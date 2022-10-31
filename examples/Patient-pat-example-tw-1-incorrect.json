@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "id": "pat-example-tw-1",
+    "meta": {
+        "profile": [
+            "https://twcore.mohw.gov.tw/fhir/StructureDefinition/Patient-twcore"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3><b>個人基本資料</b></h3><p><b>護照號碼</b>:310942728</p><p><b>姓名</b>:WANG, DA-MING 王大明</p><p><b>性別</b>:男</p><p><b>生日（DD / MM / YYYY）</b>:01/01/1990</p></div>"
+    },
+    "name": [
+        {
+            "use": "official",
+            "text": "王大明",
+            "family": "WANG",
+            "given": ["DA-MING"]
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1990-01-01"
+}

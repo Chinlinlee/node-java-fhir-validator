@@ -1,0 +1,35 @@
+{
+    "resourceType": "OperationOutcome",
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>ERROR</td><td/><td>Structural Issue</td><td>Patient.identifier: minimum required = 1, but only found 0 (from https://twcore.mohw.gov.tw/fhir/StructureDefinition/Patient-twcore)</td><td/><td>No display for Extension</td></tr></table></div>"
+    },
+    "issue": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                },
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 2
+                },
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                    "valueCode": "InstanceValidator"
+                },
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueCode": "Validation_VAL_Profile_Minimum"
+                }
+            ],
+            "severity": "error",
+            "code": "structure",
+            "details": {
+                "text": "Patient.identifier: minimum required = 1, but only found 0 (from https://twcore.mohw.gov.tw/fhir/StructureDefinition/Patient-twcore)"
+            },
+            "expression": ["Patient"]
+        }
+    ]
+}
