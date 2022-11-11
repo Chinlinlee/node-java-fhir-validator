@@ -87,5 +87,29 @@ module.exports = function (igDir = "") {
         );
     };
 
+    /**
+     * Load an IG in user's local cache into the validator.
+     * Download IG's package when  IG not exist in local
+     * @param {*} igPackageId 
+     * @param {*} version 
+     */
+    this.loadIg = async (igPackageId, version) => {
+        await javaInstance.callMethodPromise(
+            javaFhirValidator,
+            "loadIg",
+            igPackageId,
+            version
+        );
+    }
+
+    this.getKnownIGs = async () => {
+        let knownIGs = await javaInstance.callMethodPromise(
+            javaFhirValidator,
+            "getKnownIGs"
+        );
+        let knownIGsJson = JSON.parse(knownIGs);
+        return knownIGsJson;
+    }
+
     return this;
 };
