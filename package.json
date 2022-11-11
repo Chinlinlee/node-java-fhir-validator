@@ -1,6 +1,6 @@
 {
   "name": "node-java-fhir-validator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The node version FHIR validator that use node-java call java FHIR's APIs",
   "main": "src/validator.js",
   "scripts": {
