@@ -1,0 +1,1 @@
+{"version":3,"file":"BundleInclusionRule.js","sourceRoot":"","sources":["../../../../../../java-wrapper/ca/uhn/fhir/context/api/BundleInclusionRule.ts"],"names":[],"mappings":";;;AAAA,6CAA0F;AAuO1F;;;;;;;;GAQG;AACH,MAAa,mBAAoB,SAAQ,IAAA,yBAAW,EAAkC,6CAA6C,CAAC;IAChI;;;OAGG;IACH;QACI,KAAK,EAAE,CAAC;IACZ,CAAC;CACJ;AARD,kDAQC;AACD,kBAAe,mBAAmB,CAAC"}

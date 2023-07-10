@@ -14,15 +14,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chinlinlee/hapi-node-validator"
+    "url": "https://github.com/Chinlinlee/node-fhir-validator"
   },
-  "homepage": "https://github.com/Chinlinlee/hapi-node-validator",
+  "homepage": "https://github.com/Chinlinlee/node-fhir-validator",
   "dependencies": {
-    "glob": "^8.0.3",
-    "java": "^0.12.2",
+    "glob": "^8.1.0",
+    "java-bridge": "^2.3.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "chai": "^4.3.6"
+    "@types/node": "^20.4.1",
+    "chai": "^4.3.6",
+    "java-ts-definition-generator": "^1.0.0"
   }
 }

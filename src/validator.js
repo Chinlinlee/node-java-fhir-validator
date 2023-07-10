@@ -1,115 +1,55 @@
-const { javaInstance } = require("../src/java-instance");
+const { java, JString, JArrays } = require("./java-instance");
+const { Validator } = require("./java-wrapper-js/org/mitre/inferno/Validator");
+const { JsonParser } = require("./java-wrapper-js/org/hl7/fhir/r5/formats/JsonParser");
 
-module.exports = function (igDir = "") {
-    let javaFhirValidator;
-    if (igDir) {
-        javaFhirValidator = javaInstance.newInstanceSync(
-            "org.github.chinlinlee.Caller",
-            igDir
-        );
-    } else {
-        javaFhirValidator = javaInstance.newInstanceSync(
-            "org.github.chinlinlee.Caller"
-        );
+class FhirValidator {
+    /**
+     * 
+     * @param {string} igDir 
+     */
+    constructor(igDir) {
+
+        if (!igDir) {
+            throw new Error("Invalid IG Directory");
+        }
+
+        this.igDir = igDir;
+        /** @type {Validator} */
+        this.validator = {};
     }
 
-    /**
-     * Lists the names of resources defined for this version of validator
-     *
-     * @return a sorted list of distinct resource names
-     */
-    this.getResources = async () => {
+    async init() {
         try {
-            let list = [];
-            supportResources = await javaInstance.callMethodPromise(
-                this.javaFhirCaller,
-                "getResources"
-            );
-
-            let size = supportResources.sizeSync();
-            for (let i = 0; i < size; i++) {
-                let resource = supportResources.getSync(i);
-                list.push(resource);
-            }
-            return list;
+            this.validator = await Validator.newInstanceAsync(this.igDir);
         } catch (e) {
             console.error(e);
-            return undefined;
         }
-    };
+    }
 
     /**
-     * Lists the StructureDefinitions loaded in the validator.
-     *
-     * @return a sorted list of distinct structure canonicals
+     * 
+     * @param {string} resource
+     * @param {string} profile
      */
-    this.getStructures = async () => {
-        try {
-            let list = [];
-            let loadedStructures = await javaInstance.callMethodPromise(
-                javaFhirValidator,
-                "getStructures"
-            );
-            let size = loadedStructures.sizeSync();
-            for (let i = 0; i < size; i++) {
-                let structure = loadedStructures.getSync(i);
-                list.push(structure);
-            }
-            return list;
-        } catch (e) {
-            console.error(e);
-            return undefined;
+    async validate(resource, profile = "") {
+        let resourceJavaString = new JString(resource);
+
+        let profiles = []
+        if (profile) {
+            profiles = profile.split(",").map(v => new JString(v));
+        } else {
+            profiles = null;
         }
-    };
 
-    /**
-     * Validates the given resource against the given list of profiles.
-     *
-     * @param {string}  resource a byte array representation of a FHIR resource
-     * @param {string} profiles a profile URLs use comma delimiter to validate against
-     * @return an OperationOutcome resource representing the result of the validation operation
-     */
-    this.validateResource = async (resource, profiles) => {
-        let result = await javaInstance.callMethodPromise(
-            javaFhirValidator,
-            "validateResource",
-            resource,
-            profiles
+        let operationOutcome = await this.validator.validate(
+            await resourceJavaString.getBytes(),
+            await JArrays.asList([...profiles])
         );
-        return result;
+
+        let javaJsonParser = await JsonParser.newInstanceAsync();
+
+        return await javaJsonParser.composeString(operationOutcome);
     }
+}
 
-    this.loadProfile = async (resource) => {
-        await javaInstance.callMethodPromise(
-            javaFhirValidator,
-            "loadProfile",
-            resource
-        );
-    };
-
-    /**
-     * Load an IG in user's local cache into the validator.
-     * Download IG's package when  IG not exist in local
-     * @param {*} igPackageId 
-     * @param {*} version 
-     */
-    this.loadIg = async (igPackageId, version) => {
-        await javaInstance.callMethodPromise(
-            javaFhirValidator,
-            "loadIg",
-            igPackageId,
-            version
-        );
-    }
-
-    this.getKnownIGs = async () => {
-        let knownIGs = await javaInstance.callMethodPromise(
-            javaFhirValidator,
-            "getKnownIGs"
-        );
-        let knownIGsJson = JSON.parse(knownIGs);
-        return knownIGsJson;
-    }
-
-    return this;
-};
+module.exports.FhirValidator = FhirValidator;
