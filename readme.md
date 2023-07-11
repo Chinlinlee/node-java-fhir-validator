@@ -1,5 +1,5 @@
 # hapi-node-validator
-Use [node-java](https://github.com/joeferner/node-java) that we can use [fhir-validator-wrapper](https://github.com/inferno-framework/fhir-validator-wrapper) APIs.
+Use [node-java-bridge](https://github.com/MarkusJx/node-java-bridge) that we can use [fhir-validator-wrapper](https://github.com/inferno-framework/fhir-validator-wrapper) APIs.
 
 # Requirements
 - JDK >= 11
@@ -10,36 +10,34 @@ sudo apt install openjdk-11-jdk-headless openjdk-11-jre-headless
 ```
 
 # Usage
-- Put you IG package (package.tgz file) in `igs` folder
+- Put you IG package (package.tgz file) in any folder, here we use "igs"
 - Example:
 ```js
-const validator = require("../src/validator");
-
-const fs = require("fs");
 const path = require("path");
-
+const fs = require("fs");
+const { FhirValidator } = require("node-java-fhir-validator");
 
 
 (async () => {
-
     try {
+        let validator = new FhirValidator(
+            path.normalize(path.join(__dirname, "./igs"))
+        );
+        await validator.init();
         // validate resource example
         let item = fs.readFileSync(path.join(__dirname, "./Patient-pat-example-tw-1-incorrect.json"), "utf-8");
-        let validationOperationOutcome = await validator.validateResource(item, "https://twcore.mohw.gov.tw/fhir/StructureDefinition/Patient-twcore");
-        console.log(validationOperationOutcome);
+        let validationResult = await validator.validate(item, "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Patient-twcore");
 
+        console.log(validationResult);
 
-        let profileStr = fs.readFileSync(path.join(__dirname, "../igs/StructureDefinition-us-core-careplan.json"), "utf-8");
-        await validator.loadProfile(profileStr);
+        await validator.validator.loadProfile(
+            fs.readFileSync(
+                path.join(__dirname, "./StructureDefinition-us-core-careplan.json")
+            )
+        );
+        let structures = await validator.validator.getStructures();
+        console.log(await structures.contains("http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"));
 
-        let incorrectProfile = fs.readFileSync(path.join(__dirname, "../igs/no-content.json"), "utf-8");
-        await validator.loadProfile(incorrectProfile);
-
-        let structures = await validator.getStructures();
-
-        if (structures.includes("http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan")) {
-            console.log("load profile \"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan\" from file successful");
-        }
     } catch (e) {
         console.error("err", e);
     }
