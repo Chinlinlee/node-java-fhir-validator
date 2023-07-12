@@ -7,26 +7,26 @@ import { Element as org_hl7_fhir_r5_model_Element } from "./Element";
 import { DataType as org_hl7_fhir_r5_model_DataType } from "./DataType";
 import { BackboneType as org_hl7_fhir_r5_model_BackboneType } from "./BackboneType";
 import { IntegerType as org_hl7_fhir_r5_model_IntegerType } from "./IntegerType";
-import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
-import { Timing as org_hl7_fhir_r5_model_Timing } from "./Timing";
-import { StringType as org_hl7_fhir_r5_model_StringType } from "./StringType";
-import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
-import { Quantity as org_hl7_fhir_r5_model_Quantity } from "./Quantity";
-import { Dosage$DosageDoseAndRateComponent as org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent } from "./Dosage$DosageDoseAndRateComponent";
-import { Ratio as org_hl7_fhir_r5_model_Ratio } from "./Ratio";
 import { BooleanType as org_hl7_fhir_r5_model_BooleanType } from "./BooleanType";
-import { IBaseExtension as org_hl7_fhir_instance_model_api_IBaseExtension } from "./../../instance/model/api/IBaseExtension";
+import { Dosage$DosageDoseAndRateComponent as org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent } from "./Dosage$DosageDoseAndRateComponent";
+import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
+import { Timing as org_hl7_fhir_r5_model_Timing } from "./Timing";
+import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
+import { StringType as org_hl7_fhir_r5_model_StringType } from "./StringType";
+import { Ratio as org_hl7_fhir_r5_model_Ratio } from "./Ratio";
+import { Quantity as org_hl7_fhir_r5_model_Quantity } from "./Quantity";
 import { Extension as org_hl7_fhir_r5_model_Extension } from "./Extension";
-import { IBaseElement as org_hl7_fhir_instance_model_api_IBaseElement } from "./../../instance/model/api/IBaseElement";
+import { IBaseExtension as org_hl7_fhir_instance_model_api_IBaseExtension } from "./../../instance/model/api/IBaseExtension";
 import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
+import { IBaseElement as org_hl7_fhir_instance_model_api_IBaseElement } from "./../../instance/model/api/IBaseElement";
 import { PrimitiveType as org_hl7_fhir_r5_model_PrimitiveType } from "./PrimitiveType";
 import { ValidationMessage as org_hl7_fhir_utilities_validation_ValidationMessage } from "./../../utilities/validation/ValidationMessage";
+import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
 import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Base$ValidationInfo as org_hl7_fhir_r5_model_Base$ValidationInfo } from "./Base$ValidationInfo";
 import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { ElementDefinition as org_hl7_fhir_r5_model_ElementDefinition } from "./ElementDefinition";
 import { Base$ValidationMode as org_hl7_fhir_r5_model_Base$ValidationMode } from "./Base$ValidationMode";
-import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
@@ -168,6 +168,322 @@ export declare class DosageClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.IntegerType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setSequenceElement(var0: org_hl7_fhir_r5_model_IntegerType | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.IntegerType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setSequenceElementSync(var0: org_hl7_fhir_r5_model_IntegerType | null): Dosage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSequence(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSequenceSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSequenceElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSequenceElementSync(): boolean;
+    /**
+     * @return original return type: 'int'
+     */
+    getSequence(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getSequenceSync(): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAsNeededElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAsNeededElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAsNeeded(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAsNeededSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.BooleanType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAsNeededElement(var0: org_hl7_fhir_r5_model_BooleanType | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.BooleanType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAsNeededElementSync(var0: org_hl7_fhir_r5_model_BooleanType | null): Dosage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    getAsNeeded(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    getAsNeededSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAsNeeded(var0: java_lang_Boolean | boolean): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAsNeededSync(var0: java_lang_Boolean | boolean): Dosage | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BooleanType'
+     */
+    getAsNeededElement(): Promise<org_hl7_fhir_r5_model_BooleanType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BooleanType'
+     */
+    getAsNeededElementSync(): org_hl7_fhir_r5_model_BooleanType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.IntegerType'
+     */
+    getSequenceElement(): Promise<org_hl7_fhir_r5_model_IntegerType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.IntegerType'
+     */
+    getSequenceElementSync(): org_hl7_fhir_r5_model_IntegerType | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setSequence(var0: java_lang_Integer | number): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setSequenceSync(var0: java_lang_Integer | number): Dosage | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    getSite(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    getSiteSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    addDoseAndRate(var0: org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    addDoseAndRateSync(var0: org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null): Dosage | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     */
+    addDoseAndRate(): Promise<org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     */
+    addDoseAndRateSync(): org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setSite(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setSiteSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasRoute(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasRouteSync(): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAsNeededFor(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAsNeededForSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getAsNeededFor(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getAsNeededForSync(): java_util_List | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAsNeededFor(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAsNeededForSync(): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setDoseAndRate(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setDoseAndRateSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSite(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSiteSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setRoute(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setRouteSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasMethod(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasMethodSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDoseAndRate(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDoseAndRateSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    addAsNeededFor(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    addAsNeededForSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    addAsNeededFor(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    addAsNeededForSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getDoseAndRate(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getDoseAndRateSync(): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    getRoute(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    getRouteSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setTiming(var0: org_hl7_fhir_r5_model_Timing | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setTimingSync(var0: org_hl7_fhir_r5_model_Timing | null): Dosage | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing'
+     */
+    getTiming(): Promise<org_hl7_fhir_r5_model_Timing | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing'
+     */
+    getTimingSync(): org_hl7_fhir_r5_model_Timing | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTiming(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTimingSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasText(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTextSync(): boolean;
+    /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Dosage'
      * @return original return type: 'void'
      */
@@ -218,57 +534,29 @@ export declare class DosageClass extends JavaClass {
      */
     copyValuesSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
      */
-    hasSequenceElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSequenceElementSync(): boolean;
-    /**
-     * @return original return type: 'int'
-     */
-    getSequence(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getSequenceSync(): number;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSequence(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSequenceSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.IntegerType'
-     */
-    getSequenceElement(): Promise<org_hl7_fhir_r5_model_IntegerType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.IntegerType'
-     */
-    getSequenceElementSync(): org_hl7_fhir_r5_model_IntegerType | null;
+    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
     /**
      * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
      */
-    setSequence(var0: java_lang_Integer | number): Promise<Dosage | null>;
+    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
     /**
      * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    setSequenceSync(var0: java_lang_Integer | number): Dosage | null;
+    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.IntegerType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    setSequenceElement(var0: org_hl7_fhir_r5_model_IntegerType | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.IntegerType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setSequenceElementSync(var0: org_hl7_fhir_r5_model_IntegerType | null): Dosage | null;
+    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
     /**
      * @param var0 original type: 'int'
      * @param var1 original type: 'java.lang.String'
@@ -294,102 +582,6 @@ export declare class DosageClass extends JavaClass {
      */
     getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
-     */
-    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
-     */
-    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasText(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasTextSync(): boolean;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setTiming(var0: org_hl7_fhir_r5_model_Timing | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setTimingSync(var0: org_hl7_fhir_r5_model_Timing | null): Dosage | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing'
-     */
-    getTiming(): Promise<org_hl7_fhir_r5_model_Timing | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing'
-     */
-    getTimingSync(): org_hl7_fhir_r5_model_Timing | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasTiming(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasTimingSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getTextElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getTextElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
      * @return original return type: 'boolean'
      */
     hasTextElement(): Promise<boolean>;
@@ -408,31 +600,29 @@ export declare class DosageClass extends JavaClass {
      */
     setTextElementSync(var0: org_hl7_fhir_r5_model_StringType | null): Dosage | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
      */
-    getAdditionalInstruction(): Promise<java_util_List | null>;
+    getTextElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
      */
-    getAdditionalInstructionSync(): java_util_List | null;
+    getTextElementSync(): org_hl7_fhir_r5_model_StringType | null;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
      */
-    setAdditionalInstruction(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Dosage | null>;
+    getPatientInstructionElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
      */
-    setAdditionalInstructionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
+    getPatientInstructionElementSync(): org_hl7_fhir_r5_model_StringType | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
      */
-    hasAdditionalInstruction(): Promise<boolean>;
+    addAdditionalInstruction(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
      */
-    hasAdditionalInstructionSync(): boolean;
+    addAdditionalInstructionSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
@@ -444,13 +634,23 @@ export declare class DosageClass extends JavaClass {
      */
     addAdditionalInstructionSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'boolean'
      */
-    addAdditionalInstruction(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
+    hasAdditionalInstruction(): Promise<boolean>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'boolean'
      */
-    addAdditionalInstructionSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
+    hasAdditionalInstructionSync(): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAdditionalInstruction(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Dosage | null>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
+     */
+    setAdditionalInstructionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
     /**
      * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
      */
@@ -459,6 +659,22 @@ export declare class DosageClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
      */
     getAdditionalInstructionFirstRepSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getAdditionalInstruction(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getAdditionalInstructionSync(): java_util_List | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPatientInstruction(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPatientInstructionSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
@@ -470,30 +686,6 @@ export declare class DosageClass extends JavaClass {
      */
     setPatientInstructionElementSync(var0: org_hl7_fhir_r5_model_StringType | null): Dosage | null;
     /**
-     * @return original return type: 'boolean'
-     */
-    hasPatientInstructionElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPatientInstructionElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getPatientInstructionElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getPatientInstructionElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPatientInstruction(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPatientInstructionSync(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     getPatientInstruction(): Promise<string | null>;
@@ -501,6 +693,14 @@ export declare class DosageClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getPatientInstructionSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPatientInstructionElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPatientInstructionElementSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
@@ -512,13 +712,45 @@ export declare class DosageClass extends JavaClass {
      */
     setPatientInstructionSync(var0: string | null): Dosage | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
      */
-    hasMaxDosePerAdministration(): Promise<boolean>;
+    getAsNeededForFirstRep(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     */
+    getAsNeededForFirstRepSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     */
+    getDoseAndRateFirstRep(): Promise<org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     */
+    getDoseAndRateFirstRepSync(): org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getMaxDosePerPeriod(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getMaxDosePerPeriodSync(): java_util_List | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasMaxDosePerAdministrationSync(): boolean;
+    hasMaxDosePerPeriod(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasMaxDosePerPeriodSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Ratio'
+     */
+    getMaxDosePerPeriodFirstRep(): Promise<org_hl7_fhir_r5_model_Ratio | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Ratio'
+     */
+    getMaxDosePerPeriodFirstRepSync(): org_hl7_fhir_r5_model_Ratio | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
@@ -538,32 +770,6 @@ export declare class DosageClass extends JavaClass {
      */
     getMaxDosePerLifetimeSync(): org_hl7_fhir_r5_model_Quantity | null;
     /**
-     * @return original return type: 'boolean'
-     */
-    hasMaxDosePerLifetime(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMaxDosePerLifetimeSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setMaxDosePerLifetime(var0: org_hl7_fhir_r5_model_Quantity | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setMaxDosePerLifetimeSync(var0: org_hl7_fhir_r5_model_Quantity | null): Dosage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMaxDosePerPeriod(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMaxDosePerPeriodSync(): boolean;
-    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
      */
@@ -574,13 +780,13 @@ export declare class DosageClass extends JavaClass {
      */
     setMaxDosePerPeriodSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     * @return original return type: 'boolean'
      */
-    getDoseAndRateFirstRep(): Promise<org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null>;
+    hasMaxDosePerLifetime(): Promise<boolean>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
+     * @return original return type: 'boolean'
      */
-    getDoseAndRateFirstRepSync(): org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null;
+    hasMaxDosePerLifetimeSync(): boolean;
     /**
      * @return original return type: 'org.hl7.fhir.r5.model.Ratio'
      */
@@ -600,30 +806,6 @@ export declare class DosageClass extends JavaClass {
      */
     addMaxDosePerPeriodSync(var0: org_hl7_fhir_r5_model_Ratio | null): Dosage | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Ratio'
-     */
-    getMaxDosePerPeriodFirstRep(): Promise<org_hl7_fhir_r5_model_Ratio | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Ratio'
-     */
-    getMaxDosePerPeriodFirstRepSync(): org_hl7_fhir_r5_model_Ratio | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getMaxDosePerPeriod(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getMaxDosePerPeriodSync(): java_util_List | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    getAsNeededForFirstRep(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    getAsNeededForFirstRepSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
-    /**
      * @return original return type: 'org.hl7.fhir.r5.model.Quantity'
      */
     getMaxDosePerAdministration(): Promise<org_hl7_fhir_r5_model_Quantity | null>;
@@ -632,205 +814,23 @@ export declare class DosageClass extends JavaClass {
      */
     getMaxDosePerAdministrationSync(): org_hl7_fhir_r5_model_Quantity | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @return original return type: 'boolean'
      */
-    getRoute(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    getRouteSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getDoseAndRate(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getDoseAndRateSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setAsNeededFor(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setAsNeededForSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setDoseAndRate(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setDoseAndRateSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Dosage | null;
+    hasMaxDosePerAdministration(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasDoseAndRate(): Promise<boolean>;
+    hasMaxDosePerAdministrationSync(): boolean;
     /**
-     * @return original return type: 'boolean'
-     */
-    hasDoseAndRateSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAsNeededElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAsNeededElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAsNeeded(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAsNeededSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
      */
-    setSite(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Promise<Dosage | null>;
+    setMaxDosePerLifetime(var0: org_hl7_fhir_r5_model_Quantity | null): Promise<Dosage | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
      * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
      */
-    setSiteSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSite(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSiteSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAsNeededFor(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAsNeededForSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setAsNeeded(var0: java_lang_Boolean | boolean): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setAsNeededSync(var0: java_lang_Boolean | boolean): Dosage | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    addAsNeededFor(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    addAsNeededForSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    addAsNeededFor(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    addAsNeededForSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    getAsNeeded(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    getAsNeededSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasRoute(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasRouteSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setRoute(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setRouteSync(var0: org_hl7_fhir_r5_model_CodeableConcept | null): Dosage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMethod(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMethodSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    getSite(): Promise<org_hl7_fhir_r5_model_CodeableConcept | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeableConcept'
-     */
-    getSiteSync(): org_hl7_fhir_r5_model_CodeableConcept | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAsNeededFor(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAsNeededForSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
-     */
-    addDoseAndRate(): Promise<org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
-     */
-    addDoseAndRateSync(): org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    addDoseAndRate(var0: org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Dosage$DosageDoseAndRateComponent'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    addDoseAndRateSync(var0: org_hl7_fhir_r5_model_Dosage$DosageDoseAndRateComponent | null): Dosage | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.BooleanType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setAsNeededElement(var0: org_hl7_fhir_r5_model_BooleanType | null): Promise<Dosage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.BooleanType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Dosage'
-     */
-    setAsNeededElementSync(var0: org_hl7_fhir_r5_model_BooleanType | null): Dosage | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BooleanType'
-     */
-    getAsNeededElement(): Promise<org_hl7_fhir_r5_model_BooleanType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BooleanType'
-     */
-    getAsNeededElementSync(): org_hl7_fhir_r5_model_BooleanType | null;
+    setMaxDosePerLifetimeSync(var0: org_hl7_fhir_r5_model_Quantity | null): Dosage | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -844,15 +844,21 @@ export declare class DosageClass extends JavaClass {
      */
     checkNoModifiersSync(var0: string | null, var1: string | null): void;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.BackboneType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    setModifierExtension(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<org_hl7_fhir_r5_model_BackboneType | null>;
+    getModifierExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.BackboneType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    setModifierExtensionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_r5_model_BackboneType | null;
+    getModifierExtensionFirstRepSync(): org_hl7_fhir_r5_model_Extension | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getModifierExtension(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getModifierExtensionSync(): java_util_List | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -862,13 +868,15 @@ export declare class DosageClass extends JavaClass {
      */
     hasModifierExtensionSync(): boolean;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'org.hl7.fhir.r5.model.BackboneType'
      */
-    getModifierExtension(): Promise<java_util_List | null>;
+    addModifierExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<org_hl7_fhir_r5_model_BackboneType | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'org.hl7.fhir.r5.model.BackboneType'
      */
-    getModifierExtensionSync(): java_util_List | null;
+    addModifierExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): org_hl7_fhir_r5_model_BackboneType | null;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
      */
@@ -886,23 +894,15 @@ export declare class DosageClass extends JavaClass {
      */
     addModifierExtensionSync(): org_hl7_fhir_r5_model_Extension | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @param var0 original type: 'java.util.List'
      * @return original return type: 'org.hl7.fhir.r5.model.BackboneType'
      */
-    addModifierExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<org_hl7_fhir_r5_model_BackboneType | null>;
+    setModifierExtension(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<org_hl7_fhir_r5_model_BackboneType | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @param var0 original type: 'java.util.List'
      * @return original return type: 'org.hl7.fhir.r5.model.BackboneType'
      */
-    addModifierExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): org_hl7_fhir_r5_model_BackboneType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    getModifierExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    getModifierExtensionFirstRepSync(): org_hl7_fhir_r5_model_Extension | null;
+    setModifierExtensionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_r5_model_BackboneType | null;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -930,113 +930,89 @@ export declare class DosageClass extends JavaClass {
      */
     setExtensionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_r5_model_Element | null;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionFirstRepSync(): org_hl7_fhir_r5_model_Extension | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasId(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElementSync(): boolean;
+    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
+     * @return original return type: 'void'
      */
-    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseElement | null>;
+    removeExtension(var0: string | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
+     * @return original return type: 'void'
      */
-    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseElement | null;
+    removeExtensionSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBase(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBaseSync(): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionStringSync(var0: string | null): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBase(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBaseSync(var0: string | null): void;
+    /**
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setId(var0: string | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setIdSync(var0: string | null): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'boolean'
-     */
-    hasExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'boolean'
-     */
-    hasExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasExtension(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasExtensionSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasExtension(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasExtensionSync(var0: string | null): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setDisallowExtensions(var0: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setDisallowExtensionsSync(var0: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDisallowExtensions(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDisallowExtensionsSync(): boolean;
+    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
     /**
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
@@ -1076,89 +1052,113 @@ export declare class DosageClass extends JavaClass {
      */
     addExtensionSync(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBase(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBaseSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    getExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
+    getExtensionFirstRepSync(): org_hl7_fhir_r5_model_Extension | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    isDisallowExtensions(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDisallowExtensionsSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
+    setDisallowExtensions(var0: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Element | null>;
     /**
+     * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
+    setDisallowExtensionsSync(var0: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Element | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdElementSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getExtensionString(var0: string | null): Promise<string | null>;
+    hasExtension(var0: string | null): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getExtensionStringSync(var0: string | null): string | null;
+    hasExtensionSync(var0: string | null): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasExtension(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasExtensionSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'boolean'
+     */
+    hasExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'boolean'
+     */
+    hasExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setIdBase(var0: string | null): Promise<void>;
+    setId(var0: string | null): Promise<org_hl7_fhir_r5_model_Element | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setIdBaseSync(var0: string | null): void;
+    setIdSync(var0: string | null): org_hl7_fhir_r5_model_Element | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
      */
-    removeExtension(var0: string | null): Promise<void>;
+    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseElement | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
      */
-    removeExtensionSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
+    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseElement | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -1190,20 +1190,6 @@ export declare class DosageClass extends JavaClass {
      */
     isPrimitiveSync(): boolean;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareValues(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareValuesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.PrimitiveType'
      * @param var1 original type: 'org.hl7.fhir.r5.model.PrimitiveType'
      * @param var2 original type: 'boolean'
@@ -1217,6 +1203,20 @@ export declare class DosageClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     static compareValuesSync(var0: org_hl7_fhir_r5_model_PrimitiveType | null, var1: org_hl7_fhir_r5_model_PrimitiveType | null, var2: java_lang_Boolean | boolean): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
+     */
+    static compareValues(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
+     */
+    static compareValuesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -1234,22 +1234,6 @@ export declare class DosageClass extends JavaClass {
      */
     isResourceSync(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPostSync(): boolean;
-    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
      */
@@ -1260,6 +1244,14 @@ export declare class DosageClass extends JavaClass {
      */
     addFormatCommentsPostSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
     /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPostSync(): boolean;
+    /**
      * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
@@ -1269,22 +1261,6 @@ export declare class DosageClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
     addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessagesSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationMessages(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationMessagesSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -1306,65 +1282,145 @@ export declare class DosageClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatComment(): Promise<boolean>;
+    hasValidationMessages(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatCommentSync(): boolean;
+    hasValidationMessagesSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    static compareDeep(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    clearUserData(var0: string | null): Promise<void>;
+    static compareDeep(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    clearUserDataSync(var0: string | null): void;
+    static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
-    getUserString(var0: string | null): Promise<string | null>;
+    primitiveValue(): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
-    getUserStringSync(var0: string | null): string | null;
+    primitiveValueSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessagesSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTime(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTimeSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getChildByName(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
+     */
+    getUserInt(var0: string | null): Promise<number>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
+     */
+    getUserIntSync(var0: string | null): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveValue(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveValueSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
@@ -1388,13 +1444,25 @@ export declare class DosageClass extends JavaClass {
      */
     listChildrenByNameSync(var0: string | null, var1: java_lang_Boolean | boolean): (org_hl7_fhir_r5_model_Base | null)[] | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    isBooleanPrimitive(): Promise<boolean>;
+    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    isBooleanPrimitiveSync(): boolean;
+    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
     /**
      * @param var0 original type: 'java.lang.String[]'
      * @return original return type: 'boolean'
@@ -1405,6 +1473,36 @@ export declare class DosageClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasTypeSync(var0: (string | null)[] | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearUserData(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearUserDataSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitiveSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -1419,64 +1517,6 @@ export declare class DosageClass extends JavaClass {
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'void'
      */
-    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveValue(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveValueSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
-     */
-    getUserInt(var0: string | null): Promise<number>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
-     */
-    getUserIntSync(var0: string | null): number;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
-     */
-    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
-     */
-    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getChildByName(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
     copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
@@ -1484,13 +1524,31 @@ export declare class DosageClass extends JavaClass {
      */
     copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
      */
-    isDateTime(): Promise<boolean>;
+    getUserString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getUserStringSync(var0: string | null): string | null;
     /**
      * @return original return type: 'boolean'
      */
-    isDateTimeSync(): boolean;
+    hasValidationInfo(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationInfoSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfo(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfoSync(): java_util_List | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
      * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
@@ -1514,93 +1572,35 @@ export declare class DosageClass extends JavaClass {
      */
     getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    getValidationInfo(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfoSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfo(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfoSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValueSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    hasFormatComment(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.lang.Object'
      */
-    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    static compareDeep(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeep(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

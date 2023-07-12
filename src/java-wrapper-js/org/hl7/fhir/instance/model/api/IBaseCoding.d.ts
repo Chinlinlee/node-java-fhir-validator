@@ -16,40 +16,6 @@ export declare class IBaseCodingClass extends JavaClass {
      */
     getVersionSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    setSystem(var0: string | null): Promise<IBaseCoding | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    setSystemSync(var0: string | null): IBaseCoding | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSystem(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSystemSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCode(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplay(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplaySync(): string | null;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
      */
@@ -68,15 +34,39 @@ export declare class IBaseCodingClass extends JavaClass {
      */
     getUserSelectedSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     * @return original return type: 'java.lang.String'
      */
-    setVersion(var0: string | null): Promise<IBaseCoding | null>;
+    getDisplay(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDisplaySync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystem(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystemSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCode(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
      */
-    setVersionSync(var0: string | null): IBaseCoding | null;
+    setSystem(var0: string | null): Promise<IBaseCoding | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    setSystemSync(var0: string | null): IBaseCoding | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
@@ -98,6 +88,16 @@ export declare class IBaseCodingClass extends JavaClass {
      */
     setDisplaySync(var0: string | null): IBaseCoding | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    setVersion(var0: string | null): Promise<IBaseCoding | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    setVersionSync(var0: string | null): IBaseCoding | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): Promise<boolean>;
@@ -105,22 +105,6 @@ export declare class IBaseCodingClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isEmptySync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -130,15 +114,21 @@ export declare class IBaseCodingClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -152,13 +142,23 @@ export declare class IBaseCodingClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -177,23 +177,6 @@ export interface IBaseCodingInterface {
      */
     getVersion(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    setSystem(var0: string | null): IBaseCoding | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSystem(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCode(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplay(): string | null;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
      */
@@ -203,10 +186,22 @@ export interface IBaseCodingInterface {
      */
     getUserSelected(): boolean;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDisplay(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystem(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCode(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
      */
-    setVersion(var0: string | null): IBaseCoding | null;
+    setSystem(var0: string | null): IBaseCoding | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
@@ -218,26 +213,26 @@ export interface IBaseCodingInterface {
      */
     setDisplay(var0: string | null): IBaseCoding | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    setVersion(var0: string | null): IBaseCoding | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -245,9 +240,14 @@ export interface IBaseCodingInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IBaseCoding} interface.

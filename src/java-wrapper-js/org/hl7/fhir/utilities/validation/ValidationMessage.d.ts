@@ -2,8 +2,8 @@ import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { ValidationMessage$IssueType as org_hl7_fhir_utilities_validation_ValidationMessage$IssueType } from "./ValidationMessage$IssueType";
 import { ValidationMessage$Source as org_hl7_fhir_utilities_validation_ValidationMessage$Source } from "./ValidationMessage$Source";
 import { ValidationMessage$IssueSeverity as org_hl7_fhir_utilities_validation_ValidationMessage$IssueSeverity } from "./ValidationMessage$IssueSeverity";
-import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
+import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Date as java_util_Date } from "./../../../../../java/util/Date";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -69,18 +69,6 @@ export declare class ValidationMessageClass extends JavaClass {
      */
     compareToSync(var0: ValidationMessageClass | null): number;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @param var1 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @return original return type: 'int'
-     */
-    compare(var0: ValidationMessageClass | null, var1: ValidationMessageClass | null): Promise<number>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @param var1 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @return original return type: 'int'
-     */
-    compareSync(var0: ValidationMessageClass | null, var1: ValidationMessageClass | null): number;
-    /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'java.lang.Object'
      * @return original return type: 'int'
@@ -92,6 +80,18 @@ export declare class ValidationMessageClass extends JavaClass {
      * @return original return type: 'int'
      */
     compareSync(var0: BasicOrJavaType | null, var1: BasicOrJavaType | null): number;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @param var1 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @return original return type: 'int'
+     */
+    compare(var0: ValidationMessageClass | null, var1: ValidationMessageClass | null): Promise<number>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @param var1 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @return original return type: 'int'
+     */
+    compareSync(var0: ValidationMessageClass | null, var1: ValidationMessageClass | null): number;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -151,6 +151,290 @@ export declare class ValidationMessageClass extends JavaClass {
      */
     setLevelSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage$IssueSeverity | null): ValidationMessage | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setLocation(var0: string | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setLocationSync(var0: string | null): ValidationMessage | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setMessage(var0: string | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setMessageSync(var0: string | null): ValidationMessage | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setCol(var0: java_lang_Integer | number): Promise<void>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setColSync(var0: java_lang_Integer | number): void;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage$IssueType'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setType(var0: org_hl7_fhir_utilities_validation_ValidationMessage$IssueType | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage$IssueType'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setTypeSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage$IssueType | null): ValidationMessage | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setLine(var0: java_lang_Integer | number): Promise<void>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setLineSync(var0: java_lang_Integer | number): void;
+    /**
+     * @return original return type: 'int'
+     */
+    getLine(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getLineSync(): number;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setLocationLink(var0: string | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setLocationLinkSync(var0: string | null): ValidationMessage | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setTxLink(var0: string | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setTxLinkSync(var0: string | null): ValidationMessage | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toXML(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toXMLSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setHtml(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setHtmlSync(var0: string | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTxLink(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTxLinkSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSlicingHint(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSlicingHintSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setSlicingHint(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setSlicingHintSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSliceHtml(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSliceHtmlSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String[]'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setSliceHtml(var0: string | null, var1: (string | null)[] | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String[]'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setSliceHtmlSync(var0: string | null, var1: (string | null)[] | null): ValidationMessage | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getLocationLink(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getLocationLinkSync(): string | null;
+    /**
+     * @return original return type: 'int'
+     */
+    getCol(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getColSync(): number;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getHtml(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getHtmlSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setMessageId(var0: string | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setMessageIdSync(var0: string | null): ValidationMessage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isMatched(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isMatchedSync(): boolean;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getRuleDate(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getRuleDateSync(): java_util_Date | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getMessageId(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getMessageIdSync(): string | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setMatched(var0: java_lang_Boolean | boolean): Promise<void>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setMatchedSync(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setIgnorableError(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setIgnorableErrorSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setSignpost(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setSignpostSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSignpost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSignpostSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isCriticalSignpost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isCriticalSignpostSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setRuleDate(var0: string | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setRuleDateSync(var0: string | null): ValidationMessage | null;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setRuleDate(var0: java_util_Date | null): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setRuleDateSync(var0: java_util_Date | null): ValidationMessage | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIgnorableError(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIgnorableErrorSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setCriticalSignpost(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     */
+    setCriticalSignpostSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
+    /**
      * @return original return type: 'java.lang.String'
      */
     getDisplay(): Promise<string | null>;
@@ -176,290 +460,6 @@ export declare class ValidationMessageClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
      */
     setSourceSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage$Source | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setCriticalSignpost(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setCriticalSignpostSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setLocation(var0: string | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setLocationSync(var0: string | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setMessage(var0: string | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setMessageSync(var0: string | null): ValidationMessage | null;
-    /**
-     * @return original return type: 'int'
-     */
-    getLine(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getLineSync(): number;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setLine(var0: java_lang_Integer | number): Promise<void>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setLineSync(var0: java_lang_Integer | number): void;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setCol(var0: java_lang_Integer | number): Promise<void>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setColSync(var0: java_lang_Integer | number): void;
-    /**
-     * @return original return type: 'int'
-     */
-    getCol(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getColSync(): number;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getRuleDate(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getRuleDateSync(): java_util_Date | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setSlicingHint(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setSlicingHintSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toXML(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toXMLSync(): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSignpost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSignpostSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getTxLink(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getTxLinkSync(): string | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setIgnorableError(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setIgnorableErrorSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSliceHtml(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSliceHtmlSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage$IssueType'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setType(var0: org_hl7_fhir_utilities_validation_ValidationMessage$IssueType | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage$IssueType'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setTypeSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage$IssueType | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setMessageId(var0: string | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setMessageIdSync(var0: string | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setTxLink(var0: string | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setTxLinkSync(var0: string | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setRuleDate(var0: string | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setRuleDateSync(var0: string | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setRuleDate(var0: java_util_Date | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setRuleDateSync(var0: java_util_Date | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setLocationLink(var0: string | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setLocationLinkSync(var0: string | null): ValidationMessage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isCriticalSignpost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isCriticalSignpostSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIgnorableError(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIgnorableErrorSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setHtml(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setHtmlSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getHtml(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getHtmlSync(): string | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setMatched(var0: java_lang_Boolean | boolean): Promise<void>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setMatchedSync(var0: java_lang_Boolean | boolean): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isMatched(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isMatchedSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String[]'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setSliceHtml(var0: string | null, var1: (string | null)[] | null): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String[]'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setSliceHtmlSync(var0: string | null, var1: (string | null)[] | null): ValidationMessage | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setSignpost(var0: java_lang_Boolean | boolean): Promise<ValidationMessage | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     */
-    setSignpostSync(var0: java_lang_Boolean | boolean): ValidationMessage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSlicingHint(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSlicingHintSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getLocationLink(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getLocationLinkSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getMessageId(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getMessageIdSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

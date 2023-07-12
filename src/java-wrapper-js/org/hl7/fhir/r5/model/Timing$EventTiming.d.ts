@@ -163,19 +163,11 @@ export declare class Timing$EventTimingClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSystem(): Promise<string | null>;
+    toCode(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSystemSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplay(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplaySync(): string | null;
+    toCodeSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
@@ -189,11 +181,19 @@ export declare class Timing$EventTimingClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    toCode(): Promise<string | null>;
+    getDisplay(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    toCodeSync(): string | null;
+    getDisplaySync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystem(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystemSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

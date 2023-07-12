@@ -5,29 +5,29 @@ import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./
 import { Base as org_hl7_fhir_r5_model_Base } from "./Base";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
+import { CodeType as org_hl7_fhir_r5_model_CodeType } from "./CodeType";
+import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./../../instance/model/api/IPrimitiveType";
+import { Meta as org_hl7_fhir_r5_model_Meta } from "./Meta";
+import { PackageInformation as org_hl7_fhir_r5_model_PackageInformation } from "./PackageInformation";
 import { ResourceType as org_hl7_fhir_r5_model_ResourceType } from "./ResourceType";
-import { UriType as org_hl7_fhir_r5_model_UriType } from "./UriType";
-import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
+import { IBaseMetaType as org_hl7_fhir_instance_model_api_IBaseMetaType } from "./../../instance/model/api/IBaseMetaType";
+import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../instance/model/api/IIdType";
 import { IdType as org_hl7_fhir_r5_model_IdType } from "./IdType";
 import { BaseResource as org_hl7_fhir_r5_model_BaseResource } from "./BaseResource";
-import { IAnyResource as org_hl7_fhir_instance_model_api_IAnyResource } from "./../../instance/model/api/IAnyResource";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource } from "./../../instance/model/api/IBaseResource";
-import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../instance/model/api/IIdType";
-import { CodeType as org_hl7_fhir_r5_model_CodeType } from "./CodeType";
-import { PackageInformation as org_hl7_fhir_r5_model_PackageInformation } from "./PackageInformation";
-import { Meta as org_hl7_fhir_r5_model_Meta } from "./Meta";
-import { IBaseMetaType as org_hl7_fhir_instance_model_api_IBaseMetaType } from "./../../instance/model/api/IBaseMetaType";
-import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./../../instance/model/api/IPrimitiveType";
+import { IAnyResource as org_hl7_fhir_instance_model_api_IAnyResource } from "./../../instance/model/api/IAnyResource";
+import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
+import { UriType as org_hl7_fhir_r5_model_UriType } from "./UriType";
 import { FhirVersionEnum as ca_uhn_fhir_context_FhirVersionEnum } from "./../../../../../ca/uhn/fhir/context/FhirVersionEnum";
-import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { PrimitiveType as org_hl7_fhir_r5_model_PrimitiveType } from "./PrimitiveType";
+import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { ValidationMessage as org_hl7_fhir_utilities_validation_ValidationMessage } from "./../../utilities/validation/ValidationMessage";
+import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
 import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Base$ValidationInfo as org_hl7_fhir_r5_model_Base$ValidationInfo } from "./Base$ValidationInfo";
 import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { ElementDefinition as org_hl7_fhir_r5_model_ElementDefinition } from "./ElementDefinition";
 import { Base$ValidationMode as org_hl7_fhir_r5_model_Base$ValidationMode } from "./Base$ValidationMode";
-import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
@@ -125,14 +125,6 @@ export declare class ResourceClass extends JavaClass {
      */
     copySync(): Resource | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getLanguage(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getLanguageSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
@@ -142,6 +134,14 @@ export declare class ResourceClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getLanguageSync(var0: string | null): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getLanguage(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getLanguageSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Resource'
@@ -153,6 +153,208 @@ export declare class ResourceClass extends JavaClass {
      */
     setLanguageSync(var0: string | null): Resource | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirTypeSync(): string | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     */
+    getLanguageElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     */
+    getLanguageElementSync(): org_hl7_fhir_r5_model_CodeType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
+     */
+    getLanguageElement(): Promise<org_hl7_fhir_instance_model_api_IPrimitiveType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
+     */
+    getLanguageElementSync(): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Meta'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setMeta(var0: org_hl7_fhir_r5_model_Meta | null): Promise<Resource | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Meta'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setMetaSync(var0: org_hl7_fhir_r5_model_Meta | null): Resource | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PackageInformation'
+     * @return original return type: 'void'
+     */
+    setSourcePackage(var0: org_hl7_fhir_r5_model_PackageInformation | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PackageInformation'
+     * @return original return type: 'void'
+     */
+    setSourcePackageSync(var0: org_hl7_fhir_r5_model_PackageInformation | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLanguageElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLanguageElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasMeta(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasMetaSync(): boolean;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getWebPath(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getWebPathSync(): string | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PackageInformation'
+     */
+    getSourcePackage(): Promise<org_hl7_fhir_r5_model_PackageInformation | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PackageInformation'
+     */
+    getSourcePackageSync(): org_hl7_fhir_r5_model_PackageInformation | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdPart(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdPartSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSourcePackage(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSourcePackageSync(): boolean;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getImplicitRules(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getImplicitRulesSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setImplicitRules(var0: string | null): Promise<Resource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setImplicitRulesSync(var0: string | null): Resource | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasImplicitRules(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasImplicitRulesSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWebPath(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWebPathSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setLanguageElement(var0: org_hl7_fhir_r5_model_CodeType | null): Promise<Resource | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setLanguageElementSync(var0: org_hl7_fhir_r5_model_CodeType | null): Resource | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLanguage(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLanguageSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setWebPath(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setWebPathSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBase(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBaseSync(): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBase(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBaseSync(var0: string | null): void;
+    /**
      * @return original return type: 'org.hl7.fhir.r5.model.ResourceType'
      */
     getResourceType(): Promise<org_hl7_fhir_r5_model_ResourceType | null>;
@@ -161,39 +363,21 @@ export declare class ResourceClass extends JavaClass {
      */
     getResourceTypeSync(): org_hl7_fhir_r5_model_ResourceType | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.UriType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     * @return original return type: 'org.hl7.fhir.r5.model.Meta'
      */
-    setImplicitRulesElement(var0: org_hl7_fhir_r5_model_UriType | null): Promise<Resource | null>;
+    getMeta(): Promise<org_hl7_fhir_r5_model_Meta | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.UriType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     * @return original return type: 'org.hl7.fhir.r5.model.Meta'
      */
-    setImplicitRulesElementSync(var0: org_hl7_fhir_r5_model_UriType | null): Resource | null;
+    getMetaSync(): org_hl7_fhir_r5_model_Meta | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
      */
-    hasImplicitRulesElement(): Promise<boolean>;
+    getMeta(): Promise<org_hl7_fhir_instance_model_api_IBaseMetaType | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
      */
-    hasImplicitRulesElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.UriType'
-     */
-    getImplicitRulesElement(): Promise<org_hl7_fhir_r5_model_UriType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.UriType'
-     */
-    getImplicitRulesElementSync(): org_hl7_fhir_r5_model_UriType | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    fhirType(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    fhirTypeSync(): string | null;
+    getMetaSync(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Resource'
      * @return original return type: 'void'
@@ -214,6 +398,132 @@ export declare class ResourceClass extends JavaClass {
      * @return original return type: 'void'
      */
     copyValuesSync(var0: org_hl7_fhir_r5_model_Base | null): void;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
+     */
+    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
+     */
+    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getIdElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.IdType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_r5_model_IdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.IdType'
+     */
+    getIdElementSync(): org_hl7_fhir_r5_model_IdType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setIdElement(var0: org_hl7_fhir_r5_model_IdType | null): Promise<Resource | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setIdElementSync(var0: org_hl7_fhir_r5_model_IdType | null): Resource | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
+     */
+    setIdElement(var0: org_hl7_fhir_r5_model_IdType | null): Promise<org_hl7_fhir_r5_model_BaseResource | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
+     */
+    setIdElementSync(var0: org_hl7_fhir_r5_model_IdType | null): org_hl7_fhir_r5_model_BaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setId(var0: string | null): Promise<Resource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
+     */
+    setIdSync(var0: string | null): Resource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
+     */
+    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IAnyResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
+     */
+    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IAnyResource | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
+     */
+    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<org_hl7_fhir_r5_model_BaseResource | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
+     */
+    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_r5_model_BaseResource | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
      * @param var0 original type: 'int'
      * @param var1 original type: 'java.lang.String'
@@ -239,341 +549,31 @@ export declare class ResourceClass extends JavaClass {
      */
     getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.UriType'
      */
-    hasId(): Promise<boolean>;
+    getImplicitRulesElement(): Promise<org_hl7_fhir_r5_model_UriType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.UriType'
+     */
+    getImplicitRulesElementSync(): org_hl7_fhir_r5_model_UriType | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasIdSync(): boolean;
+    hasImplicitRulesElement(): Promise<boolean>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
+     * @return original return type: 'boolean'
+     */
+    hasImplicitRulesElementSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.UriType'
      * @return original return type: 'org.hl7.fhir.r5.model.Resource'
      */
-    setIdElement(var0: org_hl7_fhir_r5_model_IdType | null): Promise<Resource | null>;
+    setImplicitRulesElement(var0: org_hl7_fhir_r5_model_UriType | null): Promise<Resource | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.UriType'
      * @return original return type: 'org.hl7.fhir.r5.model.Resource'
      */
-    setIdElementSync(var0: org_hl7_fhir_r5_model_IdType | null): Resource | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
-     */
-    setIdElement(var0: org_hl7_fhir_r5_model_IdType | null): Promise<org_hl7_fhir_r5_model_BaseResource | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.IdType'
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
-     */
-    setIdElementSync(var0: org_hl7_fhir_r5_model_IdType | null): org_hl7_fhir_r5_model_BaseResource | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElementSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
-     */
-    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IAnyResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
-     */
-    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IAnyResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setId(var0: string | null): Promise<Resource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setIdSync(var0: string | null): Resource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
-     */
-    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<org_hl7_fhir_r5_model_BaseResource | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseResource'
-     */
-    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_r5_model_BaseResource | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getIdElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getIdElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.IdType'
-     */
-    getIdElement(): Promise<org_hl7_fhir_r5_model_IdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.IdType'
-     */
-    getIdElementSync(): org_hl7_fhir_r5_model_IdType | null;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
-     */
-    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
-     */
-    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getImplicitRules(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getImplicitRulesSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getWebPath(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getWebPathSync(): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMeta(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasMetaSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdPart(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdPartSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setWebPath(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setWebPathSync(var0: string | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWebPath(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWebPathSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setLanguageElement(var0: org_hl7_fhir_r5_model_CodeType | null): Promise<Resource | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CodeType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setLanguageElementSync(var0: org_hl7_fhir_r5_model_CodeType | null): Resource | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PackageInformation'
-     */
-    getSourcePackage(): Promise<org_hl7_fhir_r5_model_PackageInformation | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PackageInformation'
-     */
-    getSourcePackageSync(): org_hl7_fhir_r5_model_PackageInformation | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSourcePackage(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSourcePackageSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PackageInformation'
-     * @return original return type: 'void'
-     */
-    setSourcePackage(var0: org_hl7_fhir_r5_model_PackageInformation | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PackageInformation'
-     * @return original return type: 'void'
-     */
-    setSourcePackageSync(var0: org_hl7_fhir_r5_model_PackageInformation | null): void;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Meta'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setMeta(var0: org_hl7_fhir_r5_model_Meta | null): Promise<Resource | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Meta'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setMetaSync(var0: org_hl7_fhir_r5_model_Meta | null): Resource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setImplicitRules(var0: string | null): Promise<Resource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Resource'
-     */
-    setImplicitRulesSync(var0: string | null): Resource | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasImplicitRules(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasImplicitRulesSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLanguageElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLanguageElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLanguage(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLanguageSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Meta'
-     */
-    getMeta(): Promise<org_hl7_fhir_r5_model_Meta | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Meta'
-     */
-    getMetaSync(): org_hl7_fhir_r5_model_Meta | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    getMeta(): Promise<org_hl7_fhir_instance_model_api_IBaseMetaType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    getMetaSync(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
-     */
-    getLanguageElement(): Promise<org_hl7_fhir_instance_model_api_IPrimitiveType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
-     */
-    getLanguageElementSync(): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
-     */
-    getLanguageElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
-     */
-    getLanguageElementSync(): org_hl7_fhir_r5_model_CodeType | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBase(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBaseSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setIdBase(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setIdBaseSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    setImplicitRulesElementSync(var0: org_hl7_fhir_r5_model_UriType | null): Resource | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -621,20 +621,6 @@ export declare class ResourceClass extends JavaClass {
      */
     isPrimitiveSync(): boolean;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareValues(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareValuesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.PrimitiveType'
      * @param var1 original type: 'org.hl7.fhir.r5.model.PrimitiveType'
      * @param var2 original type: 'boolean'
@@ -649,6 +635,20 @@ export declare class ResourceClass extends JavaClass {
      */
     static compareValuesSync(var0: org_hl7_fhir_r5_model_PrimitiveType | null, var1: org_hl7_fhir_r5_model_PrimitiveType | null, var2: java_lang_Boolean | boolean): boolean;
     /**
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
+     */
+    static compareValues(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
+     */
+    static compareValuesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
+    /**
      * @return original return type: 'java.util.List'
      */
     children(): Promise<java_util_List | null>;
@@ -656,22 +656,6 @@ export declare class ResourceClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     childrenSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPostSync(): boolean;
     /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
@@ -683,6 +667,14 @@ export declare class ResourceClass extends JavaClass {
      */
     addFormatCommentsPostSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
     /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPostSync(): boolean;
+    /**
      * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
@@ -692,22 +684,6 @@ export declare class ResourceClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
     addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessagesSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationMessages(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationMessagesSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -729,65 +705,145 @@ export declare class ResourceClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatComment(): Promise<boolean>;
+    hasValidationMessages(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatCommentSync(): boolean;
+    hasValidationMessagesSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    static compareDeep(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    clearUserData(var0: string | null): Promise<void>;
+    static compareDeep(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    clearUserDataSync(var0: string | null): void;
+    static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
-    getUserString(var0: string | null): Promise<string | null>;
+    primitiveValue(): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
-    getUserStringSync(var0: string | null): string | null;
+    primitiveValueSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessagesSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTime(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTimeSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getChildByName(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
+     */
+    getUserInt(var0: string | null): Promise<number>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
+     */
+    getUserIntSync(var0: string | null): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveValue(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveValueSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
@@ -811,13 +867,25 @@ export declare class ResourceClass extends JavaClass {
      */
     listChildrenByNameSync(var0: string | null, var1: java_lang_Boolean | boolean): (org_hl7_fhir_r5_model_Base | null)[] | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    isBooleanPrimitive(): Promise<boolean>;
+    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    isBooleanPrimitiveSync(): boolean;
+    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
     /**
      * @param var0 original type: 'java.lang.String[]'
      * @return original return type: 'boolean'
@@ -828,6 +896,36 @@ export declare class ResourceClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasTypeSync(var0: (string | null)[] | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearUserData(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearUserDataSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitiveSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -842,64 +940,6 @@ export declare class ResourceClass extends JavaClass {
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'void'
      */
-    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveValue(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveValueSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
-     */
-    getUserInt(var0: string | null): Promise<number>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
-     */
-    getUserIntSync(var0: string | null): number;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
-     */
-    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
-     */
-    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getChildByName(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
     copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
@@ -907,13 +947,31 @@ export declare class ResourceClass extends JavaClass {
      */
     copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
      */
-    isDateTime(): Promise<boolean>;
+    getUserString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getUserStringSync(var0: string | null): string | null;
     /**
      * @return original return type: 'boolean'
      */
-    isDateTimeSync(): boolean;
+    hasValidationInfo(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationInfoSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfo(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfoSync(): java_util_List | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
      * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
@@ -937,93 +995,35 @@ export declare class ResourceClass extends JavaClass {
      */
     getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    getValidationInfo(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfoSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfo(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfoSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValueSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    hasFormatComment(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.lang.Object'
      */
-    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    static compareDeep(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeep(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

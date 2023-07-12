@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType } from "java-bridge";
 import { Date as java_util_Date } from "./../../../../java/util/Date";
-import { Double as java_lang_Double } from "./../../../../java/lang/Double";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { TimeUnit as java_util_concurrent_TimeUnit } from "./../../../../java/util/concurrent/TimeUnit";
+import { Double as java_lang_Double } from "./../../../../java/lang/Double";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../java/lang/Class";
 /**
@@ -38,6 +38,54 @@ export declare class StopWatchClass extends JavaClass {
      */
     getMillisSync(): number;
     /**
+     * @param var0 original type: 'long'
+     * @param var1 original type: 'long'
+     * @param var2 original type: 'java.util.concurrent.TimeUnit'
+     * @return original return type: 'double'
+     */
+    static getThroughput(var0: java_lang_Long | bigint | number, var1: java_lang_Long | bigint | number, var2: java_util_concurrent_TimeUnit | null): Promise<number>;
+    /**
+     * @param var0 original type: 'long'
+     * @param var1 original type: 'long'
+     * @param var2 original type: 'java.util.concurrent.TimeUnit'
+     * @return original return type: 'double'
+     */
+    static getThroughputSync(var0: java_lang_Long | bigint | number, var1: java_lang_Long | bigint | number, var2: java_util_concurrent_TimeUnit | null): number;
+    /**
+     * @param var0 original type: 'long'
+     * @param var1 original type: 'java.util.concurrent.TimeUnit'
+     * @return original return type: 'double'
+     */
+    getThroughput(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): Promise<number>;
+    /**
+     * @param var0 original type: 'long'
+     * @param var1 original type: 'java.util.concurrent.TimeUnit'
+     * @return original return type: 'double'
+     */
+    getThroughputSync(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): number;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'java.lang.String'
+     */
+    static formatThroughput(var0: java_lang_Double | number): Promise<string | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'java.lang.String'
+     */
+    static formatThroughputSync(var0: java_lang_Double | number): string | null;
+    /**
+     * @param var0 original type: 'long'
+     * @param var1 original type: 'java.util.concurrent.TimeUnit'
+     * @return original return type: 'java.lang.String'
+     */
+    formatThroughput(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @param var1 original type: 'java.util.concurrent.TimeUnit'
+     * @return original return type: 'java.lang.String'
+     */
+    formatThroughputSync(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): string | null;
+    /**
      * @param var0 original type: 'double'
      * @return original return type: 'java.lang.String'
      */
@@ -66,61 +114,23 @@ export declare class StopWatchClass extends JavaClass {
      */
     endCurrentTaskSync(): void;
     /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'java.lang.String'
-     */
-    static formatThroughput(var0: java_lang_Double | number): Promise<string | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'java.lang.String'
-     */
-    static formatThroughputSync(var0: java_lang_Double | number): string | null;
-    /**
-     * @param var0 original type: 'long'
-     * @param var1 original type: 'java.util.concurrent.TimeUnit'
-     * @return original return type: 'java.lang.String'
-     */
-    formatThroughput(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @param var1 original type: 'java.util.concurrent.TimeUnit'
-     * @return original return type: 'java.lang.String'
-     */
-    formatThroughputSync(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): string | null;
-    /**
-     * @param var0 original type: 'long'
-     * @param var1 original type: 'java.util.concurrent.TimeUnit'
-     * @return original return type: 'double'
-     */
-    getThroughput(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): Promise<number>;
-    /**
-     * @param var0 original type: 'long'
-     * @param var1 original type: 'java.util.concurrent.TimeUnit'
-     * @return original return type: 'double'
-     */
-    getThroughputSync(var0: java_lang_Long | bigint | number, var1: java_util_concurrent_TimeUnit | null): number;
-    /**
-     * @param var0 original type: 'long'
-     * @param var1 original type: 'long'
-     * @param var2 original type: 'java.util.concurrent.TimeUnit'
-     * @return original return type: 'double'
-     */
-    static getThroughput(var0: java_lang_Long | bigint | number, var1: java_lang_Long | bigint | number, var2: java_util_concurrent_TimeUnit | null): Promise<number>;
-    /**
-     * @param var0 original type: 'long'
-     * @param var1 original type: 'long'
-     * @param var2 original type: 'java.util.concurrent.TimeUnit'
-     * @return original return type: 'double'
-     */
-    static getThroughputSync(var0: java_lang_Long | bigint | number, var1: java_lang_Long | bigint | number, var2: java_util_concurrent_TimeUnit | null): number;
-    /**
+     * @param var0 original type: 'java.lang.Long'
      * @return original return type: 'void'
      */
-    restart(): Promise<void>;
+    static setNowForUnitTest(var0: java_lang_Long | bigint | number | null): Promise<void>;
     /**
+     * @param var0 original type: 'java.lang.Long'
      * @return original return type: 'void'
      */
-    restartSync(): void;
+    static setNowForUnitTestSync(var0: java_lang_Long | bigint | number | null): void;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getStartedDate(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getStartedDateSync(): java_util_Date | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -132,23 +142,61 @@ export declare class StopWatchClass extends JavaClass {
      */
     startTaskSync(var0: string | null): void;
     /**
-     * @return original return type: 'java.util.Date'
-     */
-    getStartedDate(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getStartedDateSync(): java_util_Date | null;
-    /**
-     * @param var0 original type: 'java.lang.Long'
      * @return original return type: 'void'
      */
-    static setNowForUnitTest(var0: java_lang_Long | bigint | number | null): Promise<void>;
+    restart(): Promise<void>;
     /**
-     * @param var0 original type: 'java.lang.Long'
      * @return original return type: 'void'
      */
-    static setNowForUnitTestSync(var0: java_lang_Long | bigint | number | null): void;
+    restartSync(): void;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'java.lang.String'
+     */
+    formatMillisPerOperation(var0: java_lang_Long | bigint | number): Promise<string | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'java.lang.String'
+     */
+    formatMillisPerOperationSync(var0: java_lang_Long | bigint | number): string | null;
+    /**
+     * @return original return type: 'long'
+     */
+    getMillisAndRestart(): Promise<number>;
+    /**
+     * @return original return type: 'long'
+     */
+    getMillisAndRestartSync(): number;
+    /**
+     * @param var0 original type: 'double'
+     * @param var1 original type: 'double'
+     * @return original return type: 'java.lang.String'
+     */
+    getEstimatedTimeRemaining(var0: java_lang_Double | number, var1: java_lang_Double | number): Promise<string | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @param var1 original type: 'double'
+     * @return original return type: 'java.lang.String'
+     */
+    getEstimatedTimeRemainingSync(var0: java_lang_Double | number, var1: java_lang_Double | number): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    formatTaskDurations(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    formatTaskDurationsSync(): string | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'long'
+     */
+    getMillisPerOperation(var0: java_lang_Long | bigint | number): Promise<number>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'long'
+     */
+    getMillisPerOperationSync(var0: java_lang_Long | bigint | number): number;
     /**
      * @param var0 original type: 'double'
      * @param var1 original type: 'double'
@@ -163,54 +211,6 @@ export declare class StopWatchClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     static formatEstimatedTimeRemainingSync(var0: java_lang_Double | number, var1: java_lang_Double | number, var2: java_lang_Double | number): string | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'long'
-     */
-    getMillisPerOperation(var0: java_lang_Long | bigint | number): Promise<number>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'long'
-     */
-    getMillisPerOperationSync(var0: java_lang_Long | bigint | number): number;
-    /**
-     * @param var0 original type: 'double'
-     * @param var1 original type: 'double'
-     * @return original return type: 'java.lang.String'
-     */
-    getEstimatedTimeRemaining(var0: java_lang_Double | number, var1: java_lang_Double | number): Promise<string | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @param var1 original type: 'double'
-     * @return original return type: 'java.lang.String'
-     */
-    getEstimatedTimeRemainingSync(var0: java_lang_Double | number, var1: java_lang_Double | number): string | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'java.lang.String'
-     */
-    formatMillisPerOperation(var0: java_lang_Long | bigint | number): Promise<string | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'java.lang.String'
-     */
-    formatMillisPerOperationSync(var0: java_lang_Long | bigint | number): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    formatTaskDurations(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    formatTaskDurationsSync(): string | null;
-    /**
-     * @return original return type: 'long'
-     */
-    getMillisAndRestart(): Promise<number>;
-    /**
-     * @return original return type: 'long'
-     */
-    getMillisAndRestartSync(): number;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

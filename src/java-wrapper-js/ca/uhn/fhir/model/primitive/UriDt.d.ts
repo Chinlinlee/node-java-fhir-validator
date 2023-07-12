@@ -128,14 +128,6 @@ export declare class UriDtClass extends JavaClass {
      */
     readExternalSync(var0: java_io_ObjectInput | JavaInterfaceProxy<java_io_ObjectInputInterface> | null): void;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsStringSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -145,6 +137,14 @@ export declare class UriDtClass extends JavaClass {
      * @return original return type: 'void'
      */
     setValueAsStringSync(var0: string | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsStringSync(): string | null;
     /**
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
@@ -192,6 +192,24 @@ export declare class UriDtClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensionsSync(): java_util_List | null;
+    /**
      * @return original return type: 'java.util.List'
      */
     getUndeclaredExtensions(): Promise<java_util_List | null>;
@@ -202,23 +220,11 @@ export declare class UriDtClass extends JavaClass {
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensionsSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ca_uhn_fhir_model_api_ExtensionDt | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ca_uhn_fhir_model_api_ExtensionDt | null;
+    getAllUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'boolean'
      * @param var1 original type: 'java.lang.String'
@@ -234,6 +240,18 @@ export declare class UriDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null, var2: org_hl7_fhir_instance_model_api_IBaseDatatype | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseDatatypeInterface> | null): ca_uhn_fhir_model_api_ExtensionDt | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ca_uhn_fhir_model_api_ExtensionDt | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ca_uhn_fhir_model_api_ExtensionDt | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.model.api.ExtensionDt'
      * @return original return type: 'void'
      */
@@ -244,23 +262,13 @@ export declare class UriDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ca_uhn_fhir_model_api_ExtensionDt | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllUndeclaredExtensionsSync(): java_util_List | null;
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -269,6 +277,18 @@ export declare class UriDtClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -287,26 +307,6 @@ export declare class UriDtClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     getUserDataSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

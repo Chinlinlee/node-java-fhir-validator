@@ -9,11 +9,19 @@ export declare class DateClientParam$IDateCriterionClass extends JavaClass {
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    orAfterOrEquals(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
+    orAfter(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    orAfterOrEqualsSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    orAfterSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
+     */
+    orBefore(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
+     */
+    orBeforeSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
@@ -33,19 +41,11 @@ export declare class DateClientParam$IDateCriterionClass extends JavaClass {
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    orBefore(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
+    orAfterOrEquals(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    orBeforeSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
-     */
-    orAfter(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
-     */
-    orAfterSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    orAfterOrEqualsSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -62,7 +62,11 @@ export interface DateClientParam$IDateCriterionInterface {
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    orAfterOrEquals(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    orAfter(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
+     */
+    orBefore(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
@@ -74,11 +78,7 @@ export interface DateClientParam$IDateCriterionInterface {
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    orBefore(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
-     */
-    orAfter(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    orAfterOrEquals(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
 }
 /**
  * Create a proxy for the {@link DateClientParam$IDateCriterion} interface.

@@ -26,14 +26,6 @@ export declare class IPrimitiveDatatypeClass extends JavaClass {
      */
     setValueSync(var0: BasicOrJavaType | null): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsStringSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -44,6 +36,14 @@ export declare class IPrimitiveDatatypeClass extends JavaClass {
      */
     setValueAsStringSync(var0: string | null): void;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsStringSync(): string | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): Promise<boolean>;
@@ -51,22 +51,6 @@ export declare class IPrimitiveDatatypeClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isEmptySync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -76,15 +60,21 @@ export declare class IPrimitiveDatatypeClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -98,13 +88,23 @@ export declare class IPrimitiveDatatypeClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -136,35 +136,30 @@ export interface IPrimitiveDatatypeInterface {
      */
     setValue(var0: BasicOrJavaType | null): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
     setValueAsString(var0: string | null): void;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): string | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -172,9 +167,14 @@ export interface IPrimitiveDatatypeInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
     /**
      * @return original return type: 'boolean'
      */

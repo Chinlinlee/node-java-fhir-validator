@@ -1,10 +1,10 @@
 import { JavaClass, BasicOrJavaType, InterfaceProxyOptions, JavaInterfaceProxy } from "java-bridge";
 import { Include as ca_uhn_fhir_model_api_Include } from "./../../../../../../ca/uhn/fhir/model/api/Include";
 import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../../../java/util/Set";
-import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource } from "./IBaseResource";
-import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./IIdType";
-import { IBaseMetaType as org_hl7_fhir_instance_model_api_IBaseMetaType } from "./IBaseMetaType";
 import { FhirVersionEnum as ca_uhn_fhir_context_FhirVersionEnum } from "./../../../../../../ca/uhn/fhir/context/FhirVersionEnum";
+import { IBaseMetaType as org_hl7_fhir_instance_model_api_IBaseMetaType } from "./IBaseMetaType";
+import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./IIdType";
+import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource } from "./IBaseResource";
 import { List as java_util_List } from "./../../../../../../java/util/List";
 /**
  * This class just defines types, you should import {@link IBaseParameters} instead of this.
@@ -21,15 +21,29 @@ export declare class IBaseParametersClass extends JavaClass {
      */
     static readonly WILDCARD_ALL_SET: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
      */
-    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    getStructureFhirVersionEnum(): Promise<ca_uhn_fhir_context_FhirVersionEnum | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
      */
-    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    getStructureFhirVersionEnumSync(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
+     */
+    getMeta(): Promise<org_hl7_fhir_instance_model_api_IBaseMetaType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
+     */
+    getMetaSync(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getIdElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
@@ -41,29 +55,15 @@ export declare class IBaseParametersClass extends JavaClass {
      */
     setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    getIdElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    getIdElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    getMeta(): Promise<org_hl7_fhir_instance_model_api_IBaseMetaType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    getMetaSync(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     */
-    getStructureFhirVersionEnum(): Promise<ca_uhn_fhir_context_FhirVersionEnum | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     */
-    getStructureFhirVersionEnumSync(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -73,22 +73,6 @@ export declare class IBaseParametersClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     fhirType(): Promise<string | null>;
@@ -97,15 +81,21 @@ export declare class IBaseParametersClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -119,13 +109,23 @@ export declare class IBaseParametersClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -140,48 +140,43 @@ export declare class IBaseParametersClass extends JavaClass {
  */
 export interface IBaseParametersInterface {
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
      */
-    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    getStructureFhirVersionEnum(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
+     */
+    getMeta(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getIdElement(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
     setId(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    getIdElement(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    getMeta(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     */
-    getStructureFhirVersionEnum(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -189,9 +184,14 @@ export interface IBaseParametersInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IBaseParameters} interface.

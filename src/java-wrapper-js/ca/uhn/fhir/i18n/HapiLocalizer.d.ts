@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType } from "java-bridge";
 import { Class as java_lang_Class } from "./../../../../java/lang/Class";
 import { Locale as java_util_Locale } from "./../../../../java/util/Locale";
-import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { Boolean as java_lang_Boolean } from "./../../../../java/lang/Boolean";
+import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
 /**
@@ -15,6 +15,18 @@ export declare class HapiLocalizerClass extends JavaClass {
      * Original type: 'java.lang.String'
      */
     static readonly UNKNOWN_I18N_KEY_MESSAGE: string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object[]'
+     * @return original return type: 'java.lang.String'
+     */
+    getMessage(var0: string | null, var1: (BasicOrJavaType | null)[] | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object[]'
+     * @return original return type: 'java.lang.String'
+     */
+    getMessageSync(var0: string | null, var1: (BasicOrJavaType | null)[] | null): string | null;
     /**
      * @param var0 original type: 'java.lang.Class'
      * @param var1 original type: 'java.lang.String'
@@ -29,18 +41,6 @@ export declare class HapiLocalizerClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getMessageSync(var0: java_lang_Class | null, var1: string | null, var2: (BasicOrJavaType | null)[] | null): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object[]'
-     * @return original return type: 'java.lang.String'
-     */
-    getMessage(var0: string | null, var1: (BasicOrJavaType | null)[] | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object[]'
-     * @return original return type: 'java.lang.String'
-     */
-    getMessageSync(var0: string | null, var1: (BasicOrJavaType | null)[] | null): string | null;
     /**
      * @return original return type: 'java.util.Locale'
      */
@@ -61,24 +61,6 @@ export declare class HapiLocalizerClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     static toKeySync(var0: java_lang_Class | null, var1: string | null): string | null;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getAllKeys(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getAllKeysSync(): java_util_Set | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getFormatString(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getFormatStringSync(var0: string | null): string | null;
     /**
      * @param var0 original type: 'java.lang.Class'
      * @param var1 original type: 'java.lang.String'
@@ -103,6 +85,24 @@ export declare class HapiLocalizerClass extends JavaClass {
      * @return original return type: 'void'
      */
     static setOurFailOnMissingMessageSync(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getAllKeys(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getAllKeysSync(): java_util_Set | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getFormatString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getFormatStringSync(var0: string | null): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -20,7 +20,8 @@ const generator = new TypescriptBulkDefinitionGenerator();
         "org.mitre.inferno.Validator",
         "org.mitre.inferno.JsonParser",
         "org.mitre.inferno.rest.IgResponse",
-        "org.hl7.fhir.r5.formats.JsonParser"
+        "org.hl7.fhir.r5.formats.JsonParser",
+        "org.hl7.fhir.utilities.npm.PackageClient"
     ]);
 
     // Save the definitions to a directory

@@ -6,10 +6,10 @@ import { JsonElement as org_hl7_fhir_utilities_json_model_JsonElement } from "./
 import { JsonElementType as org_hl7_fhir_utilities_json_model_JsonElementType } from "./JsonElementType";
 import { Instant as java_time_Instant } from "./../../../../../../java/time/Instant";
 import { List as java_util_List } from "./../../../../../../java/util/List";
-import { JsonString as org_hl7_fhir_utilities_json_model_JsonString } from "./JsonString";
 import { JsonBoolean as org_hl7_fhir_utilities_json_model_JsonBoolean } from "./JsonBoolean";
-import { JsonNull as org_hl7_fhir_utilities_json_model_JsonNull } from "./JsonNull";
 import { JsonNumber as org_hl7_fhir_utilities_json_model_JsonNumber } from "./JsonNumber";
+import { JsonString as org_hl7_fhir_utilities_json_model_JsonString } from "./JsonString";
+import { JsonNull as org_hl7_fhir_utilities_json_model_JsonNull } from "./JsonNull";
 import { JsonArray as org_hl7_fhir_utilities_json_model_JsonArray } from "./JsonArray";
 import { JsonLocationData as org_hl7_fhir_utilities_json_model_JsonLocationData } from "./JsonLocationData";
 import { JsonPrimitive as org_hl7_fhir_utilities_json_model_JsonPrimitive } from "./JsonPrimitive";
@@ -254,16 +254,6 @@ export declare class JsonObjectClass extends JavaClass {
     getStringsSync(var0: string | null): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    forceObject(var0: string | null): Promise<JsonObject | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    forceObjectSync(var0: string | null): JsonObject | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'org.hl7.fhir.utilities.json.model.JsonElement'
      * @param var2 original type: 'boolean'
      * @param var3 original type: 'boolean'
@@ -282,66 +272,6 @@ export declare class JsonObjectClass extends JavaClass {
     addForParserSync(var0: string | null, var1: org_hl7_fhir_utilities_json_model_JsonElement | null, var2: java_lang_Boolean | boolean, var3: java_lang_Boolean | boolean, var4: java_lang_Boolean | boolean): JsonObject | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasString(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasStringSync(var0: string | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonString'
-     */
-    getJsonString(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonString | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonString'
-     */
-    getJsonStringSync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonString | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
-     */
-    getJsonBoolean(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonBoolean | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
-     */
-    getJsonBooleanSync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonBoolean | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
-     */
-    getJsonNull(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonNull | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
-     */
-    getJsonNullSync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonNull | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Integer'
-     */
-    asInteger(var0: string | null): Promise<number | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Integer'
-     */
-    asIntegerSync(var0: string | null): number | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.time.Instant'
-     */
-    asDate(var0: string | null): Promise<java_time_Instant | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.time.Instant'
-     */
-    asDateSync(var0: string | null): java_time_Instant | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.time.Instant'
      */
     asInstant(var0: string | null): Promise<java_time_Instant | null>;
@@ -351,15 +281,13 @@ export declare class JsonObjectClass extends JavaClass {
      */
     asInstantSync(var0: string | null): java_time_Instant | null;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    hasNull(var0: string | null): Promise<boolean>;
+    isExtraComma(): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    hasNullSync(var0: string | null): boolean;
+    isExtraCommaSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -372,22 +300,28 @@ export declare class JsonObjectClass extends JavaClass {
     hasBooleanSync(var0: string | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
      */
-    hasNumber(var0: string | null): Promise<boolean>;
+    findByStringProp(var0: string | null, var1: string | null, var2: string | null): Promise<JsonObject | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
      */
-    hasNumberSync(var0: string | null): boolean;
+    findByStringPropSync(var0: string | null, var1: string | null, var2: string | null): JsonObject | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
      */
-    getNames(): Promise<java_util_List | null>;
+    getJsonBoolean(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonBoolean | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
      */
-    getNamesSync(): java_util_List | null;
+    getJsonBooleanSync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonBoolean | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNumber'
@@ -410,52 +344,92 @@ export declare class JsonObjectClass extends JavaClass {
     setExtraCommaSync(var0: java_lang_Boolean | boolean): void;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonString'
      */
-    findByStringProp(var0: string | null, var1: string | null, var2: string | null): Promise<JsonObject | null>;
+    getJsonString(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonString | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonString'
      */
-    findByStringPropSync(var0: string | null, var1: string | null, var2: string | null): JsonObject | null;
+    getJsonStringSync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonString | null;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    isExtraComma(): Promise<boolean>;
+    hasString(var0: string | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    isExtraCommaSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonElement'
-     */
-    deepCopy(): Promise<org_hl7_fhir_utilities_json_model_JsonElement | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonElement'
-     */
-    deepCopySync(): org_hl7_fhir_utilities_json_model_JsonElement | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    deepCopy(): Promise<JsonObject | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    deepCopySync(): JsonObject | null;
+    hasStringSync(var0: string | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonArray'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
      */
-    forceArray(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonArray | null>;
+    getJsonNull(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonNull | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonArray'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
      */
-    forceArraySync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonArray | null;
+    getJsonNullSync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonNull | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getNames(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getNamesSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasNumber(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasNumberSync(var0: string | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.time.Instant'
+     */
+    asDate(var0: string | null): Promise<java_time_Instant | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.time.Instant'
+     */
+    asDateSync(var0: string | null): java_time_Instant | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Integer'
+     */
+    asInteger(var0: string | null): Promise<number | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Integer'
+     */
+    asIntegerSync(var0: string | null): number | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    forceObject(var0: string | null): Promise<JsonObject | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    forceObjectSync(var0: string | null): JsonObject | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasNull(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasNullSync(var0: string | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -466,6 +440,26 @@ export declare class JsonObjectClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasObjectSync(var0: string | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasPrimitive(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveSync(var0: string | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    getJsonObject(var0: string | null): Promise<JsonObject | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    getJsonObjectSync(var0: string | null): JsonObject | null;
     /**
      * @param var0 original type: 'java.lang.String[]'
      * @return original return type: 'java.lang.String'
@@ -496,6 +490,16 @@ export declare class JsonObjectClass extends JavaClass {
     asStringSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonArray'
+     */
+    forceArray(var0: string | null): Promise<org_hl7_fhir_utilities_json_model_JsonArray | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonArray'
+     */
+    forceArraySync(var0: string | null): org_hl7_fhir_utilities_json_model_JsonArray | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
     getJsonObjects(var0: string | null): Promise<java_util_List | null>;
@@ -504,16 +508,6 @@ export declare class JsonObjectClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getJsonObjectsSync(var0: string | null): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    getJsonObject(var0: string | null): Promise<JsonObject | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    getJsonObjectSync(var0: string | null): JsonObject | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonArray'
@@ -528,22 +522,28 @@ export declare class JsonObjectClass extends JavaClass {
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    hasPrimitive(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveSync(var0: string | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
     asBoolean(var0: string | null): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
     asBooleanSync(var0: string | null): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonElement'
+     */
+    deepCopy(): Promise<org_hl7_fhir_utilities_json_model_JsonElement | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonElement'
+     */
+    deepCopySync(): org_hl7_fhir_utilities_json_model_JsonElement | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    deepCopy(): Promise<JsonObject | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    deepCopySync(): JsonObject | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonLocationData'
      * @return original return type: 'void'
@@ -557,11 +557,19 @@ export declare class JsonObjectClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    isJsonBoolean(): Promise<boolean>;
+    isJsonNull(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    isJsonBooleanSync(): boolean;
+    isJsonNullSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    asJsonObject(): Promise<JsonObject | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     */
+    asJsonObjectSync(): JsonObject | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -570,22 +578,6 @@ export declare class JsonObjectClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isJsonNumberSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasComments(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCommentsSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonString(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonStringSync(): boolean;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonArray'
      */
@@ -603,6 +595,62 @@ export declare class JsonObjectClass extends JavaClass {
      */
     getCommentsSync(): java_util_List | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    hasComments(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCommentsSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonArray(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonArraySync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonObject(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonObjectSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonPrimitiveSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonBoolean(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonBooleanSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonString(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonStringSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
+     */
+    asJsonBoolean(): Promise<org_hl7_fhir_utilities_json_model_JsonBoolean | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
+     */
+    asJsonBooleanSync(): org_hl7_fhir_utilities_json_model_JsonBoolean | null;
+    /**
      * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonString'
      */
     asJsonString(): Promise<org_hl7_fhir_utilities_json_model_JsonString | null>;
@@ -619,38 +667,6 @@ export declare class JsonObjectClass extends JavaClass {
      */
     asJsonNumberSync(): org_hl7_fhir_utilities_json_model_JsonNumber | null;
     /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    asJsonObject(): Promise<JsonObject | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    asJsonObjectSync(): JsonObject | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
-     */
-    asJsonNull(): Promise<org_hl7_fhir_utilities_json_model_JsonNull | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
-     */
-    asJsonNullSync(): org_hl7_fhir_utilities_json_model_JsonNull | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonObject(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonObjectSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonArray(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonArraySync(): boolean;
-    /**
      * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonPrimitive'
      */
     asJsonPrimitive(): Promise<org_hl7_fhir_utilities_json_model_JsonPrimitive | null>;
@@ -659,29 +675,13 @@ export declare class JsonObjectClass extends JavaClass {
      */
     asJsonPrimitiveSync(): org_hl7_fhir_utilities_json_model_JsonPrimitive | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
      */
-    isJsonPrimitive(): Promise<boolean>;
+    asJsonNull(): Promise<org_hl7_fhir_utilities_json_model_JsonNull | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonNull'
      */
-    isJsonPrimitiveSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonNull(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonNullSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
-     */
-    asJsonBoolean(): Promise<org_hl7_fhir_utilities_json_model_JsonBoolean | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonBoolean'
-     */
-    asJsonBooleanSync(): org_hl7_fhir_utilities_json_model_JsonBoolean | null;
+    asJsonNullSync(): org_hl7_fhir_utilities_json_model_JsonNull | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonLocationData'
      * @return original return type: 'void'

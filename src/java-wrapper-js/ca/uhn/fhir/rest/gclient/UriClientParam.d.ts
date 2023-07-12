@@ -30,6 +30,14 @@ export declare class UriClientParamClass extends JavaClass {
      */
     matchesSync(var0: string | null): ca_uhn_fhir_rest_gclient_UriClientParam$IUriMatch | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
@@ -39,14 +47,6 @@ export declare class UriClientParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamNameSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

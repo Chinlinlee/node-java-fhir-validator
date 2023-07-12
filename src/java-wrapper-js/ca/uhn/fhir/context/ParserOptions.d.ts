@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { Boolean as java_lang_Boolean } from "./../../../../java/lang/Boolean";
+import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../java/util/Collection";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
@@ -11,62 +11,6 @@ import { Class as java_lang_Class } from "./../../../../java/lang/Class";
  * You should probably not edit this.
  */
 export declare class ParserOptionsClass extends JavaClass {
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getDontStripVersionsFromReferencesAtPaths(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getDontStripVersionsFromReferencesAtPathsSync(): java_util_Set | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean): Promise<ParserOptions | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setOverrideResourceIdWithBundleEntryFullUrlSync(var0: java_lang_Boolean | boolean): ParserOptions | null;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<ParserOptions | null>;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setDontStripVersionsFromReferencesAtPathsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ParserOptions | null;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): Promise<ParserOptions | null>;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setDontStripVersionsFromReferencesAtPathsSync(var0: (string | null)[] | null): ParserOptions | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isStripVersionsFromReferences(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isStripVersionsFromReferencesSync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setAutoContainReferenceTargetsWithNoId(var0: java_lang_Boolean | boolean): Promise<void>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setAutoContainReferenceTargetsWithNoIdSync(var0: java_lang_Boolean | boolean): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -85,6 +29,16 @@ export declare class ParserOptionsClass extends JavaClass {
     isAutoContainReferenceTargetsWithNoIdSync(): boolean;
     /**
      * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setAutoContainReferenceTargetsWithNoId(var0: java_lang_Boolean | boolean): Promise<void>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setAutoContainReferenceTargetsWithNoIdSync(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
      */
     setStripVersionsFromReferences(var0: java_lang_Boolean | boolean): Promise<ParserOptions | null>;
@@ -93,6 +47,52 @@ export declare class ParserOptionsClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
      */
     setStripVersionsFromReferencesSync(var0: java_lang_Boolean | boolean): ParserOptions | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean): Promise<ParserOptions | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrlSync(var0: java_lang_Boolean | boolean): ParserOptions | null;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getDontStripVersionsFromReferencesAtPaths(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getDontStripVersionsFromReferencesAtPathsSync(): java_util_Set | null;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): Promise<ParserOptions | null>;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setDontStripVersionsFromReferencesAtPathsSync(var0: (string | null)[] | null): ParserOptions | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setDontStripVersionsFromReferencesAtPaths(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<ParserOptions | null>;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setDontStripVersionsFromReferencesAtPathsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ParserOptions | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isStripVersionsFromReferences(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isStripVersionsFromReferencesSync(): boolean;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

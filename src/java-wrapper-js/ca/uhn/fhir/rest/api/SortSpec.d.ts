@@ -38,6 +38,14 @@ export declare class SortSpecClass extends JavaClass {
      */
     setOrderSync(var0: ca_uhn_fhir_rest_api_SortOrderEnum | null): SortSpec | null;
     /**
+     * @return original return type: 'ca.uhn.fhir.rest.api.SortOrderEnum'
+     */
+    getOrder(): Promise<ca_uhn_fhir_rest_api_SortOrderEnum | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.api.SortOrderEnum'
+     */
+    getOrderSync(): ca_uhn_fhir_rest_api_SortOrderEnum | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.rest.api.SortSpec'
      * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
      */
@@ -47,14 +55,6 @@ export declare class SortSpecClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
      */
     setChainSync(var0: SortSpecClass | null): SortSpec | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.SortOrderEnum'
-     */
-    getOrder(): Promise<ca_uhn_fhir_rest_api_SortOrderEnum | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.SortOrderEnum'
-     */
-    getOrderSync(): ca_uhn_fhir_rest_api_SortOrderEnum | null;
     /**
      * @return original return type: 'java.lang.String'
      */

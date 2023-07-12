@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IBaseResource";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
-import { BasePrimitive as ca_uhn_fhir_model_api_BasePrimitive } from "./../api/BasePrimitive";
 import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./../../../../../org/hl7/fhir/instance/model/api/IPrimitiveType";
+import { BasePrimitive as ca_uhn_fhir_model_api_BasePrimitive } from "./../api/BasePrimitive";
 import { BigDecimal as java_math_BigDecimal } from "./../../../../../java/math/BigDecimal";
 import { UriDt as ca_uhn_fhir_model_primitive_UriDt } from "./UriDt";
 import { ObjectOutput as java_io_ObjectOutput, ObjectOutputInterface as java_io_ObjectOutputInterface } from "./../../../../../java/io/ObjectOutput";
@@ -57,14 +57,6 @@ export declare class IdDtClass extends JavaClass {
      */
     hashCodeSync(): number;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueSync(): string | null;
-    /**
      * @return original return type: 'java.lang.Object'
      */
     getValue(): Promise<BasicOrJavaType | null>;
@@ -72,6 +64,14 @@ export declare class IdDtClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     getValueSync(): BasicOrJavaType | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValue(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueSync(): string | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -120,16 +120,6 @@ export declare class IdDtClass extends JavaClass {
     setValueSync(var0: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'ca.uhn.fhir.model.api.BasePrimitive'
-     */
-    setValue(var0: BasicOrJavaType | null): Promise<ca_uhn_fhir_model_api_BasePrimitive | null>;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'ca.uhn.fhir.model.api.BasePrimitive'
-     */
-    setValueSync(var0: BasicOrJavaType | null): ca_uhn_fhir_model_api_BasePrimitive | null;
-    /**
-     * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
      */
     setValue(var0: BasicOrJavaType | null): Promise<org_hl7_fhir_instance_model_api_IPrimitiveType | null>;
@@ -139,13 +129,23 @@ export declare class IdDtClass extends JavaClass {
      */
     setValueSync(var0: BasicOrJavaType | null): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'ca.uhn.fhir.model.api.BasePrimitive'
      */
-    getValueAsString(): Promise<string | null>;
+    setValue(var0: BasicOrJavaType | null): Promise<ca_uhn_fhir_model_api_BasePrimitive | null>;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'ca.uhn.fhir.model.api.BasePrimitive'
+     */
+    setValueSync(var0: BasicOrJavaType | null): ca_uhn_fhir_model_api_BasePrimitive | null;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getValueAsStringSync(): string | null;
+    getIdPart(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdPartSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -156,6 +156,14 @@ export declare class IdDtClass extends JavaClass {
      * @return original return type: 'void'
      */
     setValueAsStringSync(var0: string | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsStringSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -185,14 +193,6 @@ export declare class IdDtClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdPart(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdPartSync(): string | null;
-    /**
      * @return original return type: 'java.math.BigDecimal'
      */
     getIdPartAsBigDecimal(): Promise<java_math_BigDecimal | null>;
@@ -209,13 +209,13 @@ export declare class IdDtClass extends JavaClass {
      */
     getVersionIdPartAsLongSync(): number | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'boolean'
      */
-    toUnqualifiedVersionless(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    isVersionIdPartValidLong(): Promise<boolean>;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'boolean'
      */
-    toUnqualifiedVersionlessSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    isVersionIdPartValidLongSync(): boolean;
     /**
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
@@ -225,13 +225,13 @@ export declare class IdDtClass extends JavaClass {
      */
     toUnqualifiedVersionlessSync(): IdDt | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    isVersionIdPartValidLong(): Promise<boolean>;
+    toUnqualifiedVersionless(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    isVersionIdPartValidLongSync(): boolean;
+    toUnqualifiedVersionlessSync(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @return original return type: 'java.lang.Long'
      */
@@ -241,77 +241,15 @@ export declare class IdDtClass extends JavaClass {
      */
     getIdPartAsLongSync(): number | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toVersionless(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toVersionlessSync(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
-     */
-    toVersionless(): Promise<IdDt | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
-     */
-    toVersionlessSync(): IdDt | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getVersionIdPart(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getVersionIdPartSync(): string | null;
-    /**
+     * @param var0 original type: 'ca.uhn.fhir.model.primitive.IdDt'
      * @return original return type: 'boolean'
      */
-    hasBaseUrl(): Promise<boolean>;
+    equalsIgnoreBase(var0: IdDtClass | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.model.primitive.IdDt'
      * @return original return type: 'boolean'
      */
-    hasBaseUrlSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIdPartValid(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIdPartValidSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getBaseUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getBaseUrlSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    setParts(var0: string | null, var1: string | null, var2: string | null, var3: string | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    setPartsSync(var0: string | null, var1: string | null, var2: string | null, var3: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasVersionIdPart(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasVersionIdPartSync(): boolean;
+    equalsIgnoreBaseSync(var0: IdDtClass | null): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'void'
@@ -323,13 +261,53 @@ export declare class IdDtClass extends JavaClass {
      */
     applyToSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.math.BigDecimal'
      */
-    isIdPartValidLong(): Promise<boolean>;
+    asBigDecimal(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    asBigDecimalSync(): java_math_BigDecimal | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getBaseUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getBaseUrlSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withServerBase(var0: string | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withServerBaseSync(var0: string | null, var1: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
+     */
+    withServerBase(var0: string | null, var1: string | null): Promise<IdDt | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
+     */
+    withServerBaseSync(var0: string | null, var1: string | null): IdDt | null;
     /**
      * @return original return type: 'boolean'
      */
-    isIdPartValidLongSync(): boolean;
+    hasResourceType(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasResourceTypeSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -341,37 +319,19 @@ export declare class IdDtClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasResourceType(): Promise<boolean>;
+    hasVersionIdPart(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasResourceTypeSync(): boolean;
+    hasVersionIdPartSync(): boolean;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.String'
      */
-    toUnqualified(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    getVersionIdPart(): Promise<string | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.String'
      */
-    toUnqualifiedSync(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
-     */
-    toUnqualified(): Promise<IdDt | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
-     */
-    toUnqualifiedSync(): IdDt | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withResourceType(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withResourceTypeSync(var0: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
+    getVersionIdPartSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
@@ -383,31 +343,15 @@ export declare class IdDtClass extends JavaClass {
      */
     withResourceTypeSync(var0: string | null): IdDt | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    isLocal(): Promise<boolean>;
+    withResourceType(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    isLocalSync(): boolean;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    asBigDecimal(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    asBigDecimalSync(): java_math_BigDecimal | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.primitive.IdDt'
-     * @return original return type: 'boolean'
-     */
-    equalsIgnoreBase(var0: IdDtClass | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.primitive.IdDt'
-     * @return original return type: 'boolean'
-     */
-    equalsIgnoreBaseSync(var0: IdDtClass | null): boolean;
+    withResourceTypeSync(var0: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
@@ -429,13 +373,37 @@ export declare class IdDtClass extends JavaClass {
      */
     withVersionSync(var0: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
+     * @return original return type: 'boolean'
      */
-    static newRandomUuid(): Promise<IdDt | null>;
+    hasBaseUrl(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBaseUrlSync(): boolean;
     /**
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
-    static newRandomUuidSync(): IdDt | null;
+    toUnqualified(): Promise<IdDt | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
+     */
+    toUnqualifiedSync(): IdDt | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualified(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualifiedSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValidLong(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValidLongSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -447,29 +415,61 @@ export declare class IdDtClass extends JavaClass {
      */
     static isValidLongSync(var0: string | null): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
-    withServerBase(var0: string | null, var1: string | null): Promise<IdDt | null>;
+    static newRandomUuid(): Promise<IdDt | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
-    withServerBaseSync(var0: string | null, var1: string | null): IdDt | null;
+    static newRandomUuidSync(): IdDt | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toVersionless(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toVersionlessSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
+     */
+    toVersionless(): Promise<IdDt | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
+     */
+    toVersionlessSync(): IdDt | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isLocal(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isLocalSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValid(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValidSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    withServerBase(var0: string | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    setParts(var0: string | null, var1: string | null, var2: string | null, var3: string | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    withServerBaseSync(var0: string | null, var1: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
+    setPartsSync(var0: string | null, var1: string | null, var2: string | null, var3: string | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.primitive.UriDt'
@@ -535,6 +535,24 @@ export declare class IdDtClass extends JavaClass {
      */
     setElementSpecificIdSync(var0: string | null): void;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensionsSync(): java_util_List | null;
+    /**
      * @return original return type: 'java.util.List'
      */
     getUndeclaredExtensions(): Promise<java_util_List | null>;
@@ -545,23 +563,11 @@ export declare class IdDtClass extends JavaClass {
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensionsSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ca_uhn_fhir_model_api_ExtensionDt | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ca_uhn_fhir_model_api_ExtensionDt | null;
+    getAllUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'boolean'
      * @param var1 original type: 'java.lang.String'
@@ -577,6 +583,18 @@ export declare class IdDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null, var2: org_hl7_fhir_instance_model_api_IBaseDatatype | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseDatatypeInterface> | null): ca_uhn_fhir_model_api_ExtensionDt | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ca_uhn_fhir_model_api_ExtensionDt | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ca_uhn_fhir_model_api_ExtensionDt | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.model.api.ExtensionDt'
      * @return original return type: 'void'
      */
@@ -587,23 +605,13 @@ export declare class IdDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ca_uhn_fhir_model_api_ExtensionDt | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllUndeclaredExtensionsSync(): java_util_List | null;
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -612,6 +620,18 @@ export declare class IdDtClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -630,26 +650,6 @@ export declare class IdDtClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     getUserDataSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

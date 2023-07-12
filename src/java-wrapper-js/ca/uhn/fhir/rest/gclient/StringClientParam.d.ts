@@ -28,6 +28,14 @@ export declare class StringClientParamClass extends JavaClass {
      */
     containsSync(): ca_uhn_fhir_rest_gclient_StringClientParam$IStringMatch | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
@@ -37,14 +45,6 @@ export declare class StringClientParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamNameSync(): string | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.StringClientParam$IStringMatch'
      */

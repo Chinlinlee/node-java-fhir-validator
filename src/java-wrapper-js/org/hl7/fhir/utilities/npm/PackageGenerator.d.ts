@@ -84,18 +84,6 @@ export declare class PackageGeneratorClass extends JavaClass {
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
-     */
-    dependency(var0: string | null, var1: string | null): Promise<PackageGenerator | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
-     */
-    dependencySync(var0: string | null, var1: string | null): PackageGenerator | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
      * @param var2 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
      */
@@ -107,6 +95,18 @@ export declare class PackageGeneratorClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
      */
     contributorSync(var0: string | null, var1: string | null, var2: string | null): PackageGenerator | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
+     */
+    dependency(var0: string | null, var1: string | null): Promise<PackageGenerator | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
+     */
+    dependencySync(var0: string | null, var1: string | null): PackageGenerator | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -125,22 +125,22 @@ export declare class PackageGeneratorClass extends JavaClass {
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
      */
-    homepage(var0: string | null): Promise<PackageGenerator | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
-     */
-    homepageSync(var0: string | null): PackageGenerator | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
-     */
     license(var0: string | null): Promise<PackageGenerator | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
      */
     licenseSync(var0: string | null): PackageGenerator | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
+     */
+    homepage(var0: string | null): Promise<PackageGenerator | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'
+     */
+    homepageSync(var0: string | null): PackageGenerator | null;
     /**
      * @param var0 original type: 'int'
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageGenerator'

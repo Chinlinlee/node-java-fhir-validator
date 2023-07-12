@@ -52,31 +52,25 @@ export declare class SingleValidationMessageClass extends JavaClass {
      */
     getSeveritySync(): ca_uhn_fhir_validation_ResultSeverityEnum | null;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.Integer'
      * @return original return type: 'void'
      */
-    setLocationString(var0: string | null): Promise<void>;
+    setLocationLine(var0: java_lang_Integer | number | null): Promise<void>;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.Integer'
      * @return original return type: 'void'
      */
-    setLocationStringSync(var0: string | null): void;
+    setLocationLineSync(var0: java_lang_Integer | number | null): void;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.Integer'
+     * @return original return type: 'void'
      */
-    getLocationString(): Promise<string | null>;
+    setLocationCol(var0: java_lang_Integer | number | null): Promise<void>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.Integer'
+     * @return original return type: 'void'
      */
-    getLocationStringSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.Integer'
-     */
-    getLocationLine(): Promise<number | null>;
-    /**
-     * @return original return type: 'java.lang.Integer'
-     */
-    getLocationLineSync(): number | null;
+    setLocationColSync(var0: java_lang_Integer | number | null): void;
     /**
      * @return original return type: 'java.lang.Integer'
      */
@@ -85,6 +79,14 @@ export declare class SingleValidationMessageClass extends JavaClass {
      * @return original return type: 'java.lang.Integer'
      */
     getLocationColSync(): number | null;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getLocationLine(): Promise<number | null>;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getLocationLineSync(): number | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.validation.ResultSeverityEnum'
      * @return original return type: 'void'
@@ -124,25 +126,23 @@ export declare class SingleValidationMessageClass extends JavaClass {
      */
     getMessageIdSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @return original return type: 'void'
+     * @return original return type: 'java.lang.String'
      */
-    setLocationCol(var0: java_lang_Integer | number | null): Promise<void>;
+    getLocationString(): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @return original return type: 'void'
+     * @return original return type: 'java.lang.String'
      */
-    setLocationColSync(var0: java_lang_Integer | number | null): void;
+    getLocationStringSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.Integer'
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    setLocationLine(var0: java_lang_Integer | number | null): Promise<void>;
+    setLocationString(var0: string | null): Promise<void>;
     /**
-     * @param var0 original type: 'java.lang.Integer'
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    setLocationLineSync(var0: java_lang_Integer | number | null): void;
+    setLocationStringSync(var0: string | null): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

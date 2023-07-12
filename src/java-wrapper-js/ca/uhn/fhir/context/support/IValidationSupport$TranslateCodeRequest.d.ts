@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
+import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -30,13 +30,37 @@ export declare class IValidationSupport$TranslateCodeRequestClass extends JavaCl
      */
     hashCodeSync(): number;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.String'
      */
-    getResourceId(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    getConceptMapVersion(): Promise<string | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.String'
      */
-    getResourceIdSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    getConceptMapVersionSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTargetValueSetUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTargetValueSetUrlSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSourceValueSetUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSourceValueSetUrlSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getCodings(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getCodingsSync(): java_util_List | null;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -54,14 +78,6 @@ export declare class IValidationSupport$TranslateCodeRequestClass extends JavaCl
      */
     isReverseSync(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getCodings(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getCodingsSync(): java_util_List | null;
-    /**
      * @return original return type: 'java.lang.String'
      */
     getTargetSystemUrl(): Promise<string | null>;
@@ -70,29 +86,13 @@ export declare class IValidationSupport$TranslateCodeRequestClass extends JavaCl
      */
     getTargetSystemUrlSync(): string | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getConceptMapVersion(): Promise<string | null>;
+    getResourceId(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getConceptMapVersionSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSourceValueSetUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSourceValueSetUrlSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getTargetValueSetUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getTargetValueSetUrlSync(): string | null;
+    getResourceIdSync(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

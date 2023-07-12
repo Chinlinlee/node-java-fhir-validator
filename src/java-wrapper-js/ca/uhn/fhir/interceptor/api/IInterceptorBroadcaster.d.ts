@@ -21,16 +21,6 @@ export declare class IInterceptorBroadcasterClass extends JavaClass {
     callHooksAndReturnObjectSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
-     * @return original return type: 'boolean'
-     */
-    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
-     * @return original return type: 'boolean'
-     */
-    hasHooksSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
      * @param var1 original type: 'ca.uhn.fhir.interceptor.api.HookParams'
      * @return original return type: 'boolean'
      */
@@ -41,6 +31,16 @@ export declare class IInterceptorBroadcasterClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     callHooksSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
+     * @return original return type: 'boolean'
+     */
+    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
+     * @return original return type: 'boolean'
+     */
+    hasHooksSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -62,15 +62,15 @@ export interface IInterceptorBroadcasterInterface {
     callHooksAndReturnObject(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
-     * @return original return type: 'boolean'
-     */
-    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
      * @param var1 original type: 'ca.uhn.fhir.interceptor.api.HookParams'
      * @return original return type: 'boolean'
      */
     callHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
+     * @return original return type: 'boolean'
+     */
+    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
 }
 /**
  * Create a proxy for the {@link IInterceptorBroadcaster} interface.

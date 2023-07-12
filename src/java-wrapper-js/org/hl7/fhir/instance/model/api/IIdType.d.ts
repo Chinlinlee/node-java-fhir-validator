@@ -63,19 +63,19 @@ export declare class IIdTypeClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getResourceType(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getResourceTypeSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     getIdPart(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
     getIdPartSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getResourceType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getResourceTypeSync(): string | null;
     /**
      * @return original return type: 'java.lang.Long'
      */
@@ -85,14 +85,6 @@ export declare class IIdTypeClass extends JavaClass {
      */
     getVersionIdPartAsLongSync(): number | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toUnqualifiedVersionless(): Promise<IIdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toUnqualifiedVersionlessSync(): IIdType | null;
-    /**
      * @return original return type: 'boolean'
      */
     isVersionIdPartValidLong(): Promise<boolean>;
@@ -100,6 +92,14 @@ export declare class IIdTypeClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isVersionIdPartValidLongSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualifiedVersionless(): Promise<IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualifiedVersionlessSync(): IIdType | null;
     /**
      * @return original return type: 'java.lang.Long'
      */
@@ -109,13 +109,59 @@ export declare class IIdTypeClass extends JavaClass {
      */
     getIdPartAsLongSync(): number | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'void'
      */
-    toVersionless(): Promise<IIdType | null>;
+    applyTo(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<void>;
     /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'void'
+     */
+    applyToSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getBaseUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getBaseUrlSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    toVersionlessSync(): IIdType | null;
+    withServerBase(var0: string | null, var1: string | null): Promise<IIdType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withServerBaseSync(var0: string | null, var1: string | null): IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasResourceType(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasResourceTypeSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdPart(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdPartSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasVersionIdPart(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasVersionIdPartSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -125,6 +171,26 @@ export declare class IIdTypeClass extends JavaClass {
      */
     getVersionIdPartSync(): string | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withResourceType(var0: string | null): Promise<IIdType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withResourceTypeSync(var0: string | null): IIdType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withVersion(var0: string | null): Promise<IIdType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withVersionSync(var0: string | null): IIdType | null;
+    /**
      * @return original return type: 'boolean'
      */
     hasBaseUrl(): Promise<boolean>;
@@ -133,6 +199,38 @@ export declare class IIdTypeClass extends JavaClass {
      */
     hasBaseUrlSync(): boolean;
     /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualified(): Promise<IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualifiedSync(): IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValidLong(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValidLongSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toVersionless(): Promise<IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toVersionlessSync(): IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isLocal(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isLocalSync(): boolean;
+    /**
      * @return original return type: 'boolean'
      */
     isIdPartValid(): Promise<boolean>;
@@ -140,14 +238,6 @@ export declare class IIdTypeClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isIdPartValidSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getBaseUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getBaseUrlSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -167,109 +257,11 @@ export declare class IIdTypeClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasVersionIdPart(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasVersionIdPartSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'void'
-     */
-    applyTo(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'void'
-     */
-    applyToSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIdPartValidLong(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIdPartValidLongSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdPart(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdPartSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasResourceType(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasResourceTypeSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toUnqualified(): Promise<IIdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toUnqualifiedSync(): IIdType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withResourceType(var0: string | null): Promise<IIdType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withResourceTypeSync(var0: string | null): IIdType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isLocal(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isLocalSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withVersion(var0: string | null): Promise<IIdType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withVersionSync(var0: string | null): IIdType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withServerBase(var0: string | null, var1: string | null): Promise<IIdType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withServerBaseSync(var0: string | null, var1: string | null): IIdType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
     hasValue(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
     hasValueSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsStringSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -281,21 +273,13 @@ export declare class IIdTypeClass extends JavaClass {
      */
     setValueAsStringSync(var0: string | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'java.lang.String'
      */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
+    getValueAsString(): Promise<string | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'java.lang.String'
      */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
+    getValueAsStringSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -305,15 +289,21 @@ export declare class IIdTypeClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -327,13 +317,23 @@ export declare class IIdTypeClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -380,47 +380,92 @@ export interface IIdTypeInterface {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getResourceType(): string | null;
+    getIdPart(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getIdPart(): string | null;
+    getResourceType(): string | null;
     /**
      * @return original return type: 'java.lang.Long'
      */
     getVersionIdPartAsLong(): number | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toUnqualifiedVersionless(): IIdType | null;
-    /**
      * @return original return type: 'boolean'
      */
     isVersionIdPartValidLong(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualifiedVersionless(): IIdType | null;
     /**
      * @return original return type: 'java.lang.Long'
      */
     getIdPartAsLong(): number | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'void'
+     */
+    applyTo(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getBaseUrl(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    toVersionless(): IIdType | null;
+    withServerBase(var0: string | null, var1: string | null): IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasResourceType(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdPart(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasVersionIdPart(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
     getVersionIdPart(): string | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withResourceType(var0: string | null): IIdType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    withVersion(var0: string | null): IIdType | null;
+    /**
      * @return original return type: 'boolean'
      */
     hasBaseUrl(): boolean;
     /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toUnqualified(): IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIdPartValidLong(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    toVersionless(): IIdType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isLocal(): boolean;
+    /**
      * @return original return type: 'boolean'
      */
     isIdPartValid(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getBaseUrl(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -432,78 +477,28 @@ export interface IIdTypeInterface {
     /**
      * @return original return type: 'boolean'
      */
-    hasVersionIdPart(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'void'
-     */
-    applyTo(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIdPartValidLong(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdPart(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasResourceType(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    toUnqualified(): IIdType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withResourceType(var0: string | null): IIdType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isLocal(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withVersion(var0: string | null): IIdType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    withServerBase(var0: string | null, var1: string | null): IIdType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
     hasValue(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
     setValueAsString(var0: string | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'java.lang.String'
      */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
+    getValueAsString(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -511,9 +506,14 @@ export interface IIdTypeInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IIdType} interface.

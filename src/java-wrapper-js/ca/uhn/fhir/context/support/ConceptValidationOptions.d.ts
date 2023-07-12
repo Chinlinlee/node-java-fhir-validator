@@ -18,6 +18,24 @@ export declare class ConceptValidationOptionsClass extends JavaClass {
      */
     toStringSync(): string;
     /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
+     */
+    setValidateDisplay(var0: java_lang_Boolean | boolean): Promise<ConceptValidationOptions | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
+     */
+    setValidateDisplaySync(var0: java_lang_Boolean | boolean): ConceptValidationOptions | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isValidateDisplay(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isValidateDisplaySync(): boolean;
+    /**
      * @return original return type: 'boolean'
      */
     isInferSystem(): Promise<boolean>;
@@ -35,24 +53,6 @@ export declare class ConceptValidationOptionsClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
      */
     setInferSystemSync(var0: java_lang_Boolean | boolean): ConceptValidationOptions | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isValidateDisplay(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isValidateDisplaySync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
-     */
-    setValidateDisplay(var0: java_lang_Boolean | boolean): Promise<ConceptValidationOptions | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
-     */
-    setValidateDisplaySync(var0: java_lang_Boolean | boolean): ConceptValidationOptions | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -63,19 +63,11 @@ export declare class StructureDefinition$TypeDerivationRuleClass extends JavaCla
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSystem(): Promise<string | null>;
+    toCode(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSystemSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplay(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplaySync(): string | null;
+    toCodeSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r4.model.StructureDefinition$TypeDerivationRule'
@@ -89,11 +81,19 @@ export declare class StructureDefinition$TypeDerivationRuleClass extends JavaCla
     /**
      * @return original return type: 'java.lang.String'
      */
-    toCode(): Promise<string | null>;
+    getDisplay(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    toCodeSync(): string | null;
+    getDisplaySync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystem(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSystemSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

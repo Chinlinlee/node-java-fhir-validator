@@ -96,30 +96,6 @@ export declare class RuntimeSearchParamClass extends JavaClass {
      */
     getBaseSync(): java_util_Set | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getPathsSplit(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getPathsSplitSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getProvidesMembershipInCompartments(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getProvidesMembershipInCompartmentsSync(): java_util_Set | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.ComboSearchParamType'
-     */
-    getComboSearchParamType(): Promise<ca_uhn_fhir_context_ComboSearchParamType | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.ComboSearchParamType'
-     */
-    getComboSearchParamTypeSync(): ca_uhn_fhir_context_ComboSearchParamType | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
@@ -130,13 +106,21 @@ export declare class RuntimeSearchParamClass extends JavaClass {
      */
     getPathsSplitForResourceTypeSync(var0: string | null): java_util_List | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'ca.uhn.fhir.context.ComboSearchParamType'
      */
-    getComponents(): Promise<java_util_List | null>;
+    getComboSearchParamType(): Promise<ca_uhn_fhir_context_ComboSearchParamType | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'ca.uhn.fhir.context.ComboSearchParamType'
      */
-    getComponentsSync(): java_util_List | null;
+    getComboSearchParamTypeSync(): ca_uhn_fhir_context_ComboSearchParamType | null;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getProvidesMembershipInCompartments(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getProvidesMembershipInCompartmentsSync(): java_util_Set | null;
     /**
      * @return original return type: 'java.util.Set'
      */
@@ -145,6 +129,22 @@ export declare class RuntimeSearchParamClass extends JavaClass {
      * @return original return type: 'java.util.Set'
      */
     getTargetsSync(): java_util_Set | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getComponents(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getComponentsSync(): java_util_List | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTargets(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTargetsSync(): boolean;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.phonetic.IPhoneticEncoder'
      * @return original return type: 'ca.uhn.fhir.context.RuntimeSearchParam'
@@ -155,22 +155,6 @@ export declare class RuntimeSearchParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.context.RuntimeSearchParam'
      */
     setPhoneticEncoderSync(var0: ca_uhn_fhir_context_phonetic_IPhoneticEncoder | JavaInterfaceProxy<ca_uhn_fhir_context_phonetic_IPhoneticEncoderInterface> | null): RuntimeSearchParam | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasTargets(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasTargetsSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDescription(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDescriptionSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
@@ -199,6 +183,22 @@ export declare class RuntimeSearchParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.RestSearchParameterTypeEnum'
      */
     getParamTypeSync(): ca_uhn_fhir_rest_api_RestSearchParameterTypeEnum | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDescription(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDescriptionSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getPathsSplit(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getPathsSplitSync(): java_util_List | null;
     /**
      * @return original return type: 'java.lang.String'
      */

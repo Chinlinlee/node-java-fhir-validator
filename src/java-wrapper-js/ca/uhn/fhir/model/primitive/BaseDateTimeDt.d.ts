@@ -1,13 +1,13 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { Date as java_util_Date } from "./../../../../../java/util/Date";
-import { TemporalPrecisionEnum as ca_uhn_fhir_model_api_TemporalPrecisionEnum } from "./../api/TemporalPrecisionEnum";
 import { BasePrimitive as ca_uhn_fhir_model_api_BasePrimitive } from "./../api/BasePrimitive";
 import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./../../../../../org/hl7/fhir/instance/model/api/IPrimitiveType";
+import { TemporalPrecisionEnum as ca_uhn_fhir_model_api_TemporalPrecisionEnum } from "./../api/TemporalPrecisionEnum";
 import { TimeZone as java_util_TimeZone } from "./../../../../../java/util/TimeZone";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
-import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
-import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { GregorianCalendar as java_util_GregorianCalendar } from "./../../../../../java/util/GregorianCalendar";
+import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
+import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { ObjectOutput as java_io_ObjectOutput, ObjectOutputInterface as java_io_ObjectOutputInterface } from "./../../../../../java/io/ObjectOutput";
 import { ObjectInput as java_io_ObjectInput, ObjectInputInterface as java_io_ObjectInputInterface } from "./../../../../../java/io/ObjectInput";
 import { IdDt as ca_uhn_fhir_model_primitive_IdDt } from "./IdDt";
@@ -31,16 +31,14 @@ export declare class BaseDateTimeDtClass extends JavaClass {
     static readonly TODAY_DATE_CONSTANT: string | null;
     /**
      * @param var0 original type: 'java.util.Date'
-     * @param var1 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
-     * @return original return type: 'void'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
      */
-    setValue(var0: java_util_Date | null, var1: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): Promise<void>;
+    setValue(var0: java_util_Date | null): Promise<BaseDateTimeDt | null>;
     /**
      * @param var0 original type: 'java.util.Date'
-     * @param var1 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
-     * @return original return type: 'void'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
      */
-    setValueSync(var0: java_util_Date | null, var1: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): void;
+    setValueSync(var0: java_util_Date | null): BaseDateTimeDt | null;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'ca.uhn.fhir.model.api.BasePrimitive'
@@ -63,14 +61,16 @@ export declare class BaseDateTimeDtClass extends JavaClass {
     setValueSync(var0: BasicOrJavaType | null): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
     /**
      * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     * @param var1 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
+     * @return original return type: 'void'
      */
-    setValue(var0: java_util_Date | null): Promise<BaseDateTimeDt | null>;
+    setValue(var0: java_util_Date | null, var1: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): Promise<void>;
     /**
      * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     * @param var1 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
+     * @return original return type: 'void'
      */
-    setValueSync(var0: java_util_Date | null): BaseDateTimeDt | null;
+    setValueSync(var0: java_util_Date | null, var1: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): void;
     /**
      * @return original return type: 'java.lang.Integer'
      */
@@ -194,53 +194,55 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      */
     setValueAsStringSync(var0: string | null): void;
     /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     * @return original return type: 'java.lang.String'
      */
-    setMinute(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setMinuteSync(var0: java_lang_Integer | number): BaseDateTimeDt | null;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setHour(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setHourSync(var0: java_lang_Integer | number): BaseDateTimeDt | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setTimeZoneZulu(var0: java_lang_Boolean | boolean): Promise<BaseDateTimeDt | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setTimeZoneZuluSync(var0: java_lang_Boolean | boolean): BaseDateTimeDt | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setPrecision(var0: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): Promise<BaseDateTimeDt | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
-     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
-     */
-    setPrecisionSync(var0: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): BaseDateTimeDt | null;
+    toHumanDisplayLocalTimezone(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    toHumanDisplay(): Promise<string | null>;
+    toHumanDisplayLocalTimezoneSync(): string | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'java.util.GregorianCalendar'
      */
-    toHumanDisplaySync(): string | null;
+    getValueAsCalendar(): Promise<java_util_GregorianCalendar | null>;
+    /**
+     * @return original return type: 'java.util.GregorianCalendar'
+     */
+    getValueAsCalendarSync(): java_util_GregorianCalendar | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isToday(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isTodaySync(): boolean;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setDay(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setDaySync(var0: java_lang_Integer | number): BaseDateTimeDt | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isTimeZoneZulu(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isTimeZoneZuluSync(): boolean;
+    /**
+     * @return original return type: 'java.lang.Long'
+     */
+    getNanos(): Promise<number | null>;
+    /**
+     * @return original return type: 'java.lang.Long'
+     */
+    getNanosSync(): number | null;
     /**
      * @param var0 original type: 'long'
      * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
@@ -255,6 +257,44 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      * @param var0 original type: 'int'
      * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
      */
+    setMinute(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setMinuteSync(var0: java_lang_Integer | number): BaseDateTimeDt | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setPrecision(var0: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): Promise<BaseDateTimeDt | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.model.api.TemporalPrecisionEnum'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setPrecisionSync(var0: ca_uhn_fhir_model_api_TemporalPrecisionEnum | null): BaseDateTimeDt | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setTimeZoneZulu(var0: java_lang_Boolean | boolean): Promise<BaseDateTimeDt | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
+    setTimeZoneZuluSync(var0: java_lang_Boolean | boolean): BaseDateTimeDt | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toHumanDisplay(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toHumanDisplaySync(): string | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
+     */
     setSecond(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
     /**
      * @param var0 original type: 'int'
@@ -265,52 +305,12 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      * @param var0 original type: 'int'
      * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
      */
-    setDay(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
+    setHour(var0: java_lang_Integer | number): Promise<BaseDateTimeDt | null>;
     /**
      * @param var0 original type: 'int'
      * @return original return type: 'ca.uhn.fhir.model.primitive.BaseDateTimeDt'
      */
-    setDaySync(var0: java_lang_Integer | number): BaseDateTimeDt | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toHumanDisplayLocalTimezone(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toHumanDisplayLocalTimezoneSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.Long'
-     */
-    getNanos(): Promise<number | null>;
-    /**
-     * @return original return type: 'java.lang.Long'
-     */
-    getNanosSync(): number | null;
-    /**
-     * @return original return type: 'java.util.GregorianCalendar'
-     */
-    getValueAsCalendar(): Promise<java_util_GregorianCalendar | null>;
-    /**
-     * @return original return type: 'java.util.GregorianCalendar'
-     */
-    getValueAsCalendarSync(): java_util_GregorianCalendar | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isTimeZoneZulu(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isTimeZoneZuluSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isToday(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isTodaySync(): boolean;
+    setHourSync(var0: java_lang_Integer | number): BaseDateTimeDt | null;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'boolean'
@@ -436,6 +436,24 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensionsSync(): java_util_List | null;
+    /**
      * @return original return type: 'java.util.List'
      */
     getUndeclaredExtensions(): Promise<java_util_List | null>;
@@ -446,23 +464,11 @@ export declare class BaseDateTimeDtClass extends JavaClass {
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensionsSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ca_uhn_fhir_model_api_ExtensionDt | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ca_uhn_fhir_model_api_ExtensionDt | null;
+    getAllUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'boolean'
      * @param var1 original type: 'java.lang.String'
@@ -478,6 +484,18 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null, var2: org_hl7_fhir_instance_model_api_IBaseDatatype | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseDatatypeInterface> | null): ca_uhn_fhir_model_api_ExtensionDt | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ca_uhn_fhir_model_api_ExtensionDt | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ca_uhn_fhir_model_api_ExtensionDt | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.model.api.ExtensionDt'
      * @return original return type: 'void'
      */
@@ -488,23 +506,13 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ca_uhn_fhir_model_api_ExtensionDt | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllUndeclaredExtensionsSync(): java_util_List | null;
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -513,6 +521,18 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -531,26 +551,6 @@ export declare class BaseDateTimeDtClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     getUserDataSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

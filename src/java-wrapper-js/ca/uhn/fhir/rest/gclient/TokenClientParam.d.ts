@@ -1,7 +1,7 @@
 import { JavaClass, BasicOrJavaType } from "java-bridge";
+import { TokenClientParam$IMatches as ca_uhn_fhir_rest_gclient_TokenClientParam$IMatches } from "./TokenClientParam$IMatches";
 import { ICriterion as ca_uhn_fhir_rest_gclient_ICriterion } from "./ICriterion";
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
-import { TokenClientParam$IMatches as ca_uhn_fhir_rest_gclient_TokenClientParam$IMatches } from "./TokenClientParam$IMatches";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -12,15 +12,21 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class TokenClientParamClass extends JavaClass {
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.TokenClientParam$IMatches'
      */
-    hasSystemWithAnyCode(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    exactly(): Promise<ca_uhn_fhir_rest_gclient_TokenClientParam$IMatches | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.TokenClientParam$IMatches'
      */
-    hasSystemWithAnyCodeSync(var0: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    exactlySync(): ca_uhn_fhir_rest_gclient_TokenClientParam$IMatches | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
     /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
@@ -32,21 +38,15 @@ export declare class TokenClientParamClass extends JavaClass {
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    getParamName(): Promise<string | null>;
+    hasSystemWithAnyCode(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    getParamNameSync(): string | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.TokenClientParam$IMatches'
-     */
-    exactly(): Promise<ca_uhn_fhir_rest_gclient_TokenClientParam$IMatches | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.TokenClientParam$IMatches'
-     */
-    exactlySync(): ca_uhn_fhir_rest_gclient_TokenClientParam$IMatches | null;
+    hasSystemWithAnyCodeSync(var0: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

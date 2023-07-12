@@ -1,7 +1,7 @@
 import { JavaClass, BasicOrJavaType } from "java-bridge";
-import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../context/FhirContext";
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { IQueryParameterType as ca_uhn_fhir_model_api_IQueryParameterType } from "./../../model/api/IQueryParameterType";
+import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../context/FhirContext";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -11,40 +11,6 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  * You should probably not edit this.
  */
 export declare class BaseParamClass extends JavaClass {
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getQueryParameterQualifier(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getQueryParameterQualifierSync(): string | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setValueAsQueryToken(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setValueAsQueryTokenSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsQueryToken(var0: ca_uhn_fhir_context_FhirContext | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsQueryTokenSync(var0: ca_uhn_fhir_context_FhirContext | null): string | null;
     /**
      * @return original return type: 'java.lang.Boolean'
      */
@@ -73,6 +39,40 @@ export declare class BaseParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
      */
     setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsQueryToken(var0: ca_uhn_fhir_context_FhirContext | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsQueryTokenSync(var0: ca_uhn_fhir_context_FhirContext | null): string | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setValueAsQueryToken(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setValueAsQueryTokenSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: string | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getQueryParameterQualifier(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getQueryParameterQualifierSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

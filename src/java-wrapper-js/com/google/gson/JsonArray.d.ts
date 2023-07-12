@@ -238,6 +238,30 @@ export declare class JsonArrayClass extends JavaClass {
      */
     getAsBigDecimalSync(): java_math_BigDecimal | null;
     /**
+     * @return original return type: 'java.lang.Number'
+     */
+    getAsNumber(): Promise<java_lang_Number | null>;
+    /**
+     * @return original return type: 'java.lang.Number'
+     */
+    getAsNumberSync(): java_lang_Number | null;
+    /**
+     * @return original return type: 'java.math.BigInteger'
+     */
+    getAsBigInteger(): Promise<java_math_BigInteger | null>;
+    /**
+     * @return original return type: 'java.math.BigInteger'
+     */
+    getAsBigIntegerSync(): java_math_BigInteger | null;
+    /**
+     * @return original return type: 'float'
+     */
+    getAsFloat(): Promise<number>;
+    /**
+     * @return original return type: 'float'
+     */
+    getAsFloatSync(): number;
+    /**
      * @return original return type: 'byte'
      */
     getAsByte(): Promise<number>;
@@ -254,14 +278,6 @@ export declare class JsonArrayClass extends JavaClass {
      */
     getAsCharacterSync(): string | null;
     /**
-     * @return original return type: 'java.math.BigInteger'
-     */
-    getAsBigInteger(): Promise<java_math_BigInteger | null>;
-    /**
-     * @return original return type: 'java.math.BigInteger'
-     */
-    getAsBigIntegerSync(): java_math_BigInteger | null;
-    /**
      * @return original return type: 'short'
      */
     getAsShort(): Promise<number>;
@@ -269,22 +285,6 @@ export declare class JsonArrayClass extends JavaClass {
      * @return original return type: 'short'
      */
     getAsShortSync(): number;
-    /**
-     * @return original return type: 'java.lang.Number'
-     */
-    getAsNumber(): Promise<java_lang_Number | null>;
-    /**
-     * @return original return type: 'java.lang.Number'
-     */
-    getAsNumberSync(): java_lang_Number | null;
-    /**
-     * @return original return type: 'float'
-     */
-    getAsFloat(): Promise<number>;
-    /**
-     * @return original return type: 'float'
-     */
-    getAsFloatSync(): number;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -296,11 +296,11 @@ export declare class JsonArrayClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    isJsonObject(): Promise<boolean>;
+    isJsonNull(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    isJsonObjectSync(): boolean;
+    isJsonNullSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -312,19 +312,19 @@ export declare class JsonArrayClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
+    isJsonObject(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonObjectSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
     isJsonPrimitive(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
     isJsonPrimitiveSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonNull(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonNullSync(): boolean;
     /**
      * @return original return type: 'com.google.gson.JsonArray'
      */

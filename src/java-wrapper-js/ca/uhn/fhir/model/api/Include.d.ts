@@ -62,6 +62,14 @@ export declare class IncludeClass extends JavaClass {
      */
     isLockedSync(): boolean;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
+    /**
      * @return original return type: 'ca.uhn.fhir.model.api.Include'
      */
     toLocked(): Promise<Include | null>;
@@ -72,37 +80,11 @@ export declare class IncludeClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getParamName(): Promise<string | null>;
+    getParamType(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getParamNameSync(): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isRecurse(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isRecurseSync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.Include'
-     */
-    setRecurse(var0: java_lang_Boolean | boolean): Promise<Include | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.Include'
-     */
-    setRecurseSync(var0: java_lang_Boolean | boolean): Include | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamTargetType(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamTargetTypeSync(): string | null;
+    getParamTypeSync(): string | null;
     /**
      * @return original return type: 'ca.uhn.fhir.model.api.Include'
      */
@@ -122,11 +104,19 @@ export declare class IncludeClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getParamType(): Promise<string | null>;
+    getParamTargetType(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getParamTypeSync(): string | null;
+    getParamTargetTypeSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isRecurse(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isRecurseSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.api.Include'
@@ -137,6 +127,16 @@ export declare class IncludeClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.model.api.Include'
      */
     withTypeSync(var0: string | null): Include | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.Include'
+     */
+    setRecurse(var0: java_lang_Boolean | boolean): Promise<Include | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.Include'
+     */
+    setRecurseSync(var0: java_lang_Boolean | boolean): Include | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -53,14 +53,6 @@ export declare class SearchTotalModeEnumClass extends JavaClass {
      */
     static valueOfSync(var0: java_lang_Class | null, var1: string | null): java_lang_Enum | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCode(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.SearchTotalModeEnum'
      */
@@ -70,6 +62,14 @@ export declare class SearchTotalModeEnumClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.SearchTotalModeEnum'
      */
     static fromCodeSync(var0: string | null): SearchTotalModeEnum | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCode(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

@@ -52,14 +52,6 @@ export declare class PackageInformationClass extends JavaClass {
      */
     getDateSync(): java_util_Date | null;
     /**
-     * @return original return type: 'boolean'
-     */
-    isExamplesPackage(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isExamplesPackageSync(): boolean;
-    /**
      * @return original return type: 'java.util.List'
      */
     getDependencies(): Promise<java_util_List | null>;
@@ -67,14 +59,6 @@ export declare class PackageInformationClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getDependenciesSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getWeb(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getWebSync(): string | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -86,6 +70,22 @@ export declare class PackageInformationClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
+    getVID(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getVIDSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isExamplesPackage(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isExamplesPackageSync(): boolean;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
     getCanonical(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
@@ -94,11 +94,11 @@ export declare class PackageInformationClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getVID(): Promise<string | null>;
+    getWeb(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getVIDSync(): string | null;
+    getWebSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

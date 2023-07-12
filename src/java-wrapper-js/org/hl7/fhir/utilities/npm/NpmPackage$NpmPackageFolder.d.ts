@@ -76,16 +76,6 @@ export declare class NpmPackage$NpmPackageFolderClass extends JavaClass {
      */
     readIndexSync(var0: org_hl7_fhir_utilities_json_model_JsonObject | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeFile(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeFileSync(var0: string | null): void;
-    /**
      * @return original return type: 'java.lang.String'
      */
     getFolderName(): Promise<string | null>;
@@ -103,6 +93,16 @@ export declare class NpmPackage$NpmPackageFolderClass extends JavaClass {
      * @return original return type: 'byte[]'
      */
     fetchFileSync(var0: string | null): Buffer | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeFile(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeFileSync(var0: string | null): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -28,6 +28,22 @@ export declare class DateClientParamClass extends JavaClass {
      */
     afterSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
     /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
+     */
+    exactly(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
+     */
+    exactlySync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
@@ -38,21 +54,13 @@ export declare class DateClientParamClass extends JavaClass {
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    getParamName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamNameSync(): string | null;
+    beforeOrEquals(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
-    exactly(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
-     */
-    exactlySync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
+    beforeOrEqualsSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
@@ -61,14 +69,6 @@ export declare class DateClientParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
      */
     afterOrEqualsSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
-     */
-    beforeOrEquals(): Promise<ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.DateClientParam$IDateSpecifier'
-     */
-    beforeOrEqualsSync(): ca_uhn_fhir_rest_gclient_DateClientParam$IDateSpecifier | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

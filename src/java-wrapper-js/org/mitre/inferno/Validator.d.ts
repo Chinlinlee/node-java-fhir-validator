@@ -2,8 +2,8 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { OperationOutcome as org_hl7_fhir_r5_model_OperationOutcome } from "./../../hl7/fhir/r5/model/OperationOutcome";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../java/util/List";
-import { Map as java_util_Map } from "./../../../java/util/Map";
 import { IgResponse as org_mitre_inferno_rest_IgResponse } from "./rest/IgResponse";
+import { Map as java_util_Map } from "./../../../java/util/Map";
 import { Long as java_lang_Long } from "./../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../java/lang/Class";
@@ -42,52 +42,6 @@ export declare class ValidatorClass extends JavaClass {
      */
     getVersionSync(): string | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getStructures(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getStructuresSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getProfilesByIg(): Promise<java_util_Map | null>;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getProfilesByIgSync(): java_util_Map | null;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getKnownIGs(): Promise<java_util_Map | null>;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getKnownIGsSync(): java_util_Map | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.mitre.inferno.rest.IgResponse'
-     */
-    loadIg(var0: string | null, var1: string | null): Promise<org_mitre_inferno_rest_IgResponse | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.mitre.inferno.rest.IgResponse'
-     */
-    loadIgSync(var0: string | null, var1: string | null): org_mitre_inferno_rest_IgResponse | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    loadProfileFromFile(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    loadProfileFromFileSync(var0: string | null): void;
-    /**
      * @param var0 original type: 'byte[]'
      * @return original return type: 'void'
      */
@@ -107,6 +61,52 @@ export declare class ValidatorClass extends JavaClass {
      * @return original return type: 'org.mitre.inferno.rest.IgResponse'
      */
     loadPackageSync(var0: Buffer | null): org_mitre_inferno_rest_IgResponse | null;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getKnownIGs(): Promise<java_util_Map | null>;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getKnownIGsSync(): java_util_Map | null;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getProfilesByIg(): Promise<java_util_Map | null>;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getProfilesByIgSync(): java_util_Map | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    loadProfileFromFile(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    loadProfileFromFileSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.mitre.inferno.rest.IgResponse'
+     */
+    loadIg(var0: string | null, var1: string | null): Promise<org_mitre_inferno_rest_IgResponse | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.mitre.inferno.rest.IgResponse'
+     */
+    loadIgSync(var0: string | null, var1: string | null): org_mitre_inferno_rest_IgResponse | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getStructures(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getStructuresSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -6,33 +6,33 @@ import { DataType as org_hl7_fhir_r5_model_DataType } from "./DataType";
 import { Element as org_hl7_fhir_r5_model_Element } from "./Element";
 import { BigDecimal as java_math_BigDecimal } from "./../../../../../java/math/BigDecimal";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
-import { Enumeration as org_hl7_fhir_r5_model_Enumeration } from "./Enumeration";
-import { PositiveIntType as org_hl7_fhir_r5_model_PositiveIntType } from "./PositiveIntType";
 import { DecimalType as org_hl7_fhir_r5_model_DecimalType } from "./DecimalType";
+import { PositiveIntType as org_hl7_fhir_r5_model_PositiveIntType } from "./PositiveIntType";
+import { Enumeration as org_hl7_fhir_r5_model_Enumeration } from "./Enumeration";
 import { TimeType as org_hl7_fhir_r5_model_TimeType } from "./TimeType";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Double as java_lang_Double } from "./../../../../../java/lang/Double";
 import { Timing$EventTiming as org_hl7_fhir_r5_model_Timing$EventTiming } from "./Timing$EventTiming";
 import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
+import { Timing$UnitsOfTime as org_hl7_fhir_r5_model_Timing$UnitsOfTime } from "./Timing$UnitsOfTime";
 import { UnsignedIntType as org_hl7_fhir_r5_model_UnsignedIntType } from "./UnsignedIntType";
+import { Enumerations$DaysOfWeek as org_hl7_fhir_r5_model_Enumerations$DaysOfWeek } from "./Enumerations$DaysOfWeek";
 import { Range as org_hl7_fhir_r5_model_Range } from "./Range";
 import { Period as org_hl7_fhir_r5_model_Period } from "./Period";
 import { Duration as org_hl7_fhir_r5_model_Duration } from "./Duration";
-import { Timing$UnitsOfTime as org_hl7_fhir_r5_model_Timing$UnitsOfTime } from "./Timing$UnitsOfTime";
-import { Enumerations$DaysOfWeek as org_hl7_fhir_r5_model_Enumerations$DaysOfWeek } from "./Enumerations$DaysOfWeek";
 import { Extension as org_hl7_fhir_r5_model_Extension } from "./Extension";
+import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
+import { IBaseExtension as org_hl7_fhir_instance_model_api_IBaseExtension } from "./../../instance/model/api/IBaseExtension";
 import { StringType as org_hl7_fhir_r5_model_StringType } from "./StringType";
 import { IBaseElement as org_hl7_fhir_instance_model_api_IBaseElement } from "./../../instance/model/api/IBaseElement";
-import { IBaseExtension as org_hl7_fhir_instance_model_api_IBaseExtension } from "./../../instance/model/api/IBaseExtension";
-import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
 import { PrimitiveType as org_hl7_fhir_r5_model_PrimitiveType } from "./PrimitiveType";
 import { ValidationMessage as org_hl7_fhir_utilities_validation_ValidationMessage } from "./../../utilities/validation/ValidationMessage";
+import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
 import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Base$ValidationInfo as org_hl7_fhir_r5_model_Base$ValidationInfo } from "./Base$ValidationInfo";
 import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { ElementDefinition as org_hl7_fhir_r5_model_ElementDefinition } from "./ElementDefinition";
 import { Base$ValidationMode as org_hl7_fhir_r5_model_Base$ValidationMode } from "./Base$ValidationMode";
-import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
  * This class just defines types, you should import {@link Timing$TimingRepeatComponent} instead of this.
@@ -201,6 +201,92 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     addTimeOfDaySync(var0: string | null): Timing$TimingRepeatComponent | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodMaxElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodMaxElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setFrequencyMaxElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setFrequencyMaxElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
+     */
+    addDayOfWeekElement(): Promise<org_hl7_fhir_r5_model_Enumeration | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
+     */
+    addDayOfWeekElementSync(): org_hl7_fhir_r5_model_Enumeration | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodMaxElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodMaxElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodUnitElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodUnitElementSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getPeriodMaxElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getPeriodMaxElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
+     */
+    getPeriodUnitElement(): Promise<org_hl7_fhir_r5_model_Enumeration | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
+     */
+    getPeriodUnitElementSync(): org_hl7_fhir_r5_model_Enumeration | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.TimeType'
+     */
+    addTimeOfDayElement(): Promise<org_hl7_fhir_r5_model_TimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.TimeType'
+     */
+    addTimeOfDayElementSync(): org_hl7_fhir_r5_model_TimeType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumeration'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodUnitElement(var0: org_hl7_fhir_r5_model_Enumeration | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumeration'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodUnitElementSync(var0: org_hl7_fhir_r5_model_Enumeration | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getDurationMaxElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getDurationMaxElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
      * @return original return type: 'boolean'
      */
     hasDurationMaxElement(): Promise<boolean>;
@@ -208,6 +294,16 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasDurationMaxElementSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMaxElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMaxElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
     /**
      * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
      */
@@ -243,91 +339,13 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     getFrequencyElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @return original return type: 'boolean'
      */
-    setDurationMaxElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMaxElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getDurationMaxElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getDurationMaxElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    hasFrequencyElement(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasFrequencyMaxElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFrequencyMaxElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getPeriodMaxElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getPeriodMaxElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPeriodUnitElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPeriodUnitElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
-     */
-    addDayOfWeekElement(): Promise<org_hl7_fhir_r5_model_Enumeration | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
-     */
-    addDayOfWeekElementSync(): org_hl7_fhir_r5_model_Enumeration | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPeriodMaxElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPeriodMaxElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getFrequencyMaxElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getFrequencyMaxElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setFrequencyMaxElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setFrequencyMaxElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodMaxElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodMaxElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
+    hasFrequencyElementSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
@@ -339,39 +357,21 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     setFrequencyElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
+     * @return original return type: 'boolean'
      */
-    getPeriodUnitElement(): Promise<org_hl7_fhir_r5_model_Enumeration | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
-     */
-    getPeriodUnitElementSync(): org_hl7_fhir_r5_model_Enumeration | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.TimeType'
-     */
-    addTimeOfDayElement(): Promise<org_hl7_fhir_r5_model_TimeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.TimeType'
-     */
-    addTimeOfDayElementSync(): org_hl7_fhir_r5_model_TimeType | null;
+    hasFrequencyMaxElement(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasFrequencyElement(): Promise<boolean>;
+    hasFrequencyMaxElementSync(): boolean;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
      */
-    hasFrequencyElementSync(): boolean;
+    getFrequencyMaxElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumeration'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
      */
-    setPeriodUnitElement(var0: org_hl7_fhir_r5_model_Enumeration | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumeration'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodUnitElementSync(var0: org_hl7_fhir_r5_model_Enumeration | null): Timing$TimingRepeatComponent | null;
+    getFrequencyMaxElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
     /**
      * @param var0 original type: 'int'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
@@ -390,6 +390,182 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     fhirTypeSync(): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriod(var0: java_lang_Long | bigint | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriod(var0: java_math_BigDecimal | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodSync(var0: java_math_BigDecimal | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriod(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriod(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodSync(): boolean;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getPeriod(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getPeriodSync(): java_math_BigDecimal | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getDurationElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getDurationElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDuration(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDuration(var0: java_lang_Long | bigint | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDuration(var0: java_math_BigDecimal | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationSync(var0: java_math_BigDecimal | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDuration(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWhen(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWhenSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
+     * @return original return type: 'boolean'
+     */
+    hasWhen(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
+     * @return original return type: 'boolean'
+     */
+    hasWhenSync(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getWhen(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getWhenSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setWhen(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setWhenSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Timing$TimingRepeatComponent | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      * @return original return type: 'void'
@@ -421,105 +597,29 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     copyValuesSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
      */
-    getDurationElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
      */
-    getDurationElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    setDurationElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
+    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    setDurationElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDuration(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationSync(): boolean;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDuration(var0: java_lang_Long | bigint | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDuration(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDuration(var0: java_math_BigDecimal | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationSync(var0: java_math_BigDecimal | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setWhen(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setWhenSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWhen(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWhenSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
-     * @return original return type: 'boolean'
-     */
-    hasWhen(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
-     * @return original return type: 'boolean'
-     */
-    hasWhenSync(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getWhen(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getWhenSync(): java_util_List | null;
+    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
     /**
      * @param var0 original type: 'int'
      * @param var1 original type: 'java.lang.String'
@@ -545,407 +645,23 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
-     */
-    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
-     */
-    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getPeriod(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getPeriodSync(): java_math_BigDecimal | null;
+    hasPeriodUnit(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasPeriod(): Promise<boolean>;
+    hasPeriodUnitSync(): boolean;
     /**
-     * @return original return type: 'boolean'
-     */
-    hasPeriodSync(): boolean;
-    /**
-     * @param var0 original type: 'long'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    setPeriod(var0: java_lang_Long | bigint | number): Promise<Timing$TimingRepeatComponent | null>;
+    addWhen(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): Promise<Timing$TimingRepeatComponent | null>;
     /**
-     * @param var0 original type: 'long'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    setPeriodSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriod(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriod(var0: java_math_BigDecimal | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodSync(var0: java_math_BigDecimal | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.UnsignedIntType'
-     */
-    getOffsetElement(): Promise<org_hl7_fhir_r5_model_UnsignedIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.UnsignedIntType'
-     */
-    getOffsetElementSync(): org_hl7_fhir_r5_model_UnsignedIntType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsetElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsetElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffset(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsetSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.UnsignedIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setOffsetElement(var0: org_hl7_fhir_r5_model_UnsignedIntType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.UnsignedIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setOffsetElementSync(var0: org_hl7_fhir_r5_model_UnsignedIntType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Range'
-     */
-    getBoundsRange(): Promise<org_hl7_fhir_r5_model_Range | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Range'
-     */
-    getBoundsRangeSync(): org_hl7_fhir_r5_model_Range | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsRange(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsRangeSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Period'
-     */
-    getBoundsPeriod(): Promise<org_hl7_fhir_r5_model_Period | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Period'
-     */
-    getBoundsPeriodSync(): org_hl7_fhir_r5_model_Period | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsPeriod(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsPeriodSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setBounds(var0: org_hl7_fhir_r5_model_DataType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setBoundsSync(var0: org_hl7_fhir_r5_model_DataType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsDuration(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsDurationSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Duration'
-     */
-    getBoundsDuration(): Promise<org_hl7_fhir_r5_model_Duration | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Duration'
-     */
-    getBoundsDurationSync(): org_hl7_fhir_r5_model_Duration | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBounds(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasBoundsSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountMaxElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountMaxElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationUnit(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationUnitSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
-     */
-    getDurationUnit(): Promise<org_hl7_fhir_r5_model_Timing$UnitsOfTime | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
-     */
-    getDurationUnitSync(): org_hl7_fhir_r5_model_Timing$UnitsOfTime | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setCountElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setCountElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationUnit(var0: org_hl7_fhir_r5_model_Timing$UnitsOfTime | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationUnitSync(var0: org_hl7_fhir_r5_model_Timing$UnitsOfTime | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFrequency(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFrequencySync(): boolean;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setCountMax(var0: java_lang_Integer | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setCountMaxSync(var0: java_lang_Integer | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'int'
-     */
-    getFrequency(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getFrequencySync(): number;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMax(var0: java_math_BigDecimal | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMaxSync(var0: java_math_BigDecimal | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMax(var0: java_lang_Long | bigint | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMaxSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMax(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setDurationMaxSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setCountMaxElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setCountMaxElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setFrequency(var0: java_lang_Integer | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setFrequencySync(var0: java_lang_Integer | number): Timing$TimingRepeatComponent | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getCountElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getCountElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountMax(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountMaxSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFrequencyMax(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFrequencyMaxSync(): boolean;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getDurationMax(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getDurationMaxSync(): java_math_BigDecimal | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCount(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCountSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getCountMaxElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getCountMaxElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationMax(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationMaxSync(): boolean;
-    /**
-     * @return original return type: 'int'
-     */
-    getCountMax(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getCountMaxSync(): number;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
+    addWhenSync(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): Timing$TimingRepeatComponent | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -965,21 +681,13 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     hasTimeOfDaySync(var0: string | null): boolean;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
+     * @return original return type: 'boolean'
      */
-    addWhenElement(): Promise<org_hl7_fhir_r5_model_Enumeration | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
-     */
-    addWhenElementSync(): org_hl7_fhir_r5_model_Enumeration | null;
+    hasOffsetElement(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasPeriodElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPeriodElementSync(): boolean;
+    hasOffsetElementSync(): boolean;
     /**
      * @return original return type: 'java.math.BigDecimal'
      */
@@ -989,25 +697,13 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     getPeriodMaxSync(): java_math_BigDecimal | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
      */
-    addWhen(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): Promise<Timing$TimingRepeatComponent | null>;
+    getPeriodUnit(): Promise<org_hl7_fhir_r5_model_Timing$UnitsOfTime | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$EventTiming'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
      */
-    addWhenSync(var0: org_hl7_fhir_r5_model_Timing$EventTiming | null): Timing$TimingRepeatComponent | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodMax(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
-     */
-    setPeriodMaxSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
+    getPeriodUnitSync(): org_hl7_fhir_r5_model_Timing$UnitsOfTime | null;
     /**
      * @param var0 original type: 'java.math.BigDecimal'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
@@ -1029,37 +725,33 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     setPeriodMaxSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    getPeriodUnit(): Promise<org_hl7_fhir_r5_model_Timing$UnitsOfTime | null>;
+    setPeriodMax(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    getPeriodUnitSync(): org_hl7_fhir_r5_model_Timing$UnitsOfTime | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getPeriodElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getPeriodElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
-    /**
-     * @return original return type: 'int'
-     */
-    getFrequencyMax(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getFrequencyMaxSync(): number;
+    setPeriodMaxSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasPeriodUnit(): Promise<boolean>;
+    hasOffset(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasPeriodUnitSync(): boolean;
+    hasOffsetSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.UnsignedIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setOffsetElement(var0: org_hl7_fhir_r5_model_UnsignedIntType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.UnsignedIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setOffsetElementSync(var0: org_hl7_fhir_r5_model_UnsignedIntType | null): Timing$TimingRepeatComponent | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
@@ -1071,23 +763,31 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     setPeriodUnitSync(var0: org_hl7_fhir_r5_model_Timing$UnitsOfTime | null): Timing$TimingRepeatComponent | null;
     /**
-     * @param var0 original type: 'int'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumerations$DaysOfWeek'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    setFrequencyMax(var0: java_lang_Integer | number): Promise<Timing$TimingRepeatComponent | null>;
+    addDayOfWeek(var0: org_hl7_fhir_r5_model_Enumerations$DaysOfWeek | null): Promise<Timing$TimingRepeatComponent | null>;
     /**
-     * @param var0 original type: 'int'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumerations$DaysOfWeek'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    setFrequencyMaxSync(var0: java_lang_Integer | number): Timing$TimingRepeatComponent | null;
+    addDayOfWeekSync(var0: org_hl7_fhir_r5_model_Enumerations$DaysOfWeek | null): Timing$TimingRepeatComponent | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
      */
-    hasDayOfWeek(): Promise<boolean>;
+    addWhenElement(): Promise<org_hl7_fhir_r5_model_Enumeration | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Enumeration'
      */
-    hasDayOfWeekSync(): boolean;
+    addWhenElementSync(): org_hl7_fhir_r5_model_Enumeration | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.UnsignedIntType'
+     */
+    getOffsetElement(): Promise<org_hl7_fhir_r5_model_UnsignedIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.UnsignedIntType'
+     */
+    getOffsetElementSync(): org_hl7_fhir_r5_model_UnsignedIntType | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Enumerations$DaysOfWeek'
      * @return original return type: 'boolean'
@@ -1101,21 +801,321 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
+    hasDayOfWeek(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDayOfWeekSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Range'
+     */
+    getBoundsRange(): Promise<org_hl7_fhir_r5_model_Range | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Range'
+     */
+    getBoundsRangeSync(): org_hl7_fhir_r5_model_Range | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Period'
+     */
+    getBoundsPeriod(): Promise<org_hl7_fhir_r5_model_Period | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Period'
+     */
+    getBoundsPeriodSync(): org_hl7_fhir_r5_model_Period | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsPeriod(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsPeriodSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsDuration(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsDurationSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsRange(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsRangeSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setBounds(var0: org_hl7_fhir_r5_model_DataType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setBoundsSync(var0: org_hl7_fhir_r5_model_DataType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBounds(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasBoundsSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Duration'
+     */
+    getBoundsDuration(): Promise<org_hl7_fhir_r5_model_Duration | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Duration'
+     */
+    getBoundsDurationSync(): org_hl7_fhir_r5_model_Duration | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getCountElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getCountElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setCountElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setCountElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountMaxElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountMaxElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountMax(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountMaxSync(): boolean;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setCountMax(var0: java_lang_Integer | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setCountMaxSync(var0: java_lang_Integer | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getCountMaxElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getCountMaxElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCount(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountSync(): boolean;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMax(var0: java_lang_Double | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMaxSync(var0: java_lang_Double | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMax(var0: java_math_BigDecimal | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMaxSync(var0: java_math_BigDecimal | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMax(var0: java_lang_Long | bigint | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationMaxSync(var0: java_lang_Long | bigint | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setCountMaxElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setCountMaxElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationUnit(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationUnitSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCountElementSync(): boolean;
+    /**
+     * @return original return type: 'int'
+     */
+    getCountMax(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getCountMaxSync(): number;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getDurationMax(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getDurationMaxSync(): java_math_BigDecimal | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationMax(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationMaxSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
+     */
+    getDurationUnit(): Promise<org_hl7_fhir_r5_model_Timing$UnitsOfTime | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
+     */
+    getDurationUnitSync(): org_hl7_fhir_r5_model_Timing$UnitsOfTime | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationUnit(var0: org_hl7_fhir_r5_model_Timing$UnitsOfTime | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Timing$UnitsOfTime'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setDurationUnitSync(var0: org_hl7_fhir_r5_model_Timing$UnitsOfTime | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPeriodElementSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setPeriodElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'boolean'
+     */
     hasPeriodMax(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
     hasPeriodMaxSync(): boolean;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumerations$DaysOfWeek'
-     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     * @return original return type: 'int'
      */
-    addDayOfWeek(var0: org_hl7_fhir_r5_model_Enumerations$DaysOfWeek | null): Promise<Timing$TimingRepeatComponent | null>;
+    getFrequencyMax(): Promise<number>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Enumerations$DaysOfWeek'
+     * @return original return type: 'int'
+     */
+    getFrequencyMaxSync(): number;
+    /**
+     * @param var0 original type: 'int'
      * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
      */
-    addDayOfWeekSync(var0: org_hl7_fhir_r5_model_Enumerations$DaysOfWeek | null): Timing$TimingRepeatComponent | null;
+    setFrequencyMax(var0: java_lang_Integer | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setFrequencyMaxSync(var0: java_lang_Integer | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setFrequency(var0: java_lang_Integer | number): Promise<Timing$TimingRepeatComponent | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Timing$TimingRepeatComponent'
+     */
+    setFrequencySync(var0: java_lang_Integer | number): Timing$TimingRepeatComponent | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getPeriodElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getPeriodElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFrequency(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFrequencySync(): boolean;
+    /**
+     * @return original return type: 'int'
+     */
+    getFrequency(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getFrequencySync(): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFrequencyMax(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFrequencyMaxSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -1143,113 +1143,89 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     setExtensionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_r5_model_Element | null;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionFirstRepSync(): org_hl7_fhir_r5_model_Extension | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasId(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElementSync(): boolean;
+    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
+     * @return original return type: 'void'
      */
-    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseElement | null>;
+    removeExtension(var0: string | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
+     * @return original return type: 'void'
      */
-    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseElement | null;
+    removeExtensionSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBase(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBaseSync(): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionStringSync(var0: string | null): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBase(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBaseSync(var0: string | null): void;
+    /**
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setId(var0: string | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setIdSync(var0: string | null): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'boolean'
-     */
-    hasExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'boolean'
-     */
-    hasExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasExtension(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasExtensionSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasExtension(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasExtensionSync(var0: string | null): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setDisallowExtensions(var0: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setDisallowExtensionsSync(var0: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDisallowExtensions(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDisallowExtensionsSync(): boolean;
+    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
     /**
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
@@ -1289,89 +1265,113 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     addExtensionSync(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBase(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBaseSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    getExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
-    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
+    getExtensionFirstRepSync(): org_hl7_fhir_r5_model_Extension | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    isDisallowExtensions(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDisallowExtensionsSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
+    setDisallowExtensions(var0: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Element | null>;
     /**
+     * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
+    setDisallowExtensionsSync(var0: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Element | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdElementSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getExtensionString(var0: string | null): Promise<string | null>;
+    hasExtension(var0: string | null): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getExtensionStringSync(var0: string | null): string | null;
+    hasExtensionSync(var0: string | null): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasExtension(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasExtensionSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'boolean'
+     */
+    hasExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'boolean'
+     */
+    hasExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setIdBase(var0: string | null): Promise<void>;
+    setId(var0: string | null): Promise<org_hl7_fhir_r5_model_Element | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
      */
-    setIdBaseSync(var0: string | null): void;
+    setIdSync(var0: string | null): org_hl7_fhir_r5_model_Element | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
      */
-    removeExtension(var0: string | null): Promise<void>;
+    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseElement | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
      */
-    removeExtensionSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
+    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseElement | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -1403,20 +1403,6 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     isPrimitiveSync(): boolean;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareValues(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareValuesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.PrimitiveType'
      * @param var1 original type: 'org.hl7.fhir.r5.model.PrimitiveType'
      * @param var2 original type: 'boolean'
@@ -1430,6 +1416,20 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     static compareValuesSync(var0: org_hl7_fhir_r5_model_PrimitiveType | null, var1: org_hl7_fhir_r5_model_PrimitiveType | null, var2: java_lang_Boolean | boolean): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
+     */
+    static compareValues(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
+     */
+    static compareValuesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -1447,22 +1447,6 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     isResourceSync(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPostSync(): boolean;
-    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
      */
@@ -1473,6 +1457,14 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     addFormatCommentsPostSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
     /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPostSync(): boolean;
+    /**
      * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
@@ -1482,22 +1474,6 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
     addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessagesSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationMessages(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationMessagesSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -1519,65 +1495,145 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatComment(): Promise<boolean>;
+    hasValidationMessages(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatCommentSync(): boolean;
+    hasValidationMessagesSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    static compareDeep(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @param var0 original type: 'java.util.List'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    clearUserData(var0: string | null): Promise<void>;
+    static compareDeep(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    clearUserDataSync(var0: string | null): void;
+    static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'boolean'
      */
-    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
-    getUserString(var0: string | null): Promise<string | null>;
+    primitiveValue(): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
      */
-    getUserStringSync(var0: string | null): string | null;
+    primitiveValueSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessagesSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTime(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTimeSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getChildByName(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
+     */
+    getUserInt(var0: string | null): Promise<number>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
+     */
+    getUserIntSync(var0: string | null): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveValue(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPrimitiveValueSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
@@ -1601,13 +1657,25 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     listChildrenByNameSync(var0: string | null, var1: java_lang_Boolean | boolean): (org_hl7_fhir_r5_model_Base | null)[] | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    isBooleanPrimitive(): Promise<boolean>;
+    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    isBooleanPrimitiveSync(): boolean;
+    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
     /**
      * @param var0 original type: 'java.lang.String[]'
      * @return original return type: 'boolean'
@@ -1618,6 +1686,36 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasTypeSync(var0: (string | null)[] | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearUserData(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearUserDataSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitiveSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -1632,64 +1730,6 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'void'
      */
-    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveValue(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPrimitiveValueSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
-     */
-    getUserInt(var0: string | null): Promise<number>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
-     */
-    getUserIntSync(var0: string | null): number;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
-     */
-    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
-     */
-    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getChildByName(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
     copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
@@ -1697,13 +1737,31 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
      */
-    isDateTime(): Promise<boolean>;
+    getUserString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getUserStringSync(var0: string | null): string | null;
     /**
      * @return original return type: 'boolean'
      */
-    isDateTimeSync(): boolean;
+    hasValidationInfo(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationInfoSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfo(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfoSync(): java_util_List | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
      * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
@@ -1727,93 +1785,35 @@ export declare class Timing$TimingRepeatComponentClass extends JavaClass {
      */
     getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    getValidationInfo(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfoSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfo(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfoSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValueSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    hasFormatComment(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.lang.Object'
      */
-    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    static compareDeep(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeep(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'boolean'
-     */
-    static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

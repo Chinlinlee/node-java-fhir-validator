@@ -188,6 +188,14 @@ export declare class MultisetClass extends JavaClass {
      */
     containsAllSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): boolean;
     /**
+     * @return original return type: 'java.util.Set'
+     */
+    elementSet(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    elementSetSync(): java_util_Set | null;
+    /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'int'
      * @return original return type: 'int'
@@ -213,14 +221,6 @@ export declare class MultisetClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     setCountSync(var0: BasicOrJavaType | null, var1: java_lang_Integer | number, var2: java_lang_Integer | number): boolean;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    elementSet(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    elementSetSync(): java_util_Set | null;
     /**
      * @return original return type: 'void'
      */
@@ -401,6 +401,10 @@ export interface MultisetInterface {
      */
     containsAll(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): boolean;
     /**
+     * @return original return type: 'java.util.Set'
+     */
+    elementSet(): java_util_Set | null;
+    /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'int'
      * @return original return type: 'int'
@@ -413,10 +417,6 @@ export interface MultisetInterface {
      * @return original return type: 'boolean'
      */
     setCount(var0: BasicOrJavaType | null, var1: java_lang_Integer | number, var2: java_lang_Integer | number): boolean;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    elementSet(): java_util_Set | null;
     /**
      * @return original return type: 'void'
      */

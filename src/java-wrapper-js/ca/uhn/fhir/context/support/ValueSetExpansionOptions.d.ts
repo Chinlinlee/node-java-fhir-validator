@@ -54,36 +54,6 @@ export declare class ValueSetExpansionOptionsClass extends JavaClass {
      */
     setFilterSync(var0: string | null): ValueSetExpansionOptions | null;
     /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     */
-    setCount(var0: java_lang_Integer | number): Promise<ValueSetExpansionOptions | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     */
-    setCountSync(var0: java_lang_Integer | number): ValueSetExpansionOptions | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIncludeHierarchy(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isIncludeHierarchySync(): boolean;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     */
-    static forOffsetAndCount(var0: java_lang_Integer | number, var1: java_lang_Integer | number): Promise<ValueSetExpansionOptions | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'int'
-     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     */
-    static forOffsetAndCountSync(var0: java_lang_Integer | number, var1: java_lang_Integer | number): ValueSetExpansionOptions | null;
-    /**
      * @return original return type: 'boolean'
      */
     isFailOnMissingCodeSystem(): Promise<boolean>;
@@ -102,6 +72,24 @@ export declare class ValueSetExpansionOptionsClass extends JavaClass {
      */
     setFailOnMissingCodeSystemSync(var0: java_lang_Boolean | boolean): ValueSetExpansionOptions | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setIncludeHierarchy(var0: java_lang_Boolean | boolean): Promise<void>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setIncludeHierarchySync(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTheDisplayLanguage(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTheDisplayLanguageSync(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
      */
@@ -112,23 +100,35 @@ export declare class ValueSetExpansionOptionsClass extends JavaClass {
      */
     setTheDisplayLanguageSync(var0: string | null): ValueSetExpansionOptions | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
      */
-    getTheDisplayLanguage(): Promise<string | null>;
+    static forOffsetAndCount(var0: java_lang_Integer | number, var1: java_lang_Integer | number): Promise<ValueSetExpansionOptions | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
      */
-    getTheDisplayLanguageSync(): string | null;
+    static forOffsetAndCountSync(var0: java_lang_Integer | number, var1: java_lang_Integer | number): ValueSetExpansionOptions | null;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
+     * @param var0 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
      */
-    setIncludeHierarchy(var0: java_lang_Boolean | boolean): Promise<void>;
+    setCount(var0: java_lang_Integer | number): Promise<ValueSetExpansionOptions | null>;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
+     * @param var0 original type: 'int'
+     * @return original return type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
      */
-    setIncludeHierarchySync(var0: java_lang_Boolean | boolean): void;
+    setCountSync(var0: java_lang_Integer | number): ValueSetExpansionOptions | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIncludeHierarchy(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isIncludeHierarchySync(): boolean;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

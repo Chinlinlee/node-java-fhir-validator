@@ -53,14 +53,6 @@ export declare class PreferReturnEnumClass extends JavaClass {
      */
     static valueOfSync(var0: java_lang_Class | null, var1: string | null): java_lang_Enum | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getHeaderValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getHeaderValueSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.PreferReturnEnum'
      */
@@ -70,6 +62,14 @@ export declare class PreferReturnEnumClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.PreferReturnEnum'
      */
     static fromHeaderValueSync(var0: string | null): PreferReturnEnum | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getHeaderValue(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getHeaderValueSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

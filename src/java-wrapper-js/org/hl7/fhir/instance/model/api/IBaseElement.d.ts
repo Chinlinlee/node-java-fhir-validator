@@ -15,16 +15,6 @@ export declare class IBaseElementClass extends JavaClass {
     getIdSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
      * @return original return type: 'void'
      */
@@ -35,6 +25,16 @@ export declare class IBaseElementClass extends JavaClass {
      * @return original return type: 'void'
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
@@ -64,15 +64,15 @@ export interface IBaseElementInterface {
     getId(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserData(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
      * @return original return type: 'void'
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'

@@ -51,22 +51,6 @@ export declare class INarrativeClass extends JavaClass {
      */
     getStatusAsStringSync(): string | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     fhirType(): Promise<string | null>;
@@ -75,15 +59,21 @@ export declare class INarrativeClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -97,13 +87,23 @@ export declare class INarrativeClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -140,22 +140,17 @@ export interface INarrativeInterface {
      */
     getStatusAsString(): string | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -163,9 +158,14 @@ export interface INarrativeInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link INarrative} interface.

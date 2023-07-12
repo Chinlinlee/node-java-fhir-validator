@@ -11,12 +11,22 @@ export declare class ISortClass extends JavaClass {
      * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
-    defaultOrder(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
+    ascending(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
-    defaultOrderSync(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    ascendingSync(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    ascending(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    ascendingSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
@@ -27,6 +37,16 @@ export declare class ISortClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     defaultOrderSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    defaultOrder(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    defaultOrderSync(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
@@ -47,26 +67,6 @@ export declare class ISortClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     descendingSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    ascending(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    ascendingSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    ascending(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    ascendingSync(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -84,12 +84,22 @@ export interface ISortInterface {
      * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
-    defaultOrder(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    ascending(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    ascending(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     defaultOrder(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    defaultOrder(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
@@ -100,16 +110,6 @@ export interface ISortInterface {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     descending(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    ascending(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.IParam'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    ascending(var0: ca_uhn_fhir_rest_gclient_IParam | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_IParamInterface> | null): ca_uhn_fhir_rest_gclient_IQuery | null;
 }
 /**
  * Create a proxy for the {@link ISort} interface.

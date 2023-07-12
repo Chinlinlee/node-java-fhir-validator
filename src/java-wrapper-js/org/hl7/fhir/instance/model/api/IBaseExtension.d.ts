@@ -34,14 +34,6 @@ export declare class IBaseExtensionClass extends JavaClass {
      */
     getExtensionSync(): java_util_List | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
      */
@@ -52,6 +44,14 @@ export declare class IBaseExtensionClass extends JavaClass {
      */
     setUrlSync(var0: string | null): BasicOrJavaType | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlSync(): string | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): Promise<boolean>;
@@ -59,22 +59,6 @@ export declare class IBaseExtensionClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isEmptySync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -84,15 +68,21 @@ export declare class IBaseExtensionClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -106,13 +96,23 @@ export declare class IBaseExtensionClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -140,35 +140,30 @@ export interface IBaseExtensionInterface {
      */
     getExtension(): java_util_List | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrl(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
      */
     setUrl(var0: string | null): BasicOrJavaType | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrl(): string | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -176,9 +171,14 @@ export interface IBaseExtensionInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IBaseExtension} interface.

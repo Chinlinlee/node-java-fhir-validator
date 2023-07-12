@@ -79,22 +79,6 @@ export declare class JsonCreatorClass extends JavaClass {
     /**
      * @return original return type: 'void'
      */
-    endArray(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    endArraySync(): void;
-    /**
-     * @return original return type: 'void'
-     */
-    beginArray(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    beginArraySync(): void;
-    /**
-     * @return original return type: 'void'
-     */
     beginObject(): Promise<void>;
     /**
      * @return original return type: 'void'
@@ -126,6 +110,22 @@ export declare class JsonCreatorClass extends JavaClass {
      * @return original return type: 'void'
      */
     nullValueSync(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    endArray(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    endArraySync(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    beginArray(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    beginArraySync(): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -186,14 +186,6 @@ export interface JsonCreatorInterface {
     /**
      * @return original return type: 'void'
      */
-    endArray(): void;
-    /**
-     * @return original return type: 'void'
-     */
-    beginArray(): void;
-    /**
-     * @return original return type: 'void'
-     */
     beginObject(): void;
     /**
      * @param var0 original type: 'java.lang.String'
@@ -208,6 +200,14 @@ export interface JsonCreatorInterface {
      * @return original return type: 'void'
      */
     nullValue(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    endArray(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    beginArray(): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'

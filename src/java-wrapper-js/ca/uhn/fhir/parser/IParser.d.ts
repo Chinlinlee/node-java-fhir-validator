@@ -1,15 +1,15 @@
 import { JavaClass, InterfaceProxyOptions, JavaInterfaceProxy } from "java-bridge";
 import { EncodingEnum as ca_uhn_fhir_rest_api_EncodingEnum } from "./../rest/api/EncodingEnum";
-import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../java/util/Set";
-import { Boolean as java_lang_Boolean } from "./../../../../java/lang/Boolean";
-import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../java/util/Collection";
-import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../java/util/List";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./../../../../org/hl7/fhir/instance/model/api/IBaseResource";
-import { Reader as java_io_Reader } from "./../../../../java/io/Reader";
-import { Class as java_lang_Class } from "./../../../../java/lang/Class";
-import { InputStream as java_io_InputStream } from "./../../../../java/io/InputStream";
 import { Writer as java_io_Writer } from "./../../../../java/io/Writer";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../org/hl7/fhir/instance/model/api/IIdType";
+import { Boolean as java_lang_Boolean } from "./../../../../java/lang/Boolean";
+import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../java/util/Collection";
+import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../java/util/Set";
+import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../java/util/List";
+import { Class as java_lang_Class } from "./../../../../java/lang/Class";
+import { InputStream as java_io_InputStream } from "./../../../../java/io/InputStream";
+import { Reader as java_io_Reader } from "./../../../../java/io/Reader";
 import { IParserErrorHandler as ca_uhn_fhir_parser_IParserErrorHandler, IParserErrorHandlerInterface as ca_uhn_fhir_parser_IParserErrorHandlerInterface } from "./IParserErrorHandler";
 /**
  * This class just defines types, you should import {@link IParser} instead of this.
@@ -25,222 +25,6 @@ export declare class IParserClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      */
     getEncodingSync(): ca_uhn_fhir_rest_api_EncodingEnum | null;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getDontStripVersionsFromReferencesAtPaths(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getDontStripVersionsFromReferencesAtPathsSync(): java_util_Set | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isEncodeElementsAppliesToChildResourcesOnly(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isEncodeElementsAppliesToChildResourcesOnlySync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setEncodeElementsAppliesToChildResourcesOnly(var0: java_lang_Boolean | boolean): Promise<void>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setEncodeElementsAppliesToChildResourcesOnlySync(var0: java_lang_Boolean | boolean): void;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean | null): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setOverrideResourceIdWithBundleEntryFullUrlSync(var0: java_lang_Boolean | boolean | null): IParser | null;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontStripVersionsFromReferencesAtPathsSync(var0: (string | null)[] | null): IParser | null;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontStripVersionsFromReferencesAtPathsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getPreferTypes(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getPreferTypesSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'void'
-     */
-    setPreferTypes(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'void'
-     */
-    setPreferTypesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isOmitResourceId(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isOmitResourceIdSync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setOmitResourceId(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setOmitResourceIdSync(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.io.Reader'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_io_Reader | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.io.Reader'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResourceSync(var0: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_lang_Class | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResourceSync(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_io_InputStream | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResourceSync(var0: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResourceSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_lang_Class | null, var1: java_io_InputStream | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResourceSync(var0: java_lang_Class | null, var1: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.io.Reader'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_lang_Class | null, var1: java_io_Reader | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.io.Reader'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResourceSync(var0: java_lang_Class | null, var1: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setServerBaseUrl(var0: string | null): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setServerBaseUrlSync(var0: string | null): IParser | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setPrettyPrint(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setPrettyPrintSync(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSummaryMode(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSummaryModeSync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setSummaryMode(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setSummaryModeSync(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.util.Set'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setEncodeElements(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'java.util.Set'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setEncodeElementsSync(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): IParser | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'java.lang.String'
-     */
-    encodeResourceToString(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'java.lang.String'
-     */
-    encodeResourceToStringSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): string | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @param var1 original type: 'java.io.Writer'
@@ -272,25 +56,15 @@ export declare class IParserClass extends JavaClass {
      */
     setEncodeForceResourceIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): IParser | null;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'java.lang.String'
      */
-    setSuppressNarratives(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
+    encodeResourceToString(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<string | null>;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'java.lang.String'
      */
-    setSuppressNarrativesSync(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontEncodeElements(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontEncodeElementsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
+    encodeResourceToStringSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): string | null;
     /**
      * @return original return type: 'java.lang.Boolean'
      */
@@ -309,6 +83,232 @@ export declare class IParserClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.parser.IParser'
      */
     setStripVersionsFromReferencesSync(var0: java_lang_Boolean | boolean | null): IParser | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontEncodeElements(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontEncodeElementsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setSuppressNarratives(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setSuppressNarrativesSync(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setEncodeElementsAppliesToChildResourcesOnly(var0: java_lang_Boolean | boolean): Promise<void>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setEncodeElementsAppliesToChildResourcesOnlySync(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean | null): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrlSync(var0: java_lang_Boolean | boolean | null): IParser | null;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getDontStripVersionsFromReferencesAtPaths(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getDontStripVersionsFromReferencesAtPathsSync(): java_util_Set | null;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontStripVersionsFromReferencesAtPathsSync(var0: (string | null)[] | null): IParser | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontStripVersionsFromReferencesAtPaths(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontStripVersionsFromReferencesAtPathsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEncodeElementsAppliesToChildResourcesOnly(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEncodeElementsAppliesToChildResourcesOnlySync(): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'void'
+     */
+    setPreferTypes(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'void'
+     */
+    setPreferTypesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setOmitResourceId(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setOmitResourceIdSync(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOmitResourceId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOmitResourceIdSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSummaryMode(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSummaryModeSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setSummaryMode(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setSummaryModeSync(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @param var0 original type: 'java.util.Set'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setEncodeElements(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'java.util.Set'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setEncodeElementsSync(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): IParser | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_lang_Class | null, var1: java_io_InputStream | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResourceSync(var0: java_lang_Class | null, var1: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_lang_Class | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResourceSync(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.io.Reader'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_io_Reader | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.io.Reader'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResourceSync(var0: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.io.Reader'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_lang_Class | null, var1: java_io_Reader | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.io.Reader'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResourceSync(var0: java_lang_Class | null, var1: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResourceSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_io_InputStream | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResourceSync(var0: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getPreferTypes(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getPreferTypesSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setServerBaseUrl(var0: string | null): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setServerBaseUrlSync(var0: string | null): IParser | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setPrettyPrint(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setPrettyPrintSync(var0: java_lang_Boolean | boolean): IParser | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler'
      * @return original return type: 'ca.uhn.fhir.parser.IParser'
@@ -337,114 +337,6 @@ export interface IParserInterface {
      */
     getEncoding(): ca_uhn_fhir_rest_api_EncodingEnum | null;
     /**
-     * @return original return type: 'java.util.Set'
-     */
-    getDontStripVersionsFromReferencesAtPaths(): java_util_Set | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isEncodeElementsAppliesToChildResourcesOnly(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setEncodeElementsAppliesToChildResourcesOnly(var0: java_lang_Boolean | boolean): void;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean | null): IParser | null;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): IParser | null;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getPreferTypes(): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'void'
-     */
-    setPreferTypes(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isOmitResourceId(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setOmitResourceId(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.io.Reader'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_lang_Class | null, var1: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.io.Reader'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    parseResource(var0: java_lang_Class | null, var1: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setServerBaseUrl(var0: string | null): IParser | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setPrettyPrint(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isSummaryMode(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setSummaryMode(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.util.Set'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setEncodeElements(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): IParser | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'java.lang.String'
-     */
-    encodeResourceToString(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): string | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @param var1 original type: 'java.io.Writer'
      * @return original return type: 'void'
@@ -460,15 +352,10 @@ export interface IParserInterface {
      */
     setEncodeForceResourceId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): IParser | null;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'java.lang.String'
      */
-    setSuppressNarratives(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.parser.IParser'
-     */
-    setDontEncodeElements(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
+    encodeResourceToString(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): string | null;
     /**
      * @return original return type: 'java.lang.Boolean'
      */
@@ -478,6 +365,119 @@ export interface IParserInterface {
      * @return original return type: 'ca.uhn.fhir.parser.IParser'
      */
     setStripVersionsFromReferences(var0: java_lang_Boolean | boolean | null): IParser | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontEncodeElements(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setSuppressNarratives(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setEncodeElementsAppliesToChildResourcesOnly(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean | null): IParser | null;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getDontStripVersionsFromReferencesAtPaths(): java_util_Set | null;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): IParser | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setDontStripVersionsFromReferencesAtPaths(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): IParser | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEncodeElementsAppliesToChildResourcesOnly(): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'void'
+     */
+    setPreferTypes(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setOmitResourceId(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOmitResourceId(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isSummaryMode(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setSummaryMode(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @param var0 original type: 'java.util.Set'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setEncodeElements(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): IParser | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_lang_Class | null, var1: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.io.Reader'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.io.Reader'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_lang_Class | null, var1: java_io_Reader | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    parseResource(var0: java_io_InputStream | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getPreferTypes(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setServerBaseUrl(var0: string | null): IParser | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.parser.IParser'
+     */
+    setPrettyPrint(var0: java_lang_Boolean | boolean): IParser | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler'
      * @return original return type: 'ca.uhn.fhir.parser.IParser'

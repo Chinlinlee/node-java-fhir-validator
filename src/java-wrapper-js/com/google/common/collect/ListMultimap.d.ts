@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType, InterfaceProxyOptions, JavaInterfaceProxy } from "java-bridge";
 import { List as java_util_List } from "./../../../../java/util/List";
 import { Collection as java_util_Collection } from "./../../../../java/util/Collection";
-import { Map as java_util_Map } from "./../../../../java/util/Map";
 import { Iterable as java_lang_Iterable, IterableInterface as java_lang_IterableInterface } from "./../../../../java/lang/Iterable";
+import { Map as java_util_Map } from "./../../../../java/util/Map";
 import { Multimap as com_google_common_collect_Multimap, MultimapInterface as com_google_common_collect_MultimapInterface } from "./Multimap";
 import { BiConsumer as java_util_function_BiConsumer, BiConsumerInterface as java_util_function_BiConsumerInterface } from "./../../../../java/util/function/BiConsumer";
 import { Multiset as com_google_common_collect_Multiset } from "./Multiset";
@@ -64,13 +64,17 @@ export declare class ListMultimapClass extends JavaClass {
      */
     removeAllSync(var0: BasicOrJavaType | null): java_util_Collection | null;
     /**
-     * @return original return type: 'java.util.Map'
+     * @param var0 original type: 'java.lang.Object'
+     * @param var1 original type: 'java.lang.Iterable'
+     * @return original return type: 'java.util.Collection'
      */
-    asMap(): Promise<java_util_Map | null>;
+    replaceValues(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): Promise<java_util_Collection | null>;
     /**
-     * @return original return type: 'java.util.Map'
+     * @param var0 original type: 'java.lang.Object'
+     * @param var1 original type: 'java.lang.Iterable'
+     * @return original return type: 'java.util.Collection'
      */
-    asMapSync(): java_util_Map | null;
+    replaceValuesSync(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_Collection | null;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'java.lang.Iterable'
@@ -84,17 +88,13 @@ export declare class ListMultimapClass extends JavaClass {
      */
     replaceValuesSync(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_List | null;
     /**
-     * @param var0 original type: 'java.lang.Object'
-     * @param var1 original type: 'java.lang.Iterable'
-     * @return original return type: 'java.util.Collection'
+     * @return original return type: 'java.util.Map'
      */
-    replaceValues(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): Promise<java_util_Collection | null>;
+    asMap(): Promise<java_util_Map | null>;
     /**
-     * @param var0 original type: 'java.lang.Object'
-     * @param var1 original type: 'java.lang.Iterable'
-     * @return original return type: 'java.util.Collection'
+     * @return original return type: 'java.util.Map'
      */
-    replaceValuesSync(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_Collection | null;
+    asMapSync(): java_util_Map | null;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'java.lang.Object'
@@ -290,9 +290,11 @@ export interface ListMultimapInterface {
      */
     removeAll?(var0: BasicOrJavaType | null): java_util_Collection | null;
     /**
-     * @return original return type: 'java.util.Map'
+     * @param var0 original type: 'java.lang.Object'
+     * @param var1 original type: 'java.lang.Iterable'
+     * @return original return type: 'java.util.Collection'
      */
-    asMap(): java_util_Map | null;
+    replaceValues?(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_Collection | null;
     /**
      * **Note: Although this method is marked as optional, it actually must be implemented.**
      *
@@ -302,11 +304,9 @@ export interface ListMultimapInterface {
      */
     replaceValues?(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_List | null;
     /**
-     * @param var0 original type: 'java.lang.Object'
-     * @param var1 original type: 'java.lang.Iterable'
-     * @return original return type: 'java.util.Collection'
+     * @return original return type: 'java.util.Map'
      */
-    replaceValues?(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_Collection | null;
+    asMap(): java_util_Map | null;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'java.lang.Object'

@@ -11,6 +11,14 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class SpecialClientParamClass extends JavaClass {
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
@@ -20,14 +28,6 @@ export declare class SpecialClientParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamNameSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

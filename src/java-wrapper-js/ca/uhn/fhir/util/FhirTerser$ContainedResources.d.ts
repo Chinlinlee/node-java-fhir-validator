@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { Map as java_util_Map } from "./../../../../java/util/Map";
 import { List as java_util_List } from "./../../../../java/util/List";
+import { Map as java_util_Map } from "./../../../../java/util/Map";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../org/hl7/fhir/instance/model/api/IIdType";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./../../../../org/hl7/fhir/instance/model/api/IBaseResource";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
@@ -21,13 +21,13 @@ export declare class FhirTerser$ContainedResourcesClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
-     * @return original return type: 'java.util.Map'
+     * @return original return type: 'void'
      */
-    getExistingIdToContainedResource(): Promise<java_util_Map | null>;
+    assignIdsToContainedResources(): Promise<void>;
     /**
-     * @return original return type: 'java.util.Map'
+     * @return original return type: 'void'
      */
-    getExistingIdToContainedResourceSync(): java_util_Map | null;
+    assignIdsToContainedResourcesSync(): void;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -45,23 +45,13 @@ export declare class FhirTerser$ContainedResourcesClass extends JavaClass {
      */
     hasExistingIdToContainedResourceSync(): boolean;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.util.Map'
      */
-    getResourceId(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    getExistingIdToContainedResource(): Promise<java_util_Map | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.util.Map'
      */
-    getResourceIdSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * @return original return type: 'void'
-     */
-    assignIdsToContainedResources(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    assignIdsToContainedResourcesSync(): void;
+    getExistingIdToContainedResourceSync(): java_util_Map | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
@@ -84,6 +74,16 @@ export declare class FhirTerser$ContainedResourcesClass extends JavaClass {
      * @return original return type: 'void'
      */
     addContainedSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null, var1: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getResourceId(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getResourceIdSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

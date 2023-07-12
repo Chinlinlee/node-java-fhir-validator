@@ -65,16 +65,6 @@ export declare class StandardsStatusClass extends JavaClass {
      */
     static valueOfSync(var0: java_lang_Class | null, var1: string | null): java_lang_Enum | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    static fromCode(var0: string | null): Promise<StandardsStatus | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    static fromCodeSync(var0: string | null): StandardsStatus | null;
-    /**
      * @return original return type: 'java.lang.String'
      */
     toCode(): Promise<string | null>;
@@ -85,19 +75,37 @@ export declare class StandardsStatusClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
+    getColor(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getColorSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toDisplay(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toDisplaySync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
     getAbbrev(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
     getAbbrevSync(): string | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'boolean'
      */
-    getColor(): Promise<string | null>;
+    isLowerThan(var0: StandardsStatusClass | null): Promise<boolean>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'boolean'
      */
-    getColorSync(): string | null;
+    isLowerThanSync(var0: StandardsStatusClass | null): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
      * @return original return type: 'boolean'
@@ -117,23 +125,15 @@ export declare class StandardsStatusClass extends JavaClass {
      */
     getColorSvgSync(): string | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
      */
-    isLowerThan(var0: StandardsStatusClass | null): Promise<boolean>;
+    static fromCode(var0: string | null): Promise<StandardsStatus | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
      */
-    isLowerThanSync(var0: StandardsStatusClass | null): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toDisplay(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toDisplaySync(): string | null;
+    static fromCodeSync(var0: string | null): StandardsStatus | null;
     /**
      * @return original return type: 'java.lang.String'
      */

@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { DateParam as ca_uhn_fhir_rest_param_DateParam } from "./DateParam";
 import { Date as java_util_Date } from "./../../../../../java/util/Date";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../context/FhirContext";
+import { DateParam as ca_uhn_fhir_rest_param_DateParam } from "./DateParam";
 import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType, IPrimitiveTypeInterface as org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IPrimitiveType";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
@@ -48,6 +48,176 @@ export declare class DateRangeParamClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBoundInclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBoundInclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValuesAsQueryTokens(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValuesAsQueryTokensSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setUpperBoundInclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setUpperBoundInclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBoundExclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBoundExclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.util.List'
+     * @return original return type: 'void'
+     */
+    setValuesAsQueryTokens(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.util.List'
+     * @return original return type: 'void'
+     */
+    setValuesAsQueryTokensSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getLowerBoundAsDateInteger(): Promise<number | null>;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getLowerBoundAsDateIntegerSync(): number | null;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getLowerBoundAsInstant(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getLowerBoundAsInstantSync(): java_util_Date | null;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getUpperBoundAsDateInteger(): Promise<number | null>;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getUpperBoundAsDateIntegerSync(): number | null;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setUpperBoundExclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setUpperBoundExclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getUpperBoundAsInstant(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getUpperBoundAsInstantSync(): java_util_Date | null;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @param var1 original type: 'java.util.Date'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusive(var0: java_util_Date | null, var1: java_util_Date | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @param var1 original type: 'java.util.Date'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusiveSync(var0: java_util_Date | null, var1: java_util_Date | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
+     * @param var1 original type: 'ca.uhn.fhir.rest.param.DateParam'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusive(var0: ca_uhn_fhir_rest_param_DateParam | null, var1: ca_uhn_fhir_rest_param_DateParam | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
+     * @param var1 original type: 'ca.uhn.fhir.rest.param.DateParam'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusiveSync(var0: ca_uhn_fhir_rest_param_DateParam | null, var1: ca_uhn_fhir_rest_param_DateParam | null): void;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
+     * @param var1 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusive(var0: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null, var1: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
+     * @param var1 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusiveSync(var0: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null, var1: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusive(var0: string | null, var1: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setRangeFromDatesInclusiveSync(var0: string | null, var1: string | null): void;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateParam'
+     */
+    getLowerBound(): Promise<ca_uhn_fhir_rest_param_DateParam | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateParam'
+     */
+    getLowerBoundSync(): ca_uhn_fhir_rest_param_DateParam | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBound(var0: ca_uhn_fhir_rest_param_DateParam | null): Promise<DateRangeParam | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBoundSync(var0: ca_uhn_fhir_rest_param_DateParam | null): DateRangeParam | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBound(var0: string | null): Promise<DateRangeParam | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
+     */
+    setLowerBoundSync(var0: string | null): DateRangeParam | null;
+    /**
      * @return original return type: 'ca.uhn.fhir.rest.param.DateParam'
      */
     getUpperBound(): Promise<ca_uhn_fhir_rest_param_DateParam | null>;
@@ -75,176 +245,6 @@ export declare class DateRangeParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
      */
     setUpperBoundSync(var0: ca_uhn_fhir_rest_param_DateParam | null): DateRangeParam | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBound(var0: ca_uhn_fhir_rest_param_DateParam | null): Promise<DateRangeParam | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBoundSync(var0: ca_uhn_fhir_rest_param_DateParam | null): DateRangeParam | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBound(var0: string | null): Promise<DateRangeParam | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBoundSync(var0: string | null): DateRangeParam | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateParam'
-     */
-    getLowerBound(): Promise<ca_uhn_fhir_rest_param_DateParam | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateParam'
-     */
-    getLowerBoundSync(): ca_uhn_fhir_rest_param_DateParam | null;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setUpperBoundExclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setUpperBoundExclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBoundExclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBoundExclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValuesAsQueryTokens(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValuesAsQueryTokensSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.util.List'
-     * @return original return type: 'void'
-     */
-    setValuesAsQueryTokens(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.util.List'
-     * @return original return type: 'void'
-     */
-    setValuesAsQueryTokensSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getLowerBoundAsInstant(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getLowerBoundAsInstantSync(): java_util_Date | null;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBoundInclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setLowerBoundInclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setUpperBoundInclusive(var0: java_util_Date | null): Promise<DateRangeParam | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'ca.uhn.fhir.rest.param.DateRangeParam'
-     */
-    setUpperBoundInclusiveSync(var0: java_util_Date | null): DateRangeParam | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusive(var0: string | null, var1: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusiveSync(var0: string | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
-     * @param var1 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusive(var0: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null, var1: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
-     * @param var1 original type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusiveSync(var0: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null, var1: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
-     * @param var1 original type: 'ca.uhn.fhir.rest.param.DateParam'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusive(var0: ca_uhn_fhir_rest_param_DateParam | null, var1: ca_uhn_fhir_rest_param_DateParam | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.param.DateParam'
-     * @param var1 original type: 'ca.uhn.fhir.rest.param.DateParam'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusiveSync(var0: ca_uhn_fhir_rest_param_DateParam | null, var1: ca_uhn_fhir_rest_param_DateParam | null): void;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @param var1 original type: 'java.util.Date'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusive(var0: java_util_Date | null, var1: java_util_Date | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @param var1 original type: 'java.util.Date'
-     * @return original return type: 'void'
-     */
-    setRangeFromDatesInclusiveSync(var0: java_util_Date | null, var1: java_util_Date | null): void;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getUpperBoundAsInstant(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getUpperBoundAsInstantSync(): java_util_Date | null;
-    /**
-     * @return original return type: 'java.lang.Integer'
-     */
-    getLowerBoundAsDateInteger(): Promise<number | null>;
-    /**
-     * @return original return type: 'java.lang.Integer'
-     */
-    getLowerBoundAsDateIntegerSync(): number | null;
-    /**
-     * @return original return type: 'java.lang.Integer'
-     */
-    getUpperBoundAsDateInteger(): Promise<number | null>;
-    /**
-     * @return original return type: 'java.lang.Integer'
-     */
-    getUpperBoundAsDateIntegerSync(): number | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

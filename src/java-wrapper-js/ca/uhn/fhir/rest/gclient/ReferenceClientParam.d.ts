@@ -1,7 +1,7 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { ICriterion as ca_uhn_fhir_rest_gclient_ICriterion, ICriterionInterface as ca_uhn_fhir_rest_gclient_ICriterionInterface } from "./ICriterion";
-import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
+import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
 import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../../java/util/Collection";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
@@ -13,25 +13,13 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class ReferenceClientParamClass extends JavaClass {
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @return original return type: 'java.lang.String'
      */
-    hasId(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    getParamName(): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @return original return type: 'java.lang.String'
      */
-    hasIdSync(var0: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    hasId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    hasIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    getParamNameSync(): string | null;
     /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
@@ -43,13 +31,25 @@ export declare class ReferenceClientParamClass extends JavaClass {
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    getParamName(): Promise<string | null>;
+    hasId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    getParamNameSync(): string | null;
+    hasIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    hasId(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    hasIdSync(var0: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'

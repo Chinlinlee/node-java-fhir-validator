@@ -44,6 +44,18 @@ export declare class QualifiedParamListClass extends JavaClass {
      */
     static singletonSync(var0: string | null): QualifiedParamList | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.QualifiedParamList'
+     */
+    static splitQueryStringByCommasIgnoreEscape(var0: string | null, var1: string | null): Promise<QualifiedParamList | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.QualifiedParamList'
+     */
+    static splitQueryStringByCommasIgnoreEscapeSync(var0: string | null, var1: string | null): QualifiedParamList | null;
+    /**
      * @return original return type: 'java.lang.String'
      */
     getQualifier(): Promise<string | null>;
@@ -61,18 +73,6 @@ export declare class QualifiedParamListClass extends JavaClass {
      * @return original return type: 'void'
      */
     setQualifierSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.QualifiedParamList'
-     */
-    static splitQueryStringByCommasIgnoreEscape(var0: string | null, var1: string | null): Promise<QualifiedParamList | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.QualifiedParamList'
-     */
-    static splitQueryStringByCommasIgnoreEscapeSync(var0: string | null, var1: string | null): QualifiedParamList | null;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'boolean'

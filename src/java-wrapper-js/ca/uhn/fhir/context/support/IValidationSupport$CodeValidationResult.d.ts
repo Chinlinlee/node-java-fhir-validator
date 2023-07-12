@@ -46,15 +46,31 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      */
     getSeveritySync(): ca_uhn_fhir_context_support_IValidationSupport$IssueSeverity | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     * @return original return type: 'java.lang.String'
      */
-    setCodeSystemName(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    getCodeSystemVersion(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSystemVersionSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
-    setCodeSystemNameSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    setCodeSystemVersion(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setCodeSystemVersionSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOk(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOkSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -68,13 +84,15 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      */
     asLookupCodeResultSync(var0: string | null, var1: string | null): ca_uhn_fhir_context_support_IValidationSupport$LookupCodeResult | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
-    isOk(): Promise<boolean>;
+    setSeverityCode(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
-    isOkSync(): boolean;
+    setSeverityCodeSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -87,66 +105,12 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
-    setSeverityCode(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    setCodeSystemName(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
-    setSeverityCodeSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setCodeSystemVersion(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setCodeSystemVersionSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSystemVersion(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSystemVersionSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCode(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplay(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDisplaySync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setCode(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setCodeSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setDisplay(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setDisplaySync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    setCodeSystemNameSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$IssueSeverity'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
@@ -167,6 +131,42 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
     setMessageSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDisplay(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDisplaySync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCode(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setCode(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setCodeSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setDisplay(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setDisplaySync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

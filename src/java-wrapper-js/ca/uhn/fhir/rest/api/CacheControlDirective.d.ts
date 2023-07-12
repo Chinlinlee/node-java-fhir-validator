@@ -21,22 +21,6 @@ export declare class CacheControlDirectiveClass extends JavaClass {
      */
     parseSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): CacheControlDirective | null;
     /**
-     * @return original return type: 'boolean'
-     */
-    isNoCache(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isNoCacheSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isNoStore(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isNoStoreSync(): boolean;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
      */
@@ -47,23 +31,21 @@ export declare class CacheControlDirectiveClass extends JavaClass {
      */
     setNoCacheSync(var0: java_lang_Boolean | boolean): CacheControlDirective | null;
     /**
-     * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
      */
-    setNoStore(var0: java_lang_Boolean | boolean): Promise<CacheControlDirective | null>;
+    static noCache(): Promise<CacheControlDirective | null>;
     /**
-     * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
      */
-    setNoStoreSync(var0: java_lang_Boolean | boolean): CacheControlDirective | null;
+    static noCacheSync(): CacheControlDirective | null;
     /**
-     * @return original return type: 'java.lang.Integer'
+     * @return original return type: 'boolean'
      */
-    getMaxResults(): Promise<number | null>;
+    isNoStore(): Promise<boolean>;
     /**
-     * @return original return type: 'java.lang.Integer'
+     * @return original return type: 'boolean'
      */
-    getMaxResultsSync(): number | null;
+    isNoStoreSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.Integer'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
@@ -75,13 +57,31 @@ export declare class CacheControlDirectiveClass extends JavaClass {
      */
     setMaxResultsSync(var0: java_lang_Integer | number | null): CacheControlDirective | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     * @return original return type: 'java.lang.Integer'
      */
-    static noCache(): Promise<CacheControlDirective | null>;
+    getMaxResults(): Promise<number | null>;
     /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getMaxResultsSync(): number | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isNoCache(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isNoCacheSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
      */
-    static noCacheSync(): CacheControlDirective | null;
+    setNoStore(var0: java_lang_Boolean | boolean): Promise<CacheControlDirective | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     */
+    setNoStoreSync(var0: java_lang_Boolean | boolean): CacheControlDirective | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

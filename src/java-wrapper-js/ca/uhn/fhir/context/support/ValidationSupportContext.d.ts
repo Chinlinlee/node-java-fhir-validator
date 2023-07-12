@@ -11,14 +11,6 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class ValidationSupportContextClass extends JavaClass {
     /**
-     * @return original return type: 'boolean'
-     */
-    isEnabledValidationForCodingsLogicalAnd(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isEnabledValidationForCodingsLogicalAndSync(): boolean;
-    /**
      * @return original return type: 'java.util.Set'
      */
     getCurrentlyGeneratingSnapshots(): Promise<java_util_Set | null>;
@@ -34,6 +26,14 @@ export declare class ValidationSupportContextClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport'
      */
     getRootValidationSupportSync(): ca_uhn_fhir_context_support_IValidationSupport | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEnabledValidationForCodingsLogicalAnd(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEnabledValidationForCodingsLogicalAndSync(): boolean;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -19,14 +19,6 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     getResourceSync(): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
-     * @return original return type: 'boolean'
-     */
-    hasIdentifier(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdentifierSync(): boolean;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseReference'
      */
@@ -65,6 +57,14 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     setDisplaySync(var0: string | null): org_hl7_fhir_instance_model_api_IBase | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    hasIdentifier(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdentifierSync(): boolean;
+    /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
     getReferenceElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
@@ -81,22 +81,6 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     fhirType(): Promise<string | null>;
@@ -105,15 +89,21 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     fhirTypeSync(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -127,13 +117,23 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -151,10 +151,6 @@ export interface IBaseReferenceInterface {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
     getResource(): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdentifier?(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseReference'
@@ -175,6 +171,10 @@ export interface IBaseReferenceInterface {
      */
     setDisplay(var0: string | null): org_hl7_fhir_instance_model_api_IBase | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    hasIdentifier?(): boolean;
+    /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
     getReferenceElement(): org_hl7_fhir_instance_model_api_IIdType | null;
@@ -183,22 +183,17 @@ export interface IBaseReferenceInterface {
      */
     isEmpty(): boolean;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): boolean;
-    /**
      * @return original return type: 'java.lang.String'
      */
     fhirType?(): string | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -206,9 +201,14 @@ export interface IBaseReferenceInterface {
      */
     setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'boolean'
      */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IBaseReference} interface.

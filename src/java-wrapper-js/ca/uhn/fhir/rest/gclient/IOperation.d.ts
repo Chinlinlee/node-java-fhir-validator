@@ -28,26 +28,6 @@ export declare class IOperationClass extends JavaClass {
      */
     processMessageSync(): ca_uhn_fhir_rest_gclient_IOperationProcessMsg | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    onInstance(var0: string | null): Promise<BasicOrJavaType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    onInstanceSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'java.lang.Object'
-     */
-    onInstance(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<BasicOrJavaType | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'java.lang.Object'
-     */
-    onInstanceSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): BasicOrJavaType | null;
-    /**
      * @return original return type: 'java.lang.Object'
      */
     onServer(): Promise<BasicOrJavaType | null>;
@@ -55,6 +35,16 @@ export declare class IOperationClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     onServerSync(): BasicOrJavaType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    onType(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    onTypeSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.Class'
      * @return original return type: 'java.lang.Object'
@@ -66,15 +56,25 @@ export declare class IOperationClass extends JavaClass {
      */
     onTypeSync(var0: java_lang_Class | null): BasicOrJavaType | null;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'java.lang.Object'
      */
-    onType(var0: string | null): Promise<BasicOrJavaType | null>;
+    onInstance(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.Object'
+     */
+    onInstanceSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
      */
-    onTypeSync(var0: string | null): BasicOrJavaType | null;
+    onInstance(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    onInstanceSync(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -98,29 +98,29 @@ export interface IOperationInterface {
      */
     processMessage(): ca_uhn_fhir_rest_gclient_IOperationProcessMsg | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    onInstance(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'java.lang.Object'
-     */
-    onInstance(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): BasicOrJavaType | null;
-    /**
      * @return original return type: 'java.lang.Object'
      */
     onServer(): BasicOrJavaType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    onType(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.Class'
      * @return original return type: 'java.lang.Object'
      */
     onType(var0: java_lang_Class | null): BasicOrJavaType | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.Object'
+     */
+    onInstance(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): BasicOrJavaType | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
      */
-    onType(var0: string | null): BasicOrJavaType | null;
+    onInstance(var0: string | null): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IOperation} interface.

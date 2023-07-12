@@ -3,8 +3,8 @@ import { IBaseDatatype as org_hl7_fhir_instance_model_api_IBaseDatatype, IBaseDa
 import { List as java_util_List } from "./../../../../../java/util/List";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
-import { IPrimitiveDatatype as ca_uhn_fhir_model_api_IPrimitiveDatatype } from "./IPrimitiveDatatype";
 import { StringDt as ca_uhn_fhir_model_primitive_StringDt } from "./../primitive/StringDt";
+import { IPrimitiveDatatype as ca_uhn_fhir_model_api_IPrimitiveDatatype } from "./IPrimitiveDatatype";
 import { IdDt as ca_uhn_fhir_model_primitive_IdDt } from "./../primitive/IdDt";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
@@ -67,6 +67,14 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     getExtensionSync(): java_util_List | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlAsStringSync(): string | null;
+    /**
      * @param var0 original type: 'java.lang.Class'
      * @return original return type: 'java.util.List'
      */
@@ -77,22 +85,6 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     getAllPopulatedChildElementsOfTypeSync(var0: java_lang_Class | null): java_util_List | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlAsStringSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlSync(): string | null;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'void'
      */
@@ -102,22 +94,6 @@ export declare class ExtensionDtClass extends JavaClass {
      * @return original return type: 'void'
      */
     setModifierSync(var0: java_lang_Boolean | boolean): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isModifier(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isModifierSync(): boolean;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.api.IPrimitiveDatatype'
-     */
-    getValueAsPrimitive(): Promise<ca_uhn_fhir_model_api_IPrimitiveDatatype | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.api.IPrimitiveDatatype'
-     */
-    getValueAsPrimitiveSync(): ca_uhn_fhir_model_api_IPrimitiveDatatype | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
@@ -148,6 +124,30 @@ export declare class ExtensionDtClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
      */
     setUrlSync(var0: ca_uhn_fhir_model_primitive_StringDt | null): ExtensionDt | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlSync(): string | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.api.IPrimitiveDatatype'
+     */
+    getValueAsPrimitive(): Promise<ca_uhn_fhir_model_api_IPrimitiveDatatype | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.api.IPrimitiveDatatype'
+     */
+    getValueAsPrimitiveSync(): ca_uhn_fhir_model_api_IPrimitiveDatatype | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isModifier(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isModifierSync(): boolean;
     /**
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
@@ -195,6 +195,24 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getUndeclaredModifierExtensionsSync(): java_util_List | null;
+    /**
      * @return original return type: 'java.util.List'
      */
     getUndeclaredExtensions(): Promise<java_util_List | null>;
@@ -205,23 +223,11 @@ export declare class ExtensionDtClass extends JavaClass {
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensions(): Promise<java_util_List | null>;
+    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredModifierExtensionsSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ExtensionDt | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
-     */
-    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ExtensionDt | null;
+    getAllUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'boolean'
      * @param var1 original type: 'java.lang.String'
@@ -237,6 +243,18 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null, var2: org_hl7_fhir_instance_model_api_IBaseDatatype | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseDatatypeInterface> | null): ExtensionDt | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtension(var0: java_lang_Boolean | boolean, var1: string | null): Promise<ExtensionDt | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
+     */
+    addUndeclaredExtensionSync(var0: java_lang_Boolean | boolean, var1: string | null): ExtensionDt | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.model.api.ExtensionDt'
      * @return original return type: 'void'
      */
@@ -247,23 +265,13 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ExtensionDtClass | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
      * @return original return type: 'java.util.List'
      */
-    getAllUndeclaredExtensions(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllUndeclaredExtensionsSync(): java_util_List | null;
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -272,6 +280,18 @@ export declare class ExtensionDtClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -290,26 +310,6 @@ export declare class ExtensionDtClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     getUserDataSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

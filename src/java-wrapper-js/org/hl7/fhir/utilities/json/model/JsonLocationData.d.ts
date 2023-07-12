@@ -49,14 +49,6 @@ export declare class JsonLocationDataClass extends JavaClass {
      */
     backSync(): void;
     /**
-     * @return original return type: 'void'
-     */
-    incCol(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    incColSync(): void;
-    /**
      * @return original return type: 'int'
      */
     getLine(): Promise<number>;
@@ -72,6 +64,14 @@ export declare class JsonLocationDataClass extends JavaClass {
      * @return original return type: 'int'
      */
     getColSync(): number;
+    /**
+     * @return original return type: 'void'
+     */
+    incCol(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    incColSync(): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

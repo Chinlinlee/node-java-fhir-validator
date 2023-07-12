@@ -9,8 +9,8 @@ import { OutputStream as java_io_OutputStream } from "./../../../../../java/io/O
 import { PackageGenerator$PackageType as org_hl7_fhir_utilities_npm_PackageGenerator$PackageType } from "./PackageGenerator$PackageType";
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
-import { Map as java_util_Map } from "./../../../../../java/util/Map";
 import { Date as java_util_Date } from "./../../../../../java/util/Date";
+import { Map as java_util_Map } from "./../../../../../java/util/Map";
 import { NpmPackage$NpmPackageFolder as org_hl7_fhir_utilities_npm_NpmPackage$NpmPackageFolder } from "./NpmPackage$NpmPackageFolder";
 import { JsonObject as org_hl7_fhir_utilities_json_model_JsonObject } from "./../json/model/JsonObject";
 import { NpmPackage$ITransformingLoader as org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoader, NpmPackage$ITransformingLoaderInterface as org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoaderInterface } from "./NpmPackage$ITransformingLoader";
@@ -235,6 +235,82 @@ export declare class NpmPackageClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
+    canonical(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    canonicalSync(): string | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromPackage(var0: java_io_InputStream | null, var1: string | null): Promise<NpmPackage | null>;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromPackageSync(var0: java_io_InputStream | null, var1: string | null): NpmPackage | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromPackage(var0: java_io_InputStream | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<NpmPackage | null>;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromPackageSync(var0: java_io_InputStream | null, var1: string | null, var2: java_lang_Boolean | boolean): NpmPackage | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromPackage(var0: java_io_InputStream | null): Promise<NpmPackage | null>;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromPackageSync(var0: java_io_InputStream | null): NpmPackage | null;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    dateAsDate(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    dateAsDateSync(): java_util_Date | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    title(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    titleSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getWebLocation(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getWebLocationSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    dependencies(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    dependenciesSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
     fhirVersion(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
@@ -256,82 +332,6 @@ export declare class NpmPackageClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     summarySync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    canonical(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    canonicalSync(): string | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromPackage(var0: java_io_InputStream | null, var1: string | null): Promise<NpmPackage | null>;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromPackageSync(var0: java_io_InputStream | null, var1: string | null): NpmPackage | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromPackage(var0: java_io_InputStream | null): Promise<NpmPackage | null>;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromPackageSync(var0: java_io_InputStream | null): NpmPackage | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromPackage(var0: java_io_InputStream | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<NpmPackage | null>;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromPackageSync(var0: java_io_InputStream | null, var1: string | null, var2: java_lang_Boolean | boolean): NpmPackage | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    dependencies(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    dependenciesSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getWebLocation(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getWebLocationSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    title(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    titleSync(): string | null;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    dateAsDate(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    dateAsDateSync(): java_util_Date | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -359,18 +359,6 @@ export declare class NpmPackageClass extends JavaClass {
      */
     loadByCanonicalVersionSync(var0: string | null, var1: string | null): java_io_InputStream | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.io.InputStream'
-     */
-    loadExampleResource(var0: string | null, var1: string | null): Promise<java_io_InputStream | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.io.InputStream'
-     */
-    loadExampleResourceSync(var0: string | null, var1: string | null): java_io_InputStream | null;
-    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'java.util.List'
      */
@@ -391,6 +379,26 @@ export declare class NpmPackageClass extends JavaClass {
      */
     listIndexedResourcesSync(var0: (string | null)[] | null): java_util_List | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.io.InputStream'
+     */
+    loadExampleResource(var0: string | null, var1: string | null): Promise<java_io_InputStream | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.io.InputStream'
+     */
+    loadExampleResourceSync(var0: string | null, var1: string | null): java_io_InputStream | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isNotForPublication(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isNotForPublicationSync(): boolean;
+    /**
      * @param var0 original type: 'java.io.File'
      * @return original return type: 'boolean'
      */
@@ -401,27 +409,15 @@ export declare class NpmPackageClass extends JavaClass {
      */
     static isInternalExemptFileSync(var0: java_io_File | null): boolean;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    isNotForPublication(): Promise<boolean>;
+    static isValidVersion(var0: string | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    isNotForPublicationSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.io.File'
-     * @param var2 original type: 'java.lang.String[]'
-     * @return original return type: 'void'
-     */
-    loadFiles(var0: string | null, var1: java_io_File | null, var2: (string | null)[] | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.io.File'
-     * @param var2 original type: 'java.lang.String[]'
-     * @return original return type: 'void'
-     */
-    loadFilesSync(var0: string | null, var1: java_io_File | null, var2: (string | null)[] | null): void;
+    static isValidVersionSync(var0: string | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
@@ -460,22 +456,38 @@ export declare class NpmPackageClass extends JavaClass {
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    static isValidVersion(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    static isValidVersionSync(var0: string | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
     static isValidName(var0: string | null): Promise<boolean>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
     static isValidNameSync(var0: string | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'byte[]'
+     * @return original return type: 'void'
+     */
+    loadFile(var0: string | null, var1: Buffer | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'byte[]'
+     * @return original return type: 'void'
+     */
+    loadFileSync(var0: string | null, var1: Buffer | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.io.File'
+     * @param var2 original type: 'java.lang.String[]'
+     * @return original return type: 'void'
+     */
+    loadFiles(var0: string | null, var1: java_io_File | null, var2: (string | null)[] | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.io.File'
+     * @param var2 original type: 'java.lang.String[]'
+     * @return original return type: 'void'
+     */
+    loadFilesSync(var0: string | null, var1: java_io_File | null, var2: (string | null)[] | null): void;
     /**
      * @param var0 original type: 'java.io.InputStream'
      * @param var1 original type: 'java.lang.String'
@@ -493,18 +505,6 @@ export declare class NpmPackageClass extends JavaClass {
      */
     static extractFromTgzSync(var0: java_io_InputStream | null, var1: string | null, var2: string | null, var3: java_lang_Boolean | boolean): NpmPackage | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$NpmPackageFolder'
-     * @return original return type: 'void'
-     */
-    indexFolder(var0: string | null, var1: org_hl7_fhir_utilities_npm_NpmPackage$NpmPackageFolder | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$NpmPackageFolder'
-     * @return original return type: 'void'
-     */
-    indexFolderSync(var0: string | null, var1: org_hl7_fhir_utilities_npm_NpmPackage$NpmPackageFolder | null): void;
-    /**
      * @param var0 original type: 'java.io.InputStream'
      * @param var1 original type: 'boolean'
      * @param var2 original type: 'java.lang.String'
@@ -519,45 +519,17 @@ export declare class NpmPackageClass extends JavaClass {
      */
     static fromZipSync(var0: java_io_InputStream | null, var1: java_lang_Boolean | boolean, var2: string | null): NpmPackage | null;
     /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'java.util.List'
-     */
-    listResources(var0: (string | null)[] | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'java.util.List'
-     */
-    listResourcesSync(var0: (string | null)[] | null): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'java.util.List'
-     */
-    listResources(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'java.util.List'
-     */
-    listResourcesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): java_util_List | null;
-    /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'byte[]'
+     * @param var1 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$NpmPackageFolder'
      * @return original return type: 'void'
      */
-    loadFile(var0: string | null, var1: Buffer | null): Promise<void>;
+    indexFolder(var0: string | null, var1: org_hl7_fhir_utilities_npm_NpmPackage$NpmPackageFolder | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'byte[]'
+     * @param var1 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$NpmPackageFolder'
      * @return original return type: 'void'
      */
-    loadFileSync(var0: string | null, var1: Buffer | null): void;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    getNpm(): Promise<org_hl7_fhir_utilities_json_model_JsonObject | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     */
-    getNpmSync(): org_hl7_fhir_utilities_json_model_JsonObject | null;
+    indexFolderSync(var0: string | null, var1: org_hl7_fhir_utilities_npm_NpmPackage$NpmPackageFolder | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -584,20 +556,30 @@ export declare class NpmPackageClass extends JavaClass {
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    clearFolder(var0: string | null): Promise<void>;
+    unPackWithAppend(var0: string | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    clearFolderSync(var0: string | null): void;
+    unPackWithAppendSync(var0: string | null): void;
     /**
      * @return original return type: 'java.lang.String'
      */
-    homepage(): Promise<string | null>;
+    license(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    homepageSync(): string | null;
+    licenseSync(): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     * @return original return type: 'void'
+     */
+    setNpm(var0: org_hl7_fhir_utilities_json_model_JsonObject | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonObject'
+     * @return original return type: 'void'
+     */
+    setNpmSync(var0: org_hl7_fhir_utilities_json_model_JsonObject | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -621,96 +603,6 @@ export declare class NpmPackageClass extends JavaClass {
      */
     loadResourceSync(var0: string | null): java_io_InputStream | null;
     /**
-     * @return original return type: 'java.util.Map'
-     */
-    getFolders(): Promise<java_util_Map | null>;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getFoldersSync(): java_util_Map | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasFile(var0: string | null, var1: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasFileSync(var0: string | null, var1: string | null): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    license(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    licenseSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    fhirVersionList(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    fhirVersionListSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    dependencySummary(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    dependencySummarySync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toolsVersion(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    toolsVersionSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    debugDump(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    debugDumpSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     * @return original return type: 'void'
-     */
-    setNpm(var0: org_hl7_fhir_utilities_json_model_JsonObject | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonObject'
-     * @return original return type: 'void'
-     */
-    setNpmSync(var0: org_hl7_fhir_utilities_json_model_JsonObject | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unPackWithAppend(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unPackWithAppendSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getTypes(): Promise<java_util_Map | null>;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    getTypesSync(): java_util_Map | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.io.InputStream'
      */
@@ -733,23 +625,93 @@ export declare class NpmPackageClass extends JavaClass {
      */
     loadByCanonicalSync(var0: string | null, var1: string | null): java_io_InputStream | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$ITransformingLoader'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
      */
-    loadAllFiles(var0: org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoader | JavaInterfaceProxy<org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoaderInterface> | null): Promise<void>;
+    getNpm(): Promise<org_hl7_fhir_utilities_json_model_JsonObject | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$ITransformingLoader'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.utilities.json.model.JsonObject'
      */
-    loadAllFilesSync(var0: org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoader | JavaInterfaceProxy<org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoaderInterface> | null): void;
+    getNpmSync(): org_hl7_fhir_utilities_json_model_JsonObject | null;
     /**
-     * @return original return type: 'void'
+     * @return original return type: 'java.lang.String'
      */
-    loadAllFiles(): Promise<void>;
+    homepage(): Promise<string | null>;
     /**
-     * @return original return type: 'void'
+     * @return original return type: 'java.lang.String'
      */
-    loadAllFilesSync(): void;
+    homepageSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasFile(var0: string | null, var1: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasFileSync(var0: string | null, var1: string | null): boolean;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'java.util.List'
+     */
+    listResources(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.util.List'
+     * @return original return type: 'java.util.List'
+     */
+    listResourcesSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): java_util_List | null;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'java.util.List'
+     */
+    listResources(var0: (string | null)[] | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'java.util.List'
+     */
+    listResourcesSync(var0: (string | null)[] | null): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toolsVersion(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    toolsVersionSync(): string | null;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getFolders(): Promise<java_util_Map | null>;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getFoldersSync(): java_util_Map | null;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getTypes(): Promise<java_util_Map | null>;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    getTypesSync(): java_util_Map | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirVersionList(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirVersionListSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    dependencySummary(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    dependencySummarySync(): string | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -758,60 +720,6 @@ export declare class NpmPackageClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isChangedByLoaderSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasCanonical(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    hasCanonicalSync(var0: string | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromUrl(var0: string | null): Promise<NpmPackage | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
-     */
-    static fromUrlSync(var0: string | null): NpmPackage | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    canLazyLoad(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    canLazyLoadSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isCore(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isCoreSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isMinimalMemory(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isMinimalMemorySync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getFilePath(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getFilePathSync(var0: string | null): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -823,6 +731,42 @@ export declare class NpmPackageClass extends JavaClass {
      */
     deleteFolderSync(var0: string | null): void;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasCanonical(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasCanonicalSync(var0: string | null): boolean;
+    /**
+     * @return original return type: 'void'
+     */
+    loadAllFiles(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    loadAllFilesSync(): void;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$ITransformingLoader'
+     * @return original return type: 'void'
+     */
+    loadAllFiles(var0: org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoader | JavaInterfaceProxy<org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoaderInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.npm.NpmPackage$ITransformingLoader'
+     * @return original return type: 'void'
+     */
+    loadAllFilesSync(var0: org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoader | JavaInterfaceProxy<org_hl7_fhir_utilities_npm_NpmPackage$ITransformingLoaderInterface> | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isCore(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isCoreSync(): boolean;
+    /**
      * @return original return type: 'boolean'
      */
     isTx(): Promise<boolean>;
@@ -830,6 +774,62 @@ export declare class NpmPackageClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isTxSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    canLazyLoad(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    canLazyLoadSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isMinimalMemory(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isMinimalMemorySync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearFolder(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    clearFolderSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    debugDump(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    debugDumpSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromUrl(var0: string | null): Promise<NpmPackage | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.npm.NpmPackage'
+     */
+    static fromUrlSync(var0: string | null): NpmPackage | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getFilePath(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getFilePathSync(var0: string | null): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

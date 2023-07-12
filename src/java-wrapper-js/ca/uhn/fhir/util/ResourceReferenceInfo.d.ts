@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../java/util/Set";
 import { Include as ca_uhn_fhir_model_api_Include } from "./../model/api/Include";
+import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../java/util/Set";
 import { IBaseReference as org_hl7_fhir_instance_model_api_IBaseReference, IBaseReferenceInterface as org_hl7_fhir_instance_model_api_IBaseReferenceInterface } from "./../../../../org/hl7/fhir/instance/model/api/IBaseReference";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
@@ -31,16 +31,6 @@ export declare class ResourceReferenceInfoClass extends JavaClass {
      */
     toStringSync(): string;
     /**
-     * @param var0 original type: 'java.util.Set'
-     * @return original return type: 'boolean'
-     */
-    matchesIncludeSet(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.util.Set'
-     * @return original return type: 'boolean'
-     */
-    matchesIncludeSetSync(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): boolean;
-    /**
      * @param var0 original type: 'ca.uhn.fhir.model.api.Include'
      * @return original return type: 'boolean'
      */
@@ -50,6 +40,16 @@ export declare class ResourceReferenceInfoClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     matchesIncludeSync(var0: ca_uhn_fhir_model_api_Include | null): boolean;
+    /**
+     * @param var0 original type: 'java.util.Set'
+     * @return original return type: 'boolean'
+     */
+    matchesIncludeSet(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.util.Set'
+     * @return original return type: 'boolean'
+     */
+    matchesIncludeSetSync(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null): boolean;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseReference'
      */

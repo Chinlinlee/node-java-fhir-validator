@@ -8,6 +8,14 @@ import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean
  */
 export declare class IParamClass extends JavaClass {
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamNameSync(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
@@ -17,14 +25,6 @@ export declare class IParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     isMissingSync(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamNameSync(): string | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -39,14 +39,14 @@ export declare class IParamClass extends JavaClass {
  */
 export interface IParamInterface {
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getParamName(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     isMissing(var0: java_lang_Boolean | boolean): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getParamName(): string | null;
 }
 /**
  * Create a proxy for the {@link IParam} interface.

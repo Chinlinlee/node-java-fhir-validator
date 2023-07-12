@@ -20,20 +20,40 @@ export declare class FhirValidatorClass extends JavaClass {
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
      */
-    setConcurrentBundleValidation(var0: java_lang_Boolean | boolean): Promise<FhirValidator | null>;
+    setValidateAgainstStandardSchematron(var0: java_lang_Boolean | boolean): Promise<FhirValidator | null>;
     /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
      */
-    setConcurrentBundleValidationSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
+    setValidateAgainstStandardSchematronSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
     /**
      * @return original return type: 'boolean'
      */
-    isValidateAgainstStandardSchema(): Promise<boolean>;
+    isValidateAgainstStandardSchematron(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    isValidateAgainstStandardSchemaSync(): boolean;
+    isValidateAgainstStandardSchematronSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     */
+    setSkipContainedReferenceValidation(var0: java_lang_Boolean | boolean): Promise<FhirValidator | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     */
+    setSkipContainedReferenceValidationSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.validation.IValidatorModule'
+     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     */
+    registerValidatorModule(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): Promise<FhirValidator | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.validation.IValidatorModule'
+     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     */
+    registerValidatorModuleSync(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): FhirValidator | null;
     /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
@@ -46,14 +66,32 @@ export declare class FhirValidatorClass extends JavaClass {
     setValidateAgainstStandardSchemaSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.validation.IValidatorModule'
-     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     * @return original return type: 'void'
      */
-    registerValidatorModule(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): Promise<FhirValidator | null>;
+    unregisterValidatorModule(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): Promise<void>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.validation.IValidatorModule'
-     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     * @return original return type: 'void'
      */
-    registerValidatorModuleSync(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): FhirValidator | null;
+    unregisterValidatorModuleSync(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isValidateAgainstStandardSchema(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isValidateAgainstStandardSchemaSync(): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IInterceptorBroadcaster'
+     * @return original return type: 'void'
+     */
+    setInterceptorBroadcaster(var0: ca_uhn_fhir_interceptor_api_IInterceptorBroadcaster | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IInterceptorBroadcasterInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IInterceptorBroadcaster'
+     * @return original return type: 'void'
+     */
+    setInterceptorBroadcasterSync(var0: ca_uhn_fhir_interceptor_api_IInterceptorBroadcaster | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IInterceptorBroadcasterInterface> | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -71,43 +109,25 @@ export declare class FhirValidatorClass extends JavaClass {
      */
     isSkipContainedReferenceValidationSync(): boolean;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IInterceptorBroadcaster'
-     * @return original return type: 'void'
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
      */
-    setInterceptorBroadcaster(var0: ca_uhn_fhir_interceptor_api_IInterceptorBroadcaster | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IInterceptorBroadcasterInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IInterceptorBroadcaster'
-     * @return original return type: 'void'
-     */
-    setInterceptorBroadcasterSync(var0: ca_uhn_fhir_interceptor_api_IInterceptorBroadcaster | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IInterceptorBroadcasterInterface> | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.validation.IValidatorModule'
-     * @return original return type: 'void'
-     */
-    unregisterValidatorModule(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.validation.IValidatorModule'
-     * @return original return type: 'void'
-     */
-    unregisterValidatorModuleSync(var0: ca_uhn_fhir_validation_IValidatorModule | JavaInterfaceProxy<ca_uhn_fhir_validation_IValidatorModuleInterface> | null): void;
+    setConcurrentBundleValidation(var0: java_lang_Boolean | boolean): Promise<FhirValidator | null>;
     /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
      */
-    setValidateAgainstStandardSchematron(var0: java_lang_Boolean | boolean): Promise<FhirValidator | null>;
+    setConcurrentBundleValidationSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
      */
-    setValidateAgainstStandardSchematronSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
+    validateWithResult(var0: string | null): Promise<ca_uhn_fhir_validation_ValidationResult | null>;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
      */
-    isValidateAgainstStandardSchematron(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isValidateAgainstStandardSchematronSync(): boolean;
+    validateWithResultSync(var0: string | null): ca_uhn_fhir_validation_ValidationResult | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'ca.uhn.fhir.validation.ValidationOptions'
@@ -121,26 +141,6 @@ export declare class FhirValidatorClass extends JavaClass {
      */
     validateWithResultSync(var0: string | null, var1: ca_uhn_fhir_validation_ValidationOptions | null): ca_uhn_fhir_validation_ValidationResult | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
-     */
-    validateWithResult(var0: string | null): Promise<ca_uhn_fhir_validation_ValidationResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
-     */
-    validateWithResultSync(var0: string | null): ca_uhn_fhir_validation_ValidationResult | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
-     */
-    validateWithResult(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<ca_uhn_fhir_validation_ValidationResult | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
-     */
-    validateWithResultSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_validation_ValidationResult | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @param var1 original type: 'ca.uhn.fhir.validation.ValidationOptions'
      * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
@@ -153,6 +153,16 @@ export declare class FhirValidatorClass extends JavaClass {
      */
     validateWithResultSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: ca_uhn_fhir_validation_ValidationOptions | null): ca_uhn_fhir_validation_ValidationResult | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
+     */
+    validateWithResult(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<ca_uhn_fhir_validation_ValidationResult | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.validation.ValidationResult'
+     */
+    validateWithResultSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_validation_ValidationResult | null;
+    /**
      * @param var0 original type: 'java.util.concurrent.ExecutorService'
      * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
      */
@@ -162,16 +172,6 @@ export declare class FhirValidatorClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
      */
     setExecutorServiceSync(var0: java_util_concurrent_ExecutorService | JavaInterfaceProxy<java_util_concurrent_ExecutorServiceInterface> | null): FhirValidator | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
-     */
-    setSkipContainedReferenceValidation(var0: java_lang_Boolean | boolean): Promise<FhirValidator | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.validation.FhirValidator'
-     */
-    setSkipContainedReferenceValidationSync(var0: java_lang_Boolean | boolean): FhirValidator | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

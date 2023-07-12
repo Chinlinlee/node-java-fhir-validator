@@ -17,6 +17,16 @@ export declare class IValueSetEnumBinderClass extends JavaClass {
      */
     toSystemStringSync(var0: java_lang_Enum | null): string | null;
     /**
+     * @param var0 original type: 'java.lang.Enum'
+     * @return original return type: 'java.lang.String'
+     */
+    toCodeString(var0: java_lang_Enum | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.Enum'
+     * @return original return type: 'java.lang.String'
+     */
+    toCodeStringSync(var0: java_lang_Enum | null): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Enum'
@@ -38,16 +48,6 @@ export declare class IValueSetEnumBinderClass extends JavaClass {
      * @return original return type: 'java.lang.Enum'
      */
     fromCodeStringSync(var0: string | null): java_lang_Enum | null;
-    /**
-     * @param var0 original type: 'java.lang.Enum'
-     * @return original return type: 'java.lang.String'
-     */
-    toCodeString(var0: java_lang_Enum | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.Enum'
-     * @return original return type: 'java.lang.String'
-     */
-    toCodeStringSync(var0: java_lang_Enum | null): string | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -67,6 +67,11 @@ export interface IValueSetEnumBinderInterface {
      */
     toSystemString(var0: java_lang_Enum | null): string | null;
     /**
+     * @param var0 original type: 'java.lang.Enum'
+     * @return original return type: 'java.lang.String'
+     */
+    toCodeString(var0: java_lang_Enum | null): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Enum'
@@ -77,11 +82,6 @@ export interface IValueSetEnumBinderInterface {
      * @return original return type: 'java.lang.Enum'
      */
     fromCodeString(var0: string | null): java_lang_Enum | null;
-    /**
-     * @param var0 original type: 'java.lang.Enum'
-     * @return original return type: 'java.lang.String'
-     */
-    toCodeString(var0: java_lang_Enum | null): string | null;
 }
 /**
  * Create a proxy for the {@link IValueSetEnumBinder} interface.

@@ -21,18 +21,6 @@ export declare class TokenClientParam$IMatchesClass extends JavaClass {
      */
     codeSync(var0: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndIdentifier(var0: string | null, var1: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndIdentifierSync(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseCoding[]'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
@@ -42,62 +30,6 @@ export declare class TokenClientParam$IMatchesClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     codingsSync(var0: (org_hl7_fhir_instance_model_api_IBaseCoding | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseCodingInterface> | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt[]'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    identifiers(var0: (ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null)[] | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt[]'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    identifiersSync(var0: (ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    identifiers(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    identifiersSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndCode(var0: string | null, var1: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndCodeSync(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndValues(var0: string | null, var1: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndValuesSync(var0: string | null, var1: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndValues(var0: string | null, var1: (string | null)[] | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndValuesSync(var0: string | null, var1: (string | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
@@ -119,15 +51,25 @@ export declare class TokenClientParam$IMatchesClass extends JavaClass {
      */
     identifierSync(var0: ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @param var0 original type: 'java.util.Collection'
+     * @param var0 original type: 'java.util.List'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    codes(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    identifiers(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
     /**
-     * @param var0 original type: 'java.util.Collection'
+     * @param var0 original type: 'java.util.List'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    codesSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    identifiersSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt[]'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    identifiers(var0: (ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null)[] | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt[]'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    identifiersSync(var0: (ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
      * @param var0 original type: 'java.lang.String[]'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
@@ -138,6 +80,64 @@ export declare class TokenClientParam$IMatchesClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     codesSync(var0: (string | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    codes(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    codesSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndValues(var0: string | null, var1: (string | null)[] | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndValuesSync(var0: string | null, var1: (string | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndValues(var0: string | null, var1: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndValuesSync(var0: string | null, var1: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndCode(var0: string | null, var1: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndCodeSync(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndIdentifier(var0: string | null, var1: string | null): Promise<ca_uhn_fhir_rest_gclient_ICriterion | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndIdentifierSync(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -157,44 +157,10 @@ export interface TokenClientParam$IMatchesInterface {
      */
     code(var0: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndIdentifier(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseCoding[]'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     codings(var0: (org_hl7_fhir_instance_model_api_IBaseCoding | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseCodingInterface> | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt[]'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    identifiers(var0: (ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.util.List'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    identifiers(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndCode(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.util.Collection'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndValues(var0: string | null, var1: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
-     */
-    systemAndValues(var0: string | null, var1: (string | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
@@ -206,15 +172,49 @@ export interface TokenClientParam$IMatchesInterface {
      */
     identifier(var0: ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
-     * @param var0 original type: 'java.util.Collection'
+     * @param var0 original type: 'java.util.List'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
-    codes(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    identifiers(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt[]'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    identifiers(var0: (ca_uhn_fhir_model_base_composite_BaseIdentifierDt | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
     /**
      * @param var0 original type: 'java.lang.String[]'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      */
     codes(var0: (string | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    codes(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndValues(var0: string | null, var1: (string | null)[] | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.util.Collection'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndValues(var0: string | null, var1: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndCode(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     */
+    systemAndIdentifier(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_ICriterion | null;
 }
 /**
  * Create a proxy for the {@link TokenClientParam$IMatches} interface.

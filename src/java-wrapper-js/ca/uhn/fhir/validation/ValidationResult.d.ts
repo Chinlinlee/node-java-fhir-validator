@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
 import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../context/FhirContext";
-import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../java/util/List";
 import { IBaseOperationOutcome as org_hl7_fhir_instance_model_api_IBaseOperationOutcome, IBaseOperationOutcomeInterface as org_hl7_fhir_instance_model_api_IBaseOperationOutcomeInterface } from "./../../../../org/hl7/fhir/instance/model/api/IBaseOperationOutcome";
+import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../java/util/List";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../java/lang/Class";
 /**
@@ -32,24 +32,6 @@ export declare class ValidationResultClass extends JavaClass {
      */
     getContextSync(): ca_uhn_fhir_context_FhirContext | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getMessagesSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setErrorDisplayLimit(var0: java_lang_Integer | number): Promise<void>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setErrorDisplayLimitSync(var0: java_lang_Integer | number): void;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseOperationOutcome'
      * @return original return type: 'void'
      */
@@ -68,6 +50,16 @@ export declare class ValidationResultClass extends JavaClass {
      */
     getErrorDisplayLimitSync(): number;
     /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setErrorDisplayLimit(var0: java_lang_Integer | number): Promise<void>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setErrorDisplayLimitSync(var0: java_lang_Integer | number): void;
+    /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseOperationOutcome'
      */
     toOperationOutcome(): Promise<org_hl7_fhir_instance_model_api_IBaseOperationOutcome | null>;
@@ -83,6 +75,14 @@ export declare class ValidationResultClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isSuccessfulSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getMessagesSync(): java_util_List | null;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseOperationOutcome'
      */
