@@ -38,7 +38,7 @@ class FhirValidator {
         if (profile) {
             profiles = profile.split(",").map(v => new JString(v));
         } else {
-            profiles = null;
+            profiles = [];
         }
 
         let operationOutcome = await this.validator.validate(
