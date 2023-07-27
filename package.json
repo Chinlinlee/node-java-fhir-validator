@@ -20,7 +20,8 @@
   "dependencies": {
     "glob": "^8.1.0",
     "java-bridge": "^2.3.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "uid": "^2.0.2"
   },
   "devDependencies": {
     "@types/node": "^20.4.1",
