@@ -17,6 +17,24 @@ export declare class INarrativeClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
+    getStatusAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getStatusAsStringSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.INarrative'
+     */
+    setStatusAsString(var0: string | null): Promise<INarrative | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.INarrative'
+     */
+    setStatusAsStringSync(var0: string | null): INarrative | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
     getDivAsString(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
@@ -34,46 +52,14 @@ export declare class INarrativeClass extends JavaClass {
     setDivAsStringSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.INarrative'
+     * @return original return type: 'java.lang.Object'
      */
-    setStatusAsString(var0: string | null): Promise<INarrative | null>;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.INarrative'
+     * @return original return type: 'java.lang.Object'
      */
-    setStatusAsStringSync(var0: string | null): INarrative | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getStatusAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getStatusAsStringSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    fhirType(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    fhirTypeSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -95,15 +81,29 @@ export declare class INarrativeClass extends JavaClass {
      */
     hasFormatCommentSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPre(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirTypeSync(): string | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -124,12 +124,7 @@ export interface INarrativeInterface {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getDivAsString(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setDivAsString(var0: string | null): void;
+    getStatusAsString(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.INarrative'
@@ -138,19 +133,17 @@ export interface INarrativeInterface {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getStatusAsString(): string | null;
+    getDivAsString(): string | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
      */
-    fhirType?(): string | null;
+    setDivAsString(var0: string | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPost(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
+    getUserData(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -162,10 +155,17 @@ export interface INarrativeInterface {
      */
     hasFormatComment(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPre(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType?(): string | null;
 }
 /**
  * Create a proxy for the {@link INarrative} interface.

@@ -2,9 +2,9 @@ import { JavaClass, BasicOrJavaType } from "java-bridge";
 import { IBase as org_hl7_fhir_instance_model_api_IBase } from "./../../../../org/hl7/fhir/instance/model/api/IBase";
 import { List as java_util_List } from "./../../../../java/util/List";
 import { RuntimeChildDeclaredExtensionDefinition as ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition } from "./RuntimeChildDeclaredExtensionDefinition";
-import { Class as java_lang_Class } from "./../../../../java/lang/Class";
-import { BaseRuntimeChildDefinition as ca_uhn_fhir_context_BaseRuntimeChildDefinition } from "./BaseRuntimeChildDefinition";
 import { BaseRuntimeElementDefinition$ChildTypeEnum as ca_uhn_fhir_context_BaseRuntimeElementDefinition$ChildTypeEnum } from "./BaseRuntimeElementDefinition$ChildTypeEnum";
+import { BaseRuntimeChildDefinition as ca_uhn_fhir_context_BaseRuntimeChildDefinition } from "./BaseRuntimeChildDefinition";
+import { Class as java_lang_Class } from "./../../../../java/lang/Class";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
 /**
@@ -72,22 +72,6 @@ export declare class BaseRuntimeElementDefinitionClass extends JavaClass {
      */
     getChildrenSync(): java_util_List | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsModifier(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsModifierSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsNonModifier(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsNonModifierSync(): java_util_List | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
@@ -100,6 +84,14 @@ export declare class BaseRuntimeElementDefinitionClass extends JavaClass {
      */
     getDeclaredExtensionSync(var0: string | null, var1: string | null): ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null;
     /**
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsNonModifier(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsNonModifierSync(): java_util_List | null;
+    /**
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
      */
     getRootParentDefinition(): Promise<BaseRuntimeElementDefinition | null>;
@@ -108,33 +100,13 @@ export declare class BaseRuntimeElementDefinitionClass extends JavaClass {
      */
     getRootParentDefinitionSync(): BaseRuntimeElementDefinition | null;
     /**
-     * @return original return type: 'java.lang.Class'
+     * @return original return type: 'java.util.List'
      */
-    getImplementingClass(): Promise<java_lang_Class | null>;
+    getExtensionsModifier(): Promise<java_util_List | null>;
     /**
-     * @return original return type: 'java.lang.Class'
+     * @return original return type: 'java.util.List'
      */
-    getImplementingClassSync(): java_lang_Class | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
-     */
-    getChildByName(var0: string | null): Promise<ca_uhn_fhir_context_BaseRuntimeChildDefinition | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
-     */
-    getChildByNameSync(var0: string | null): ca_uhn_fhir_context_BaseRuntimeChildDefinition | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
-     * @return original return type: 'void'
-     */
-    addExtension(var0: ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
-     * @return original return type: 'void'
-     */
-    addExtensionSync(var0: ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null): void;
+    getExtensionsModifierSync(): java_util_List | null;
     /**
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition$ChildTypeEnum'
      */
@@ -151,6 +123,34 @@ export declare class BaseRuntimeElementDefinitionClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isStandardTypeSync(): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
+     * @return original return type: 'void'
+     */
+    addExtension(var0: ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
+     * @return original return type: 'void'
+     */
+    addExtensionSync(var0: ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
+     */
+    getChildByName(var0: string | null): Promise<ca_uhn_fhir_context_BaseRuntimeChildDefinition | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
+     */
+    getChildByNameSync(var0: string | null): ca_uhn_fhir_context_BaseRuntimeChildDefinition | null;
+    /**
+     * @return original return type: 'java.lang.Class'
+     */
+    getImplementingClass(): Promise<java_lang_Class | null>;
+    /**
+     * @return original return type: 'java.lang.Class'
+     */
+    getImplementingClassSync(): java_lang_Class | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

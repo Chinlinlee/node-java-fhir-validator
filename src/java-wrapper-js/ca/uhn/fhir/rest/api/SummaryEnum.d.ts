@@ -61,6 +61,14 @@ export declare class SummaryEnumClass extends JavaClass {
      */
     static valueOfSync(var0: java_lang_Class | null, var1: string | null): java_lang_Enum | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCode(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSync(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.SummaryEnum'
      */
@@ -70,14 +78,6 @@ export declare class SummaryEnumClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.SummaryEnum'
      */
     static fromCodeSync(var0: string | null): SummaryEnum | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCode(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

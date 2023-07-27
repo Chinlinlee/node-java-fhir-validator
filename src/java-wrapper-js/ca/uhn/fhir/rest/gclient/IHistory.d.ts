@@ -8,14 +8,6 @@ import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as
  */
 export declare class IHistoryClass extends JavaClass {
     /**
-     * @return original return type: 'java.lang.Object'
-     */
-    onServer(): Promise<BasicOrJavaType | null>;
-    /**
-     * @return original return type: 'java.lang.Object'
-     */
-    onServerSync(): BasicOrJavaType | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
      */
@@ -55,6 +47,14 @@ export declare class IHistoryClass extends JavaClass {
      * @return original return type: 'java.lang.Object'
      */
     onInstanceSync(var0: string | null): BasicOrJavaType | null;
+    /**
+     * @return original return type: 'java.lang.Object'
+     */
+    onServer(): Promise<BasicOrJavaType | null>;
+    /**
+     * @return original return type: 'java.lang.Object'
+     */
+    onServerSync(): BasicOrJavaType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -68,10 +68,6 @@ export declare class IHistoryClass extends JavaClass {
  * You should probably not edit this.
  */
 export interface IHistoryInterface {
-    /**
-     * @return original return type: 'java.lang.Object'
-     */
-    onServer(): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
@@ -92,6 +88,10 @@ export interface IHistoryInterface {
      * @return original return type: 'java.lang.Object'
      */
     onInstance(var0: string | null): BasicOrJavaType | null;
+    /**
+     * @return original return type: 'java.lang.Object'
+     */
+    onServer(): BasicOrJavaType | null;
 }
 /**
  * Create a proxy for the {@link IHistory} interface.

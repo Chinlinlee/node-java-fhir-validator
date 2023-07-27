@@ -27,6 +27,22 @@ export declare class PackageServerClass extends JavaClass {
      */
     toStringSync(): string;
     /**
+     * @return original return type: 'java.util.List'
+     */
+    static publicServers(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    static publicServersSync(): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageServer'
+     */
+    static secondaryServer(): Promise<PackageServer | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageServer'
+     */
+    static secondaryServerSync(): PackageServer | null;
+    /**
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageServer'
      */
     static primaryServer(): Promise<PackageServer | null>;
@@ -50,22 +66,6 @@ export declare class PackageServerClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getPasswordSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    static publicServers(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    static publicServersSync(): java_util_List | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageServer'
-     */
-    static secondaryServer(): Promise<PackageServer | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.npm.PackageServer'
-     */
-    static secondaryServerSync(): PackageServer | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.npm.PackageServer$PackageServerAuthenticationMode'
      */

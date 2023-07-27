@@ -46,14 +46,6 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      */
     getSeveritySync(): ca_uhn_fhir_context_support_IValidationSupport$IssueSeverity | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSystemVersion(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSystemVersionSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
@@ -64,13 +56,31 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      */
     setCodeSystemVersionSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.lang.String'
      */
-    isOk(): Promise<boolean>;
+    getCodeSystemVersion(): Promise<string | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.lang.String'
      */
-    isOkSync(): boolean;
+    getCodeSystemVersionSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSeverityCode(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSeverityCodeSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setCodeSystemName(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setCodeSystemNameSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -94,43 +104,13 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      */
     setSeverityCodeSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getSeverityCode(): Promise<string | null>;
+    isOk(): Promise<boolean>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getSeverityCodeSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setCodeSystemName(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setCodeSystemNameSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$IssueSeverity'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setSeverity(var0: ca_uhn_fhir_context_support_IValidationSupport$IssueSeverity | null): Promise<IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$IssueSeverity'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setSeveritySync(var0: ca_uhn_fhir_context_support_IValidationSupport$IssueSeverity | null): IValidationSupport$CodeValidationResult | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setMessage(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    setMessageSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    isOkSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -167,6 +147,26 @@ export declare class IValidationSupport$CodeValidationResultClass extends JavaCl
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
     setDisplaySync(var0: string | null): IValidationSupport$CodeValidationResult | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$IssueSeverity'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setSeverity(var0: ca_uhn_fhir_context_support_IValidationSupport$IssueSeverity | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$IssueSeverity'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setSeveritySync(var0: ca_uhn_fhir_context_support_IValidationSupport$IssueSeverity | null): IValidationSupport$CodeValidationResult | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setMessage(var0: string | null): Promise<IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    setMessageSync(var0: string | null): IValidationSupport$CodeValidationResult | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

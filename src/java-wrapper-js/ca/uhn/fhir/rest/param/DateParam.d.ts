@@ -5,10 +5,10 @@ import { TemporalPrecisionEnum as ca_uhn_fhir_model_api_TemporalPrecisionEnum } 
 import { List as java_util_List } from "./../../../../../java/util/List";
 import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../context/FhirContext";
 import { QualifiedParamList as ca_uhn_fhir_rest_api_QualifiedParamList } from "./../api/QualifiedParamList";
-import { ParamPrefixEnum as ca_uhn_fhir_rest_param_ParamPrefixEnum } from "./ParamPrefixEnum";
 import { BaseParam as ca_uhn_fhir_rest_param_BaseParam } from "./BaseParam";
-import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
+import { ParamPrefixEnum as ca_uhn_fhir_rest_param_ParamPrefixEnum } from "./ParamPrefixEnum";
 import { IQueryParameterType as ca_uhn_fhir_model_api_IQueryParameterType } from "./../../model/api/IQueryParameterType";
+import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -102,6 +102,24 @@ export declare class DateParamClass extends JavaClass {
      */
     getValuesAsQueryTokensSync(): java_util_List | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsStringSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setValueAsString(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setValueAsStringSync(var0: string | null): void;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @param var1 original type: 'java.lang.String'
      * @param var2 original type: 'ca.uhn.fhir.rest.api.QualifiedParamList'
@@ -116,32 +134,6 @@ export declare class DateParamClass extends JavaClass {
      */
     setValuesAsQueryTokensSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: ca_uhn_fhir_rest_api_QualifiedParamList | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setValueAsString(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setValueAsStringSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsStringSync(): string | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.param.ParamPrefixEnum'
-     */
-    getPrefix(): Promise<ca_uhn_fhir_rest_param_ParamPrefixEnum | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.param.ParamPrefixEnum'
-     */
-    getPrefixSync(): ca_uhn_fhir_rest_param_ParamPrefixEnum | null;
-    /**
      * @param var0 original type: 'ca.uhn.fhir.rest.param.ParamPrefixEnum'
      * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
      */
@@ -152,33 +144,13 @@ export declare class DateParamClass extends JavaClass {
      */
     setPrefixSync(var0: ca_uhn_fhir_rest_param_ParamPrefixEnum | null): ca_uhn_fhir_rest_param_BaseParam | null;
     /**
-     * @return original return type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.param.ParamPrefixEnum'
      */
-    getMissing(): Promise<boolean | null>;
+    getPrefix(): Promise<ca_uhn_fhir_rest_param_ParamPrefixEnum | null>;
     /**
-     * @return original return type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.param.ParamPrefixEnum'
      */
-    getMissingSync(): boolean | null;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
-     */
-    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_rest_param_BaseParam | null>;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
-     */
-    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_rest_param_BaseParam | null;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
-     */
-    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_model_api_IQueryParameterType | null>;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
-     */
-    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
+    getPrefixSync(): ca_uhn_fhir_rest_param_ParamPrefixEnum | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @return original return type: 'java.lang.String'
@@ -213,6 +185,34 @@ export declare class DateParamClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getQueryParameterQualifierSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getMissing(): Promise<boolean | null>;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getMissingSync(): boolean | null;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
+     */
+    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_model_api_IQueryParameterType | null>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
+     */
+    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
+     */
+    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_rest_param_BaseParam | null>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
+     */
+    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_rest_param_BaseParam | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

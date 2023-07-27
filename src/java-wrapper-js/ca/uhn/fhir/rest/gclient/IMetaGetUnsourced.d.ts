@@ -18,6 +18,14 @@ export declare class IMetaGetUnsourcedClass extends JavaClass {
      */
     fromTypeSync(var0: string | null): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
     /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
+     */
+    fromServer(): Promise<ca_uhn_fhir_rest_gclient_IClientExecutable | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
+     */
+    fromServerSync(): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
      */
@@ -27,14 +35,6 @@ export declare class IMetaGetUnsourcedClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
      */
     fromResourceSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
-     */
-    fromServer(): Promise<ca_uhn_fhir_rest_gclient_IClientExecutable | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
-     */
-    fromServerSync(): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -54,14 +54,14 @@ export interface IMetaGetUnsourcedInterface {
      */
     fromType(var0: string | null): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
     /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
+     */
+    fromServer(): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
      */
     fromResource(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IClientExecutable'
-     */
-    fromServer(): ca_uhn_fhir_rest_gclient_IClientExecutable | null;
 }
 /**
  * Create a proxy for the {@link IMetaGetUnsourced} interface.

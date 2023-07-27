@@ -12,32 +12,6 @@ import { Class as java_lang_Class } from "./../../../../java/lang/Class";
  */
 export declare class ParserOptionsClass extends JavaClass {
     /**
-     * @return original return type: 'boolean'
-     */
-    isOverrideResourceIdWithBundleEntryFullUrl(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isOverrideResourceIdWithBundleEntryFullUrlSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isAutoContainReferenceTargetsWithNoId(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isAutoContainReferenceTargetsWithNoIdSync(): boolean;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setAutoContainReferenceTargetsWithNoId(var0: java_lang_Boolean | boolean): Promise<void>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'void'
-     */
-    setAutoContainReferenceTargetsWithNoIdSync(var0: java_lang_Boolean | boolean): void;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
      */
@@ -48,15 +22,13 @@ export declare class ParserOptionsClass extends JavaClass {
      */
     setStripVersionsFromReferencesSync(var0: java_lang_Boolean | boolean): ParserOptions | null;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     * @return original return type: 'boolean'
      */
-    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean): Promise<ParserOptions | null>;
+    isStripVersionsFromReferences(): Promise<boolean>;
     /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     * @return original return type: 'boolean'
      */
-    setOverrideResourceIdWithBundleEntryFullUrlSync(var0: java_lang_Boolean | boolean): ParserOptions | null;
+    isStripVersionsFromReferencesSync(): boolean;
     /**
      * @return original return type: 'java.util.Set'
      */
@@ -65,16 +37,6 @@ export declare class ParserOptionsClass extends JavaClass {
      * @return original return type: 'java.util.Set'
      */
     getDontStripVersionsFromReferencesAtPathsSync(): java_util_Set | null;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): Promise<ParserOptions | null>;
-    /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
-     */
-    setDontStripVersionsFromReferencesAtPathsSync(var0: (string | null)[] | null): ParserOptions | null;
     /**
      * @param var0 original type: 'java.util.Collection'
      * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
@@ -86,13 +48,51 @@ export declare class ParserOptionsClass extends JavaClass {
      */
     setDontStripVersionsFromReferencesAtPathsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): ParserOptions | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
      */
-    isStripVersionsFromReferences(): Promise<boolean>;
+    setDontStripVersionsFromReferencesAtPaths(var0: (string | null)[] | null): Promise<ParserOptions | null>;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setDontStripVersionsFromReferencesAtPathsSync(var0: (string | null)[] | null): ParserOptions | null;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrl(var0: java_lang_Boolean | boolean): Promise<ParserOptions | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'ca.uhn.fhir.context.ParserOptions'
+     */
+    setOverrideResourceIdWithBundleEntryFullUrlSync(var0: java_lang_Boolean | boolean): ParserOptions | null;
     /**
      * @return original return type: 'boolean'
      */
-    isStripVersionsFromReferencesSync(): boolean;
+    isAutoContainReferenceTargetsWithNoId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isAutoContainReferenceTargetsWithNoIdSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOverrideResourceIdWithBundleEntryFullUrl(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isOverrideResourceIdWithBundleEntryFullUrlSync(): boolean;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setAutoContainReferenceTargetsWithNoId(var0: java_lang_Boolean | boolean): Promise<void>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
+     */
+    setAutoContainReferenceTargetsWithNoIdSync(var0: java_lang_Boolean | boolean): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

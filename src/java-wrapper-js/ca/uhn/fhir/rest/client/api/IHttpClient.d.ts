@@ -24,16 +24,20 @@ export declare class IHttpClientClass extends JavaClass {
     createBinaryRequestSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: org_hl7_fhir_instance_model_api_IBaseBinary | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBinaryInterface> | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      * @return original return type: 'ca.uhn.fhir.rest.client.api.IHttpRequest'
      */
-    createGetRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: ca_uhn_fhir_rest_api_EncodingEnum | null): Promise<ca_uhn_fhir_rest_client_api_IHttpRequest | null>;
+    createByteRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: ca_uhn_fhir_rest_api_EncodingEnum | null): Promise<ca_uhn_fhir_rest_client_api_IHttpRequest | null>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      * @return original return type: 'ca.uhn.fhir.rest.client.api.IHttpRequest'
      */
-    createGetRequestSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
+    createByteRequestSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @param var1 original type: 'java.util.Map'
@@ -50,20 +54,16 @@ export declare class IHttpClientClass extends JavaClass {
     createParamRequestSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null, var2: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     * @param var1 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      * @return original return type: 'ca.uhn.fhir.rest.client.api.IHttpRequest'
      */
-    createByteRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: ca_uhn_fhir_rest_api_EncodingEnum | null): Promise<ca_uhn_fhir_rest_client_api_IHttpRequest | null>;
+    createGetRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: ca_uhn_fhir_rest_api_EncodingEnum | null): Promise<ca_uhn_fhir_rest_client_api_IHttpRequest | null>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     * @param var1 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      * @return original return type: 'ca.uhn.fhir.rest.client.api.IHttpRequest'
      */
-    createByteRequestSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
+    createGetRequestSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -85,10 +85,12 @@ export interface IHttpClientInterface {
     createBinaryRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: org_hl7_fhir_instance_model_api_IBaseBinary | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBinaryInterface> | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      * @return original return type: 'ca.uhn.fhir.rest.client.api.IHttpRequest'
      */
-    createGetRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
+    createByteRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @param var1 original type: 'java.util.Map'
@@ -98,12 +100,10 @@ export interface IHttpClientInterface {
     createParamRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null, var2: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     * @param var1 original type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      * @return original return type: 'ca.uhn.fhir.rest.client.api.IHttpRequest'
      */
-    createByteRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: string | null, var2: string | null, var3: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
+    createGetRequest(var0: ca_uhn_fhir_context_FhirContext | null, var1: ca_uhn_fhir_rest_api_EncodingEnum | null): ca_uhn_fhir_rest_client_api_IHttpRequest | null;
 }
 /**
  * Create a proxy for the {@link IHttpClient} interface.

@@ -18,15 +18,15 @@ export declare class IBaseQueryClass extends JavaClass {
      */
     andSync(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): IBaseQuery | null;
     /**
-     * @param var0 original type: 'java.util.Map'
+     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
-    whereMap(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): Promise<IBaseQuery | null>;
+    where(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): Promise<IBaseQuery | null>;
     /**
-     * @param var0 original type: 'java.util.Map'
+     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
-    whereMapSync(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): IBaseQuery | null;
+    whereSync(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): IBaseQuery | null;
     /**
      * @param var0 original type: 'java.util.Map'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
@@ -38,15 +38,15 @@ export declare class IBaseQueryClass extends JavaClass {
      */
     whereSync(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): IBaseQuery | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @param var0 original type: 'java.util.Map'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
-    where(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): Promise<IBaseQuery | null>;
+    whereMap(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): Promise<IBaseQuery | null>;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @param var0 original type: 'java.util.Map'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
-    whereSync(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): IBaseQuery | null;
+    whereMapSync(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): IBaseQuery | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -66,20 +66,20 @@ export interface IBaseQueryInterface {
      */
     and(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): IBaseQuery | null;
     /**
-     * @param var0 original type: 'java.util.Map'
+     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
-    whereMap(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): IBaseQuery | null;
+    where(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): IBaseQuery | null;
     /**
      * @param var0 original type: 'java.util.Map'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
     where(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): IBaseQuery | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.gclient.ICriterion'
+     * @param var0 original type: 'java.util.Map'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IBaseQuery'
      */
-    where(var0: ca_uhn_fhir_rest_gclient_ICriterion | JavaInterfaceProxy<ca_uhn_fhir_rest_gclient_ICriterionInterface> | null): IBaseQuery | null;
+    whereMap(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): IBaseQuery | null;
 }
 /**
  * Create a proxy for the {@link IBaseQuery} interface.

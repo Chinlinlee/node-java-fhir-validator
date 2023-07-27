@@ -71,14 +71,6 @@ export declare class TranslateConceptResultsClass extends JavaClass {
      */
     setResultSync(var0: java_lang_Boolean | boolean): void;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getResults(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getResultsSync(): java_util_List | null;
-    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
      */
@@ -88,6 +80,14 @@ export declare class TranslateConceptResultsClass extends JavaClass {
      * @return original return type: 'void'
      */
     setResultsSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getResults(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getResultsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'

@@ -34,6 +34,42 @@ export declare class IValidationSupport$LookupCodeResultClass extends JavaClass 
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
+    setCodeSystemVersion(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setCodeSystemVersionSync(var0: string | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSearchedForSystem(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSearchedForSystemSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSystemDisplayName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeSystemDisplayNameSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
+     */
+    setSearchedForSystem(var0: string | null): Promise<IValidationSupport$LookupCodeResult | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
+     */
+    setSearchedForSystemSync(var0: string | null): IValidationSupport$LookupCodeResult | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
     setCodeSystemDisplayName(var0: string | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
@@ -50,58 +86,14 @@ export declare class IValidationSupport$LookupCodeResultClass extends JavaClass 
     getCodeSystemVersionSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
      */
-    setCodeSystemVersion(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setCodeSystemVersionSync(var0: string | null): void;
+    setSearchedForCode(var0: string | null): Promise<IValidationSupport$LookupCodeResult | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
      */
-    setSearchedForSystem(var0: string | null): Promise<IValidationSupport$LookupCodeResult | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
-     */
-    setSearchedForSystemSync(var0: string | null): IValidationSupport$LookupCodeResult | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSystemDisplayName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeSystemDisplayNameSync(): string | null;
-    /**
-     * @return original return type: 'void'
-     */
-    throwNotFoundIfAppropriate(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    throwNotFoundIfAppropriateSync(): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSearchedForSystem(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSearchedForSystemSync(): string | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
-     */
-    setFound(var0: java_lang_Boolean | boolean): Promise<IValidationSupport$LookupCodeResult | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
-     */
-    setFoundSync(var0: java_lang_Boolean | boolean): IValidationSupport$LookupCodeResult | null;
+    setSearchedForCodeSync(var0: string | null): IValidationSupport$LookupCodeResult | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -113,15 +105,31 @@ export declare class IValidationSupport$LookupCodeResultClass extends JavaClass 
      */
     setCodeDisplaySync(var0: string | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
      */
-    setSearchedForCode(var0: string | null): Promise<IValidationSupport$LookupCodeResult | null>;
+    setFound(var0: java_lang_Boolean | boolean): Promise<IValidationSupport$LookupCodeResult | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$LookupCodeResult'
      */
-    setSearchedForCodeSync(var0: string | null): IValidationSupport$LookupCodeResult | null;
+    setFoundSync(var0: java_lang_Boolean | boolean): IValidationSupport$LookupCodeResult | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSearchedForCode(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSearchedForCodeSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isCodeIsAbstract(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isCodeIsAbstractSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -133,11 +141,19 @@ export declare class IValidationSupport$LookupCodeResultClass extends JavaClass 
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSearchedForCode(): Promise<string | null>;
+    getCodeDisplay(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSearchedForCodeSync(): string | null;
+    getCodeDisplaySync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getDesignations(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getDesignationsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -151,21 +167,15 @@ export declare class IValidationSupport$LookupCodeResultClass extends JavaClass 
      */
     static notFoundSync(var0: string | null, var1: string | null): IValidationSupport$LookupCodeResult | null;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
      */
-    getDesignations(): Promise<java_util_List | null>;
+    setCodeIsAbstract(var0: java_lang_Boolean | boolean): Promise<void>;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'void'
      */
-    getDesignationsSync(): java_util_List | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isCodeIsAbstract(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isCodeIsAbstractSync(): boolean;
+    setCodeIsAbstractSync(var0: java_lang_Boolean | boolean): void;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @param var1 original type: 'java.util.List'
@@ -179,23 +189,13 @@ export declare class IValidationSupport$LookupCodeResultClass extends JavaClass 
      */
     toParametersSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_instance_model_api_IBaseParameters | null;
     /**
-     * @param var0 original type: 'boolean'
      * @return original return type: 'void'
      */
-    setCodeIsAbstract(var0: java_lang_Boolean | boolean): Promise<void>;
+    throwNotFoundIfAppropriate(): Promise<void>;
     /**
-     * @param var0 original type: 'boolean'
      * @return original return type: 'void'
      */
-    setCodeIsAbstractSync(var0: java_lang_Boolean | boolean): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeDisplay(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeDisplaySync(): string | null;
+    throwNotFoundIfAppropriateSync(): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -4,29 +4,29 @@ import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer
 import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { DataType as org_hl7_fhir_r5_model_DataType } from "./DataType";
 import { Element as org_hl7_fhir_r5_model_Element } from "./Element";
-import { StringType as org_hl7_fhir_r5_model_StringType } from "./StringType";
-import { DecimalType as org_hl7_fhir_r5_model_DecimalType } from "./DecimalType";
-import { BigDecimal as java_math_BigDecimal } from "./../../../../../java/math/BigDecimal";
-import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
-import { Double as java_lang_Double } from "./../../../../../java/lang/Double";
-import { Quantity as org_hl7_fhir_r5_model_Quantity } from "./Quantity";
-import { CanonicalType as org_hl7_fhir_r5_model_CanonicalType } from "./CanonicalType";
 import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
 import { CodeType as org_hl7_fhir_r5_model_CodeType } from "./CodeType";
+import { DecimalType as org_hl7_fhir_r5_model_DecimalType } from "./DecimalType";
 import { PositiveIntType as org_hl7_fhir_r5_model_PositiveIntType } from "./PositiveIntType";
+import { Double as java_lang_Double } from "./../../../../../java/lang/Double";
+import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
+import { BigDecimal as java_math_BigDecimal } from "./../../../../../java/math/BigDecimal";
+import { Quantity as org_hl7_fhir_r5_model_Quantity } from "./Quantity";
+import { StringType as org_hl7_fhir_r5_model_StringType } from "./StringType";
+import { CanonicalType as org_hl7_fhir_r5_model_CanonicalType } from "./CanonicalType";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { Extension as org_hl7_fhir_r5_model_Extension } from "./Extension";
-import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
 import { IBaseExtension as org_hl7_fhir_instance_model_api_IBaseExtension } from "./../../instance/model/api/IBaseExtension";
 import { IBaseElement as org_hl7_fhir_instance_model_api_IBaseElement } from "./../../instance/model/api/IBaseElement";
+import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
 import { PrimitiveType as org_hl7_fhir_r5_model_PrimitiveType } from "./PrimitiveType";
 import { ValidationMessage as org_hl7_fhir_utilities_validation_ValidationMessage } from "./../../utilities/validation/ValidationMessage";
 import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
-import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Base$ValidationInfo as org_hl7_fhir_r5_model_Base$ValidationInfo } from "./Base$ValidationInfo";
 import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { ElementDefinition as org_hl7_fhir_r5_model_ElementDefinition } from "./ElementDefinition";
 import { Base$ValidationMode as org_hl7_fhir_r5_model_Base$ValidationMode } from "./Base$ValidationMode";
+import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
  * This class just defines types, you should import {@link SampledData} instead of this.
@@ -131,33 +131,29 @@ export declare class SampledDataClass extends JavaClass {
      */
     getOffsetsSync(): string | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
      */
-    fhirType(): Promise<string | null>;
+    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
      */
-    fhirTypeSync(): string | null;
+    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
-     */
-    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Base'
@@ -169,459 +165,57 @@ export declare class SampledDataClass extends JavaClass {
      */
     addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    hasData(): Promise<boolean>;
+    equalsDeep(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
-    hasDataSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getDataElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getDataElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDataElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDataElementSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setDataElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setDataElementSync(var0: org_hl7_fhir_r5_model_StringType | null): SampledData | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getData(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getDataSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setData(var0: string | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setDataSync(var0: string | null): SampledData | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOrigin(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOriginSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getIntervalElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getIntervalElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getInterval(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getIntervalSync(): java_math_BigDecimal | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIntervalUnit(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIntervalUnitSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIntervalElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIntervalElementSync(): boolean;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setInterval(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalSync(var0: java_math_BigDecimal | null): SampledData | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setInterval(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalSync(var0: java_lang_Long | bigint | number): SampledData | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setInterval(var0: java_lang_Double | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalSync(var0: java_lang_Double | number): SampledData | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setOrigin(var0: org_hl7_fhir_r5_model_Quantity | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setOriginSync(var0: org_hl7_fhir_r5_model_Quantity | null): SampledData | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasInterval(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIntervalSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Quantity'
-     */
-    getOrigin(): Promise<org_hl7_fhir_r5_model_Quantity | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Quantity'
-     */
-    getOriginSync(): org_hl7_fhir_r5_model_Quantity | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalUnit(var0: string | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setIntervalUnitSync(var0: string | null): SampledData | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFactorElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFactorElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasUpperLimit(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasUpperLimitSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeMap(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCodeMapSync(): string | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getOffsetsElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getOffsetsElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCodeMapElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCodeMapElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsetsElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsetsElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFactor(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFactorSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsets(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasOffsetsSync(): boolean;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getUpperLimit(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getUpperLimitSync(): java_math_BigDecimal | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCodeMap(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCodeMapSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CanonicalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setCodeMapElement(var0: org_hl7_fhir_r5_model_CanonicalType | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.CanonicalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setCodeMapElementSync(var0: org_hl7_fhir_r5_model_CanonicalType | null): SampledData | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setCodeMap(var0: string | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setCodeMapSync(var0: string | null): SampledData | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setLowerLimit(var0: java_lang_Double | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setLowerLimitSync(var0: java_lang_Double | number): SampledData | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setLowerLimit(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setLowerLimitSync(var0: java_lang_Long | bigint | number): SampledData | null;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setLowerLimit(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setLowerLimitSync(var0: java_math_BigDecimal | null): SampledData | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CanonicalType'
-     */
-    getCodeMapElement(): Promise<org_hl7_fhir_r5_model_CanonicalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CanonicalType'
-     */
-    getCodeMapElementSync(): org_hl7_fhir_r5_model_CanonicalType | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIntervalUnit(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIntervalUnitSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setOffsetsElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setOffsetsElementSync(var0: org_hl7_fhir_r5_model_StringType | null): SampledData | null;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getFactor(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getFactorSync(): java_math_BigDecimal | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactorElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactorElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLowerLimit(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLowerLimitSync(): boolean;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getLowerLimit(): Promise<java_math_BigDecimal | null>;
-    /**
-     * @return original return type: 'java.math.BigDecimal'
-     */
-    getLowerLimitSync(): java_math_BigDecimal | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getFactorElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getFactorElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDimensions(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDimensionsSync(): boolean;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setUpperLimit(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setUpperLimitSync(var0: java_math_BigDecimal | null): SampledData | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setUpperLimit(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setUpperLimitSync(var0: java_lang_Long | bigint | number): SampledData | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setUpperLimit(var0: java_lang_Double | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setUpperLimitSync(var0: java_lang_Double | number): SampledData | null;
+    equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
     /**
      * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
      */
-    setDimensions(var0: java_lang_Integer | number): Promise<SampledData | null>;
+    getNamedProperty(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Property | null>;
     /**
      * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
      */
-    setDimensionsSync(var0: java_lang_Integer | number): SampledData | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactor(var0: java_lang_Double | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactorSync(var0: java_lang_Double | number): SampledData | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactor(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactorSync(var0: java_lang_Long | bigint | number): SampledData | null;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactor(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
-     */
-    setFactorSync(var0: java_math_BigDecimal | null): SampledData | null;
+    getNamedPropertySync(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Property | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
      */
-    setOffsets(var0: string | null): Promise<SampledData | null>;
+    getNamedProperty(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
      */
-    setOffsetsSync(var0: string | null): SampledData | null;
+    getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallow(var0: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirTypeSync(): string | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.SampledData'
      * @return original return type: 'void'
@@ -663,53 +257,13 @@ export declare class SampledDataClass extends JavaClass {
      */
     copyValuesSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
+     * @return original return type: 'boolean'
      */
-    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
+    hasIntervalUnitElement(): Promise<boolean>;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
+     * @return original return type: 'boolean'
      */
-    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getNamedProperty(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Property | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getNamedPropertySync(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Property | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getNamedProperty(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    hasIntervalUnitElementSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.CodeType'
      * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
@@ -723,29 +277,21 @@ export declare class SampledDataClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasIntervalUnitElement(): Promise<boolean>;
+    hasLowerLimitElement(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    hasIntervalUnitElementSync(): boolean;
+    hasLowerLimitElementSync(): boolean;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getDimensionsElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getDimensionsElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
      * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
      */
-    setDimensionsElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<SampledData | null>;
+    setLowerLimitElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<SampledData | null>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
      * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
      */
-    setDimensionsElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): SampledData | null;
+    setLowerLimitElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
     /**
      * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
      */
@@ -755,14 +301,6 @@ export declare class SampledDataClass extends JavaClass {
      */
     getUpperLimitElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
-     */
-    getIntervalUnitElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
-     */
-    getIntervalUnitElementSync(): org_hl7_fhir_r5_model_CodeType | null;
-    /**
      * @return original return type: 'boolean'
      */
     hasUpperLimitElement(): Promise<boolean>;
@@ -770,30 +308,6 @@ export declare class SampledDataClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasUpperLimitElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getLowerLimitElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getLowerLimitElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLowerLimitElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasLowerLimitElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDimensionsElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDimensionsElementSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
      * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
@@ -805,15 +319,501 @@ export declare class SampledDataClass extends JavaClass {
      */
     setUpperLimitElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getDimensionsElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getDimensionsElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     */
+    getIntervalUnitElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     */
+    getIntervalUnitElementSync(): org_hl7_fhir_r5_model_CodeType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getLowerLimitElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getLowerLimitElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
      * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
      */
-    setLowerLimitElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<SampledData | null>;
+    setDimensionsElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setDimensionsElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDimensionsElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDimensionsElementSync(): boolean;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactor(var0: java_lang_Double | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactorSync(var0: java_lang_Double | number): SampledData | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactor(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactorSync(var0: java_lang_Long | bigint | number): SampledData | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactor(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactorSync(var0: java_math_BigDecimal | null): SampledData | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIntervalUnit(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIntervalUnitSync(): string | null;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getLowerLimit(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getLowerLimitSync(): java_math_BigDecimal | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasInterval(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIntervalSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLowerLimit(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLowerLimitSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIntervalElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIntervalElementSync(): boolean;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getUpperLimit(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getUpperLimitSync(): java_math_BigDecimal | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasUpperLimit(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasUpperLimitSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Quantity'
+     */
+    getOrigin(): Promise<org_hl7_fhir_r5_model_Quantity | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Quantity'
+     */
+    getOriginSync(): org_hl7_fhir_r5_model_Quantity | null;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setLowerLimit(var0: java_lang_Double | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setLowerLimitSync(var0: java_lang_Double | number): SampledData | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setLowerLimit(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setLowerLimitSync(var0: java_lang_Long | bigint | number): SampledData | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setLowerLimit(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setLowerLimitSync(var0: java_math_BigDecimal | null): SampledData | null;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getInterval(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getIntervalSync(): java_math_BigDecimal | null;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setInterval(var0: java_lang_Double | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalSync(var0: java_lang_Double | number): SampledData | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setInterval(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalSync(var0: java_lang_Long | bigint | number): SampledData | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setInterval(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalSync(var0: java_math_BigDecimal | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIntervalUnit(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIntervalUnitSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFactorElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFactorElementSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setOrigin(var0: org_hl7_fhir_r5_model_Quantity | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Quantity'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setOriginSync(var0: org_hl7_fhir_r5_model_Quantity | null): SampledData | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalUnit(var0: string | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalUnitSync(var0: string | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFactor(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFactorSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
      * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
      */
-    setLowerLimitElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
+    setFactorElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setFactorElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasOrigin(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasOriginSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getFactorElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getFactorElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getIntervalElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getIntervalElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getFactor(): Promise<java_math_BigDecimal | null>;
+    /**
+     * @return original return type: 'java.math.BigDecimal'
+     */
+    getFactorSync(): java_math_BigDecimal | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setIntervalElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): SampledData | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeMap(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCodeMapSync(): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setDataElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setDataElementSync(var0: org_hl7_fhir_r5_model_StringType | null): SampledData | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setOffsets(var0: string | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setOffsetsSync(var0: string | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasOffsets(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasOffsetsSync(): boolean;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setUpperLimit(var0: java_math_BigDecimal | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setUpperLimitSync(var0: java_math_BigDecimal | null): SampledData | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setUpperLimit(var0: java_lang_Long | bigint | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setUpperLimitSync(var0: java_lang_Long | bigint | number): SampledData | null;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setUpperLimit(var0: java_lang_Double | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setUpperLimitSync(var0: java_lang_Double | number): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasData(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDataSync(): boolean;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getData(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDataSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setCodeMap(var0: string | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setCodeMapSync(var0: string | null): SampledData | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setData(var0: string | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setDataSync(var0: string | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCodeMapElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCodeMapElementSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setOffsetsElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setOffsetsElementSync(var0: org_hl7_fhir_r5_model_StringType | null): SampledData | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CanonicalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setCodeMapElement(var0: org_hl7_fhir_r5_model_CanonicalType | null): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.CanonicalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setCodeMapElementSync(var0: org_hl7_fhir_r5_model_CanonicalType | null): SampledData | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDataElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDataElementSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CanonicalType'
+     */
+    getCodeMapElement(): Promise<org_hl7_fhir_r5_model_CanonicalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CanonicalType'
+     */
+    getCodeMapElementSync(): org_hl7_fhir_r5_model_CanonicalType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getDataElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getDataElementSync(): org_hl7_fhir_r5_model_StringType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCodeMap(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCodeMapSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDimensions(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDimensionsSync(): boolean;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setDimensions(var0: java_lang_Integer | number): Promise<SampledData | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.SampledData'
+     */
+    setDimensionsSync(var0: java_lang_Integer | number): SampledData | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getOffsetsElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getOffsetsElementSync(): org_hl7_fhir_r5_model_StringType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasOffsetsElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasOffsetsElementSync(): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -841,128 +841,6 @@ export declare class SampledDataClass extends JavaClass {
      */
     setExtensionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_r5_model_Element | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeExtension(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeExtensionSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBase(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBaseSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getExtensionString(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getExtensionStringSync(var0: string | null): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setIdBase(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setIdBaseSync(var0: string | null): void;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    addExtension(): Promise<org_hl7_fhir_r5_model_Extension | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    addExtensionSync(): org_hl7_fhir_r5_model_Extension | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
-     */
-    addExtension(): Promise<org_hl7_fhir_instance_model_api_IBaseExtension | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
-     */
-    addExtensionSync(): org_hl7_fhir_instance_model_api_IBaseExtension | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    addExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    addExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
-     * @return original return type: 'void'
-     */
-    addExtension(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
-     * @return original return type: 'void'
-     */
-    addExtensionSync(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): void;
-    /**
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
     getExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
@@ -989,23 +867,61 @@ export declare class SampledDataClass extends JavaClass {
      */
     setDisallowExtensionsSync(var0: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Element | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
+     * @return original return type: 'void'
      */
-    hasIdElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElementSync(): boolean;
+    addExtension(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
+     * @return original return type: 'void'
      */
-    hasExtension(var0: string | null): Promise<boolean>;
+    addExtensionSync(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
+     */
+    addExtension(): Promise<org_hl7_fhir_instance_model_api_IBaseExtension | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
+     */
+    addExtensionSync(): org_hl7_fhir_instance_model_api_IBaseExtension | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    addExtension(): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    addExtensionSync(): org_hl7_fhir_r5_model_Extension | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    addExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    addExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): org_hl7_fhir_r5_model_Element | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
+    /**
      * @return original return type: 'boolean'
      */
-    hasExtensionSync(var0: string | null): boolean;
+    hasId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -1025,31 +941,23 @@ export declare class SampledDataClass extends JavaClass {
      */
     hasExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): boolean;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    hasId(): Promise<boolean>;
+    hasExtension(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasExtensionSync(var0: string | null): boolean;
     /**
      * @return original return type: 'boolean'
      */
-    hasIdSync(): boolean;
+    hasIdElement(): Promise<boolean>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'boolean'
      */
-    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
+    hasIdElementSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
@@ -1070,6 +978,98 @@ export declare class SampledDataClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
      */
     setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseElement | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBase(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBaseSync(): string | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBase(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBaseSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionStringSync(var0: string | null): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeExtension(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeExtensionSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -1145,6 +1145,36 @@ export declare class SampledDataClass extends JavaClass {
      */
     isResourceSync(): boolean;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatComment(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentSync(): boolean;
+    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
      */
@@ -1157,29 +1187,35 @@ export declare class SampledDataClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatCommentPost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPostSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addValidationMessage(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @return original return type: 'boolean'
-     */
     hasFormatCommentPre(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
     hasFormatCommentPreSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationMessages(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationMessagesSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessagesSync(): java_util_List | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPostSync(): boolean;
     /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
@@ -1191,13 +1227,77 @@ export declare class SampledDataClass extends JavaClass {
      */
     addFormatCommentsPreSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    hasValidationMessages(): Promise<boolean>;
+    addValidationMessage(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getXhtml(): Promise<org_hl7_fhir_utilities_xhtml_XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
+     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
+     */
+    addDefinition(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): Promise<org_hl7_fhir_r5_model_Base$ValidationInfo | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
+     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
+     */
+    addDefinitionSync(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): org_hl7_fhir_r5_model_Base$ValidationInfo | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasValidationMessagesSync(): boolean;
+    hasValidationInfo(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationInfoSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfo(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfoSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    primitiveValue(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    primitiveValueSync(): string | null;
     /**
      * @param var0 original type: 'java.util.List'
      * @param var1 original type: 'java.util.List'
@@ -1213,19 +1313,19 @@ export declare class SampledDataClass extends JavaClass {
      */
     static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
+    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
@@ -1241,69 +1341,19 @@ export declare class SampledDataClass extends JavaClass {
      */
     static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValueSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessagesSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDateTime(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDateTimeSync(): boolean;
+    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Property'
@@ -1316,14 +1366,32 @@ export declare class SampledDataClass extends JavaClass {
     getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
+     * @return original return type: 'java.lang.String'
      */
-    getUserInt(var0: string | null): Promise<number>;
+    getUserString(var0: string | null): Promise<string | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
+     * @return original return type: 'java.lang.String'
      */
-    getUserIntSync(var0: string | null): number;
+    getUserStringSync(var0: string | null): string | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -1332,6 +1400,44 @@ export declare class SampledDataClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasPrimitiveValueSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitiveSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTime(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTimeSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'boolean'
+     */
+    hasType(var0: (string | null)[] | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'boolean'
+     */
+    hasTypeSync(var0: (string | null)[] | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
@@ -1356,34 +1462,36 @@ export declare class SampledDataClass extends JavaClass {
     listChildrenByNameSync(var0: string | null, var1: java_lang_Boolean | boolean): (org_hl7_fhir_r5_model_Base | null)[] | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
+    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
      */
-    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    getUserInt(var0: string | null): Promise<number>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
      */
-    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
+    getUserIntSync(var0: string | null): number;
     /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
      */
-    hasType(var0: (string | null)[] | null): Promise<boolean>;
+    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
     /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
      */
-    hasTypeSync(var0: (string | null)[] | null): boolean;
+    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -1396,26 +1504,6 @@ export declare class SampledDataClass extends JavaClass {
     clearUserDataSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isBooleanPrimitive(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isBooleanPrimitiveSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
     hasUserData(var0: string | null): Promise<boolean>;
@@ -1424,94 +1512,6 @@ export declare class SampledDataClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasUserDataSync(var0: string | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getUserString(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getUserStringSync(var0: string | null): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfo(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfoSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfo(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfoSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
-     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
-     */
-    addDefinition(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): Promise<org_hl7_fhir_r5_model_Base$ValidationInfo | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
-     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
-     */
-    addDefinitionSync(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): org_hl7_fhir_r5_model_Base$ValidationInfo | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getXhtml(): Promise<org_hl7_fhir_utilities_xhtml_XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

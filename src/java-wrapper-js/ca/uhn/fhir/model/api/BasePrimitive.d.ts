@@ -107,6 +107,14 @@ export declare class BasePrimitiveClass extends JavaClass {
      */
     readExternalSync(var0: java_io_ObjectInput | JavaInterfaceProxy<java_io_ObjectInputInterface> | null): void;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsStringSync(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -116,14 +124,6 @@ export declare class BasePrimitiveClass extends JavaClass {
      * @return original return type: 'void'
      */
     setValueAsStringSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsStringSync(): string | null;
     /**
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
@@ -171,15 +171,13 @@ export declare class BasePrimitiveClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    getUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -189,13 +187,15 @@ export declare class BasePrimitiveClass extends JavaClass {
      */
     getUndeclaredModifierExtensionsSync(): java_util_List | null;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensions(): Promise<java_util_List | null>;
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsSync(): java_util_List | null;
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -241,21 +241,15 @@ export declare class BasePrimitiveClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ca_uhn_fhir_model_api_ExtensionDt | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -277,15 +271,21 @@ export declare class BasePrimitiveClass extends JavaClass {
      */
     hasFormatCommentSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPre(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -1,7 +1,7 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
-import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
+import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
@@ -21,6 +21,16 @@ export declare class CacheControlDirectiveClass extends JavaClass {
      */
     parseSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): CacheControlDirective | null;
     /**
+     * @param var0 original type: 'java.lang.Integer'
+     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     */
+    setMaxResults(var0: java_lang_Integer | number | null): Promise<CacheControlDirective | null>;
+    /**
+     * @param var0 original type: 'java.lang.Integer'
+     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     */
+    setMaxResultsSync(var0: java_lang_Integer | number | null): CacheControlDirective | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
      */
@@ -31,31 +41,13 @@ export declare class CacheControlDirectiveClass extends JavaClass {
      */
     setNoCacheSync(var0: java_lang_Boolean | boolean): CacheControlDirective | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     * @return original return type: 'boolean'
      */
-    static noCache(): Promise<CacheControlDirective | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
-     */
-    static noCacheSync(): CacheControlDirective | null;
+    isNoCache(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    isNoStore(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isNoStoreSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
-     */
-    setMaxResults(var0: java_lang_Integer | number | null): Promise<CacheControlDirective | null>;
-    /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
-     */
-    setMaxResultsSync(var0: java_lang_Integer | number | null): CacheControlDirective | null;
+    isNoCacheSync(): boolean;
     /**
      * @return original return type: 'java.lang.Integer'
      */
@@ -67,11 +59,11 @@ export declare class CacheControlDirectiveClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    isNoCache(): Promise<boolean>;
+    isNoStore(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
-    isNoCacheSync(): boolean;
+    isNoStoreSync(): boolean;
     /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
@@ -82,6 +74,14 @@ export declare class CacheControlDirectiveClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
      */
     setNoStoreSync(var0: java_lang_Boolean | boolean): CacheControlDirective | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     */
+    static noCache(): Promise<CacheControlDirective | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.api.CacheControlDirective'
+     */
+    static noCacheSync(): CacheControlDirective | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

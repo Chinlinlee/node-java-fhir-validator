@@ -2,8 +2,8 @@ import { JavaClass, BasicOrJavaType } from "java-bridge";
 import { BaseRuntimeChildDefinition$IAccessor as ca_uhn_fhir_context_BaseRuntimeChildDefinition$IAccessor } from "./BaseRuntimeChildDefinition$IAccessor";
 import { BaseRuntimeElementDefinition as ca_uhn_fhir_context_BaseRuntimeElementDefinition } from "./BaseRuntimeElementDefinition";
 import { Class as java_lang_Class } from "./../../../../java/lang/Class";
-import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { BaseRuntimeChildDefinition$IMutator as ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator } from "./BaseRuntimeChildDefinition$IMutator";
+import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { BaseRuntimeChildDefinition as ca_uhn_fhir_context_BaseRuntimeChildDefinition } from "./BaseRuntimeChildDefinition";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
@@ -38,15 +38,15 @@ export declare class RuntimeChildUndeclaredExtensionDefinitionClass extends Java
      */
     getMaxSync(): number;
     /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     * @return original return type: 'java.lang.String'
      */
-    getChildElementDefinitionByDatatype(var0: java_lang_Class | null): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition | null>;
+    static createExtensionChildName(var0: ca_uhn_fhir_context_BaseRuntimeElementDefinition | null): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     * @return original return type: 'java.lang.String'
      */
-    getChildElementDefinitionByDatatypeSync(var0: java_lang_Class | null): ca_uhn_fhir_context_BaseRuntimeElementDefinition | null;
+    static createExtensionChildNameSync(var0: ca_uhn_fhir_context_BaseRuntimeElementDefinition | null): string | null;
     /**
      * @param var0 original type: 'java.lang.Class'
      * @return original return type: 'java.lang.String'
@@ -58,15 +58,39 @@ export declare class RuntimeChildUndeclaredExtensionDefinitionClass extends Java
      */
     getChildNameByDatatypeSync(var0: java_lang_Class | null): string | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
      * @return original return type: 'java.lang.String'
      */
-    static createExtensionChildName(var0: ca_uhn_fhir_context_BaseRuntimeElementDefinition | null): Promise<string | null>;
+    getElementName(): Promise<string | null>;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
      * @return original return type: 'java.lang.String'
      */
-    static createExtensionChildNameSync(var0: ca_uhn_fhir_context_BaseRuntimeElementDefinition | null): string | null;
+    getElementNameSync(): string | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
+     */
+    getMutator(): Promise<ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
+     */
+    getMutatorSync(): ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getValidChildNames(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getValidChildNamesSync(): java_util_Set | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     */
+    getChildElementDefinitionByDatatype(var0: java_lang_Class | null): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     */
+    getChildElementDefinitionByDatatypeSync(var0: java_lang_Class | null): ca_uhn_fhir_context_BaseRuntimeElementDefinition | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
@@ -88,45 +112,11 @@ export declare class RuntimeChildUndeclaredExtensionDefinitionClass extends Java
     /**
      * @return original return type: 'java.lang.String'
      */
-    getElementName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getElementNameSync(): string | null;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getValidChildNames(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getValidChildNamesSync(): java_util_Set | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
-     */
-    getMutator(): Promise<ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
-     */
-    getMutatorSync(): ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     toString(): Promise<string>;
     /**
      * @return original return type: 'java.lang.String'
      */
     toStringSync(): string;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
-     * @return original return type: 'void'
-     */
-    setReplacedParentDefinition(var0: ca_uhn_fhir_context_BaseRuntimeChildDefinition | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
-     * @return original return type: 'void'
-     */
-    setReplacedParentDefinitionSync(var0: ca_uhn_fhir_context_BaseRuntimeChildDefinition | null): void;
     /**
      * @return original return type: 'java.lang.Object'
      */
@@ -143,6 +133,16 @@ export declare class RuntimeChildUndeclaredExtensionDefinitionClass extends Java
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
      */
     getReplacedParentDefinitionSync(): ca_uhn_fhir_context_BaseRuntimeChildDefinition | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
+     * @return original return type: 'void'
+     */
+    setReplacedParentDefinition(var0: ca_uhn_fhir_context_BaseRuntimeChildDefinition | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
+     * @return original return type: 'void'
+     */
+    setReplacedParentDefinitionSync(var0: ca_uhn_fhir_context_BaseRuntimeChildDefinition | null): void;
     /**
      * @return original return type: 'java.lang.String'
      */

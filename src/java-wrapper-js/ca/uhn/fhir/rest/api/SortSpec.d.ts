@@ -10,13 +10,13 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class SortSpecClass extends JavaClass {
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
+     * @return original return type: 'java.lang.String'
      */
-    getChain(): Promise<SortSpec | null>;
+    getParamName(): Promise<string | null>;
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
+     * @return original return type: 'java.lang.String'
      */
-    getChainSync(): SortSpec | null;
+    getParamNameSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
@@ -56,13 +56,13 @@ export declare class SortSpecClass extends JavaClass {
      */
     setChainSync(var0: SortSpecClass | null): SortSpec | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
      */
-    getParamName(): Promise<string | null>;
+    getChain(): Promise<SortSpec | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.SortSpec'
      */
-    getParamNameSync(): string | null;
+    getChainSync(): SortSpec | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

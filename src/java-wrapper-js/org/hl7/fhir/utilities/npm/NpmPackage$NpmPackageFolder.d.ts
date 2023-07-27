@@ -38,14 +38,6 @@ export declare class NpmPackage$NpmPackageFolderClass extends JavaClass {
      */
     listFilesSync(): java_util_List | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    dump(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    dumpSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
@@ -63,6 +55,16 @@ export declare class NpmPackage$NpmPackageFolderClass extends JavaClass {
      * @return original return type: 'java.util.Map'
      */
     getTypesSync(): java_util_Map | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeFile(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeFileSync(var0: string | null): void;
     /**
      * @param var0 original type: 'org.hl7.fhir.utilities.json.model.JsonObject'
      * @param var1 original type: 'java.util.Map'
@@ -94,15 +96,13 @@ export declare class NpmPackage$NpmPackageFolderClass extends JavaClass {
      */
     fetchFileSync(var0: string | null): Buffer | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'java.lang.String'
      */
-    removeFile(var0: string | null): Promise<void>;
+    dump(): Promise<string | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'java.lang.String'
      */
-    removeFileSync(var0: string | null): void;
+    dumpSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

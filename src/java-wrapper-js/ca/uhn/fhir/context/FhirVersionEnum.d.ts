@@ -79,6 +79,40 @@ export declare class FhirVersionEnumClass extends JavaClass {
      */
     newContextSync(): ca_uhn_fhir_context_FhirContext | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getFhirVersionString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getFhirVersionStringSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isPresentOnClasspath(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isPresentOnClasspathSync(): boolean;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.api.IFhirVersion'
+     */
+    getVersionImplementation(): Promise<ca_uhn_fhir_model_api_IFhirVersion | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.api.IFhirVersion'
+     */
+    getVersionImplementationSync(): ca_uhn_fhir_model_api_IFhirVersion | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     */
+    static determineVersionForType(var0: java_lang_Class | null): Promise<FhirVersionEnum | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     */
+    static determineVersionForTypeSync(var0: java_lang_Class | null): FhirVersionEnum | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
      * @return original return type: 'boolean'
      */
@@ -92,22 +126,22 @@ export declare class FhirVersionEnumClass extends JavaClass {
      * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
      * @return original return type: 'boolean'
      */
-    isNewerThan(var0: FhirVersionEnumClass | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     * @return original return type: 'boolean'
-     */
-    isNewerThanSync(var0: FhirVersionEnumClass | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     * @return original return type: 'boolean'
-     */
     isOlderThan(var0: FhirVersionEnumClass | null): Promise<boolean>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
      * @return original return type: 'boolean'
      */
     isOlderThanSync(var0: FhirVersionEnumClass | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     * @return original return type: 'boolean'
+     */
+    isNewerThan(var0: FhirVersionEnumClass | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     * @return original return type: 'boolean'
+     */
+    isNewerThanSync(var0: FhirVersionEnumClass | null): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -116,16 +150,6 @@ export declare class FhirVersionEnumClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isRiSync(): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     * @return original return type: 'boolean'
-     */
-    isEqualOrNewerThan(var0: FhirVersionEnumClass | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     * @return original return type: 'boolean'
-     */
-    isEqualOrNewerThanSync(var0: FhirVersionEnumClass | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
@@ -137,39 +161,15 @@ export declare class FhirVersionEnumClass extends JavaClass {
      */
     static forVersionStringSync(var0: string | null): FhirVersionEnum | null;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
      * @return original return type: 'boolean'
      */
-    isPresentOnClasspath(): Promise<boolean>;
+    isEqualOrNewerThan(var0: FhirVersionEnumClass | null): Promise<boolean>;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirVersionEnum'
      * @return original return type: 'boolean'
      */
-    isPresentOnClasspathSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     */
-    static determineVersionForType(var0: java_lang_Class | null): Promise<FhirVersionEnum | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
-     */
-    static determineVersionForTypeSync(var0: java_lang_Class | null): FhirVersionEnum | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.api.IFhirVersion'
-     */
-    getVersionImplementation(): Promise<ca_uhn_fhir_model_api_IFhirVersion | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.model.api.IFhirVersion'
-     */
-    getVersionImplementationSync(): ca_uhn_fhir_model_api_IFhirVersion | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getFhirVersionString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getFhirVersionStringSync(): string | null;
+    isEqualOrNewerThanSync(var0: FhirVersionEnumClass | null): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */

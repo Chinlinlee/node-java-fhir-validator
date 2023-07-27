@@ -198,18 +198,6 @@ export declare class MultisetClass extends JavaClass {
     /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'int'
-     * @return original return type: 'int'
-     */
-    setCount(var0: BasicOrJavaType | null, var1: java_lang_Integer | number): Promise<number>;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @param var1 original type: 'int'
-     * @return original return type: 'int'
-     */
-    setCountSync(var0: BasicOrJavaType | null, var1: java_lang_Integer | number): number;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @param var1 original type: 'int'
      * @param var2 original type: 'int'
      * @return original return type: 'boolean'
      */
@@ -221,6 +209,18 @@ export declare class MultisetClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     setCountSync(var0: BasicOrJavaType | null, var1: java_lang_Integer | number, var2: java_lang_Integer | number): boolean;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @param var1 original type: 'int'
+     * @return original return type: 'int'
+     */
+    setCount(var0: BasicOrJavaType | null, var1: java_lang_Integer | number): Promise<number>;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @param var1 original type: 'int'
+     * @return original return type: 'int'
+     */
+    setCountSync(var0: BasicOrJavaType | null, var1: java_lang_Integer | number): number;
     /**
      * @return original return type: 'void'
      */
@@ -407,16 +407,16 @@ export interface MultisetInterface {
     /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'int'
-     * @return original return type: 'int'
-     */
-    setCount(var0: BasicOrJavaType | null, var1: java_lang_Integer | number): number;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @param var1 original type: 'int'
      * @param var2 original type: 'int'
      * @return original return type: 'boolean'
      */
     setCount(var0: BasicOrJavaType | null, var1: java_lang_Integer | number, var2: java_lang_Integer | number): boolean;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @param var1 original type: 'int'
+     * @return original return type: 'int'
+     */
+    setCount(var0: BasicOrJavaType | null, var1: java_lang_Integer | number): number;
     /**
      * @return original return type: 'void'
      */

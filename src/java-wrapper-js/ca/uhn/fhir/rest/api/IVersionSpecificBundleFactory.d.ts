@@ -1,11 +1,11 @@
 import { JavaClass, InterfaceProxyOptions, JavaInterfaceProxy } from "java-bridge";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IBaseResource";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
-import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { BundleTypeEnum as ca_uhn_fhir_model_valueset_BundleTypeEnum } from "./../../model/valueset/BundleTypeEnum";
 import { BundleInclusionRule as ca_uhn_fhir_context_api_BundleInclusionRule } from "./../../context/api/BundleInclusionRule";
 import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../../java/util/Set";
 import { BundleLinks as ca_uhn_fhir_rest_api_BundleLinks } from "./BundleLinks";
+import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType, IPrimitiveTypeInterface as org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IPrimitiveType";
 /**
  * This class just defines types, you should import {@link IVersionSpecificBundleFactory} instead of this.
@@ -21,26 +21,6 @@ export declare class IVersionSpecificBundleFactoryClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
     getResourceBundleSync(): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @param var4 original type: 'int'
-     * @param var5 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
-     * @return original return type: 'void'
-     */
-    initializeBundleFromResourceList(var0: string | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: string | null, var3: string | null, var4: java_lang_Integer | number, var5: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @param var4 original type: 'int'
-     * @param var5 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
-     * @return original return type: 'void'
-     */
-    initializeBundleFromResourceListSync(var0: string | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: string | null, var3: string | null, var4: java_lang_Integer | number, var5: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
     /**
      * @param var0 original type: 'java.util.List'
      * @param var1 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
@@ -76,6 +56,36 @@ export declare class IVersionSpecificBundleFactoryClass extends JavaClass {
      */
     addRootPropertiesToBundleSync(var0: string | null, var1: ca_uhn_fhir_rest_api_BundleLinks | null, var2: java_lang_Integer | number | null, var3: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null): void;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @param var4 original type: 'int'
+     * @param var5 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
+     * @return original return type: 'void'
+     */
+    initializeBundleFromResourceList(var0: string | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: string | null, var3: string | null, var4: java_lang_Integer | number, var5: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @param var4 original type: 'int'
+     * @param var5 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
+     * @return original return type: 'void'
+     */
+    initializeBundleFromResourceListSync(var0: string | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: string | null, var3: string | null, var4: java_lang_Integer | number, var5: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'void'
+     */
+    initializeWithBundleResource(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'void'
+     */
+    initializeWithBundleResourceSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
+    /**
      * @param var0 original type: 'java.lang.Integer'
      * @param var1 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
      * @return original return type: 'void'
@@ -87,16 +97,6 @@ export declare class IVersionSpecificBundleFactoryClass extends JavaClass {
      * @return original return type: 'void'
      */
     addTotalResultsToBundleSync(var0: java_lang_Integer | number | null, var1: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'void'
-     */
-    initializeWithBundleResource(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'void'
-     */
-    initializeWithBundleResourceSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -123,16 +123,6 @@ export interface IVersionSpecificBundleFactoryInterface {
      */
     getResourceBundle(): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.util.List'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @param var4 original type: 'int'
-     * @param var5 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
-     * @return original return type: 'void'
-     */
-    initializeBundleFromResourceList?(var0: string | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: string | null, var3: string | null, var4: java_lang_Integer | number, var5: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
-    /**
      * @param var0 original type: 'java.util.List'
      * @param var1 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
      * @param var2 original type: 'java.lang.String'
@@ -150,16 +140,26 @@ export interface IVersionSpecificBundleFactoryInterface {
      */
     addRootPropertiesToBundle(var0: string | null, var1: ca_uhn_fhir_rest_api_BundleLinks | null, var2: java_lang_Integer | number | null, var3: org_hl7_fhir_instance_model_api_IPrimitiveType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IPrimitiveTypeInterface> | null): void;
     /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @param var1 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.util.List'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @param var4 original type: 'int'
+     * @param var5 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
      * @return original return type: 'void'
      */
-    addTotalResultsToBundle(var0: java_lang_Integer | number | null, var1: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
+    initializeBundleFromResourceList?(var0: string | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: string | null, var3: string | null, var4: java_lang_Integer | number, var5: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'void'
      */
     initializeWithBundleResource(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): void;
+    /**
+     * @param var0 original type: 'java.lang.Integer'
+     * @param var1 original type: 'ca.uhn.fhir.model.valueset.BundleTypeEnum'
+     * @return original return type: 'void'
+     */
+    addTotalResultsToBundle(var0: java_lang_Integer | number | null, var1: ca_uhn_fhir_model_valueset_BundleTypeEnum | null): void;
     /**
      * @return original return type: 'java.util.List'
      */

@@ -4,11 +4,11 @@ import { JsonElement as com_google_gson_JsonElement } from "./JsonElement";
 import { Boolean as java_lang_Boolean } from "./../../../java/lang/Boolean";
 import { Integer as java_lang_Integer } from "./../../../java/lang/Integer";
 import { Iterator as java_util_Iterator } from "./../../../java/util/Iterator";
-import { BigDecimal as java_math_BigDecimal } from "./../../../java/math/BigDecimal";
 import { BigInteger as java_math_BigInteger } from "./../../../java/math/BigInteger";
-import { JsonObject as com_google_gson_JsonObject } from "./JsonObject";
+import { BigDecimal as java_math_BigDecimal } from "./../../../java/math/BigDecimal";
 import { JsonNull as com_google_gson_JsonNull } from "./JsonNull";
 import { JsonPrimitive as com_google_gson_JsonPrimitive } from "./JsonPrimitive";
+import { JsonObject as com_google_gson_JsonObject } from "./JsonObject";
 import { Long as java_lang_Long } from "./../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../java/lang/Class";
 import { Spliterator as java_util_Spliterator } from "./../../../java/util/Spliterator";
@@ -222,6 +222,54 @@ export declare class JsonArrayClass extends JavaClass {
      */
     deepCopySync(): com_google_gson_JsonElement | null;
     /**
+     * @return original return type: 'char'
+     */
+    getAsCharacter(): Promise<string | null>;
+    /**
+     * @return original return type: 'char'
+     */
+    getAsCharacterSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.Number'
+     */
+    getAsNumber(): Promise<java_lang_Number | null>;
+    /**
+     * @return original return type: 'java.lang.Number'
+     */
+    getAsNumberSync(): java_lang_Number | null;
+    /**
+     * @return original return type: 'short'
+     */
+    getAsShort(): Promise<number>;
+    /**
+     * @return original return type: 'short'
+     */
+    getAsShortSync(): number;
+    /**
+     * @return original return type: 'byte'
+     */
+    getAsByte(): Promise<number>;
+    /**
+     * @return original return type: 'byte'
+     */
+    getAsByteSync(): number;
+    /**
+     * @return original return type: 'float'
+     */
+    getAsFloat(): Promise<number>;
+    /**
+     * @return original return type: 'float'
+     */
+    getAsFloatSync(): number;
+    /**
+     * @return original return type: 'java.math.BigInteger'
+     */
+    getAsBigInteger(): Promise<java_math_BigInteger | null>;
+    /**
+     * @return original return type: 'java.math.BigInteger'
+     */
+    getAsBigIntegerSync(): java_math_BigInteger | null;
+    /**
      * @return original return type: 'java.lang.String'
      */
     getAsString(): Promise<string | null>;
@@ -238,54 +286,6 @@ export declare class JsonArrayClass extends JavaClass {
      */
     getAsBigDecimalSync(): java_math_BigDecimal | null;
     /**
-     * @return original return type: 'java.lang.Number'
-     */
-    getAsNumber(): Promise<java_lang_Number | null>;
-    /**
-     * @return original return type: 'java.lang.Number'
-     */
-    getAsNumberSync(): java_lang_Number | null;
-    /**
-     * @return original return type: 'java.math.BigInteger'
-     */
-    getAsBigInteger(): Promise<java_math_BigInteger | null>;
-    /**
-     * @return original return type: 'java.math.BigInteger'
-     */
-    getAsBigIntegerSync(): java_math_BigInteger | null;
-    /**
-     * @return original return type: 'float'
-     */
-    getAsFloat(): Promise<number>;
-    /**
-     * @return original return type: 'float'
-     */
-    getAsFloatSync(): number;
-    /**
-     * @return original return type: 'byte'
-     */
-    getAsByte(): Promise<number>;
-    /**
-     * @return original return type: 'byte'
-     */
-    getAsByteSync(): number;
-    /**
-     * @return original return type: 'char'
-     */
-    getAsCharacter(): Promise<string | null>;
-    /**
-     * @return original return type: 'char'
-     */
-    getAsCharacterSync(): string | null;
-    /**
-     * @return original return type: 'short'
-     */
-    getAsShort(): Promise<number>;
-    /**
-     * @return original return type: 'short'
-     */
-    getAsShortSync(): number;
-    /**
      * @return original return type: 'java.lang.String'
      */
     toString(): Promise<string>;
@@ -294,37 +294,21 @@ export declare class JsonArrayClass extends JavaClass {
      */
     toStringSync(): string;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'com.google.gson.JsonNull'
      */
-    isJsonNull(): Promise<boolean>;
+    getAsJsonNull(): Promise<com_google_gson_JsonNull | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'com.google.gson.JsonNull'
      */
-    isJsonNullSync(): boolean;
+    getAsJsonNullSync(): com_google_gson_JsonNull | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'com.google.gson.JsonPrimitive'
      */
-    isJsonArray(): Promise<boolean>;
+    getAsJsonPrimitive(): Promise<com_google_gson_JsonPrimitive | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'com.google.gson.JsonPrimitive'
      */
-    isJsonArraySync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonObject(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonObjectSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonPrimitive(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isJsonPrimitiveSync(): boolean;
+    getAsJsonPrimitiveSync(): com_google_gson_JsonPrimitive | null;
     /**
      * @return original return type: 'com.google.gson.JsonArray'
      */
@@ -342,21 +326,37 @@ export declare class JsonArrayClass extends JavaClass {
      */
     getAsJsonObjectSync(): com_google_gson_JsonObject | null;
     /**
-     * @return original return type: 'com.google.gson.JsonNull'
+     * @return original return type: 'boolean'
      */
-    getAsJsonNull(): Promise<com_google_gson_JsonNull | null>;
+    isJsonObject(): Promise<boolean>;
     /**
-     * @return original return type: 'com.google.gson.JsonNull'
+     * @return original return type: 'boolean'
      */
-    getAsJsonNullSync(): com_google_gson_JsonNull | null;
+    isJsonObjectSync(): boolean;
     /**
-     * @return original return type: 'com.google.gson.JsonPrimitive'
+     * @return original return type: 'boolean'
      */
-    getAsJsonPrimitive(): Promise<com_google_gson_JsonPrimitive | null>;
+    isJsonArray(): Promise<boolean>;
     /**
-     * @return original return type: 'com.google.gson.JsonPrimitive'
+     * @return original return type: 'boolean'
      */
-    getAsJsonPrimitiveSync(): com_google_gson_JsonPrimitive | null;
+    isJsonArraySync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonPrimitiveSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonNull(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isJsonNullSync(): boolean;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

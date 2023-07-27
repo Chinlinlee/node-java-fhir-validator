@@ -23,14 +23,6 @@ export declare class QuantityClientParamClass extends JavaClass {
      */
     withPrefixSync(var0: ca_uhn_fhir_rest_param_ParamPrefixEnum | null): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
-     */
-    exactly(): Promise<ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
-     */
-    exactlySync(): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
-    /**
      * @return original return type: 'java.lang.String'
      */
     getParamName(): Promise<string | null>;
@@ -51,11 +43,27 @@ export declare class QuantityClientParamClass extends JavaClass {
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
      */
+    exactly(): Promise<ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
+     */
+    exactlySync(): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
+     */
     greaterThanOrEquals(): Promise<ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null>;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
      */
     greaterThanOrEqualsSync(): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
+     */
+    lessThan(): Promise<ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
+     */
+    lessThanSync(): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
      */
@@ -72,14 +80,6 @@ export declare class QuantityClientParamClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
      */
     greaterThanSync(): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
-     */
-    lessThan(): Promise<ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
-     */
-    lessThanSync(): ca_uhn_fhir_rest_gclient_NumberClientParam$IMatches | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.NumberClientParam$IMatches'
      */

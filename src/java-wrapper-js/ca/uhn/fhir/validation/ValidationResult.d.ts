@@ -60,6 +60,14 @@ export declare class ValidationResultClass extends JavaClass {
      */
     setErrorDisplayLimitSync(var0: java_lang_Integer | number): void;
     /**
+     * @return original return type: 'java.util.List'
+     */
+    getMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getMessagesSync(): java_util_List | null;
+    /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseOperationOutcome'
      */
     toOperationOutcome(): Promise<org_hl7_fhir_instance_model_api_IBaseOperationOutcome | null>;
@@ -75,14 +83,6 @@ export declare class ValidationResultClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isSuccessfulSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getMessagesSync(): java_util_List | null;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseOperationOutcome'
      */

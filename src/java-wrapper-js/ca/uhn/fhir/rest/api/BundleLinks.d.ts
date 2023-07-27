@@ -27,37 +27,11 @@ export declare class BundleLinksClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSelf(): Promise<string | null>;
+    getNext(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getSelfSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getPrev(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getPrevSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.BundleLinks'
-     */
-    setSelf(var0: string | null): Promise<BundleLinks | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.BundleLinks'
-     */
-    setSelfSync(var0: string | null): BundleLinks | null;
-    /**
-     * @return original return type: 'java.util.Collection'
-     */
-    getIncludes(): Promise<java_util_Collection | null>;
-    /**
-     * @return original return type: 'java.util.Collection'
-     */
-    getIncludesSync(): java_util_Collection | null;
+    getNextSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.BundleLinks'
@@ -79,13 +53,39 @@ export declare class BundleLinksClass extends JavaClass {
      */
     setPrevSync(var0: string | null): BundleLinks | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'java.util.Collection'
      */
-    getNext(): Promise<string | null>;
+    getIncludes(): Promise<java_util_Collection | null>;
+    /**
+     * @return original return type: 'java.util.Collection'
+     */
+    getIncludesSync(): java_util_Collection | null;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getNextSync(): string | null;
+    getPrev(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getPrevSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.BundleLinks'
+     */
+    setSelf(var0: string | null): Promise<BundleLinks | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.BundleLinks'
+     */
+    setSelfSync(var0: string | null): BundleLinks | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSelf(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSelfSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

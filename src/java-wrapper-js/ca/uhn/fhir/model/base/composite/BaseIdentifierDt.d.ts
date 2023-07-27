@@ -1,9 +1,9 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
+import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../../context/FhirContext";
 import { IQueryParameterType as ca_uhn_fhir_model_api_IQueryParameterType } from "./../../api/IQueryParameterType";
 import { Boolean as java_lang_Boolean } from "./../../../../../../java/lang/Boolean";
-import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../../context/FhirContext";
-import { StringDt as ca_uhn_fhir_model_primitive_StringDt } from "./../../primitive/StringDt";
 import { UriDt as ca_uhn_fhir_model_primitive_UriDt } from "./../../primitive/UriDt";
+import { StringDt as ca_uhn_fhir_model_primitive_StringDt } from "./../../primitive/StringDt";
 import { IdDt as ca_uhn_fhir_model_primitive_IdDt } from "./../../primitive/IdDt";
 import { List as java_util_List } from "./../../../../../../java/util/List";
 import { ExtensionDt as ca_uhn_fhir_model_api_ExtensionDt } from "./../../api/ExtensionDt";
@@ -27,24 +27,6 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt'
      */
     setValueSync(var0: string | null): BaseIdentifierDt | null;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getMissing(): Promise<boolean | null>;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getMissingSync(): boolean | null;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
-     */
-    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_model_api_IQueryParameterType | null>;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
-     */
-    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @return original return type: 'java.lang.String'
@@ -90,21 +72,23 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      */
     getQueryParameterQualifierSync(): string | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.StringDt'
+     * @return original return type: 'java.lang.Boolean'
      */
-    getValueElement(): Promise<ca_uhn_fhir_model_primitive_StringDt | null>;
+    getMissing(): Promise<boolean | null>;
     /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.StringDt'
+     * @return original return type: 'java.lang.Boolean'
      */
-    getValueElementSync(): ca_uhn_fhir_model_primitive_StringDt | null;
+    getMissingSync(): boolean | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.UriDt'
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
      */
-    getSystemElement(): Promise<ca_uhn_fhir_model_primitive_UriDt | null>;
+    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_model_api_IQueryParameterType | null>;
     /**
-     * @return original return type: 'ca.uhn.fhir.model.primitive.UriDt'
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
      */
-    getSystemElementSync(): ca_uhn_fhir_model_primitive_UriDt | null;
+    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt'
@@ -115,6 +99,22 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.model.base.composite.BaseIdentifierDt'
      */
     setSystemSync(var0: string | null): BaseIdentifierDt | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.UriDt'
+     */
+    getSystemElement(): Promise<ca_uhn_fhir_model_primitive_UriDt | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.UriDt'
+     */
+    getSystemElementSync(): ca_uhn_fhir_model_primitive_UriDt | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.StringDt'
+     */
+    getValueElement(): Promise<ca_uhn_fhir_model_primitive_StringDt | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.model.primitive.StringDt'
+     */
+    getValueElementSync(): ca_uhn_fhir_model_primitive_StringDt | null;
     /**
      * @return original return type: 'ca.uhn.fhir.model.primitive.IdDt'
      */
@@ -162,15 +162,13 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    getUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -180,13 +178,15 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      */
     getUndeclaredModifierExtensionsSync(): java_util_List | null;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensions(): Promise<java_util_List | null>;
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsSync(): java_util_List | null;
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -232,21 +232,15 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ca_uhn_fhir_model_api_ExtensionDt | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -268,15 +262,21 @@ export declare class BaseIdentifierDtClass extends JavaClass {
      */
     hasFormatCommentSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPre(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

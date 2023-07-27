@@ -39,14 +39,6 @@ export declare class IgResponseClass extends JavaClass {
      */
     getVersionSync(): string | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getProfiles(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getProfilesSync(): java_util_List | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.utilities.npm.NpmPackage'
      * @return original return type: 'org.mitre.inferno.rest.IgResponse'
      */
@@ -56,6 +48,14 @@ export declare class IgResponseClass extends JavaClass {
      * @return original return type: 'org.mitre.inferno.rest.IgResponse'
      */
     static fromPackageSync(var0: org_hl7_fhir_utilities_npm_NpmPackage | null): IgResponse | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getProfiles(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getProfilesSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -1,7 +1,7 @@
 import { JavaClass, BasicOrJavaType } from "java-bridge";
-import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
-import { IQueryParameterType as ca_uhn_fhir_model_api_IQueryParameterType } from "./../../model/api/IQueryParameterType";
 import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../../context/FhirContext";
+import { IQueryParameterType as ca_uhn_fhir_model_api_IQueryParameterType } from "./../../model/api/IQueryParameterType";
+import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -11,34 +11,6 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  * You should probably not edit this.
  */
 export declare class BaseParamClass extends JavaClass {
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getMissing(): Promise<boolean | null>;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getMissingSync(): boolean | null;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
-     */
-    setMissing(var0: java_lang_Boolean | boolean | null): Promise<BaseParam | null>;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
-     */
-    setMissingSync(var0: java_lang_Boolean | boolean | null): BaseParam | null;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
-     */
-    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_model_api_IQueryParameterType | null>;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
-     */
-    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
      * @return original return type: 'java.lang.String'
@@ -73,6 +45,34 @@ export declare class BaseParamClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getQueryParameterQualifierSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getMissing(): Promise<boolean | null>;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getMissingSync(): boolean | null;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
+     */
+    setMissing(var0: java_lang_Boolean | boolean | null): Promise<ca_uhn_fhir_model_api_IQueryParameterType | null>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.model.api.IQueryParameterType'
+     */
+    setMissingSync(var0: java_lang_Boolean | boolean | null): ca_uhn_fhir_model_api_IQueryParameterType | null;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
+     */
+    setMissing(var0: java_lang_Boolean | boolean | null): Promise<BaseParam | null>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.param.BaseParam'
+     */
+    setMissingSync(var0: java_lang_Boolean | boolean | null): BaseParam | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

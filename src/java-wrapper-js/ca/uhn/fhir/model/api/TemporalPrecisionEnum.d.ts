@@ -80,19 +80,19 @@ export declare class TemporalPrecisionEnumClass extends JavaClass {
     /**
      * @return original return type: 'int'
      */
-    getCalendarConstant(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getCalendarConstantSync(): number;
-    /**
-     * @return original return type: 'int'
-     */
     stringLength(): Promise<number>;
     /**
      * @return original return type: 'int'
      */
     stringLengthSync(): number;
+    /**
+     * @return original return type: 'int'
+     */
+    getCalendarConstant(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getCalendarConstantSync(): number;
     /**
      * @return original return type: 'java.lang.String'
      */

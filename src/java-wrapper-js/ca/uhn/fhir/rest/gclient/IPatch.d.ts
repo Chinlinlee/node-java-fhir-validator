@@ -8,16 +8,6 @@ import { IBaseParameters as org_hl7_fhir_instance_model_api_IBaseParameters, IBa
  */
 export declare class IPatchClass extends JavaClass {
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
-     */
-    withBody(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IPatchWithBody | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
-     */
-    withBodySync(var0: string | null): ca_uhn_fhir_rest_gclient_IPatchWithBody | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseParameters'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
      */
@@ -27,6 +17,16 @@ export declare class IPatchClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
      */
     withFhirPatchSync(var0: org_hl7_fhir_instance_model_api_IBaseParameters | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseParametersInterface> | null): ca_uhn_fhir_rest_gclient_IPatchWithBody | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
+     */
+    withBody(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IPatchWithBody | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
+     */
+    withBodySync(var0: string | null): ca_uhn_fhir_rest_gclient_IPatchWithBody | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -41,15 +41,15 @@ export declare class IPatchClass extends JavaClass {
  */
 export interface IPatchInterface {
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
-     */
-    withBody(var0: string | null): ca_uhn_fhir_rest_gclient_IPatchWithBody | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseParameters'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
      */
     withFhirPatch(var0: org_hl7_fhir_instance_model_api_IBaseParameters | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseParametersInterface> | null): ca_uhn_fhir_rest_gclient_IPatchWithBody | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IPatchWithBody'
+     */
+    withBody(var0: string | null): ca_uhn_fhir_rest_gclient_IPatchWithBody | null;
 }
 /**
  * Create a proxy for the {@link IPatch} interface.

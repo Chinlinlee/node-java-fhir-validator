@@ -179,11 +179,19 @@ export declare class ValidationMessage$IssueTypeClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    toCode(): Promise<string | null>;
+    getSystem(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    toCodeSync(): string | null;
+    getSystemSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDisplay(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getDisplaySync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.validation.ValidationMessage$IssueType'
@@ -197,19 +205,11 @@ export declare class ValidationMessage$IssueTypeClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getDisplay(): Promise<string | null>;
+    toCode(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getDisplaySync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSystem(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSystemSync(): string | null;
+    toCodeSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

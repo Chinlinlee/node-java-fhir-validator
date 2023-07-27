@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
+import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -44,23 +44,13 @@ export declare class PropertyClass extends JavaClass {
      */
     getTypeCodeSync(): string | null;
     /**
-     * @return original return type: 'int'
+     * @return original return type: 'java.util.List'
      */
-    getMinCardinality(): Promise<number>;
+    getValues(): Promise<java_util_List | null>;
     /**
-     * @return original return type: 'int'
+     * @return original return type: 'java.util.List'
      */
-    getMinCardinalitySync(): number;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
-     * @return original return type: 'void'
-     */
-    setStructure(var0: org_hl7_fhir_r5_model_StructureDefinition | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
-     * @return original return type: 'void'
-     */
-    setStructureSync(var0: org_hl7_fhir_r5_model_StructureDefinition | null): void;
+    getValuesSync(): java_util_List | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -69,6 +59,14 @@ export declare class PropertyClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasValuesSync(): boolean;
+    /**
+     * @return original return type: 'int'
+     */
+    getMinCardinality(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getMinCardinalitySync(): number;
     /**
      * @return original return type: 'int'
      */
@@ -86,6 +84,16 @@ export declare class PropertyClass extends JavaClass {
      */
     getStructureSync(): org_hl7_fhir_r5_model_StructureDefinition | null;
     /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
+     * @return original return type: 'void'
+     */
+    setStructure(var0: org_hl7_fhir_r5_model_StructureDefinition | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
+     * @return original return type: 'void'
+     */
+    setStructureSync(var0: org_hl7_fhir_r5_model_StructureDefinition | null): void;
+    /**
      * @return original return type: 'boolean'
      */
     isList(): Promise<boolean>;
@@ -93,14 +101,6 @@ export declare class PropertyClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isListSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValues(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

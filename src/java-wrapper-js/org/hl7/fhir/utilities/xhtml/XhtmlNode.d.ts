@@ -5,8 +5,8 @@ import { XhtmlNode$Location as org_hl7_fhir_utilities_xhtml_XhtmlNode$Location }
 import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./../../instance/model/api/IPrimitiveType";
 import { Map as java_util_Map } from "./../../../../../java/util/Map";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
-import { NodeType as org_hl7_fhir_utilities_xhtml_NodeType } from "./NodeType";
 import { XhtmlNodeList as org_hl7_fhir_utilities_xhtml_XhtmlNodeList } from "./XhtmlNodeList";
+import { NodeType as org_hl7_fhir_utilities_xhtml_NodeType } from "./NodeType";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
@@ -128,16 +128,6 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     setNameSync(var0: string | null): XhtmlNode | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    setValue(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    setValueSync(var0: string | null): XhtmlNode | null;
-    /**
      * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
      */
@@ -147,6 +137,16 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IPrimitiveType'
      */
     setValueSync(var0: BasicOrJavaType | null): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    setValue(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    setValueSync(var0: string | null): XhtmlNode | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -304,6 +304,52 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     styleSync(var0: string | null): XhtmlNode | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatComment(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      * @return original return type: 'boolean'
      */
@@ -314,6 +360,46 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     equalsDeepSync(var0: XhtmlNodeClass | null): boolean;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getValueAsStringSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setValueAsString(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setValueAsStringSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    addTag(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    addTagSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    addTag(var0: java_lang_Integer | number, var1: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    addTagSync(var0: java_lang_Integer | number, var1: string | null): XhtmlNode | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode$Location'
      * @return original return type: 'void'
      */
@@ -323,38 +409,6 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'void'
      */
     setLocationSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode$Location | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasChildren(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasChildrenSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    notPretty(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    notPrettySync(): XhtmlNode | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.NodeType'
-     */
-    getNodeType(): Promise<org_hl7_fhir_utilities_xhtml_NodeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.NodeType'
-     */
-    getNodeTypeSync(): org_hl7_fhir_utilities_xhtml_NodeType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAttributes(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasAttributesSync(): boolean;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNodeList'
      */
@@ -377,36 +431,12 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    setContent(var0: string | null): Promise<XhtmlNode | null>;
+    addComment(var0: string | null): Promise<XhtmlNode | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    setContentSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getNsDecl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getNsDeclSync(): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasEmptyExpanded(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasEmptyExpandedSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isNoPretty(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isNoPrettySync(): boolean;
+    addCommentSync(var0: string | null): XhtmlNode | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
@@ -417,6 +447,66 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
     addInstructionSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAttributes(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasAttributesSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    setContent(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    setContentSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    addDocType(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    addDocTypeSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    allChildrenAreText(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    allChildrenAreTextSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getFirstElement(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getFirstElementSync(): XhtmlNode | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    allText(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    allTextSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasChildren(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasChildrenSync(): boolean;
     /**
      * @param var0 original type: 'int'
      * @param var1 original type: 'java.lang.String'
@@ -440,93 +530,21 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     addTextSync(var0: string | null): XhtmlNode | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.NodeType'
      */
-    allText(): Promise<string | null>;
+    getNodeType(): Promise<org_hl7_fhir_utilities_xhtml_NodeType | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.NodeType'
      */
-    allTextSync(): string | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    nbsp(): Promise<XhtmlNode | null>;
+    getNodeTypeSync(): org_hl7_fhir_utilities_xhtml_NodeType | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    nbspSync(): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getElementByIndex(var0: java_lang_Integer | number): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getElementByIndexSync(var0: java_lang_Integer | number): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getNextElement(var0: XhtmlNodeClass | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getNextElementSync(var0: XhtmlNodeClass | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    para(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    paraSync(var0: string | null): XhtmlNode | null;
+    notPretty(): Promise<XhtmlNode | null>;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    para(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    paraSync(): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    select(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    selectSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    allChildrenAreText(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    allChildrenAreTextSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getEmptyExpanded(): Promise<boolean | null>;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getEmptyExpandedSync(): boolean | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getFirstElement(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getFirstElementSync(): XhtmlNode | null;
+    notPrettySync(): XhtmlNode | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
@@ -538,15 +556,37 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     hasAttributeSync(var0: string | null): boolean;
     /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'void'
+     * @return original return type: 'boolean'
      */
-    setEmptyExpanded(var0: java_lang_Boolean | boolean | null): Promise<void>;
+    hasEmptyExpanded(): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.Boolean'
-     * @return original return type: 'void'
+     * @return original return type: 'boolean'
      */
-    setEmptyExpandedSync(var0: java_lang_Boolean | boolean | null): void;
+    hasEmptyExpandedSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    nbsp(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    nbspSync(): XhtmlNode | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getNsDecl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getNsDeclSync(): string | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isNoPretty(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isNoPrettySync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
@@ -569,34 +609,16 @@ export declare class XhtmlNodeClass extends JavaClass {
     addChildrenSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): XhtmlNode | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'int'
+     * @return original return type: 'void'
      */
-    addDocType(var0: string | null): Promise<XhtmlNode | null>;
+    paramValue(var0: string | null, var1: java_lang_Integer | number): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'int'
+     * @return original return type: 'void'
      */
-    addDocTypeSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    addComment(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    addCommentSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getElementById(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getElementByIdSync(var0: string | null): XhtmlNode | null;
+    paramValueSync(var0: string | null, var1: java_lang_Integer | number): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -610,17 +632,79 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     paramValueSync(var0: string | null, var1: string | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'int'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getNextElement(var0: XhtmlNodeClass | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getNextElementSync(var0: XhtmlNodeClass | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getElementByIndex(var0: java_lang_Integer | number): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getElementByIndexSync(var0: java_lang_Integer | number): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
      * @return original return type: 'void'
      */
-    paramValue(var0: string | null, var1: java_lang_Integer | number): Promise<void>;
+    setEmptyExpanded(var0: java_lang_Boolean | boolean | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'void'
+     */
+    setEmptyExpandedSync(var0: java_lang_Boolean | boolean | null): void;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getEmptyExpanded(): Promise<boolean | null>;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getEmptyExpandedSync(): boolean | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'int'
      * @return original return type: 'void'
      */
-    paramValueSync(var0: string | null, var1: java_lang_Integer | number): void;
+    sentenceForParams(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    sentenceForParamsSync(var0: string | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isPara(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isParaSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    para(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    paraSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    para(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    paraSync(): XhtmlNode | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
@@ -635,12 +719,22 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    backgroundColor(var0: string | null): Promise<XhtmlNode | null>;
+    select(var0: string | null): Promise<XhtmlNode | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    backgroundColorSync(var0: string | null): XhtmlNode | null;
+    selectSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getElementById(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getElementByIdSync(var0: string | null): XhtmlNode | null;
     /**
      * @param var0 original type: 'int'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
@@ -662,109 +756,15 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     colspanSync(var0: string | null): XhtmlNode | null;
     /**
-     * @return original return type: 'boolean'
-     */
-    isPara(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isParaSync(): boolean;
-    /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    sentenceForParams(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    sentenceForParamsSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setValueAsString(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setValueAsStringSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getValueAsStringSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    backgroundColor(var0: string | null): Promise<XhtmlNode | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    addTag(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    addTagSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    addTag(var0: java_lang_Integer | number, var1: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    addTagSync(var0: java_lang_Integer | number, var1: string | null): XhtmlNode | null;
+    backgroundColorSync(var0: string | null): XhtmlNode | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -792,6 +792,14 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     hSync(var0: java_lang_Integer | number): XhtmlNode | null;
     /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    code(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    codeSync(): XhtmlNode | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -801,14 +809,6 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
     codeSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    code(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    codeSync(): XhtmlNode | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
@@ -844,14 +844,6 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     trSync(): XhtmlNode | null;
     /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    pre(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    preSync(): XhtmlNode | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -861,6 +853,14 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
     preSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    pre(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    preSync(): XhtmlNode | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -886,6 +886,14 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     brSync(): void;
     /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    td(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    tdSync(): XhtmlNode | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -896,14 +904,6 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     tdSync(var0: string | null): XhtmlNode | null;
     /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    td(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    tdSync(): XhtmlNode | null;
-    /**
      * @return original return type: 'void'
      */
     hr(): Promise<void>;
@@ -911,6 +911,16 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'void'
      */
     hrSync(): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    an(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    anSync(var0: string | null): XhtmlNode | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -923,16 +933,6 @@ export declare class XhtmlNodeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
     anSync(var0: string | null, var1: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    an(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    anSync(var0: string | null): XhtmlNode | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -954,91 +954,13 @@ export declare class XhtmlNodeClass extends JavaClass {
      */
     markdownSync(var0: string | null, var1: string | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    img(var0: string | null, var1: string | null, var2: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    imgSync(var0: string | null, var1: string | null, var2: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    img(var0: string | null, var1: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    imgSync(var0: string | null, var1: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    span(var0: string | null, var1: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    spanSync(var0: string | null, var1: string | null): XhtmlNode | null;
+    h4(): Promise<XhtmlNode | null>;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    blockquote(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    blockquoteSync(): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    innerHTML(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    innerHTMLSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    ahOrCode(var0: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    ahOrCodeSync(var0: string | null): XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    ahOrCode(var0: string | null, var1: string | null): Promise<XhtmlNode | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    ahOrCodeSync(var0: string | null, var1: string | null): XhtmlNode | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    h3(): Promise<XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    h3Sync(): XhtmlNode | null;
+    h4Sync(): XhtmlNode | null;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
@@ -1092,11 +1014,89 @@ export declare class XhtmlNodeClass extends JavaClass {
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    h4(): Promise<XhtmlNode | null>;
+    h3(): Promise<XhtmlNode | null>;
     /**
      * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      */
-    h4Sync(): XhtmlNode | null;
+    h3Sync(): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    span(var0: string | null, var1: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    spanSync(var0: string | null, var1: string | null): XhtmlNode | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    blockquote(): Promise<XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    blockquoteSync(): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    img(var0: string | null, var1: string | null, var2: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    imgSync(var0: string | null, var1: string | null, var2: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    img(var0: string | null, var1: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    imgSync(var0: string | null, var1: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    ahOrCode(var0: string | null, var1: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    ahOrCodeSync(var0: string | null, var1: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    ahOrCode(var0: string | null): Promise<XhtmlNode | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    ahOrCodeSync(var0: string | null): XhtmlNode | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    innerHTML(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    innerHTMLSync(var0: string | null): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

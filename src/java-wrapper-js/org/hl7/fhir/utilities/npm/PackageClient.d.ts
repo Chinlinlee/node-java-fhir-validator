@@ -58,17 +58,25 @@ export declare class PackageClientClass extends JavaClass {
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'java.lang.String'
      */
-    listFromRegistry(var0: string | null, var1: string | null, var2: string | null): Promise<java_util_List | null>;
+    getLatestVersion(var0: string | null, var1: string | null): Promise<string | null>;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
+     * @return original return type: 'java.lang.String'
      */
-    listFromRegistrySync(var0: string | null, var1: string | null, var2: string | null): java_util_List | null;
+    getLatestVersionSync(var0: string | null, var1: string | null): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getLatestVersion(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getLatestVersionSync(var0: string | null): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -92,18 +100,6 @@ export declare class PackageClientClass extends JavaClass {
      */
     fetchSync(var0: org_hl7_fhir_utilities_npm_PackageInfo | null): java_io_InputStream | null;
     /**
-     * @param var0 original type: 'java.util.Date'
-     * @param var1 original type: 'java.util.List'
-     * @return original return type: 'java.util.Date'
-     */
-    getNewPackages(var0: java_util_Date | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<java_util_Date | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @param var1 original type: 'java.util.List'
-     * @return original return type: 'java.util.Date'
-     */
-    getNewPackagesSync(var0: java_util_Date | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): java_util_Date | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.io.InputStream'
      */
@@ -125,28 +121,6 @@ export declare class PackageClientClass extends JavaClass {
     getVersionsSync(var0: string | null): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getLatestVersion(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getLatestVersionSync(var0: string | null): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getLatestVersion(var0: string | null, var1: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getLatestVersionSync(var0: string | null, var1: string | null): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
      * @return original return type: 'java.io.InputStream'
      */
@@ -157,6 +131,18 @@ export declare class PackageClientClass extends JavaClass {
      * @return original return type: 'java.io.InputStream'
      */
     fetchNpmSync(var0: string | null, var1: string | null): java_io_InputStream | null;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @param var1 original type: 'java.util.List'
+     * @return original return type: 'java.util.Date'
+     */
+    getNewPackages(var0: java_util_Date | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): Promise<java_util_Date | null>;
+    /**
+     * @param var0 original type: 'java.util.Date'
+     * @param var1 original type: 'java.util.List'
+     * @return original return type: 'java.util.Date'
+     */
+    getNewPackagesSync(var0: java_util_Date | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): java_util_Date | null;
     /**
      * @param var0 original type: 'java.util.Set'
      * @param var1 original type: 'java.lang.String'
@@ -169,6 +155,20 @@ export declare class PackageClientClass extends JavaClass {
      * @return original return type: 'void'
      */
     findDependentsSync(var0: java_util_Set | JavaInterfaceProxy<java_util_SetInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    listFromRegistry(var0: string | null, var1: string | null, var2: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    listFromRegistrySync(var0: string | null, var1: string | null, var2: string | null): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

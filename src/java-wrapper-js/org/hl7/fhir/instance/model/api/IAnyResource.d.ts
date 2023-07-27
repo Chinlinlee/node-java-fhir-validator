@@ -3,10 +3,10 @@ import { TokenClientParam as ca_uhn_fhir_rest_gclient_TokenClientParam } from ".
 import { Include as ca_uhn_fhir_model_api_Include } from "./../../../../../../ca/uhn/fhir/model/api/Include";
 import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../../../java/util/Set";
 import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./IPrimitiveType";
-import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./IIdType";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource } from "./IBaseResource";
-import { FhirVersionEnum as ca_uhn_fhir_context_FhirVersionEnum } from "./../../../../../../ca/uhn/fhir/context/FhirVersionEnum";
+import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./IIdType";
 import { IBaseMetaType as org_hl7_fhir_instance_model_api_IBaseMetaType } from "./IBaseMetaType";
+import { FhirVersionEnum as ca_uhn_fhir_context_FhirVersionEnum } from "./../../../../../../ca/uhn/fhir/context/FhirVersionEnum";
 import { List as java_util_List } from "./../../../../../../java/util/List";
 /**
  * This class just defines types, you should import {@link IAnyResource} instead of this.
@@ -48,6 +48,16 @@ export declare class IAnyResourceClass extends JavaClass {
     getLanguageElementSync(): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
     /**
      * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
      * @return original return type: 'void'
      */
@@ -60,22 +70,14 @@ export declare class IAnyResourceClass extends JavaClass {
     setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getIdElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getIdElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
@@ -87,16 +89,6 @@ export declare class IAnyResourceClass extends JavaClass {
      */
     setIdSync(var0: string | null): IAnyResource | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    setId(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
@@ -107,13 +99,13 @@ export declare class IAnyResourceClass extends JavaClass {
      */
     setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getStructureFhirVersionEnum(): Promise<ca_uhn_fhir_context_FhirVersionEnum | null>;
+    getIdElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getStructureFhirVersionEnumSync(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    getIdElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
      */
@@ -123,6 +115,14 @@ export declare class IAnyResourceClass extends JavaClass {
      */
     getMetaSync(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
     /**
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     */
+    getStructureFhirVersionEnum(): Promise<ca_uhn_fhir_context_FhirVersionEnum | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     */
+    getStructureFhirVersionEnumSync(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): Promise<boolean>;
@@ -131,21 +131,13 @@ export declare class IAnyResourceClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    fhirType(): Promise<string | null>;
+    hasFormatComment(): Promise<boolean>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    fhirTypeSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
+    hasFormatCommentSync(): boolean;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -155,13 +147,21 @@ export declare class IAnyResourceClass extends JavaClass {
      */
     getFormatCommentsPreSync(): java_util_List | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.util.List'
      */
-    hasFormatComment(): Promise<boolean>;
+    getFormatCommentsPost(): Promise<java_util_List | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.util.List'
      */
-    hasFormatCommentSync(): boolean;
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirTypeSync(): string | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -185,26 +185,15 @@ export interface IAnyResourceInterface {
     getLanguageElement(): org_hl7_fhir_instance_model_api_IPrimitiveType | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
      */
     getUserData(var0: string | null): BasicOrJavaType | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getIdElement(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
-     * **Note: Although this method is marked as optional, it actually must be implemented.**
-     *
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    setId?(var0: string | null): IAnyResource | null;
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
@@ -213,38 +202,49 @@ export interface IAnyResourceInterface {
     /**
      * **Note: Although this method is marked as optional, it actually must be implemented.**
      *
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IAnyResource'
+     */
+    setId?(var0: string | null): IAnyResource | null;
+    /**
+     * **Note: Although this method is marked as optional, it actually must be implemented.**
+     *
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
     setId?(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getStructureFhirVersionEnum(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    getIdElement(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
      */
     getMeta(): org_hl7_fhir_instance_model_api_IBaseMetaType | null;
     /**
+     * @return original return type: 'ca.uhn.fhir.context.FhirVersionEnum'
+     */
+    getStructureFhirVersionEnum(): ca_uhn_fhir_context_FhirVersionEnum | null;
+    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    fhirType?(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): java_util_List | null;
+    hasFormatComment(): boolean;
     /**
      * @return original return type: 'java.util.List'
      */
     getFormatCommentsPre(): java_util_List | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.util.List'
      */
-    hasFormatComment(): boolean;
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType?(): string | null;
 }
 /**
  * Create a proxy for the {@link IAnyResource} interface.

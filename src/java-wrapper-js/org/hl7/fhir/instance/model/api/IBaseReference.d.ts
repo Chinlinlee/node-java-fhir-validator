@@ -1,8 +1,8 @@
 import { JavaClass, BasicOrJavaType, InterfaceProxyOptions, JavaInterfaceProxy } from "java-bridge";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./IBaseResource";
-import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./IPrimitiveType";
 import { IBase as org_hl7_fhir_instance_model_api_IBase } from "./IBase";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType } from "./IIdType";
+import { IPrimitiveType as org_hl7_fhir_instance_model_api_IPrimitiveType } from "./IPrimitiveType";
 import { List as java_util_List } from "./../../../../../../java/util/List";
 /**
  * This class just defines types, you should import {@link IBaseReference} instead of this.
@@ -18,6 +18,32 @@ export declare class IBaseReferenceClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
     getResourceSync(): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     */
+    setDisplay(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBase | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     */
+    setDisplaySync(var0: string | null): org_hl7_fhir_instance_model_api_IBase | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdentifier(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdentifierSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getReferenceElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getReferenceElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseReference'
@@ -47,32 +73,6 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     setResourceSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): IBaseReference | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
-     */
-    setDisplay(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBase | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
-     */
-    setDisplaySync(var0: string | null): org_hl7_fhir_instance_model_api_IBase | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdentifier(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdentifierSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getReferenceElement(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getReferenceElementSync(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): Promise<boolean>;
@@ -81,29 +81,15 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    fhirType(): Promise<string | null>;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    fhirTypeSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -125,15 +111,29 @@ export declare class IBaseReferenceClass extends JavaClass {
      */
     hasFormatCommentSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPre(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirTypeSync(): string | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -153,6 +153,19 @@ export interface IBaseReferenceInterface {
     getResource(): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
      * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     */
+    setDisplay(var0: string | null): org_hl7_fhir_instance_model_api_IBase | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdentifier?(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getReferenceElement(): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseReference'
      */
     setReference(var0: string | null): IBaseReference | null;
@@ -166,34 +179,14 @@ export interface IBaseReferenceInterface {
      */
     setResource(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): IBaseReference | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
-     */
-    setDisplay(var0: string | null): org_hl7_fhir_instance_model_api_IBase | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdentifier?(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
-     */
-    getReferenceElement(): org_hl7_fhir_instance_model_api_IIdType | null;
-    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    fhirType?(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
+    getUserData(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -205,10 +198,17 @@ export interface IBaseReferenceInterface {
      */
     hasFormatComment(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPre(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType?(): string | null;
 }
 /**
  * Create a proxy for the {@link IBaseReference} interface.

@@ -8,29 +8,29 @@ import { Element as org_hl7_fhir_r5_model_Element } from "./Element";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { BigDecimal as java_math_BigDecimal } from "./../../../../../java/math/BigDecimal";
 import { CodeType as org_hl7_fhir_r5_model_CodeType } from "./CodeType";
-import { Base64BinaryType as org_hl7_fhir_r5_model_Base64BinaryType } from "./Base64BinaryType";
-import { Date as java_util_Date } from "./../../../../../java/util/Date";
-import { PositiveIntType as org_hl7_fhir_r5_model_PositiveIntType } from "./PositiveIntType";
-import { DateTimeType as org_hl7_fhir_r5_model_DateTimeType } from "./DateTimeType";
-import { Integer64Type as org_hl7_fhir_r5_model_Integer64Type } from "./Integer64Type";
-import { DecimalType as org_hl7_fhir_r5_model_DecimalType } from "./DecimalType";
-import { Double as java_lang_Double } from "./../../../../../java/lang/Double";
 import { Property as org_hl7_fhir_r5_model_Property } from "./Property";
 import { UrlType as org_hl7_fhir_r5_model_UrlType } from "./UrlType";
 import { StringType as org_hl7_fhir_r5_model_StringType } from "./StringType";
+import { Date as java_util_Date } from "./../../../../../java/util/Date";
+import { Integer64Type as org_hl7_fhir_r5_model_Integer64Type } from "./Integer64Type";
+import { Base64BinaryType as org_hl7_fhir_r5_model_Base64BinaryType } from "./Base64BinaryType";
+import { DateTimeType as org_hl7_fhir_r5_model_DateTimeType } from "./DateTimeType";
+import { PositiveIntType as org_hl7_fhir_r5_model_PositiveIntType } from "./PositiveIntType";
+import { DecimalType as org_hl7_fhir_r5_model_DecimalType } from "./DecimalType";
+import { Double as java_lang_Double } from "./../../../../../java/lang/Double";
 import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { Extension as org_hl7_fhir_r5_model_Extension } from "./Extension";
-import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
 import { IBaseExtension as org_hl7_fhir_instance_model_api_IBaseExtension } from "./../../instance/model/api/IBaseExtension";
 import { IBaseElement as org_hl7_fhir_instance_model_api_IBaseElement } from "./../../instance/model/api/IBaseElement";
+import { StandardsStatus as org_hl7_fhir_utilities_StandardsStatus } from "./../../utilities/StandardsStatus";
 import { PrimitiveType as org_hl7_fhir_r5_model_PrimitiveType } from "./PrimitiveType";
 import { ValidationMessage as org_hl7_fhir_utilities_validation_ValidationMessage } from "./../../utilities/validation/ValidationMessage";
 import { XhtmlNode as org_hl7_fhir_utilities_xhtml_XhtmlNode } from "./../../utilities/xhtml/XhtmlNode";
-import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Base$ValidationInfo as org_hl7_fhir_r5_model_Base$ValidationInfo } from "./Base$ValidationInfo";
 import { StructureDefinition as org_hl7_fhir_r5_model_StructureDefinition } from "./StructureDefinition";
 import { ElementDefinition as org_hl7_fhir_r5_model_ElementDefinition } from "./ElementDefinition";
 import { Base$ValidationMode as org_hl7_fhir_r5_model_Base$ValidationMode } from "./Base$ValidationMode";
+import { BaseDateTimeType as org_hl7_fhir_r5_model_BaseDateTimeType } from "./BaseDateTimeType";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 /**
  * This class just defines types, you should import {@link Attachment} instead of this.
@@ -173,11 +173,11 @@ export declare class AttachmentClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    fhirType(): Promise<string | null>;
+    getUrl(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    fhirTypeSync(): string | null;
+    getUrlSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
@@ -197,6 +197,18 @@ export declare class AttachmentClass extends JavaClass {
      */
     getContentTypeSync(): string | null;
     /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
+     */
+    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String[]'
+     */
+    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
+    /**
      * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
      */
     getLanguageElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
@@ -204,6 +216,14 @@ export declare class AttachmentClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
      */
     getLanguageElementSync(): org_hl7_fhir_r5_model_CodeType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLanguage(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasLanguageSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -223,13 +243,27 @@ export declare class AttachmentClass extends JavaClass {
      */
     setLanguageElementSync(var0: org_hl7_fhir_r5_model_CodeType | null): Attachment | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    hasLanguage(): Promise<boolean>;
+    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    hasLanguageSync(): boolean;
+    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
@@ -241,6 +275,30 @@ export declare class AttachmentClass extends JavaClass {
      */
     equalsDeepSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
     /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getNamedProperty(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Property | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getNamedPropertySync(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Property | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getNamedProperty(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     */
+    getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @return original return type: 'boolean'
      */
@@ -250,16 +308,6 @@ export declare class AttachmentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     equalsShallowSync(var0: org_hl7_fhir_r5_model_Base | null): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChild(var0: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addChildSync(var0: string | null): org_hl7_fhir_r5_model_Base | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
@@ -273,473 +321,11 @@ export declare class AttachmentClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getUrl(): Promise<string | null>;
+    fhirType(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getUrlSync(): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasData(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDataSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasContentType(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasContentTypeSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     */
-    getDataElement(): Promise<org_hl7_fhir_r5_model_Base64BinaryType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     */
-    getDataElementSync(): org_hl7_fhir_r5_model_Base64BinaryType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDataElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDataElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHash(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHashSync(): boolean;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getCreation(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getCreationSync(): java_util_Date | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHeightElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHeightElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHeight(var0: java_lang_Integer | number): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHeightSync(var0: java_lang_Integer | number): Attachment | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getWidthElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getWidthElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDataElement(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDataElementSync(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Attachment | null;
-    /**
-     * @return original return type: 'byte[]'
-     */
-    getHash(): Promise<Buffer | null>;
-    /**
-     * @return original return type: 'byte[]'
-     */
-    getHashSync(): Buffer | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWidthElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWidthElementSync(): boolean;
-    /**
-     * @return original return type: 'byte[]'
-     */
-    getData(): Promise<Buffer | null>;
-    /**
-     * @return original return type: 'byte[]'
-     */
-    getDataSync(): Buffer | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getHeightElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getHeightElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCreationElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCreationElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DateTimeType'
-     */
-    getCreationElement(): Promise<org_hl7_fhir_r5_model_DateTimeType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DateTimeType'
-     */
-    getCreationElementSync(): org_hl7_fhir_r5_model_DateTimeType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSize(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSizeSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Integer64Type'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setSizeElement(var0: org_hl7_fhir_r5_model_Integer64Type | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Integer64Type'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setSizeElementSync(var0: org_hl7_fhir_r5_model_Integer64Type | null): Attachment | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DateTimeType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setCreationElement(var0: org_hl7_fhir_r5_model_DateTimeType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DateTimeType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setCreationElementSync(var0: org_hl7_fhir_r5_model_DateTimeType | null): Attachment | null;
-    /**
-     * @return original return type: 'int'
-     */
-    getHeight(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getHeightSync(): number;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHashElement(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHashElementSync(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Attachment | null;
-    /**
-     * @param var0 original type: 'byte[]'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setData(var0: Buffer | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'byte[]'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDataSync(var0: Buffer | null): Attachment | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHeight(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHeightSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     */
-    getHashElement(): Promise<org_hl7_fhir_r5_model_Base64BinaryType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
-     */
-    getHashElementSync(): org_hl7_fhir_r5_model_Base64BinaryType | null;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setCreation(var0: java_util_Date | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'java.util.Date'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setCreationSync(var0: java_util_Date | null): Attachment | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHashElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHashElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Integer64Type'
-     */
-    getSizeElement(): Promise<org_hl7_fhir_r5_model_Integer64Type | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Integer64Type'
-     */
-    getSizeElementSync(): org_hl7_fhir_r5_model_Integer64Type | null;
-    /**
-     * @param var0 original type: 'byte[]'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHash(var0: Buffer | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'byte[]'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setHashSync(var0: Buffer | null): Attachment | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCreation(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasCreationSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSizeElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasSizeElementSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHeightElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasHeightElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getDurationElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
-     */
-    getDurationElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPages(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPagesSync(): boolean;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setWidth(var0: java_lang_Integer | number): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setWidthSync(var0: java_lang_Integer | number): Attachment | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDurationElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDurationElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Attachment | null;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDuration(var0: java_lang_Long | bigint | number): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'long'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDurationSync(var0: java_lang_Long | bigint | number): Attachment | null;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDuration(var0: java_math_BigDecimal | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'java.math.BigDecimal'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDurationSync(var0: java_math_BigDecimal | null): Attachment | null;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDuration(var0: java_lang_Double | number): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'double'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setDurationSync(var0: java_lang_Double | number): Attachment | null;
-    /**
-     * @return original return type: 'int'
-     */
-    getPages(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getPagesSync(): number;
-    /**
-     * @return original return type: 'int'
-     */
-    getFrames(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getFramesSync(): number;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getFramesElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getFramesElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setWidthElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setWidthElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDuration(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFramesElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFramesElementSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setFramesElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setFramesElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setFrames(var0: java_lang_Integer | number): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setFramesSync(var0: java_lang_Integer | number): Attachment | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setPagesElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setPagesElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getPagesElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
-     */
-    getPagesElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPagesElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasPagesElementSync(): boolean;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setPages(var0: java_lang_Integer | number): Promise<Attachment | null>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
-     */
-    setPagesSync(var0: java_lang_Integer | number): Attachment | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasDurationElementSync(): boolean;
-    /**
-     * @return original return type: 'int'
-     */
-    getWidth(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getWidthSync(): number;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWidth(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasWidthSync(): boolean;
+    fhirTypeSync(): string | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Attachment'
      * @return original return type: 'void'
@@ -781,53 +367,29 @@ export declare class AttachmentClass extends JavaClass {
      */
     copyValuesSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
+     * @return original return type: 'org.hl7.fhir.r5.model.UrlType'
      */
-    getTypesForProperty(var0: java_lang_Integer | number, var1: string | null): Promise<(string | null)[] | null>;
+    getUrlElement(): Promise<org_hl7_fhir_r5_model_UrlType | null>;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String[]'
+     * @return original return type: 'org.hl7.fhir.r5.model.UrlType'
      */
-    getTypesForPropertySync(var0: java_lang_Integer | number, var1: string | null): (string | null)[] | null;
+    getUrlElementSync(): org_hl7_fhir_r5_model_UrlType | null;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
      */
-    makeProperty(var0: java_lang_Integer | number, var1: string | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    hasUrlElement(): Promise<boolean>;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
      */
-    makePropertySync(var0: java_lang_Integer | number, var1: string | null): org_hl7_fhir_r5_model_Base | null;
+    hasUrlElementSync(): boolean;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     * @return original return type: 'boolean'
      */
-    getNamedProperty(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): Promise<org_hl7_fhir_r5_model_Property | null>;
+    hasUrl(): Promise<boolean>;
     /**
-     * @param var0 original type: 'int'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
+     * @return original return type: 'boolean'
      */
-    getNamedPropertySync(var0: java_lang_Integer | number, var1: string | null, var2: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Property | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getNamedProperty(var0: string | null): Promise<org_hl7_fhir_r5_model_Property | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Property'
-     */
-    getNamedPropertySync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
+    hasUrlSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.UrlType'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
@@ -839,29 +401,15 @@ export declare class AttachmentClass extends JavaClass {
      */
     setUrlElementSync(var0: org_hl7_fhir_r5_model_UrlType | null): Attachment | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
      */
-    hasUrl(): Promise<boolean>;
+    setTitle(var0: string | null): Promise<Attachment | null>;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
      */
-    hasUrlSync(): boolean;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasUrlElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasUrlElementSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.UrlType'
-     */
-    getUrlElement(): Promise<org_hl7_fhir_r5_model_UrlType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.UrlType'
-     */
-    getUrlElementSync(): org_hl7_fhir_r5_model_UrlType | null;
+    setTitleSync(var0: string | null): Attachment | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -870,6 +418,14 @@ export declare class AttachmentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasTitleElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTitle(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasTitleSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
@@ -881,14 +437,6 @@ export declare class AttachmentClass extends JavaClass {
      */
     setTitleElementSync(var0: org_hl7_fhir_r5_model_StringType | null): Attachment | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getTitle(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getTitleSync(): string | null;
-    /**
      * @return original return type: 'org.hl7.fhir.r5.model.StringType'
      */
     getTitleElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
@@ -897,31 +445,431 @@ export declare class AttachmentClass extends JavaClass {
      */
     getTitleElementSync(): org_hl7_fhir_r5_model_StringType | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.lang.String'
      */
-    hasTitle(): Promise<boolean>;
+    getTitle(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getTitleSync(): string | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasTitleSync(): boolean;
+    hasHashElement(): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasHashElementSync(): boolean;
+    /**
+     * @param var0 original type: 'java.util.Date'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
      */
-    setTitle(var0: string | null): Promise<Attachment | null>;
+    setCreation(var0: java_util_Date | null): Promise<Attachment | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @param var0 original type: 'java.util.Date'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
      */
-    setTitleSync(var0: string | null): Attachment | null;
+    setCreationSync(var0: java_util_Date | null): Attachment | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     * @return original return type: 'byte[]'
      */
-    getContentTypeElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
+    getHash(): Promise<Buffer | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     * @return original return type: 'byte[]'
      */
-    getContentTypeElementSync(): org_hl7_fhir_r5_model_CodeType | null;
+    getHashSync(): Buffer | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Integer64Type'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setSizeElement(var0: org_hl7_fhir_r5_model_Integer64Type | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Integer64Type'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setSizeElementSync(var0: org_hl7_fhir_r5_model_Integer64Type | null): Attachment | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     */
+    getHashElement(): Promise<org_hl7_fhir_r5_model_Base64BinaryType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     */
+    getHashElementSync(): org_hl7_fhir_r5_model_Base64BinaryType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DateTimeType'
+     */
+    getCreationElement(): Promise<org_hl7_fhir_r5_model_DateTimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DateTimeType'
+     */
+    getCreationElementSync(): org_hl7_fhir_r5_model_DateTimeType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHashElement(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHashElementSync(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Attachment | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasHash(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasHashSync(): boolean;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHash(var0: Buffer | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHashSync(var0: Buffer | null): Attachment | null;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getCreation(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getCreationSync(): java_util_Date | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCreationElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCreationElementSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getHeightElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getHeightElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasContentType(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasContentTypeSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasHeightElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasHeightElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCreation(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasCreationSync(): boolean;
+    /**
+     * @return original return type: 'int'
+     */
+    getHeight(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getHeightSync(): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasHeight(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasHeightSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Integer64Type'
+     */
+    getSizeElement(): Promise<org_hl7_fhir_r5_model_Integer64Type | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Integer64Type'
+     */
+    getSizeElementSync(): org_hl7_fhir_r5_model_Integer64Type | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSizeElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSizeElementSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHeightElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHeightElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DateTimeType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setCreationElement(var0: org_hl7_fhir_r5_model_DateTimeType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DateTimeType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setCreationElementSync(var0: org_hl7_fhir_r5_model_DateTimeType | null): Attachment | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSize(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasSizeSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getWidthElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getWidthElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getDurationElement(): Promise<org_hl7_fhir_r5_model_DecimalType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.DecimalType'
+     */
+    getDurationElementSync(): org_hl7_fhir_r5_model_DecimalType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setWidthElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setWidthElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
+    /**
+     * @return original return type: 'int'
+     */
+    getFrames(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getFramesSync(): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDuration(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDurationSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPagesElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPagesElementSync(): boolean;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setWidth(var0: java_lang_Integer | number): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setWidthSync(var0: java_lang_Integer | number): Attachment | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setFrames(var0: java_lang_Integer | number): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setFramesSync(var0: java_lang_Integer | number): Attachment | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setFramesElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setFramesElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDurationElement(var0: org_hl7_fhir_r5_model_DecimalType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.DecimalType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDurationElementSync(var0: org_hl7_fhir_r5_model_DecimalType | null): Attachment | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFramesElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFramesElementSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWidth(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWidthSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getFramesElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getFramesElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDuration(var0: java_lang_Double | number): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'double'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDurationSync(var0: java_lang_Double | number): Attachment | null;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDuration(var0: java_lang_Long | bigint | number): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'long'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDurationSync(var0: java_lang_Long | bigint | number): Attachment | null;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDuration(var0: java_math_BigDecimal | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'java.math.BigDecimal'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDurationSync(var0: java_math_BigDecimal | null): Attachment | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setPages(var0: java_lang_Integer | number): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setPagesSync(var0: java_lang_Integer | number): Attachment | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHeight(var0: java_lang_Integer | number): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setHeightSync(var0: java_lang_Integer | number): Attachment | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWidthElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasWidthElementSync(): boolean;
+    /**
+     * @return original return type: 'int'
+     */
+    getWidth(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getWidthSync(): number;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getPagesElement(): Promise<org_hl7_fhir_r5_model_PositiveIntType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     */
+    getPagesElementSync(): org_hl7_fhir_r5_model_PositiveIntType | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPages(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasPagesSync(): boolean;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setPagesElement(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.PositiveIntType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setPagesElementSync(var0: org_hl7_fhir_r5_model_PositiveIntType | null): Attachment | null;
+    /**
+     * @return original return type: 'int'
+     */
+    getPages(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getPagesSync(): number;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasContentTypeElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasContentTypeElementSync(): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.CodeType'
      * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
@@ -933,13 +881,65 @@ export declare class AttachmentClass extends JavaClass {
      */
     setContentTypeElementSync(var0: org_hl7_fhir_r5_model_CodeType | null): Attachment | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
      */
-    hasContentTypeElement(): Promise<boolean>;
+    getContentTypeElement(): Promise<org_hl7_fhir_r5_model_CodeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.CodeType'
+     */
+    getContentTypeElementSync(): org_hl7_fhir_r5_model_CodeType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDataElement(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDataElementSync(var0: org_hl7_fhir_r5_model_Base64BinaryType | null): Attachment | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasContentTypeElementSync(): boolean;
+    hasData(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDataSync(): boolean;
+    /**
+     * @return original return type: 'byte[]'
+     */
+    getData(): Promise<Buffer | null>;
+    /**
+     * @return original return type: 'byte[]'
+     */
+    getDataSync(): Buffer | null;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setData(var0: Buffer | null): Promise<Attachment | null>;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @return original return type: 'org.hl7.fhir.r5.model.Attachment'
+     */
+    setDataSync(var0: Buffer | null): Attachment | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDataElement(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasDataElementSync(): boolean;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     */
+    getDataElement(): Promise<org_hl7_fhir_r5_model_Base64BinaryType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Base64BinaryType'
+     */
+    getDataElementSync(): org_hl7_fhir_r5_model_Base64BinaryType | null;
     /**
      * @return original return type: 'java.lang.String'
      */
@@ -967,128 +967,6 @@ export declare class AttachmentClass extends JavaClass {
      */
     setExtensionSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): org_hl7_fhir_r5_model_Element | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeExtension(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeExtensionSync(var0: string | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
-     */
-    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBase(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getIdBaseSync(): string | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
-     * @return original return type: 'void'
-     */
-    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getExtensionString(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getExtensionStringSync(var0: string | null): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setIdBase(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setIdBaseSync(var0: string | null): void;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    addExtension(): Promise<org_hl7_fhir_r5_model_Extension | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
-     */
-    addExtensionSync(): org_hl7_fhir_r5_model_Extension | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
-     */
-    addExtension(): Promise<org_hl7_fhir_instance_model_api_IBaseExtension | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
-     */
-    addExtensionSync(): org_hl7_fhir_instance_model_api_IBaseExtension | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    addExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    addExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): org_hl7_fhir_r5_model_Element | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
-     * @return original return type: 'void'
-     */
-    addExtension(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
-     * @return original return type: 'void'
-     */
-    addExtensionSync(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): void;
-    /**
      * @return original return type: 'org.hl7.fhir.r5.model.Extension'
      */
     getExtensionFirstRep(): Promise<org_hl7_fhir_r5_model_Extension | null>;
@@ -1115,23 +993,61 @@ export declare class AttachmentClass extends JavaClass {
      */
     setDisallowExtensionsSync(var0: java_lang_Boolean | boolean): org_hl7_fhir_r5_model_Element | null;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
+     * @return original return type: 'void'
      */
-    hasIdElement(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasIdElementSync(): boolean;
+    addExtension(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
+     * @return original return type: 'void'
      */
-    hasExtension(var0: string | null): Promise<boolean>;
+    addExtensionSync(var0: string | null, var1: org_hl7_fhir_r5_model_DataType | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
+     */
+    addExtension(): Promise<org_hl7_fhir_instance_model_api_IBaseExtension | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseExtension'
+     */
+    addExtensionSync(): org_hl7_fhir_instance_model_api_IBaseExtension | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    addExtension(): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    addExtensionSync(): org_hl7_fhir_r5_model_Extension | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    addExtension(var0: org_hl7_fhir_r5_model_Extension | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Extension'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    addExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): org_hl7_fhir_r5_model_Element | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
+    /**
      * @return original return type: 'boolean'
      */
-    hasExtensionSync(var0: string | null): boolean;
+    hasId(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasIdSync(): boolean;
     /**
      * @return original return type: 'boolean'
      */
@@ -1151,31 +1067,23 @@ export declare class AttachmentClass extends JavaClass {
      */
     hasExtensionSync(var0: org_hl7_fhir_r5_model_Extension | null): boolean;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
-    hasId(): Promise<boolean>;
+    hasExtension(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    hasExtensionSync(var0: string | null): boolean;
     /**
      * @return original return type: 'boolean'
      */
-    hasIdSync(): boolean;
+    hasIdElement(): Promise<boolean>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     * @return original return type: 'boolean'
      */
-    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
-     */
-    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElement(var0: org_hl7_fhir_r5_model_StringType | null): Promise<org_hl7_fhir_r5_model_Element | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StringType'
-     * @return original return type: 'org.hl7.fhir.r5.model.Element'
-     */
-    setIdElementSync(var0: org_hl7_fhir_r5_model_StringType | null): org_hl7_fhir_r5_model_Element | null;
+    hasIdElementSync(): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Element'
@@ -1196,6 +1104,98 @@ export declare class AttachmentClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseElement'
      */
     setIdSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseElement | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBase(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getIdBaseSync(): string | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElement(): Promise<org_hl7_fhir_r5_model_StringType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.StringType'
+     */
+    getIdElementSync(): org_hl7_fhir_r5_model_StringType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBase(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setIdBaseSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionString(var0: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionStringSync(var0: string | null): string | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatus(var0: org_hl7_fhir_utilities_StandardsStatus | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.StandardsStatus'
+     * @return original return type: 'void'
+     */
+    setStandardsStatusSync(var0: org_hl7_fhir_utilities_StandardsStatus | null): void;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    noExtensions(): Promise<org_hl7_fhir_r5_model_Element | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Element'
+     */
+    noExtensionsSync(): org_hl7_fhir_r5_model_Element | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatus(): Promise<org_hl7_fhir_utilities_StandardsStatus | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.StandardsStatus'
+     */
+    getStandardsStatusSync(): org_hl7_fhir_utilities_StandardsStatus | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    getExtensionByUrl(var0: string | null): Promise<org_hl7_fhir_r5_model_Extension | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.Extension'
+     */
+    getExtensionByUrlSync(var0: string | null): org_hl7_fhir_r5_model_Extension | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeExtension(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeExtensionSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -1271,6 +1271,36 @@ export declare class AttachmentClass extends JavaClass {
      */
     isResourceSync(): boolean;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
+     */
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
+     */
+    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatComment(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentSync(): boolean;
+    /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
      */
@@ -1283,29 +1313,35 @@ export declare class AttachmentClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
-    hasFormatCommentPost(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentPostSync(): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addValidationMessage(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): Promise<org_hl7_fhir_r5_model_Base | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base'
-     */
-    addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
-    /**
-     * @return original return type: 'boolean'
-     */
     hasFormatCommentPre(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
      */
     hasFormatCommentPreSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationMessages(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationMessagesSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessages(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationMessagesSync(): java_util_List | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPost(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasFormatCommentPostSync(): boolean;
     /**
      * @param var0 original type: 'java.util.List'
      * @return original return type: 'void'
@@ -1317,13 +1353,77 @@ export declare class AttachmentClass extends JavaClass {
      */
     addFormatCommentsPreSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null): void;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
      */
-    hasValidationMessages(): Promise<boolean>;
+    addValidationMessage(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): Promise<org_hl7_fhir_r5_model_Base | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.utilities.validation.ValidationMessage'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base'
+     */
+    addValidationMessageSync(var0: org_hl7_fhir_utilities_validation_ValidationMessage | null): org_hl7_fhir_r5_model_Base | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPre(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getXhtml(): Promise<org_hl7_fhir_utilities_xhtml_XhtmlNode | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     */
+    getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
+     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
+     */
+    addDefinition(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): Promise<org_hl7_fhir_r5_model_Base$ValidationInfo | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
+     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
+     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
+     */
+    addDefinitionSync(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): org_hl7_fhir_r5_model_Base$ValidationInfo | null;
     /**
      * @return original return type: 'boolean'
      */
-    hasValidationMessagesSync(): boolean;
+    hasValidationInfo(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    hasValidationInfoSync(): boolean;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfo(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getValidationInfoSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    primitiveValue(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    primitiveValueSync(): string | null;
     /**
      * @param var0 original type: 'java.util.List'
      * @param var1 original type: 'java.util.List'
@@ -1339,19 +1439,19 @@ export declare class AttachmentClass extends JavaClass {
      */
     static compareDeepSync(var0: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var1: java_util_List | JavaInterfaceProxy<java_util_ListInterface> | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
+    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
      * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
@@ -1367,69 +1467,19 @@ export declare class AttachmentClass extends JavaClass {
      */
     static compareDeepSync(var0: org_hl7_fhir_r5_model_Base | null, var1: org_hl7_fhir_r5_model_Base | null, var2: java_lang_Boolean | boolean): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeep(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
+    static compareDeep(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): Promise<boolean>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
+     * @param var0 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
+     * @param var1 original type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
      * @param var2 original type: 'boolean'
      * @return original return type: 'boolean'
      */
-    static compareDeepSync(var0: string | null, var1: string | null, var2: java_lang_Boolean | boolean): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValue(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    primitiveValueSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessages(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationMessagesSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDateTime(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isDateTimeSync(): boolean;
+    static compareDeepSync(var0: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var1: org_hl7_fhir_utilities_xhtml_XhtmlNode | null, var2: java_lang_Boolean | boolean): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.model.Property'
@@ -1442,14 +1492,32 @@ export declare class AttachmentClass extends JavaClass {
     getChildByNameSync(var0: string | null): org_hl7_fhir_r5_model_Property | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
+     * @return original return type: 'java.lang.String'
      */
-    getUserInt(var0: string | null): Promise<number>;
+    getUserString(var0: string | null): Promise<string | null>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'int'
+     * @return original return type: 'java.lang.String'
      */
-    getUserIntSync(var0: string | null): number;
+    getUserStringSync(var0: string | null): string | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     */
+    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
+     */
+    copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
      * @return original return type: 'boolean'
      */
@@ -1458,6 +1526,44 @@ export declare class AttachmentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasPrimitiveValueSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitive(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBooleanPrimitiveSync(): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTime(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isDateTimeSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'boolean'
+     */
+    hasType(var0: (string | null)[] | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String[]'
+     * @return original return type: 'boolean'
+     */
+    hasTypeSync(var0: (string | null)[] | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'boolean'
+     */
+    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
@@ -1482,34 +1588,36 @@ export declare class AttachmentClass extends JavaClass {
     listChildrenByNameSync(var0: string | null, var1: java_lang_Boolean | boolean): (org_hl7_fhir_r5_model_Base | null)[] | null;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    removeChild(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): Promise<boolean>;
+    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'boolean'
+     * @param var1 original type: 'java.lang.Object'
+     * @return original return type: 'void'
      */
-    removeChildSync(var0: string | null, var1: org_hl7_fhir_r5_model_Base | null): boolean;
+    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
      */
-    dateTimeValue(): Promise<org_hl7_fhir_r5_model_BaseDateTimeType | null>;
+    getUserInt(var0: string | null): Promise<number>;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.BaseDateTimeType'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'int'
      */
-    dateTimeValueSync(): org_hl7_fhir_r5_model_BaseDateTimeType | null;
+    getUserIntSync(var0: string | null): number;
     /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
      */
-    hasType(var0: (string | null)[] | null): Promise<boolean>;
+    copyFormatComments(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
     /**
-     * @param var0 original type: 'java.lang.String[]'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
+     * @return original return type: 'void'
      */
-    hasTypeSync(var0: (string | null)[] | null): boolean;
+    copyFormatCommentsSync(var0: org_hl7_fhir_r5_model_Base | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -1522,26 +1630,6 @@ export declare class AttachmentClass extends JavaClass {
     clearUserDataSync(var0: string | null): void;
     /**
      * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataINN(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataINNSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isBooleanPrimitive(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isBooleanPrimitiveSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'boolean'
      */
     hasUserData(var0: string | null): Promise<boolean>;
@@ -1550,94 +1638,6 @@ export declare class AttachmentClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     hasUserDataSync(var0: string | null): boolean;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyUserData(var0: org_hl7_fhir_r5_model_Base | null): Promise<void>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.Base'
-     * @return original return type: 'void'
-     */
-    copyUserDataSync(var0: org_hl7_fhir_r5_model_Base | null): void;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getUserString(var0: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getUserStringSync(var0: string | null): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfo(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasValidationInfoSync(): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfo(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getValidationInfoSync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
-     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
-     */
-    addDefinition(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): Promise<org_hl7_fhir_r5_model_Base$ValidationInfo | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.r5.model.StructureDefinition'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.ElementDefinition'
-     * @param var2 original type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
-     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationInfo'
-     */
-    addDefinitionSync(var0: org_hl7_fhir_r5_model_StructureDefinition | null, var1: org_hl7_fhir_r5_model_ElementDefinition | null, var2: org_hl7_fhir_r5_model_Base$ValidationMode | null): org_hl7_fhir_r5_model_Base$ValidationInfo | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getXhtml(): Promise<org_hl7_fhir_utilities_xhtml_XhtmlNode | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.utilities.xhtml.XhtmlNode'
-     */
-    getXhtmlSync(): org_hl7_fhir_utilities_xhtml_XhtmlNode | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserData(var0: string | null, var1: BasicOrJavaType | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.Object'
-     * @return original return type: 'void'
-     */
-    setUserDataSync(var0: string | null, var1: BasicOrJavaType | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatComment(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    hasFormatCommentSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
-     */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

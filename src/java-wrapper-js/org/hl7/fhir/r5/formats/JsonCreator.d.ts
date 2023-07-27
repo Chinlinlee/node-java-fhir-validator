@@ -97,14 +97,6 @@ export declare class JsonCreatorClass extends JavaClass {
      */
     linkSync(var0: string | null): void;
     /**
-     * @return original return type: 'void'
-     */
-    beginObject(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    beginObjectSync(): void;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -114,14 +106,6 @@ export declare class JsonCreatorClass extends JavaClass {
      * @return original return type: 'void'
      */
     valueNumSync(var0: string | null): void;
-    /**
-     * @return original return type: 'void'
-     */
-    endObject(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    endObjectSync(): void;
     /**
      * @return original return type: 'void'
      */
@@ -138,6 +122,22 @@ export declare class JsonCreatorClass extends JavaClass {
      * @return original return type: 'void'
      */
     endArraySync(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    endObject(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    endObjectSync(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    beginObject(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    beginObjectSync(): void;
     /**
      * @return original return type: 'void'
      */
@@ -204,18 +204,10 @@ export interface JsonCreatorInterface {
      */
     link(var0: string | null): void;
     /**
-     * @return original return type: 'void'
-     */
-    beginObject(): void;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
     valueNum(var0: string | null): void;
-    /**
-     * @return original return type: 'void'
-     */
-    endObject(): void;
     /**
      * @return original return type: 'void'
      */
@@ -224,6 +216,14 @@ export interface JsonCreatorInterface {
      * @return original return type: 'void'
      */
     endArray(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    endObject(): void;
+    /**
+     * @return original return type: 'void'
+     */
+    beginObject(): void;
     /**
      * @return original return type: 'void'
      */

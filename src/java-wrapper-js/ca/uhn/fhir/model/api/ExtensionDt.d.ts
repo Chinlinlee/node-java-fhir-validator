@@ -67,14 +67,6 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     getExtensionSync(): java_util_List | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlAsString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlAsStringSync(): string | null;
-    /**
      * @param var0 original type: 'java.lang.Class'
      * @return original return type: 'java.util.List'
      */
@@ -85,6 +77,14 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     getAllPopulatedChildElementsOfTypeSync(var0: java_lang_Class | null): java_util_List | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlAsString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlAsStringSync(): string | null;
+    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'void'
      */
@@ -94,6 +94,14 @@ export declare class ExtensionDtClass extends JavaClass {
      * @return original return type: 'void'
      */
     setModifierSync(var0: java_lang_Boolean | boolean): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUrlSync(): string | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Object'
@@ -124,14 +132,6 @@ export declare class ExtensionDtClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.model.api.ExtensionDt'
      */
     setUrlSync(var0: ca_uhn_fhir_model_primitive_StringDt | null): ExtensionDt | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUrlSync(): string | null;
     /**
      * @return original return type: 'ca.uhn.fhir.model.api.IPrimitiveDatatype'
      */
@@ -195,15 +195,13 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     setIdSync(var0: string | null): void;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
+    getUndeclaredExtensions(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
+    getUndeclaredExtensionsSync(): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -213,13 +211,15 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     getUndeclaredModifierExtensionsSync(): java_util_List | null;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensions(): Promise<java_util_List | null>;
+    getUndeclaredExtensionsByUrl(var0: string | null): Promise<java_util_List | null>;
     /**
+     * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.util.List'
      */
-    getUndeclaredExtensionsSync(): java_util_List | null;
+    getUndeclaredExtensionsByUrlSync(var0: string | null): java_util_List | null;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -265,21 +265,15 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     addUndeclaredExtensionSync(var0: ExtensionDtClass | null): void;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @return original return type: 'java.util.List'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -301,15 +295,21 @@ export declare class ExtensionDtClass extends JavaClass {
      */
     hasFormatCommentSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPre(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

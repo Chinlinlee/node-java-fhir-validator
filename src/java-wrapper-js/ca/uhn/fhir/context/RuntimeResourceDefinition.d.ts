@@ -1,12 +1,12 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { List as java_util_List } from "./../../../../java/util/List";
 import { FhirVersionEnum as ca_uhn_fhir_context_FhirVersionEnum } from "./FhirVersionEnum";
-import { Class as java_lang_Class } from "./../../../../java/lang/Class";
+import { RuntimeSearchParam as ca_uhn_fhir_context_RuntimeSearchParam } from "./RuntimeSearchParam";
+import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource } from "./../../../../org/hl7/fhir/instance/model/api/IBaseResource";
 import { BaseRuntimeElementDefinition$ChildTypeEnum as ca_uhn_fhir_context_BaseRuntimeElementDefinition$ChildTypeEnum } from "./BaseRuntimeElementDefinition$ChildTypeEnum";
 import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./FhirContext";
 import { Map as java_util_Map, MapInterface as java_util_MapInterface } from "./../../../../java/util/Map";
-import { RuntimeSearchParam as ca_uhn_fhir_context_RuntimeSearchParam } from "./RuntimeSearchParam";
-import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource } from "./../../../../org/hl7/fhir/instance/model/api/IBaseResource";
+import { Class as java_lang_Class } from "./../../../../java/lang/Class";
 import { BaseRuntimeChildDefinition as ca_uhn_fhir_context_BaseRuntimeChildDefinition } from "./BaseRuntimeChildDefinition";
 import { IBase as org_hl7_fhir_instance_model_api_IBase } from "./../../../../org/hl7/fhir/instance/model/api/IBase";
 import { RuntimeChildDeclaredExtensionDefinition as ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition } from "./RuntimeChildDeclaredExtensionDefinition";
@@ -48,59 +48,15 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      */
     getStructureVersionSync(): ca_uhn_fhir_context_FhirVersionEnum | null;
     /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'java.lang.Class'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.RuntimeSearchParam'
      */
-    getImplementingClass(var0: java_lang_Class | null): Promise<java_lang_Class | null>;
+    getSearchParam(var0: string | null): Promise<ca_uhn_fhir_context_RuntimeSearchParam | null>;
     /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'java.lang.Class'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.RuntimeSearchParam'
      */
-    getImplementingClassSync(var0: java_lang_Class | null): java_lang_Class | null;
-    /**
-     * @return original return type: 'java.lang.Class'
-     */
-    getImplementingClass(): Promise<java_lang_Class | null>;
-    /**
-     * @return original return type: 'java.lang.Class'
-     */
-    getImplementingClassSync(): java_lang_Class | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.RuntimeResourceDefinition'
-     */
-    getBaseDefinition(): Promise<RuntimeResourceDefinition | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.RuntimeResourceDefinition'
-     */
-    getBaseDefinitionSync(): RuntimeResourceDefinition | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition$ChildTypeEnum'
-     */
-    getChildType(): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition$ChildTypeEnum | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition$ChildTypeEnum'
-     */
-    getChildTypeSync(): ca_uhn_fhir_context_BaseRuntimeElementDefinition$ChildTypeEnum | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.util.Map'
-     * @return original return type: 'void'
-     */
-    sealAndInitialize(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
-     * @param var1 original type: 'java.util.Map'
-     * @return original return type: 'void'
-     */
-    sealAndInitializeSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getSearchParams(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getSearchParamsSync(): java_util_List | null;
+    getSearchParamSync(var0: string | null): ca_uhn_fhir_context_RuntimeSearchParam | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.RuntimeSearchParam'
      * @return original return type: 'void'
@@ -111,42 +67,6 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      * @return original return type: 'void'
      */
     addSearchParamSync(var0: ca_uhn_fhir_context_RuntimeSearchParam | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isBundle(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isBundleSync(): boolean;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    toProfile(): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    toProfileSync(): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    toProfile(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    toProfileSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.RuntimeSearchParam'
-     */
-    getSearchParam(var0: string | null): Promise<ca_uhn_fhir_context_RuntimeSearchParam | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.RuntimeSearchParam'
-     */
-    getSearchParamSync(var0: string | null): ca_uhn_fhir_context_RuntimeSearchParam | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.String'
@@ -168,6 +88,86 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
     /**
      * @return original return type: 'boolean'
      */
+    isBundle(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isBundleSync(): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    toProfile(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    toProfileSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    toProfile(): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    toProfileSync(): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getSearchParams(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getSearchParamsSync(): java_util_List | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition$ChildTypeEnum'
+     */
+    getChildType(): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition$ChildTypeEnum | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition$ChildTypeEnum'
+     */
+    getChildTypeSync(): ca_uhn_fhir_context_BaseRuntimeElementDefinition$ChildTypeEnum | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @param var1 original type: 'java.util.Map'
+     * @return original return type: 'void'
+     */
+    sealAndInitialize(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.FhirContext'
+     * @param var1 original type: 'java.util.Map'
+     * @return original return type: 'void'
+     */
+    sealAndInitializeSync(var0: ca_uhn_fhir_context_FhirContext | null, var1: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): void;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.RuntimeResourceDefinition'
+     */
+    getBaseDefinition(): Promise<RuntimeResourceDefinition | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.RuntimeResourceDefinition'
+     */
+    getBaseDefinitionSync(): RuntimeResourceDefinition | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'java.lang.Class'
+     */
+    getImplementingClass(var0: java_lang_Class | null): Promise<java_lang_Class | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'java.lang.Class'
+     */
+    getImplementingClassSync(var0: java_lang_Class | null): java_lang_Class | null;
+    /**
+     * @return original return type: 'java.lang.Class'
+     */
+    getImplementingClass(): Promise<java_lang_Class | null>;
+    /**
+     * @return original return type: 'java.lang.Class'
+     */
+    getImplementingClassSync(): java_lang_Class | null;
+    /**
+     * @return original return type: 'boolean'
+     */
     isSealed(): Promise<boolean>;
     /**
      * @return original return type: 'boolean'
@@ -182,6 +182,14 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      */
     getChildrenSync(): java_util_List | null;
     /**
+     * @return original return type: 'java.util.List'
+     */
+    getChildrenAndExtension(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getChildrenAndExtensionSync(): java_util_List | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
      */
@@ -191,14 +199,6 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
      */
     getChildByNameOrThrowDataFormatExceptionSync(var0: string | null): ca_uhn_fhir_context_BaseRuntimeChildDefinition | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getChildrenAndExtension(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getChildrenAndExtensionSync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
@@ -260,22 +260,6 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      */
     getExtensionsSync(): java_util_List | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsModifier(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsModifierSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsNonModifier(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getExtensionsNonModifierSync(): java_util_List | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
@@ -288,6 +272,14 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      */
     getDeclaredExtensionSync(var0: string | null, var1: string | null): ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null;
     /**
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsNonModifier(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsNonModifierSync(): java_util_List | null;
+    /**
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
      */
     getRootParentDefinition(): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition | null>;
@@ -295,6 +287,22 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
      */
     getRootParentDefinitionSync(): ca_uhn_fhir_context_BaseRuntimeElementDefinition | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsModifier(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getExtensionsModifierSync(): java_util_List | null;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isStandardType(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isStandardTypeSync(): boolean;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.RuntimeChildDeclaredExtensionDefinition'
      * @return original return type: 'void'
@@ -305,14 +313,6 @@ export declare class RuntimeResourceDefinitionClass extends JavaClass {
      * @return original return type: 'void'
      */
     addExtensionSync(var0: ca_uhn_fhir_context_RuntimeChildDeclaredExtensionDefinition | null): void;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isStandardType(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isStandardTypeSync(): boolean;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

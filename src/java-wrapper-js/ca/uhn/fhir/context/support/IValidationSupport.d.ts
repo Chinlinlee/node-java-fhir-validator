@@ -1,15 +1,15 @@
 /// <reference types="node" />
 import { JavaClass, InterfaceProxyOptions, JavaInterfaceProxy } from "java-bridge";
+import { List as java_util_List } from "./../../../../../java/util/List";
 import { IValidationSupport$CodeValidationResult as ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult } from "./IValidationSupport$CodeValidationResult";
 import { ValidationSupportContext as ca_uhn_fhir_context_support_ValidationSupportContext } from "./ValidationSupportContext";
 import { ConceptValidationOptions as ca_uhn_fhir_context_support_ConceptValidationOptions } from "./ConceptValidationOptions";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IBaseResource";
-import { List as java_util_List } from "./../../../../../java/util/List";
-import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
-import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../FhirContext";
 import { IValidationSupport$ValueSetExpansionOutcome as ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome } from "./IValidationSupport$ValueSetExpansionOutcome";
 import { ValueSetExpansionOptions as ca_uhn_fhir_context_support_ValueSetExpansionOptions } from "./ValueSetExpansionOptions";
+import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
 import { IValidationSupport$LookupCodeResult as ca_uhn_fhir_context_support_IValidationSupport$LookupCodeResult } from "./IValidationSupport$LookupCodeResult";
+import { FhirContext as ca_uhn_fhir_context_FhirContext } from "./../FhirContext";
 import { TranslateConceptResults as ca_uhn_fhir_context_support_TranslateConceptResults } from "./TranslateConceptResults";
 import { IValidationSupport$TranslateCodeRequest as ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest } from "./IValidationSupport$TranslateCodeRequest";
 /**
@@ -22,6 +22,14 @@ export declare class IValidationSupportClass extends JavaClass {
      * Original type: 'java.lang.String'
      */
     static readonly URL_PREFIX_VALUE_SET: string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    fetchAllStructureDefinitions(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    fetchAllStructureDefinitionsSync(): java_util_List | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
@@ -43,38 +51,6 @@ export declare class IValidationSupportClass extends JavaClass {
      */
     validateCodeInValueSetSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    isValueSetSupported(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    isValueSetSupportedSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    isCodeSystemSupported(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    isCodeSystemSupportedSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    fetchAllStructureDefinitions(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    fetchAllStructureDefinitionsSync(): java_util_List | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
@@ -93,6 +69,38 @@ export declare class IValidationSupportClass extends JavaClass {
      */
     fetchAllConformanceResourcesSync(): java_util_List | null;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    isCodeSystemSupported(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    isCodeSystemSupportedSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    isValueSetSupported(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    isValueSetSupportedSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEnabledValidationForCodingsLogicalAnd(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEnabledValidationForCodingsLogicalAndSync(): boolean;
+    /**
      * @return original return type: 'java.util.List'
      */
     fetchAllNonBaseStructureDefinitions(): Promise<java_util_List | null>;
@@ -109,43 +117,19 @@ export declare class IValidationSupportClass extends JavaClass {
      */
     isRemoteTerminologyServiceConfiguredSync(): boolean;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
+     * @param var2 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$ValueSetExpansionOutcome'
      */
-    isEnabledValidationForCodingsLogicalAnd(): Promise<boolean>;
+    expandValueSet(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null>;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
+     * @param var2 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$ValueSetExpansionOutcome'
      */
-    isEnabledValidationForCodingsLogicalAndSync(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    fetchResource(var0: java_lang_Class | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    fetchResourceSync(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirContext'
-     */
-    getFhirContext(): Promise<ca_uhn_fhir_context_FhirContext | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirContext'
-     */
-    getFhirContextSync(): ca_uhn_fhir_context_FhirContext | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    fetchValueSet(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    fetchValueSetSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    expandValueSetSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
@@ -161,19 +145,67 @@ export declare class IValidationSupportClass extends JavaClass {
      */
     expandValueSetSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: string | null): ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     * @param var2 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$ValueSetExpansionOutcome'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    expandValueSet(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null>;
+    fetchValueSet(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchValueSetSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchResource(var0: java_lang_Class | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchResourceSync(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     * @param var2 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$ValueSetExpansionOutcome'
+     * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @param var4 original type: 'java.lang.String'
+     * @param var5 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
      */
-    expandValueSetSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null;
+    validateCode(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: string | null): Promise<ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @param var4 original type: 'java.lang.String'
+     * @param var5 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    validateCodeSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: string | null): ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchCodeSystem(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchCodeSystemSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'byte[]'
+     */
+    fetchBinary(var0: string | null): Promise<Buffer | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'byte[]'
+     */
+    fetchBinarySync(var0: string | null): Buffer | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'java.lang.String'
@@ -205,35 +237,13 @@ export declare class IValidationSupportClass extends JavaClass {
      */
     lookupCodeSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null, var2: string | null, var3: string | null): ca_uhn_fhir_context_support_IValidationSupport$LookupCodeResult | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.FhirContext'
      */
-    fetchCodeSystem(var0: string | null): Promise<org_hl7_fhir_instance_model_api_IBaseResource | null>;
+    getFhirContext(): Promise<ca_uhn_fhir_context_FhirContext | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.FhirContext'
      */
-    fetchCodeSystemSync(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$TranslateCodeRequest'
-     * @return original return type: 'ca.uhn.fhir.context.support.TranslateConceptResults'
-     */
-    translateConcept(var0: ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest | null): Promise<ca_uhn_fhir_context_support_TranslateConceptResults | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$TranslateCodeRequest'
-     * @return original return type: 'ca.uhn.fhir.context.support.TranslateConceptResults'
-     */
-    translateConceptSync(var0: ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest | null): ca_uhn_fhir_context_support_TranslateConceptResults | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'byte[]'
-     */
-    fetchBinary(var0: string | null): Promise<Buffer | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'byte[]'
-     */
-    fetchBinarySync(var0: string | null): Buffer | null;
+    getFhirContextSync(): ca_uhn_fhir_context_FhirContext | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
@@ -253,6 +263,16 @@ export declare class IValidationSupportClass extends JavaClass {
      */
     generateSnapshotSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var2: string | null, var3: string | null, var4: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$TranslateCodeRequest'
+     * @return original return type: 'ca.uhn.fhir.context.support.TranslateConceptResults'
+     */
+    translateConcept(var0: ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest | null): Promise<ca_uhn_fhir_context_support_TranslateConceptResults | null>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$TranslateCodeRequest'
+     * @return original return type: 'ca.uhn.fhir.context.support.TranslateConceptResults'
+     */
+    translateConceptSync(var0: ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest | null): ca_uhn_fhir_context_support_TranslateConceptResults | null;
+    /**
      * @return original return type: 'void'
      */
     invalidateCaches(): Promise<void>;
@@ -260,26 +280,6 @@ export declare class IValidationSupportClass extends JavaClass {
      * @return original return type: 'void'
      */
     invalidateCachesSync(): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @param var4 original type: 'java.lang.String'
-     * @param var5 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    validateCode(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: string | null): Promise<ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @param var4 original type: 'java.lang.String'
-     * @param var5 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    validateCodeSync(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: string | null): ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -294,6 +294,10 @@ export declare class IValidationSupportClass extends JavaClass {
  */
 export interface IValidationSupportInterface {
     /**
+     * @return original return type: 'java.util.List'
+     */
+    fetchAllStructureDefinitions?(): java_util_List | null;
+    /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
      * @param var2 original type: 'java.lang.String'
@@ -304,22 +308,6 @@ export interface IValidationSupportInterface {
      */
     validateCodeInValueSet?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    isValueSetSupported?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    isCodeSystemSupported?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    fetchAllStructureDefinitions?(): java_util_List | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
@@ -329,6 +317,22 @@ export interface IValidationSupportInterface {
      */
     fetchAllConformanceResources?(): java_util_List | null;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    isCodeSystemSupported?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    isValueSetSupported?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null): boolean;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isEnabledValidationForCodingsLogicalAnd?(): boolean;
+    /**
      * @return original return type: 'java.util.List'
      */
     fetchAllNonBaseStructureDefinitions?(): java_util_List | null;
@@ -337,24 +341,12 @@ export interface IValidationSupportInterface {
      */
     isRemoteTerminologyServiceConfigured?(): boolean;
     /**
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
+     * @param var2 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$ValueSetExpansionOutcome'
      */
-    isEnabledValidationForCodingsLogicalAnd?(): boolean;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    fetchResource?(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.FhirContext'
-     */
-    getFhirContext(): ca_uhn_fhir_context_FhirContext | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     */
-    fetchValueSet?(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    expandValueSet?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
@@ -363,12 +355,36 @@ export interface IValidationSupportInterface {
      */
     expandValueSet?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: string | null): ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'ca.uhn.fhir.context.support.ValueSetExpansionOptions'
-     * @param var2 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$ValueSetExpansionOutcome'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      */
-    expandValueSet?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ValueSetExpansionOptions | null, var2: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_context_support_IValidationSupport$ValueSetExpansionOutcome | null;
+    fetchValueSet?(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchResource?(var0: java_lang_Class | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
+     * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
+     * @param var2 original type: 'java.lang.String'
+     * @param var3 original type: 'java.lang.String'
+     * @param var4 original type: 'java.lang.String'
+     * @param var5 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
+     */
+    validateCode?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: string | null): ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     */
+    fetchCodeSystem?(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'byte[]'
+     */
+    fetchBinary?(var0: string | null): Buffer | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'java.lang.String'
@@ -385,20 +401,9 @@ export interface IValidationSupportInterface {
      */
     lookupCode?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: string | null, var2: string | null, var3: string | null): ca_uhn_fhir_context_support_IValidationSupport$LookupCodeResult | null;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @return original return type: 'ca.uhn.fhir.context.FhirContext'
      */
-    fetchCodeSystem?(var0: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$TranslateCodeRequest'
-     * @return original return type: 'ca.uhn.fhir.context.support.TranslateConceptResults'
-     */
-    translateConcept?(var0: ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest | null): ca_uhn_fhir_context_support_TranslateConceptResults | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'byte[]'
-     */
-    fetchBinary?(var0: string | null): Buffer | null;
+    getFhirContext(): ca_uhn_fhir_context_FhirContext | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
      * @param var1 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
@@ -409,19 +414,14 @@ export interface IValidationSupportInterface {
      */
     generateSnapshot?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var2: string | null, var3: string | null, var4: string | null): org_hl7_fhir_instance_model_api_IBaseResource | null;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.support.IValidationSupport$TranslateCodeRequest'
+     * @return original return type: 'ca.uhn.fhir.context.support.TranslateConceptResults'
+     */
+    translateConcept?(var0: ca_uhn_fhir_context_support_IValidationSupport$TranslateCodeRequest | null): ca_uhn_fhir_context_support_TranslateConceptResults | null;
+    /**
      * @return original return type: 'void'
      */
     invalidateCaches?(): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.support.ValidationSupportContext'
-     * @param var1 original type: 'ca.uhn.fhir.context.support.ConceptValidationOptions'
-     * @param var2 original type: 'java.lang.String'
-     * @param var3 original type: 'java.lang.String'
-     * @param var4 original type: 'java.lang.String'
-     * @param var5 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport$CodeValidationResult'
-     */
-    validateCode?(var0: ca_uhn_fhir_context_support_ValidationSupportContext | null, var1: ca_uhn_fhir_context_support_ConceptValidationOptions | null, var2: string | null, var3: string | null, var4: string | null, var5: string | null): ca_uhn_fhir_context_support_IValidationSupport$CodeValidationResult | null;
 }
 /**
  * Create a proxy for the {@link IValidationSupport} interface.

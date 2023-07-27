@@ -17,6 +17,14 @@ export declare class IHttpRequestClass extends JavaClass {
      */
     executeSync(): ca_uhn_fhir_rest_client_api_IHttpResponse | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUri(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUriSync(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -29,29 +37,11 @@ export declare class IHttpRequestClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getUri(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getUriSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     getRequestBodyFromStream(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
     getRequestBodyFromStreamSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeHeaders(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeHeadersSync(var0: string | null): void;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
      */
@@ -73,16 +63,6 @@ export declare class IHttpRequestClass extends JavaClass {
      */
     addHeaderSync(var0: string | null, var1: string | null): void;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
-     * @return original return type: 'void'
-     */
-    setUrlSource(var0: ca_uhn_fhir_rest_client_api_UrlSourceEnum | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
-     * @return original return type: 'void'
-     */
-    setUrlSourceSync(var0: ca_uhn_fhir_rest_client_api_UrlSourceEnum | null): void;
-    /**
      * @return original return type: 'java.util.Map'
      */
     getAllHeaders(): Promise<java_util_Map | null>;
@@ -98,6 +78,26 @@ export declare class IHttpRequestClass extends JavaClass {
      * @return original return type: 'java.lang.String'
      */
     getHttpVerbNameSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeHeaders(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeHeadersSync(var0: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
+     * @return original return type: 'void'
+     */
+    setUrlSource(var0: ca_uhn_fhir_rest_client_api_UrlSourceEnum | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
+     * @return original return type: 'void'
+     */
+    setUrlSourceSync(var0: ca_uhn_fhir_rest_client_api_UrlSourceEnum | null): void;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -116,6 +116,10 @@ export interface IHttpRequestInterface {
      */
     execute(): ca_uhn_fhir_rest_client_api_IHttpResponse | null;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getUri(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -123,16 +127,7 @@ export interface IHttpRequestInterface {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getUri(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     getRequestBodyFromStream(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    removeHeaders(var0: string | null): void;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
      */
@@ -144,11 +139,6 @@ export interface IHttpRequestInterface {
      */
     addHeader(var0: string | null, var1: string | null): void;
     /**
-     * @param var0 original type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
-     * @return original return type: 'void'
-     */
-    setUrlSource(var0: ca_uhn_fhir_rest_client_api_UrlSourceEnum | null): void;
-    /**
      * @return original return type: 'java.util.Map'
      */
     getAllHeaders(): java_util_Map | null;
@@ -156,6 +146,16 @@ export interface IHttpRequestInterface {
      * @return original return type: 'java.lang.String'
      */
     getHttpVerbName(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    removeHeaders(var0: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.rest.client.api.UrlSourceEnum'
+     * @return original return type: 'void'
+     */
+    setUrlSource(var0: ca_uhn_fhir_rest_client_api_UrlSourceEnum | null): void;
 }
 /**
  * Create a proxy for the {@link IHttpRequest} interface.

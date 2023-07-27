@@ -8,6 +8,26 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class IUntypedQueryClass extends JavaClass {
     /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    forResource(var0: java_lang_Class | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    forResourceSync(var0: java_lang_Class | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    forResource(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    forResourceSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     forAllResources(): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
@@ -25,26 +45,6 @@ export declare class IUntypedQueryClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     byUrlSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    forResource(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    forResourceSync(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    forResource(var0: java_lang_Class | null): Promise<ca_uhn_fhir_rest_gclient_IQuery | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    forResourceSync(var0: java_lang_Class | null): ca_uhn_fhir_rest_gclient_IQuery | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -59,6 +59,16 @@ export declare class IUntypedQueryClass extends JavaClass {
  */
 export interface IUntypedQueryInterface {
     /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    forResource(var0: java_lang_Class | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
+     */
+    forResource(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
+    /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     forAllResources(): ca_uhn_fhir_rest_gclient_IQuery | null;
@@ -67,16 +77,6 @@ export interface IUntypedQueryInterface {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
      */
     byUrl(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    forResource(var0: string | null): ca_uhn_fhir_rest_gclient_IQuery | null;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IQuery'
-     */
-    forResource(var0: java_lang_Class | null): ca_uhn_fhir_rest_gclient_IQuery | null;
 }
 /**
  * Create a proxy for the {@link IUntypedQuery} interface.

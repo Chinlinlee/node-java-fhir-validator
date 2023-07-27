@@ -9,9 +9,9 @@ import { IModelVisitor2 as ca_uhn_fhir_util_IModelVisitor2, IModelVisitor2Interf
 import { List as java_util_List } from "./../../../../java/util/List";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../org/hl7/fhir/instance/model/api/IIdType";
 import { Set as java_util_Set, SetInterface as java_util_SetInterface } from "./../../../../java/util/Set";
+import { Optional as java_util_Optional } from "./../../../../java/util/Optional";
 import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../java/util/Collection";
 import { Boolean as java_lang_Boolean } from "./../../../../java/lang/Boolean";
-import { Optional as java_util_Optional } from "./../../../../java/util/Optional";
 import { FhirTerser$ContainedResources as ca_uhn_fhir_util_FhirTerser$ContainedResources } from "./FhirTerser$ContainedResources";
 import { FhirTerser$OptionsEnum as ca_uhn_fhir_util_FhirTerser$OptionsEnum } from "./FhirTerser$OptionsEnum";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
@@ -102,18 +102,6 @@ export declare class FhirTerserClass extends JavaClass {
      */
     setElementSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: string | null): org_hl7_fhir_instance_model_api_IBase | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getSinglePrimitiveValueOrNull(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.String'
-     */
-    getSinglePrimitiveValueOrNullSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): string | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @param var1 original type: 'java.lang.Class'
      * @return original return type: 'java.util.List'
@@ -125,6 +113,18 @@ export declare class FhirTerserClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getAllPopulatedChildElementsOfTypeSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: java_lang_Class | null): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getSinglePrimitiveValueOrNull(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.String'
+     */
+    getSinglePrimitiveValueOrNullSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): string | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'java.lang.String'
@@ -192,18 +192,6 @@ export declare class FhirTerserClass extends JavaClass {
      */
     getAllResourceReferencesSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): java_util_List | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @param var1 original type: 'boolean'
-     * @return original return type: 'java.util.Collection'
-     */
-    getAllEmbeddedResources(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: java_lang_Boolean | boolean): Promise<java_util_Collection | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @param var1 original type: 'boolean'
-     * @return original return type: 'java.util.Collection'
-     */
-    getAllEmbeddedResourcesSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: java_lang_Boolean | boolean): java_util_Collection | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'java.lang.String'
      * @return original return type: 'java.util.Optional'
@@ -216,121 +204,43 @@ export declare class FhirTerserClass extends JavaClass {
      */
     getSinglePrimitiveValueSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): java_util_Optional | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @param var1 original type: 'boolean'
+     * @return original return type: 'java.util.Collection'
      */
-    addElement(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: string | null): Promise<org_hl7_fhir_instance_model_api_IBase | null>;
+    getAllEmbeddedResources(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: java_lang_Boolean | boolean): Promise<java_util_Collection | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @param var1 original type: 'boolean'
+     * @return original return type: 'java.util.Collection'
+     */
+    getAllEmbeddedResourcesSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: java_lang_Boolean | boolean): java_util_Collection | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @param var1 original type: 'ca.uhn.fhir.util.FhirTerser$OptionsEnum[]'
+     * @return original return type: 'ca.uhn.fhir.util.FhirTerser$ContainedResources'
+     */
+    containResources(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: (ca_uhn_fhir_util_FhirTerser$OptionsEnum | null)[] | null): Promise<ca_uhn_fhir_util_FhirTerser$ContainedResources | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
+     * @param var1 original type: 'ca.uhn.fhir.util.FhirTerser$OptionsEnum[]'
+     * @return original return type: 'ca.uhn.fhir.util.FhirTerser$ContainedResources'
+     */
+    containResourcesSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: (ca_uhn_fhir_util_FhirTerser$OptionsEnum | null)[] | null): ca_uhn_fhir_util_FhirTerser$ContainedResources | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var2 original type: 'java.util.Collection'
+     * @return original return type: 'void'
      */
-    addElementSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: string | null): org_hl7_fhir_instance_model_api_IBase | null;
+    addElements(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<void>;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var2 original type: 'java.util.Collection'
+     * @return original return type: 'void'
      */
-    addElement(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IBase | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
-     */
-    addElementSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): org_hl7_fhir_instance_model_api_IBase | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.Class'
-     * @return original return type: 'java.util.List'
-     */
-    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.Class'
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.Class'
-     * @param var3 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.Class'
-     * @param var3 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.Class'
-     * @param var3 original type: 'boolean'
-     * @param var4 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean, var4: java_lang_Boolean | boolean): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.Class'
-     * @param var3 original type: 'boolean'
-     * @param var4 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean, var4: java_lang_Boolean | boolean): java_util_List | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @param var3 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean, var3: java_lang_Boolean | boolean): Promise<java_util_List | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
-     * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'boolean'
-     * @param var3 original type: 'boolean'
-     * @return original return type: 'java.util.List'
-     */
-    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean, var3: java_lang_Boolean | boolean): java_util_List | null;
+    addElementsSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'org.hl7.fhir.instance.model.api.IBase'
@@ -360,31 +270,121 @@ export declare class FhirTerserClass extends JavaClass {
      */
     getSingleValueSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null): java_util_Optional | null;
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @param var1 original type: 'ca.uhn.fhir.util.FhirTerser$OptionsEnum[]'
-     * @return original return type: 'ca.uhn.fhir.util.FhirTerser$ContainedResources'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
      */
-    containResources(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: (ca_uhn_fhir_util_FhirTerser$OptionsEnum | null)[] | null): Promise<ca_uhn_fhir_util_FhirTerser$ContainedResources | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
-     * @param var1 original type: 'ca.uhn.fhir.util.FhirTerser$OptionsEnum[]'
-     * @return original return type: 'ca.uhn.fhir.util.FhirTerser$ContainedResources'
-     */
-    containResourcesSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null, var1: (ca_uhn_fhir_util_FhirTerser$OptionsEnum | null)[] | null): ca_uhn_fhir_util_FhirTerser$ContainedResources | null;
+    addElement(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): Promise<org_hl7_fhir_instance_model_api_IBase | null>;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.util.Collection'
-     * @return original return type: 'void'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
      */
-    addElements(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<void>;
+    addElementSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): org_hl7_fhir_instance_model_api_IBase | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.util.Collection'
-     * @return original return type: 'void'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
      */
-    addElementsSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
+    addElement(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: string | null): Promise<org_hl7_fhir_instance_model_api_IBase | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBase'
+     */
+    addElementSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: string | null): org_hl7_fhir_instance_model_api_IBase | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
+     */
+    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @param var3 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean, var3: java_lang_Boolean | boolean): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'boolean'
+     * @param var3 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Boolean | boolean, var3: java_lang_Boolean | boolean): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.Class'
+     * @param var3 original type: 'boolean'
+     * @param var4 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean, var4: java_lang_Boolean | boolean): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.Class'
+     * @param var3 original type: 'boolean'
+     * @param var4 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean, var4: java_lang_Boolean | boolean): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.Class'
+     * @param var3 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.Class'
+     * @param var3 original type: 'boolean'
+     * @return original return type: 'java.util.List'
+     */
+    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null, var3: java_lang_Boolean | boolean): java_util_List | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.Class'
+     * @return original return type: 'java.util.List'
+     */
+    getValues(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null): Promise<java_util_List | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBase'
+     * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.Class'
+     * @return original return type: 'java.util.List'
+     */
+    getValuesSync(var0: org_hl7_fhir_instance_model_api_IBase | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseInterface> | null, var1: string | null, var2: java_lang_Class | null): java_util_List | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -2,8 +2,8 @@ import { JavaClass, BasicOrJavaType, InterfaceProxyOptions, JavaInterfaceProxy }
 import { Pointcut as ca_uhn_fhir_interceptor_api_Pointcut } from "./Pointcut";
 import { IAnonymousInterceptor as ca_uhn_fhir_interceptor_api_IAnonymousInterceptor, IAnonymousInterceptorInterface as ca_uhn_fhir_interceptor_api_IAnonymousInterceptorInterface } from "./IAnonymousInterceptor";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
-import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../../java/util/Collection";
 import { List as java_util_List } from "./../../../../../java/util/List";
+import { Collection as java_util_Collection, CollectionInterface as java_util_CollectionInterface } from "./../../../../../java/util/Collection";
 import { Predicate as java_util_function_Predicate, PredicateInterface as java_util_function_PredicateInterface } from "./../../../../../java/util/function/Predicate";
 import { IPointcut as ca_uhn_fhir_interceptor_api_IPointcut, IPointcutInterface as ca_uhn_fhir_interceptor_api_IPointcutInterface } from "./IPointcut";
 import { HookParams as ca_uhn_fhir_interceptor_api_HookParams } from "./HookParams";
@@ -41,6 +41,16 @@ export declare class IInterceptorServiceClass extends JavaClass {
     registerAnonymousInterceptorSync(var0: ca_uhn_fhir_interceptor_api_Pointcut | null, var1: java_lang_Integer | number, var2: ca_uhn_fhir_interceptor_api_IAnonymousInterceptor | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IAnonymousInterceptorInterface> | null): void;
     /**
      * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'boolean'
+     */
+    registerThreadLocalInterceptor(var0: BasicOrJavaType | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'boolean'
+     */
+    registerThreadLocalInterceptorSync(var0: BasicOrJavaType | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'void'
      */
     unregisterThreadLocalInterceptor(var0: BasicOrJavaType | null): Promise<void>;
@@ -50,25 +60,13 @@ export declare class IInterceptorServiceClass extends JavaClass {
      */
     unregisterThreadLocalInterceptorSync(var0: BasicOrJavaType | null): void;
     /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'void'
+     * @return original return type: 'java.util.List'
      */
-    unregisterInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<void>;
+    getAllRegisteredInterceptors(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'void'
+     * @return original return type: 'java.util.List'
      */
-    unregisterInterceptorsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'boolean'
-     */
-    registerThreadLocalInterceptor(var0: BasicOrJavaType | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'boolean'
-     */
-    registerThreadLocalInterceptorSync(var0: BasicOrJavaType | null): boolean;
+    getAllRegisteredInterceptorsSync(): java_util_List | null;
     /**
      * @return original return type: 'void'
      */
@@ -81,20 +79,12 @@ export declare class IInterceptorServiceClass extends JavaClass {
      * @param var0 original type: 'java.util.Collection'
      * @return original return type: 'void'
      */
-    registerInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<void>;
+    unregisterInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<void>;
     /**
      * @param var0 original type: 'java.util.Collection'
      * @return original return type: 'void'
      */
-    registerInterceptorsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllRegisteredInterceptors(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllRegisteredInterceptorsSync(): java_util_List | null;
+    unregisterInterceptorsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
     /**
      * @param var0 original type: 'java.util.function.Predicate'
      * @return original return type: 'void'
@@ -114,15 +104,15 @@ export declare class IInterceptorServiceClass extends JavaClass {
      */
     unregisterAllAnonymousInterceptorsSync(): void;
     /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'void'
      */
-    registerInterceptor(var0: BasicOrJavaType | null): Promise<boolean>;
+    registerInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): Promise<void>;
     /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'void'
      */
-    registerInterceptorSync(var0: BasicOrJavaType | null): boolean;
+    registerInterceptorsSync(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'boolean'
@@ -133,6 +123,16 @@ export declare class IInterceptorServiceClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     unregisterInterceptorSync(var0: BasicOrJavaType | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'boolean'
+     */
+    registerInterceptor(var0: BasicOrJavaType | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'boolean'
+     */
+    registerInterceptorSync(var0: BasicOrJavaType | null): boolean;
     /**
      * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
      * @param var1 original type: 'ca.uhn.fhir.interceptor.api.HookParams'
@@ -147,6 +147,16 @@ export declare class IInterceptorServiceClass extends JavaClass {
     callHooksAndReturnObjectSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
+     * @return original return type: 'boolean'
+     */
+    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
+     * @return original return type: 'boolean'
+     */
+    hasHooksSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
      * @param var1 original type: 'ca.uhn.fhir.interceptor.api.HookParams'
      * @return original return type: 'boolean'
      */
@@ -157,16 +167,6 @@ export declare class IInterceptorServiceClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     callHooksSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
-     * @return original return type: 'boolean'
-     */
-    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
-     * @return original return type: 'boolean'
-     */
-    hasHooksSync(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -195,19 +195,18 @@ export interface IInterceptorServiceInterface {
     registerAnonymousInterceptor(var0: ca_uhn_fhir_interceptor_api_Pointcut | null, var1: java_lang_Integer | number, var2: ca_uhn_fhir_interceptor_api_IAnonymousInterceptor | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IAnonymousInterceptorInterface> | null): void;
     /**
      * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'boolean'
+     */
+    registerThreadLocalInterceptor(var0: BasicOrJavaType | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'void'
      */
     unregisterThreadLocalInterceptor(var0: BasicOrJavaType | null): void;
     /**
-     * @param var0 original type: 'java.util.Collection'
-     * @return original return type: 'void'
+     * @return original return type: 'java.util.List'
      */
-    unregisterInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
-    /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'boolean'
-     */
-    registerThreadLocalInterceptor(var0: BasicOrJavaType | null): boolean;
+    getAllRegisteredInterceptors(): java_util_List | null;
     /**
      * @return original return type: 'void'
      */
@@ -216,11 +215,7 @@ export interface IInterceptorServiceInterface {
      * @param var0 original type: 'java.util.Collection'
      * @return original return type: 'void'
      */
-    registerInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getAllRegisteredInterceptors(): java_util_List | null;
+    unregisterInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
     /**
      * @param var0 original type: 'java.util.function.Predicate'
      * @return original return type: 'void'
@@ -231,15 +226,20 @@ export interface IInterceptorServiceInterface {
      */
     unregisterAllAnonymousInterceptors(): void;
     /**
-     * @param var0 original type: 'java.lang.Object'
-     * @return original return type: 'boolean'
+     * @param var0 original type: 'java.util.Collection'
+     * @return original return type: 'void'
      */
-    registerInterceptor(var0: BasicOrJavaType | null): boolean;
+    registerInterceptors(var0: java_util_Collection | JavaInterfaceProxy<java_util_CollectionInterface> | null): void;
     /**
      * @param var0 original type: 'java.lang.Object'
      * @return original return type: 'boolean'
      */
     unregisterInterceptor(var0: BasicOrJavaType | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.Object'
+     * @return original return type: 'boolean'
+     */
+    registerInterceptor(var0: BasicOrJavaType | null): boolean;
     /**
      * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
      * @param var1 original type: 'ca.uhn.fhir.interceptor.api.HookParams'
@@ -248,15 +248,15 @@ export interface IInterceptorServiceInterface {
     callHooksAndReturnObject(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
+     * @return original return type: 'boolean'
+     */
+    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
      * @param var1 original type: 'ca.uhn.fhir.interceptor.api.HookParams'
      * @return original return type: 'boolean'
      */
     callHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null, var1: ca_uhn_fhir_interceptor_api_HookParams | null): boolean;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.interceptor.api.IPointcut'
-     * @return original return type: 'boolean'
-     */
-    hasHooks(var0: ca_uhn_fhir_interceptor_api_IPointcut | JavaInterfaceProxy<ca_uhn_fhir_interceptor_api_IPointcutInterface> | null): boolean;
 }
 /**
  * Create a proxy for the {@link IInterceptorService} interface.

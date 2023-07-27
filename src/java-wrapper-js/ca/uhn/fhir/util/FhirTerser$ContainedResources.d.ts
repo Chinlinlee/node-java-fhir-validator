@@ -56,12 +56,12 @@ export declare class FhirTerser$ContainedResourcesClass extends JavaClass {
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    addContained(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    getResourceId(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    addContainedSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): org_hl7_fhir_instance_model_api_IIdType | null;
+    getResourceIdSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @param var1 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
@@ -78,12 +78,12 @@ export declare class FhirTerser$ContainedResourcesClass extends JavaClass {
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getResourceId(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    addContained(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
-    getResourceIdSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): org_hl7_fhir_instance_model_api_IIdType | null;
+    addContainedSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): org_hl7_fhir_instance_model_api_IIdType | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

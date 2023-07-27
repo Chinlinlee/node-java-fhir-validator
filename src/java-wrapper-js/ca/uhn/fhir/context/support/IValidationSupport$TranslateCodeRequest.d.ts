@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
+import { List as java_util_List, ListInterface as java_util_ListInterface } from "./../../../../../java/util/List";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -30,6 +30,22 @@ export declare class IValidationSupport$TranslateCodeRequestClass extends JavaCl
      */
     hashCodeSync(): number;
     /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getResourceId(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     */
+    getResourceIdSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSourceValueSetUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSourceValueSetUrlSync(): string | null;
+    /**
      * @return original return type: 'java.lang.String'
      */
     getConceptMapVersion(): Promise<string | null>;
@@ -46,13 +62,13 @@ export declare class IValidationSupport$TranslateCodeRequestClass extends JavaCl
      */
     getTargetValueSetUrlSync(): string | null;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getSourceValueSetUrl(): Promise<string | null>;
+    isReverse(): Promise<boolean>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'boolean'
      */
-    getSourceValueSetUrlSync(): string | null;
+    isReverseSync(): boolean;
     /**
      * @return original return type: 'java.util.List'
      */
@@ -64,35 +80,19 @@ export declare class IValidationSupport$TranslateCodeRequestClass extends JavaCl
     /**
      * @return original return type: 'java.lang.String'
      */
-    getConceptMapUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getConceptMapUrlSync(): string | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isReverse(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isReverseSync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     getTargetSystemUrl(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
     getTargetSystemUrlSync(): string | null;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.String'
      */
-    getResourceId(): Promise<org_hl7_fhir_instance_model_api_IIdType | null>;
+    getConceptMapUrl(): Promise<string | null>;
     /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'java.lang.String'
      */
-    getResourceIdSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    getConceptMapUrlSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

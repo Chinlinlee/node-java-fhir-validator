@@ -9,48 +9,6 @@ import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
  */
 export declare class IReadTypedClass extends JavaClass {
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withIdAndVersion(var0: string | null, var1: string | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withIdAndVersionSync(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withUrl(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withUrlSync(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withUrl(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withUrlSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withId(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withIdSync(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
@@ -70,6 +28,48 @@ export declare class IReadTypedClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
     withIdSync(var0: java_lang_Long | bigint | number | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withId(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withIdSync(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withIdAndVersion(var0: string | null, var1: string | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withIdAndVersionSync(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withUrl(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withUrlSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withUrl(var0: string | null): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withUrlSync(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -84,27 +84,6 @@ export declare class IReadTypedClass extends JavaClass {
  */
 export interface IReadTypedInterface {
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withIdAndVersion(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withUrl(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withUrl(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    withId(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
@@ -114,6 +93,27 @@ export interface IReadTypedInterface {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
     withId(var0: java_lang_Long | bigint | number | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withId(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withIdAndVersion(var0: string | null, var1: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withUrl(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    withUrl(var0: string | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
 }
 /**
  * Create a proxy for the {@link IReadTyped} interface.

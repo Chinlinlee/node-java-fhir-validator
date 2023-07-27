@@ -55,16 +55,6 @@ export declare class SingleValidationMessageClass extends JavaClass {
      * @param var0 original type: 'java.lang.Integer'
      * @return original return type: 'void'
      */
-    setLocationLine(var0: java_lang_Integer | number | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @return original return type: 'void'
-     */
-    setLocationLineSync(var0: java_lang_Integer | number | null): void;
-    /**
-     * @param var0 original type: 'java.lang.Integer'
-     * @return original return type: 'void'
-     */
     setLocationCol(var0: java_lang_Integer | number | null): Promise<void>;
     /**
      * @param var0 original type: 'java.lang.Integer'
@@ -72,13 +62,33 @@ export declare class SingleValidationMessageClass extends JavaClass {
      */
     setLocationColSync(var0: java_lang_Integer | number | null): void;
     /**
-     * @return original return type: 'java.lang.Integer'
+     * @param var0 original type: 'java.lang.Integer'
+     * @return original return type: 'void'
      */
-    getLocationCol(): Promise<number | null>;
+    setLocationLine(var0: java_lang_Integer | number | null): Promise<void>;
     /**
-     * @return original return type: 'java.lang.Integer'
+     * @param var0 original type: 'java.lang.Integer'
+     * @return original return type: 'void'
      */
-    getLocationColSync(): number | null;
+    setLocationLineSync(var0: java_lang_Integer | number | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getLocationString(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getLocationStringSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setLocationString(var0: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    setLocationStringSync(var0: string | null): void;
     /**
      * @return original return type: 'java.lang.Integer'
      */
@@ -87,6 +97,14 @@ export declare class SingleValidationMessageClass extends JavaClass {
      * @return original return type: 'java.lang.Integer'
      */
     getLocationLineSync(): number | null;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getLocationCol(): Promise<number | null>;
+    /**
+     * @return original return type: 'java.lang.Integer'
+     */
+    getLocationColSync(): number | null;
     /**
      * @param var0 original type: 'ca.uhn.fhir.validation.ResultSeverityEnum'
      * @return original return type: 'void'
@@ -108,6 +126,14 @@ export declare class SingleValidationMessageClass extends JavaClass {
      */
     setMessageSync(var0: string | null): void;
     /**
+     * @return original return type: 'java.lang.String'
+     */
+    getMessageId(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getMessageIdSync(): string | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
@@ -117,32 +143,6 @@ export declare class SingleValidationMessageClass extends JavaClass {
      * @return original return type: 'void'
      */
     setMessageIdSync(var0: string | null): void;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getMessageId(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getMessageIdSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getLocationString(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getLocationStringSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setLocationString(var0: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    setLocationStringSync(var0: string | null): void;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

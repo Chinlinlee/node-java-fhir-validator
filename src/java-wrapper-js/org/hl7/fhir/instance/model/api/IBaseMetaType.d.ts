@@ -39,14 +39,6 @@ export declare class IBaseMetaTypeClass extends JavaClass {
      */
     addProfileSync(var0: string | null): IBaseMetaType | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getVersionId(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getVersionIdSync(): string | null;
-    /**
      * @param var0 original type: 'java.util.Date'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
      */
@@ -57,6 +49,24 @@ export declare class IBaseMetaTypeClass extends JavaClass {
      */
     setLastUpdatedSync(var0: java_util_Date | null): IBaseMetaType | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
+     */
+    setVersionId(var0: string | null): Promise<IBaseMetaType | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
+     */
+    setVersionIdSync(var0: string | null): IBaseMetaType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    addTag(): Promise<org_hl7_fhir_instance_model_api_IBaseCoding | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    addTagSync(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
+    /**
      * @return original return type: 'java.util.List'
      */
     getProfile(): Promise<java_util_List | null>;
@@ -64,6 +74,38 @@ export declare class IBaseMetaTypeClass extends JavaClass {
      * @return original return type: 'java.util.List'
      */
     getProfileSync(): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    addSecurity(): Promise<org_hl7_fhir_instance_model_api_IBaseCoding | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    addSecuritySync(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getLastUpdated(): Promise<java_util_Date | null>;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getLastUpdatedSync(): java_util_Date | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getVersionId(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getVersionIdSync(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getSecurity(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getSecuritySync(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -77,48 +119,6 @@ export declare class IBaseMetaTypeClass extends JavaClass {
      */
     getSecuritySync(var0: string | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseCoding | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getSecurity(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getSecuritySync(): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    setVersionId(var0: string | null): Promise<IBaseMetaType | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    setVersionIdSync(var0: string | null): IBaseMetaType | null;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getLastUpdated(): Promise<java_util_Date | null>;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getLastUpdatedSync(): java_util_Date | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    addTag(): Promise<org_hl7_fhir_instance_model_api_IBaseCoding | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    addTagSync(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    addSecurity(): Promise<org_hl7_fhir_instance_model_api_IBaseCoding | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    addSecuritySync(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
-    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): Promise<boolean>;
@@ -127,29 +127,15 @@ export declare class IBaseMetaTypeClass extends JavaClass {
      */
     isEmptySync(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    fhirType(): Promise<string | null>;
+    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    fhirTypeSync(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPostSync(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPreSync(): java_util_List | null;
+    getUserDataSync(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -171,15 +157,29 @@ export declare class IBaseMetaTypeClass extends JavaClass {
      */
     hasFormatCommentSync(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): Promise<BasicOrJavaType | null>;
+    getFormatCommentsPre(): Promise<java_util_List | null>;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserDataSync(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPreSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPostSync(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirTypeSync(): string | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -209,18 +209,39 @@ export interface IBaseMetaTypeInterface {
      */
     addProfile(var0: string | null): IBaseMetaType | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getVersionId(): string | null;
-    /**
      * @param var0 original type: 'java.util.Date'
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
      */
     setLastUpdated(var0: java_util_Date | null): IBaseMetaType | null;
     /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
+     */
+    setVersionId(var0: string | null): IBaseMetaType | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    addTag(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
+    /**
      * @return original return type: 'java.util.List'
      */
     getProfile(): java_util_List | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
+     */
+    addSecurity(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
+    /**
+     * @return original return type: 'java.util.Date'
+     */
+    getLastUpdated(): java_util_Date | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getVersionId(): string | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getSecurity(): java_util_List | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.String'
@@ -228,42 +249,14 @@ export interface IBaseMetaTypeInterface {
      */
     getSecurity(var0: string | null, var1: string | null): org_hl7_fhir_instance_model_api_IBaseCoding | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getSecurity(): java_util_List | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseMetaType'
-     */
-    setVersionId(var0: string | null): IBaseMetaType | null;
-    /**
-     * @return original return type: 'java.util.Date'
-     */
-    getLastUpdated(): java_util_Date | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    addTag(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
-    /**
-     * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseCoding'
-     */
-    addSecurity(): org_hl7_fhir_instance_model_api_IBaseCoding | null;
-    /**
      * @return original return type: 'boolean'
      */
     isEmpty(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'java.lang.Object'
      */
-    fhirType?(): string | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPost(): java_util_List | null;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getFormatCommentsPre(): java_util_List | null;
+    getUserData(var0: string | null): BasicOrJavaType | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @param var1 original type: 'java.lang.Object'
@@ -275,10 +268,17 @@ export interface IBaseMetaTypeInterface {
      */
     hasFormatComment(): boolean;
     /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'java.lang.Object'
+     * @return original return type: 'java.util.List'
      */
-    getUserData(var0: string | null): BasicOrJavaType | null;
+    getFormatCommentsPre(): java_util_List | null;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getFormatCommentsPost(): java_util_List | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    fhirType?(): string | null;
 }
 /**
  * Create a proxy for the {@link IBaseMetaType} interface.

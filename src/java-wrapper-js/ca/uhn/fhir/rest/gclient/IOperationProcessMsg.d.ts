@@ -8,16 +8,6 @@ import { IBaseBundle as org_hl7_fhir_instance_model_api_IBaseBundle, IBaseBundle
  */
 export declare class IOperationProcessMsgClass extends JavaClass {
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseBundle'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsgMode'
-     */
-    setMessageBundle(var0: org_hl7_fhir_instance_model_api_IBaseBundle | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBundleInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IOperationProcessMsgMode | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseBundle'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsgMode'
-     */
-    setMessageBundleSync(var0: org_hl7_fhir_instance_model_api_IBaseBundle | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBundleInterface> | null): ca_uhn_fhir_rest_gclient_IOperationProcessMsgMode | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsg'
      */
@@ -27,6 +17,16 @@ export declare class IOperationProcessMsgClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsg'
      */
     setResponseUrlParamSync(var0: string | null): IOperationProcessMsg | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseBundle'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsgMode'
+     */
+    setMessageBundle(var0: org_hl7_fhir_instance_model_api_IBaseBundle | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBundleInterface> | null): Promise<ca_uhn_fhir_rest_gclient_IOperationProcessMsgMode | null>;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseBundle'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsgMode'
+     */
+    setMessageBundleSync(var0: org_hl7_fhir_instance_model_api_IBaseBundle | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBundleInterface> | null): ca_uhn_fhir_rest_gclient_IOperationProcessMsgMode | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -41,15 +41,15 @@ export declare class IOperationProcessMsgClass extends JavaClass {
  */
 export interface IOperationProcessMsgInterface {
     /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseBundle'
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsgMode'
-     */
-    setMessageBundle(var0: org_hl7_fhir_instance_model_api_IBaseBundle | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBundleInterface> | null): ca_uhn_fhir_rest_gclient_IOperationProcessMsgMode | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsg'
      */
     setResponseUrlParam(var0: string | null): IOperationProcessMsg | null;
+    /**
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseBundle'
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IOperationProcessMsgMode'
+     */
+    setMessageBundle(var0: org_hl7_fhir_instance_model_api_IBaseBundle | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseBundleInterface> | null): ca_uhn_fhir_rest_gclient_IOperationProcessMsgMode | null;
 }
 /**
  * Create a proxy for the {@link IOperationProcessMsg} interface.

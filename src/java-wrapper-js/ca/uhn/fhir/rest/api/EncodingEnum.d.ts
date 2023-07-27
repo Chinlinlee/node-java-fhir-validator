@@ -75,32 +75,6 @@ export declare class EncodingEnumClass extends JavaClass {
      */
     static valueOfSync(var0: java_lang_Class | null, var1: string | null): java_lang_Enum | null;
     /**
-     * @return original return type: 'java.lang.String'
-     */
-    getResourceContentTypeNonLegacy(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getResourceContentTypeNonLegacySync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getResourceContentType(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getResourceContentTypeSync(): string | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
-     */
-    static forContentTypeStrict(var0: string | null): Promise<EncodingEnum | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
-     */
-    static forContentTypeStrictSync(var0: string | null): EncodingEnum | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
      */
@@ -113,11 +87,57 @@ export declare class EncodingEnumClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
+    getResourceContentType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getResourceContentTypeSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
     getFormatContentType(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
     getFormatContentTypeSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     */
+    static forContentTypeStrict(var0: string | null): Promise<EncodingEnum | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     */
+    static forContentTypeStrictSync(var0: string | null): EncodingEnum | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getResourceContentTypeNonLegacy(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getResourceContentTypeNonLegacySync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    static isLegacy(var0: string | null): Promise<boolean>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'boolean'
+     */
+    static isLegacySync(var0: string | null): boolean;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     */
+    static detectEncoding(var0: string | null): Promise<EncodingEnum | null>;
+    /**
+     * @param var0 original type: 'java.lang.String'
+     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
+     */
+    static detectEncodingSync(var0: string | null): EncodingEnum | null;
     /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
@@ -138,26 +158,6 @@ export declare class EncodingEnumClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.parser.IParser'
      */
     newParserSync(var0: ca_uhn_fhir_context_FhirContext | null): ca_uhn_fhir_parser_IParser | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
-     */
-    static detectEncoding(var0: string | null): Promise<EncodingEnum | null>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'ca.uhn.fhir.rest.api.EncodingEnum'
-     */
-    static detectEncodingSync(var0: string | null): EncodingEnum | null;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    static isLegacy(var0: string | null): Promise<boolean>;
-    /**
-     * @param var0 original type: 'java.lang.String'
-     * @return original return type: 'boolean'
-     */
-    static isLegacySync(var0: string | null): boolean;
     /**
      * @return original return type: 'java.lang.String'
      */

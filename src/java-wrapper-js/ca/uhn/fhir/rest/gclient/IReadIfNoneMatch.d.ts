@@ -8,14 +8,6 @@ import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseRe
  */
 export declare class IReadIfNoneMatchClass extends JavaClass {
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    returnNull(): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    returnNullSync(): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
@@ -25,6 +17,14 @@ export declare class IReadIfNoneMatchClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
     returnResourceSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    returnNull(): Promise<ca_uhn_fhir_rest_gclient_IReadExecutable | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    returnNullSync(): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
@@ -47,14 +47,14 @@ export declare class IReadIfNoneMatchClass extends JavaClass {
  */
 export interface IReadIfNoneMatchInterface {
     /**
-     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
-     */
-    returnNull(): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */
     returnResource(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
+     */
+    returnNull(): ca_uhn_fhir_rest_gclient_IReadExecutable | null;
     /**
      * @return original return type: 'ca.uhn.fhir.rest.gclient.IReadExecutable'
      */

@@ -52,14 +52,6 @@ export declare class PackageInformationClass extends JavaClass {
      */
     getDateSync(): java_util_Date | null;
     /**
-     * @return original return type: 'java.util.List'
-     */
-    getDependencies(): Promise<java_util_List | null>;
-    /**
-     * @return original return type: 'java.util.List'
-     */
-    getDependenciesSync(): java_util_List | null;
-    /**
      * @return original return type: 'boolean'
      */
     isHTO(): Promise<boolean>;
@@ -68,13 +60,21 @@ export declare class PackageInformationClass extends JavaClass {
      */
     isHTOSync(): boolean;
     /**
-     * @return original return type: 'java.lang.String'
+     * @return original return type: 'java.util.List'
      */
-    getVID(): Promise<string | null>;
+    getDependencies(): Promise<java_util_List | null>;
+    /**
+     * @return original return type: 'java.util.List'
+     */
+    getDependenciesSync(): java_util_List | null;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getVIDSync(): string | null;
+    getCanonical(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCanonicalSync(): string | null;
     /**
      * @return original return type: 'boolean'
      */
@@ -86,11 +86,11 @@ export declare class PackageInformationClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getCanonical(): Promise<string | null>;
+    getVID(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
-    getCanonicalSync(): string | null;
+    getVIDSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

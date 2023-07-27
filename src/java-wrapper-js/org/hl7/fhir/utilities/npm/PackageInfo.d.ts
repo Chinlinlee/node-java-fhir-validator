@@ -44,19 +44,19 @@ export declare class PackageInfoClass extends JavaClass {
     /**
      * @return original return type: 'java.lang.String'
      */
-    getCanonical(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getCanonicalSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     getUrl(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
      */
     getUrlSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCanonical(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getCanonicalSync(): string | null;
     /**
      * @return original return type: 'java.lang.String'
      */

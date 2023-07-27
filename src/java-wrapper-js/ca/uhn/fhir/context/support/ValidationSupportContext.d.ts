@@ -1,6 +1,6 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
-import { Set as java_util_Set } from "./../../../../../java/util/Set";
 import { IValidationSupport as ca_uhn_fhir_context_support_IValidationSupport, IValidationSupportInterface as ca_uhn_fhir_context_support_IValidationSupportInterface } from "./IValidationSupport";
+import { Set as java_util_Set } from "./../../../../../java/util/Set";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -11,13 +11,13 @@ import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
  */
 export declare class ValidationSupportContextClass extends JavaClass {
     /**
-     * @return original return type: 'java.util.Set'
+     * @return original return type: 'boolean'
      */
-    getCurrentlyGeneratingSnapshots(): Promise<java_util_Set | null>;
+    isEnabledValidationForCodingsLogicalAnd(): Promise<boolean>;
     /**
-     * @return original return type: 'java.util.Set'
+     * @return original return type: 'boolean'
      */
-    getCurrentlyGeneratingSnapshotsSync(): java_util_Set | null;
+    isEnabledValidationForCodingsLogicalAndSync(): boolean;
     /**
      * @return original return type: 'ca.uhn.fhir.context.support.IValidationSupport'
      */
@@ -27,13 +27,13 @@ export declare class ValidationSupportContextClass extends JavaClass {
      */
     getRootValidationSupportSync(): ca_uhn_fhir_context_support_IValidationSupport | null;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.util.Set'
      */
-    isEnabledValidationForCodingsLogicalAnd(): Promise<boolean>;
+    getCurrentlyGeneratingSnapshots(): Promise<java_util_Set | null>;
     /**
-     * @return original return type: 'boolean'
+     * @return original return type: 'java.util.Set'
      */
-    isEnabledValidationForCodingsLogicalAndSync(): boolean;
+    getCurrentlyGeneratingSnapshotsSync(): java_util_Set | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

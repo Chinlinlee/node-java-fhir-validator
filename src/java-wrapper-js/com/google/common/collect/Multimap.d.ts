@@ -182,6 +182,14 @@ export declare class MultimapClass extends JavaClass {
      */
     removeAllSync(var0: BasicOrJavaType | null): java_util_Collection | null;
     /**
+     * @return original return type: 'java.util.Map'
+     */
+    asMap(): Promise<java_util_Map | null>;
+    /**
+     * @return original return type: 'java.util.Map'
+     */
+    asMapSync(): java_util_Map | null;
+    /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'java.lang.Object'
      * @return original return type: 'boolean'
@@ -205,14 +213,6 @@ export declare class MultimapClass extends JavaClass {
      * @return original return type: 'java.util.Collection'
      */
     replaceValuesSync(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_Collection | null;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    asMap(): Promise<java_util_Map | null>;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    asMapSync(): java_util_Map | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -312,6 +312,10 @@ export interface MultimapInterface {
      */
     removeAll(var0: BasicOrJavaType | null): java_util_Collection | null;
     /**
+     * @return original return type: 'java.util.Map'
+     */
+    asMap(): java_util_Map | null;
+    /**
      * @param var0 original type: 'java.lang.Object'
      * @param var1 original type: 'java.lang.Object'
      * @return original return type: 'boolean'
@@ -323,10 +327,6 @@ export interface MultimapInterface {
      * @return original return type: 'java.util.Collection'
      */
     replaceValues(var0: BasicOrJavaType | null, var1: java_lang_Iterable | JavaInterfaceProxy<java_lang_IterableInterface> | null): java_util_Collection | null;
-    /**
-     * @return original return type: 'java.util.Map'
-     */
-    asMap(): java_util_Map | null;
 }
 /**
  * Create a proxy for the {@link Multimap} interface.

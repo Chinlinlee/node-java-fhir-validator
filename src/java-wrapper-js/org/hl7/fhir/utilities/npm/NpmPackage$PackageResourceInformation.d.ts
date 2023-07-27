@@ -29,30 +29,6 @@ export declare class NpmPackage$PackageResourceInformationClass extends JavaClas
     /**
      * @return original return type: 'java.lang.String'
      */
-    getStatedType(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getStatedTypeSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSupplements(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getSupplementsSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getFilename(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getFilenameSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
     getUrl(): Promise<string | null>;
     /**
      * @return original return type: 'java.lang.String'
@@ -66,6 +42,30 @@ export declare class NpmPackage$PackageResourceInformationClass extends JavaClas
      * @return original return type: 'java.lang.String'
      */
     getResourceTypeSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getStatedType(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getStatedTypeSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getFilename(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getFilenameSync(): string | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSupplements(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getSupplementsSync(): string | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

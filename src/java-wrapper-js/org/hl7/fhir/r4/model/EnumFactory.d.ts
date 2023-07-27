@@ -7,16 +7,6 @@ import { Enum as java_lang_Enum } from "./../../../../../java/lang/Enum";
  */
 export declare class EnumFactoryClass extends JavaClass {
     /**
-     * @param var0 original type: 'java.lang.Enum'
-     * @return original return type: 'java.lang.String'
-     */
-    toCode(var0: java_lang_Enum | null): Promise<string | null>;
-    /**
-     * @param var0 original type: 'java.lang.Enum'
-     * @return original return type: 'java.lang.String'
-     */
-    toCodeSync(var0: java_lang_Enum | null): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Enum'
      */
@@ -26,6 +16,16 @@ export declare class EnumFactoryClass extends JavaClass {
      * @return original return type: 'java.lang.Enum'
      */
     fromCodeSync(var0: string | null): java_lang_Enum | null;
+    /**
+     * @param var0 original type: 'java.lang.Enum'
+     * @return original return type: 'java.lang.String'
+     */
+    toCode(var0: java_lang_Enum | null): Promise<string | null>;
+    /**
+     * @param var0 original type: 'java.lang.Enum'
+     * @return original return type: 'java.lang.String'
+     */
+    toCodeSync(var0: java_lang_Enum | null): string | null;
     /**
      * @param var0 original type: 'java.lang.Enum'
      * @return original return type: 'java.lang.String'
@@ -50,15 +50,15 @@ export declare class EnumFactoryClass extends JavaClass {
  */
 export interface EnumFactoryInterface {
     /**
-     * @param var0 original type: 'java.lang.Enum'
-     * @return original return type: 'java.lang.String'
-     */
-    toCode(var0: java_lang_Enum | null): string | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'java.lang.Enum'
      */
     fromCode(var0: string | null): java_lang_Enum | null;
+    /**
+     * @param var0 original type: 'java.lang.Enum'
+     * @return original return type: 'java.lang.String'
+     */
+    toCode(var0: java_lang_Enum | null): string | null;
     /**
      * @param var0 original type: 'java.lang.Enum'
      * @return original return type: 'java.lang.String'

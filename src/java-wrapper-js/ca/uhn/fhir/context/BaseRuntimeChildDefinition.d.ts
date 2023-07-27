@@ -1,9 +1,9 @@
 import { JavaClass, BasicOrJavaType } from "java-bridge";
 import { BaseRuntimeChildDefinition$IAccessor as ca_uhn_fhir_context_BaseRuntimeChildDefinition$IAccessor } from "./BaseRuntimeChildDefinition$IAccessor";
-import { BaseRuntimeElementDefinition as ca_uhn_fhir_context_BaseRuntimeElementDefinition } from "./BaseRuntimeElementDefinition";
 import { Class as java_lang_Class } from "./../../../../java/lang/Class";
-import { Set as java_util_Set } from "./../../../../java/util/Set";
 import { BaseRuntimeChildDefinition$IMutator as ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator } from "./BaseRuntimeChildDefinition$IMutator";
+import { Set as java_util_Set } from "./../../../../java/util/Set";
+import { BaseRuntimeElementDefinition as ca_uhn_fhir_context_BaseRuntimeElementDefinition } from "./BaseRuntimeElementDefinition";
 import { Long as java_lang_Long } from "./../../../../java/lang/Long";
 import { Integer as java_lang_Integer } from "./../../../../java/lang/Integer";
 /**
@@ -46,26 +46,6 @@ export declare class BaseRuntimeChildDefinitionClass extends JavaClass {
     getMaxSync(): number;
     /**
      * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
-     */
-    getChildElementDefinitionByDatatype(var0: java_lang_Class | null): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition | null>;
-    /**
-     * @param var0 original type: 'java.lang.Class'
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
-     */
-    getChildElementDefinitionByDatatypeSync(var0: java_lang_Class | null): ca_uhn_fhir_context_BaseRuntimeElementDefinition | null;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
-     * @return original return type: 'void'
-     */
-    setReplacedParentDefinition(var0: BaseRuntimeChildDefinitionClass | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
-     * @return original return type: 'void'
-     */
-    setReplacedParentDefinitionSync(var0: BaseRuntimeChildDefinitionClass | null): void;
-    /**
-     * @param var0 original type: 'java.lang.Class'
      * @return original return type: 'java.lang.String'
      */
     getChildNameByDatatype(var0: java_lang_Class | null): Promise<string | null>;
@@ -91,6 +71,58 @@ export declare class BaseRuntimeChildDefinitionClass extends JavaClass {
      */
     getReplacedParentDefinitionSync(): BaseRuntimeChildDefinition | null;
     /**
+     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
+     * @return original return type: 'void'
+     */
+    setReplacedParentDefinition(var0: BaseRuntimeChildDefinitionClass | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition'
+     * @return original return type: 'void'
+     */
+    setReplacedParentDefinitionSync(var0: BaseRuntimeChildDefinitionClass | null): void;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getElementName(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getElementNameSync(): string | null;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
+     */
+    getMutator(): Promise<ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null>;
+    /**
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
+     */
+    getMutatorSync(): ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getValidChildNames(): Promise<java_util_Set | null>;
+    /**
+     * @return original return type: 'java.util.Set'
+     */
+    getValidChildNamesSync(): java_util_Set | null;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionUrl(): Promise<string | null>;
+    /**
+     * @return original return type: 'java.lang.String'
+     */
+    getExtensionUrlSync(): string | null;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     */
+    getChildElementDefinitionByDatatype(var0: java_lang_Class | null): Promise<ca_uhn_fhir_context_BaseRuntimeElementDefinition | null>;
+    /**
+     * @param var0 original type: 'java.lang.Class'
+     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
+     */
+    getChildElementDefinitionByDatatypeSync(var0: java_lang_Class | null): ca_uhn_fhir_context_BaseRuntimeElementDefinition | null;
+    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeElementDefinition'
      */
@@ -108,38 +140,6 @@ export declare class BaseRuntimeChildDefinitionClass extends JavaClass {
      * @return original return type: 'boolean'
      */
     isSummarySync(): boolean;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getExtensionUrl(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getExtensionUrlSync(): string | null;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getElementName(): Promise<string | null>;
-    /**
-     * @return original return type: 'java.lang.String'
-     */
-    getElementNameSync(): string | null;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getValidChildNames(): Promise<java_util_Set | null>;
-    /**
-     * @return original return type: 'java.util.Set'
-     */
-    getValidChildNamesSync(): java_util_Set | null;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
-     */
-    getMutator(): Promise<ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null>;
-    /**
-     * @return original return type: 'ca.uhn.fhir.context.BaseRuntimeChildDefinition$IMutator'
-     */
-    getMutatorSync(): ca_uhn_fhir_context_BaseRuntimeChildDefinition$IMutator | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'

@@ -1,11 +1,11 @@
 import { JavaClass, BasicOrJavaType, JavaInterfaceProxy } from "java-bridge";
 import { IBaseResource as org_hl7_fhir_instance_model_api_IBaseResource, IBaseResourceInterface as org_hl7_fhir_instance_model_api_IBaseResourceInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IBaseResource";
 import { IIdType as org_hl7_fhir_instance_model_api_IIdType, IIdTypeInterface as org_hl7_fhir_instance_model_api_IIdTypeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IIdType";
+import { Map as java_util_Map, MapInterface as java_util_MapInterface } from "./../../../../../java/util/Map";
+import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
 import { Integer as java_lang_Integer } from "./../../../../../java/lang/Integer";
 import { Optional as java_util_Optional } from "./../../../../../java/util/Optional";
 import { Runnable as java_lang_Runnable, RunnableInterface as java_lang_RunnableInterface } from "./../../../../../java/lang/Runnable";
-import { Boolean as java_lang_Boolean } from "./../../../../../java/lang/Boolean";
-import { Map as java_util_Map, MapInterface as java_util_MapInterface } from "./../../../../../java/util/Map";
 import { IBaseOperationOutcome as org_hl7_fhir_instance_model_api_IBaseOperationOutcome, IBaseOperationOutcomeInterface as org_hl7_fhir_instance_model_api_IBaseOperationOutcomeInterface } from "./../../../../../org/hl7/fhir/instance/model/api/IBaseOperationOutcome";
 import { Long as java_lang_Long } from "./../../../../../java/lang/Long";
 import { Class as java_lang_Class } from "./../../../../../java/lang/Class";
@@ -31,6 +31,60 @@ export declare class MethodOutcomeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.instance.model.api.IIdType'
      */
     getIdSync(): org_hl7_fhir_instance_model_api_IIdType | null;
+    /**
+     * @param var0 original type: 'java.util.Map'
+     * @return original return type: 'void'
+     */
+    setResponseHeaders(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.util.Map'
+     * @return original return type: 'void'
+     */
+    setResponseHeadersSync(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): void;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
+     */
+    setCreated(var0: java_lang_Boolean | boolean | null): Promise<MethodOutcome | null>;
+    /**
+     * @param var0 original type: 'java.lang.Boolean'
+     * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
+     */
+    setCreatedSync(var0: java_lang_Boolean | boolean | null): MethodOutcome | null;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getCreated(): Promise<boolean | null>;
+    /**
+     * @return original return type: 'java.lang.Boolean'
+     */
+    getCreatedSync(): boolean | null;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setStatusCode(var0: java_lang_Integer | number): Promise<void>;
+    /**
+     * @param var0 original type: 'int'
+     * @return original return type: 'void'
+     */
+    setStatusCodeSync(var0: java_lang_Integer | number): void;
+    /**
+     * @return original return type: 'void'
+     */
+    fireResourceViewCallbacks(): Promise<void>;
+    /**
+     * @return original return type: 'void'
+     */
+    fireResourceViewCallbacksSync(): void;
+    /**
+     * @return original return type: 'int'
+     */
+    getResponseStatusCode(): Promise<number>;
+    /**
+     * @return original return type: 'int'
+     */
+    getResponseStatusCodeSync(): number;
     /**
      * @param var0 original type: 'int'
      * @return original return type: 'void'
@@ -62,59 +116,15 @@ export declare class MethodOutcomeClass extends JavaClass {
      */
     registerResourceViewCallbackSync(var0: java_lang_Runnable | JavaInterfaceProxy<java_lang_RunnableInterface> | null): void;
     /**
-     * @return original return type: 'void'
-     */
-    fireResourceViewCallbacks(): Promise<void>;
-    /**
-     * @return original return type: 'void'
-     */
-    fireResourceViewCallbacksSync(): void;
-    /**
-     * @return original return type: 'int'
-     */
-    getResponseStatusCode(): Promise<number>;
-    /**
-     * @return original return type: 'int'
-     */
-    getResponseStatusCodeSync(): number;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getCreated(): Promise<boolean | null>;
-    /**
-     * @return original return type: 'java.lang.Boolean'
-     */
-    getCreatedSync(): boolean | null;
-    /**
-     * @param var0 original type: 'java.lang.Boolean'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
      */
-    setCreated(var0: java_lang_Boolean | boolean | null): Promise<MethodOutcome | null>;
+    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<MethodOutcome | null>;
     /**
-     * @param var0 original type: 'java.lang.Boolean'
+     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
      * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
      */
-    setCreatedSync(var0: java_lang_Boolean | boolean | null): MethodOutcome | null;
-    /**
-     * @param var0 original type: 'java.util.Map'
-     * @return original return type: 'void'
-     */
-    setResponseHeaders(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.util.Map'
-     * @return original return type: 'void'
-     */
-    setResponseHeadersSync(var0: java_util_Map | JavaInterfaceProxy<java_util_MapInterface> | null): void;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setStatusCode(var0: java_lang_Integer | number): Promise<void>;
-    /**
-     * @param var0 original type: 'int'
-     * @return original return type: 'void'
-     */
-    setStatusCodeSync(var0: java_lang_Integer | number): void;
+    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): MethodOutcome | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.instance.model.api.IBaseResource'
      * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
@@ -125,16 +135,6 @@ export declare class MethodOutcomeClass extends JavaClass {
      * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
      */
     setResourceSync(var0: org_hl7_fhir_instance_model_api_IBaseResource | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IBaseResourceInterface> | null): MethodOutcome | null;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
-     */
-    setId(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): Promise<MethodOutcome | null>;
-    /**
-     * @param var0 original type: 'org.hl7.fhir.instance.model.api.IIdType'
-     * @return original return type: 'ca.uhn.fhir.rest.api.MethodOutcome'
-     */
-    setIdSync(var0: org_hl7_fhir_instance_model_api_IIdType | JavaInterfaceProxy<org_hl7_fhir_instance_model_api_IIdTypeInterface> | null): MethodOutcome | null;
     /**
      * @return original return type: 'org.hl7.fhir.instance.model.api.IBaseOperationOutcome'
      */

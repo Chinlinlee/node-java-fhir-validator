@@ -10,18 +10,6 @@ import { BaseJsonLikeValue$ScalarType as ca_uhn_fhir_parser_json_BaseJsonLikeVal
 export declare class IParserErrorHandlerClass extends JavaClass {
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unexpectedRepeatingElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unexpectedRepeatingElementSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @return original return type: 'void'
      */
     containedResourceWithNoId(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null): Promise<void>;
@@ -44,6 +32,18 @@ export declare class IParserErrorHandlerClass extends JavaClass {
     missingRequiredElementSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unexpectedRepeatingElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unexpectedRepeatingElementSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @return original return type: 'void'
      */
     extensionContainsValueAndNestedExtensions(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null): Promise<void>;
@@ -55,17 +55,39 @@ export declare class IParserErrorHandlerClass extends JavaClass {
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    invalidValue(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null, var2: string | null): Promise<void>;
+    unknownAttribute(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    invalidValueSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null, var2: string | null): void;
+    unknownAttributeSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unknownElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unknownElementSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unknownReference(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unknownReferenceSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
@@ -89,39 +111,17 @@ export declare class IParserErrorHandlerClass extends JavaClass {
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    unknownAttribute(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
+    invalidValue(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null, var2: string | null): Promise<void>;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    unknownAttributeSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unknownReference(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unknownReferenceSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unknownElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): Promise<void>;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unknownElementSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    invalidValueSync(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null, var2: string | null): void;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -137,12 +137,6 @@ export declare class IParserErrorHandlerClass extends JavaClass {
 export interface IParserErrorHandlerInterface {
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unexpectedRepeatingElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @return original return type: 'void'
      */
     containedResourceWithNoId(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null): void;
@@ -154,16 +148,33 @@ export interface IParserErrorHandlerInterface {
     missingRequiredElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unexpectedRepeatingElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @return original return type: 'void'
      */
     extensionContainsValueAndNestedExtensions(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null): void;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
-     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    invalidValue(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null, var2: string | null): void;
+    unknownAttribute(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unknownElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    /**
+     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'void'
+     */
+    unknownReference(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
@@ -177,21 +188,10 @@ export interface IParserErrorHandlerInterface {
     /**
      * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
      * @param var1 original type: 'java.lang.String'
+     * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
-    unknownAttribute(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unknownReference(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
-    /**
-     * @param var0 original type: 'ca.uhn.fhir.parser.IParserErrorHandler$IParseLocation'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'void'
-     */
-    unknownElement(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null): void;
+    invalidValue(var0: ca_uhn_fhir_parser_IParserErrorHandler$IParseLocation | JavaInterfaceProxy<ca_uhn_fhir_parser_IParserErrorHandler$IParseLocationInterface> | null, var1: string | null, var2: string | null): void;
 }
 /**
  * Create a proxy for the {@link IParserErrorHandler} interface.

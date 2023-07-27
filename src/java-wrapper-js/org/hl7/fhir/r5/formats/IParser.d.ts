@@ -53,18 +53,6 @@ export declare class IParserClass extends JavaClass {
     parseSync(var0: Buffer | null): org_hl7_fhir_r5_model_Resource | null;
     /**
      * @param var0 original type: 'java.io.OutputStream'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Resource'
-     * @return original return type: 'void'
-     */
-    compose(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_Resource | null): Promise<void>;
-    /**
-     * @param var0 original type: 'java.io.OutputStream'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Resource'
-     * @return original return type: 'void'
-     */
-    composeSync(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_Resource | null): void;
-    /**
-     * @param var0 original type: 'java.io.OutputStream'
      * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
      * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
@@ -77,6 +65,30 @@ export declare class IParserClass extends JavaClass {
      * @return original return type: 'void'
      */
     composeSync(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_DataType | null, var2: string | null): void;
+    /**
+     * @param var0 original type: 'java.io.OutputStream'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Resource'
+     * @return original return type: 'void'
+     */
+    compose(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_Resource | null): Promise<void>;
+    /**
+     * @param var0 original type: 'java.io.OutputStream'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Resource'
+     * @return original return type: 'void'
+     */
+    composeSync(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_Resource | null): void;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
+     */
+    parseType(var0: Buffer | null, var1: string | null): Promise<org_hl7_fhir_r5_model_DataType | null>;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
+     */
+    parseTypeSync(var0: Buffer | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
     /**
      * @param var0 original type: 'java.io.InputStream'
      * @param var1 original type: 'java.lang.String'
@@ -102,18 +114,6 @@ export declare class IParserClass extends JavaClass {
      */
     parseTypeSync(var0: string | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
     /**
-     * @param var0 original type: 'byte[]'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
-     */
-    parseType(var0: Buffer | null, var1: string | null): Promise<org_hl7_fhir_r5_model_DataType | null>;
-    /**
-     * @param var0 original type: 'byte[]'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
-     */
-    parseTypeSync(var0: Buffer | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
@@ -123,16 +123,6 @@ export declare class IParserClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
     setSuppressXhtmlSync(var0: string | null): IParser | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
-     */
-    setHandleComments(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
-     */
-    setHandleCommentsSync(var0: java_lang_Boolean | boolean): IParser | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
      * @param var1 original type: 'java.lang.String'
@@ -156,6 +146,24 @@ export declare class IParserClass extends JavaClass {
      */
     composeBytesSync(var0: org_hl7_fhir_r5_model_Resource | null): Buffer | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
+     */
+    setHandleComments(var0: java_lang_Boolean | boolean): Promise<IParser | null>;
+    /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
+     */
+    setHandleCommentsSync(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
+     */
+    getOutputStyle(): Promise<org_hl7_fhir_r5_formats_IParser$OutputStyle | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
+     */
+    getOutputStyleSync(): org_hl7_fhir_r5_formats_IParser$OutputStyle | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
@@ -174,22 +182,6 @@ export declare class IParserClass extends JavaClass {
      */
     getHandleCommentsSync(): boolean;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
-     */
-    getOutputStyle(): Promise<org_hl7_fhir_r5_formats_IParser$OutputStyle | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
-     */
-    getOutputStyleSync(): org_hl7_fhir_r5_formats_IParser$OutputStyle | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isAllowUnknownContent(): Promise<boolean>;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isAllowUnknownContentSync(): boolean;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
@@ -199,18 +191,6 @@ export declare class IParserClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
     setAllowUnknownContentSync(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
-     */
-    parseAnyType(var0: java_io_InputStream | null, var1: string | null): Promise<org_hl7_fhir_r5_model_DataType | null>;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
-     */
-    parseAnyTypeSync(var0: java_io_InputStream | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
      * @param var1 original type: 'java.lang.String'
@@ -234,6 +214,14 @@ export declare class IParserClass extends JavaClass {
      */
     composeStringSync(var0: org_hl7_fhir_r5_model_Resource | null): string | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    isAllowUnknownContent(): Promise<boolean>;
+    /**
+     * @return original return type: 'boolean'
+     */
+    isAllowUnknownContentSync(): boolean;
+    /**
      * @param var0 original type: 'java.io.InputStream'
      * @return original return type: 'org.hl7.fhir.r5.model.Resource'
      */
@@ -243,6 +231,18 @@ export declare class IParserClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.Resource'
      */
     parseAndCloseSync(var0: java_io_InputStream | null): org_hl7_fhir_r5_model_Resource | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
+     */
+    parseAnyType(var0: java_io_InputStream | null, var1: string | null): Promise<org_hl7_fhir_r5_model_DataType | null>;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
+     */
+    parseAnyTypeSync(var0: java_io_InputStream | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
 }
 /**
  * This interface just defines types for creating proxies,
@@ -277,17 +277,23 @@ export interface IParserInterface {
     parse(var0: Buffer | null): org_hl7_fhir_r5_model_Resource | null;
     /**
      * @param var0 original type: 'java.io.OutputStream'
-     * @param var1 original type: 'org.hl7.fhir.r5.model.Resource'
-     * @return original return type: 'void'
-     */
-    compose(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_Resource | null): void;
-    /**
-     * @param var0 original type: 'java.io.OutputStream'
      * @param var1 original type: 'org.hl7.fhir.r5.model.DataType'
      * @param var2 original type: 'java.lang.String'
      * @return original return type: 'void'
      */
     compose(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_DataType | null, var2: string | null): void;
+    /**
+     * @param var0 original type: 'java.io.OutputStream'
+     * @param var1 original type: 'org.hl7.fhir.r5.model.Resource'
+     * @return original return type: 'void'
+     */
+    compose(var0: java_io_OutputStream | null, var1: org_hl7_fhir_r5_model_Resource | null): void;
+    /**
+     * @param var0 original type: 'byte[]'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
+     */
+    parseType(var0: Buffer | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
     /**
      * @param var0 original type: 'java.io.InputStream'
      * @param var1 original type: 'java.lang.String'
@@ -301,21 +307,10 @@ export interface IParserInterface {
      */
     parseType(var0: string | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
     /**
-     * @param var0 original type: 'byte[]'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
-     */
-    parseType(var0: Buffer | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
-    /**
      * @param var0 original type: 'java.lang.String'
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
     setSuppressXhtml(var0: string | null): IParser | null;
-    /**
-     * @param var0 original type: 'boolean'
-     * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
-     */
-    setHandleComments(var0: java_lang_Boolean | boolean): IParser | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
      * @param var1 original type: 'java.lang.String'
@@ -328,6 +323,15 @@ export interface IParserInterface {
      */
     composeBytes(var0: org_hl7_fhir_r5_model_Resource | null): Buffer | null;
     /**
+     * @param var0 original type: 'boolean'
+     * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
+     */
+    setHandleComments(var0: java_lang_Boolean | boolean): IParser | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
+     */
+    getOutputStyle(): org_hl7_fhir_r5_formats_IParser$OutputStyle | null;
+    /**
      * @param var0 original type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
@@ -337,24 +341,10 @@ export interface IParserInterface {
      */
     getHandleComments(): boolean;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.formats.IParser$OutputStyle'
-     */
-    getOutputStyle(): org_hl7_fhir_r5_formats_IParser$OutputStyle | null;
-    /**
-     * @return original return type: 'boolean'
-     */
-    isAllowUnknownContent(): boolean;
-    /**
      * @param var0 original type: 'boolean'
      * @return original return type: 'org.hl7.fhir.r5.formats.IParser'
      */
     setAllowUnknownContent(var0: java_lang_Boolean | boolean): IParser | null;
-    /**
-     * @param var0 original type: 'java.io.InputStream'
-     * @param var1 original type: 'java.lang.String'
-     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
-     */
-    parseAnyType(var0: java_io_InputStream | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
     /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.DataType'
      * @param var1 original type: 'java.lang.String'
@@ -367,10 +357,20 @@ export interface IParserInterface {
      */
     composeString(var0: org_hl7_fhir_r5_model_Resource | null): string | null;
     /**
+     * @return original return type: 'boolean'
+     */
+    isAllowUnknownContent(): boolean;
+    /**
      * @param var0 original type: 'java.io.InputStream'
      * @return original return type: 'org.hl7.fhir.r5.model.Resource'
      */
     parseAndClose(var0: java_io_InputStream | null): org_hl7_fhir_r5_model_Resource | null;
+    /**
+     * @param var0 original type: 'java.io.InputStream'
+     * @param var1 original type: 'java.lang.String'
+     * @return original return type: 'org.hl7.fhir.r5.model.DataType'
+     */
+    parseAnyType(var0: java_io_InputStream | null, var1: string | null): org_hl7_fhir_r5_model_DataType | null;
 }
 /**
  * Create a proxy for the {@link IParser} interface.

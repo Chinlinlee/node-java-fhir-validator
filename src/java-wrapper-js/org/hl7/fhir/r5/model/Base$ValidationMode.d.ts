@@ -29,14 +29,6 @@ export declare class Base$ValidationModeClass extends JavaClass {
      */
     withSourceSync(var0: org_hl7_fhir_r5_model_Base$ProfileSource | null): Base$ValidationMode | null;
     /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationReason'
-     */
-    getReason(): Promise<org_hl7_fhir_r5_model_Base$ValidationReason | null>;
-    /**
-     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationReason'
-     */
-    getReasonSync(): org_hl7_fhir_r5_model_Base$ValidationReason | null;
-    /**
      * @param var0 original type: 'org.hl7.fhir.r5.model.Base$ValidationReason'
      * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
      */
@@ -46,6 +38,14 @@ export declare class Base$ValidationModeClass extends JavaClass {
      * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationMode'
      */
     withReasonSync(var0: org_hl7_fhir_r5_model_Base$ValidationReason | null): Base$ValidationMode | null;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationReason'
+     */
+    getReason(): Promise<org_hl7_fhir_r5_model_Base$ValidationReason | null>;
+    /**
+     * @return original return type: 'org.hl7.fhir.r5.model.Base$ValidationReason'
+     */
+    getReasonSync(): org_hl7_fhir_r5_model_Base$ValidationReason | null;
     /**
      * @param var0 original type: 'long'
      * @param var1 original type: 'int'
