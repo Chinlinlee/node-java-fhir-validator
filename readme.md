@@ -1,6 +1,8 @@
-# hapi-node-validator
+# node-java-fhir-validator
 Use [node-java-bridge](https://github.com/MarkusJx/node-java-bridge) to implement same features as the [fhir-validator-wrapper](https://github.com/inferno-framework/fhir-validator-wrapper) APIs.
 
+# Migrate to V1
+- Every feature is same as the [fhir-validator-wrapper](https://github.com/inferno-framework/fhir-validator-wrapper) APIs
 # Requirements
 - JDK >= 11
 ## Ubuntu
