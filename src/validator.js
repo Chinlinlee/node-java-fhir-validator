@@ -44,6 +44,7 @@ const fsP = require("fs/promises");
 const { default: OperationOutcome$IssueSeverity } = require("./java-wrapper-js/org/hl7/fhir/r5/model/OperationOutcome$IssueSeverity");
 const { default: OperationOutcome$OperationOutcomeIssueComponent } = require("./java-wrapper-js/org/hl7/fhir/r5/model/OperationOutcome$OperationOutcomeIssueComponent");
 const { OperationOutcome$IssueType } = require("./java-wrapper-js/org/hl7/fhir/r5/model/OperationOutcome$IssueType");
+const { InputStream } = require("./java-wrapper-js/java/io/InputStream");
 
 
 class FhirValidator {
@@ -115,12 +116,11 @@ class FhirValidator {
      * @returns OperationOutcome JSON
      */
     async validate(resource, profile = "") {
-        let operationOutcome;
         let resourceJavaString = new JString(resource);
         let resourceBytes = await resourceJavaString.getBytes();
         let format = await FormatUtilities.determineFormat(resourceBytes);
         let resourceStream = await JByteArrayInputStream.newInstanceAsync(resourceBytes);
-        
+
         let profiles = [];
         if (profile) {
             profiles = profile.split(",").map(v => new JString(v.trim()));
@@ -128,42 +128,7 @@ class FhirValidator {
             profiles = [];
         }
 
-        try {
-            operationOutcome = await this.hl7Validator.validate(
-                format,
-                resourceStream,
-                await JArrays.asList([...profiles])
-            );
-        } catch(e) {
-            let severity = OperationOutcome$IssueSeverity.FATAL;
-            let issue = await OperationOutcome$OperationOutcomeIssueComponent.newInstanceAsync(
-                severity,
-                OperationOutcome$IssueType.STRUCTURE
-            );
-
-            await issue.setDiagnostics(e.message);
-            await issue.setDetails(
-                await (await CodeableConcept.newInstanceAsync()).setText(e.message)
-            );
-            await issue.addExtension(
-                "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-                await IntegerType.newInstanceAsync(1)
-            );
-            await issue.addExtension(
-                "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-                await IntegerType.newInstanceAsync(1)
-            );
-            await issue.addExtension(
-                "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-                await CodeType.newInstanceAsync("ValidationService")
-            );
-
-            operationOutcome = await OperationOutcome.newInstanceAsync(issue);
-        }
-
-        let javaJsonParser = await JsonParser.newInstanceAsync();
-        let jsonStr = await javaJsonParser.composeString(operationOutcome);
-        return JSON.parse(jsonStr);
+        return await this.doBuiltInValidate_(format, resourceStream, profiles);
     }
 
     /**
@@ -174,11 +139,11 @@ class FhirValidator {
      * @param {Buffer} resource 
      * @param {string} profile 
      */
-    async validateFromBuffer(resource, profile="") {
+    async validateFromBuffer(resource, profile = "") {
         let operationOutcome;
         let format = await FormatUtilities.determineFormat(resource);
         let resourceStream = await JByteArrayInputStream.newInstanceAsync(resource);
-        
+
         let profiles = [];
         if (profile) {
             profiles = profile.split(",").map(v => new JString(v.trim()));
@@ -186,13 +151,26 @@ class FhirValidator {
             profiles = [];
         }
 
+        return await this.doBuiltInValidate_(format, resourceStream, profiles);
+    }
+
+    /**
+     * @private
+     * @param {Manager$FhirFormat} format 
+     * @param {InputStream} resourceStream 
+     * @param {string[]} profiles 
+     * @returns 
+     */
+    async doBuiltInValidate_(format, resourceStream, profiles = []) {
+        let operationOutcome;
+
         try {
             operationOutcome = await this.hl7Validator.validate(
                 format,
                 resourceStream,
                 await JArrays.asList([...profiles])
             );
-        } catch(e) {
+        } catch (e) {
             let severity = OperationOutcome$IssueSeverity.FATAL;
             let issue = await OperationOutcome$OperationOutcomeIssueComponent.newInstanceAsync(
                 severity,
@@ -222,7 +200,8 @@ class FhirValidator {
         let javaJsonParser = await JsonParser.newInstanceAsync();
         let jsonStr = await javaJsonParser.composeString(operationOutcome);
         return JSON.parse(jsonStr);
-    } 
+
+    }
 
     /**
      * Lists the names of resources defined for this version of the validator.
@@ -371,7 +350,7 @@ class FhirValidator {
             accept: async (entry) => {
                 let key = await entry.getKey();
                 let value = await entry.getValue();
-                
+
                 if (idRegex.test(key)) {
                     return value;
                 }
@@ -487,7 +466,7 @@ class FhirValidator {
         await igsInValidator.forEach(forEachFn);
         forEachFn.reset();
 
-        for(let key in igObj) {
+        for (let key in igObj) {
             let [id, version] = key.split("#");
             await this.getIg(id, version);
         }
