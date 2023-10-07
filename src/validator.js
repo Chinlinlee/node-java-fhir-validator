@@ -167,6 +167,64 @@ class FhirValidator {
     }
 
     /**
+     * @example
+     * await fhirValidator.validateFromBuffer(
+         resourceStr, "profile1,profile2"
+     )
+     * @param {Buffer} resource 
+     * @param {string} profile 
+     */
+    async validateFromBuffer(resource, profile="") {
+        let operationOutcome;
+        let format = await FormatUtilities.determineFormat(resource);
+        let resourceStream = await JByteArrayInputStream.newInstanceAsync(resource);
+        
+        let profiles = [];
+        if (profile) {
+            profiles = profile.split(",").map(v => new JString(v.trim()));
+        } else {
+            profiles = [];
+        }
+
+        try {
+            operationOutcome = await this.hl7Validator.validate(
+                format,
+                resourceStream,
+                await JArrays.asList([...profiles])
+            );
+        } catch(e) {
+            let severity = OperationOutcome$IssueSeverity.FATAL;
+            let issue = await OperationOutcome$OperationOutcomeIssueComponent.newInstanceAsync(
+                severity,
+                OperationOutcome$IssueType.STRUCTURE
+            );
+
+            await issue.setDiagnostics(e.message);
+            await issue.setDetails(
+                await (await CodeableConcept.newInstanceAsync()).setText(e.message)
+            );
+            await issue.addExtension(
+                "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                await IntegerType.newInstanceAsync(1)
+            );
+            await issue.addExtension(
+                "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                await IntegerType.newInstanceAsync(1)
+            );
+            await issue.addExtension(
+                "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+                await CodeType.newInstanceAsync("ValidationService")
+            );
+
+            operationOutcome = await OperationOutcome.newInstanceAsync(issue);
+        }
+
+        let javaJsonParser = await JsonParser.newInstanceAsync();
+        let jsonStr = await javaJsonParser.composeString(operationOutcome);
+        return JSON.parse(jsonStr);
+    } 
+
+    /**
      * Lists the names of resources defined for this version of the validator.
      *
      * @return {Promise<string[]>} a sorted list of distinct resource names
